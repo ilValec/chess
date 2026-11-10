@@ -1094,12 +1094,13 @@
                 children: [
                   {
                     id: "b-albin-lasker",
-                    situation: "Se il Bianco gioca 4.e3? (La Trappola di Lasker)",
-                    myMove: "4...Ab4+ 5.Ad2 dxe3! 6.Axb4? exf2+! 7.Re2 fxg1=C+!!",
-                    summary: "TRAPPOLA DI LASKER: Sotto-promozione a Cavallo con scacco! La Donna bianca in d1 cade al turno 8 dopo 8.Re1 Dh4+.",
+                    situation: "4.e3? (Spinta prematura contro il pedone d4)",
+                    myMove: "4...Ab4+! 5.Ad2 dxe3!",
+                    summary: "Se mangia 6.Axb4?? vinci la partita: 6...exf2+! 7.Re2 fxg1=C+! (promozione a Cavallo con scacco!) e poi Ag4+ vince la Donna bianca.",
                     sequence: "4.e3 Ab4+ 5.Ad2 dxe3!",
                     tag: "MATTO / DONNA VINTA",
-                    tagType: "rose"
+                    tagType: "rose",
+                    children: []
                   },
                   {
                     id: "b-albin-cf3",
@@ -1108,7 +1109,19 @@
                     summary: "Puntelli la spina d4, sviluppi rapidamente e arrocchi lungo con attacco aggressivo sul Re bianco.",
                     sequence: "4.Cf3 Cc6",
                     tag: "SVILUPPO AGGRESSIVO",
-                    tagType: "blue"
+                    tagType: "blue",
+                     children: [
+                       {
+                         id: "b-albin-cf3-ag5",
+                         situation: "4.Cf3 Cc6 5.Ag5 (Inchiodatura Alfiere)",
+                         myMove: "5...f6! 6.exf6 gxf6 7.Ah4 Ag4!",
+                         summary: "Caccia l'alfiere a bordo scacchiera. Su 8.e3 cambi in f3 e giochi 9...Ab4+! sventrando il Re al centro. ATTENZIONE: non riprendere mai in c6 con pedone b se la Donna bianca su f3 fa forchetta con la Torre a8!",
+                         sequence: "5.Ag5 f6!",
+                         tag: "PUNIZIONE 5.Ag5",
+                         tagType: "rose",
+                         children: []
+                       }
+                     ]
                   }
                 ]
               },
