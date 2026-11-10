@@ -672,7 +672,19 @@
                     summary: "Non difendere e4: gioca 3.d4! Se mangia 3...exd4 spingi 4.e5! cacciando il Cavallo con spazio enorme.",
                     sequence: "2...Cf6",
                     tag: "ATTACCO DIRETTO",
-                    tagType: "blue"
+                    tagType: "blue",
+                     children: [
+                       {
+                         id: "w-dev2-cf6-dxe4",
+                         situation: "2...Cf6 3.d4 d5 4.dxe5 dxe4 (Petroff: controspinta)",
+                         myMove: "5.Dxd8+! Rxd8 6.exf6",
+                         summary: "Liquidazione forzata delle Regine. Il Nero perde l'arrocco e tu resti con un pedone netto di vantaggio e linee aperte.",
+                         sequence: "4...dxe4",
+                         tag: "REGINE FORZATE",
+                         tagType: "rose",
+                         children: []
+                       }
+                     ]
                   }
                 ]
               }
@@ -703,7 +715,19 @@
                 summary: "Se l'avversario non mette pedoni al centro, prenditelo tutto tu con 2.d4! Su 2...d5 sviluppi 3.Cc3 proteggendo e4 e poi pezzi leggeri e arrocco.",
                 sequence: "1...c6 o 1...e6",
                 tag: "CENTRO PIENO",
-                tagType: "blue"
+                tagType: "blue",
+                 children: [
+                   {
+                     id: "w-dev1-c6e6-c5",
+                     situation: "3...c5? (Caro-Kann: spinta prematura al centro)",
+                     myMove: "4.dxe5! d4 5.Ce4!",
+                     summary: "Guadagni un pedone centrale netto. Il cavallo salta in e4 controllando il centro e preparando l'attacco su f7/d6.",
+                     sequence: "3...c5",
+                     tag: "PEDONE CENTRALE",
+                     tagType: "emerald",
+                     children: []
+                   }
+                 ]
               },
               {
                 id: "w-dev1-c5",
@@ -811,12 +835,24 @@
                   },
                   {
                     id: "b-scandi-cc3-sub",
-                    situation: "Se difende con 2.Cc3?!",
+                    situation: "2.Cc3 (Scandinava Chiusa: rifiuta lo scambio)",
                     myMove: "2...d4! 3.Cce2 e5!",
-                    summary: "CACCIATA DEL CAVALLO: Spingi 2...d4! Il Cavallo bianco è costretto a retrocedere goffamente in e2. Rispondi con 3...e5 prendendo tutto il centro.",
+                    summary: "Guadagni spazio cacciando il cavallo. ATTENZIONE: se il Bianco mette l'Alfiere in d3, MAI mangiare pedoni in d4 con la Regina per evitare scacchi di scoperta su h7!",
                     sequence: "2.Cc3 d4!",
                     tag: "CAVALLO RETROCESSO",
-                    tagType: "emerald"
+                    tagType: "emerald",
+                     children: [
+                       {
+                         id: "b-scandi-cc3-sub-cf3",
+                         situation: "4.Cf3 (Sviluppo normale)",
+                         myMove: "4...Cc6 5.Cg3 Ac5!",
+                         summary: "Sviluppo solido dei pezzi leggeri e controllo totale della casa d4.",
+                         sequence: "4.Cf3",
+                         tag: "SVILUPPO SOLIDO",
+                         tagType: "emerald",
+                         children: []
+                       }
+                     ]
                   },
                   {
                     id: "b-scandi-d3",
