@@ -541,6 +541,37 @@
                         tag: "TRAPPOLA LETALE",
                         tagType: "rose",
                         children: []
+                      },
+                      {
+                        id: "w-sc-h6",
+                        situation: "4...h6 (Mossa passiva per paura di Cg5)",
+                        myMove: "5.c3!",
+                        summary: "Il Nero spreca un tempo all'ala: offri il pedone per aprire il centro e completare lo sviluppo a tempo di record.",
+                        sequence: "4...h6 5.c3",
+                        tag: "PUNIZIONE SVILUPPO",
+                        tagType: "emerald",
+                        children: [
+                          {
+                            id: "w-sc-h6-dxc3",
+                            situation: "Il Nero accetta il pedone: 5...dxc3",
+                            myMove: "6.Cxc3! d6 7.O-O poi Dd5!",
+                            summary: "Riprendi di Cavallo. Hai 3 pezzi attivi contro zero. Prepari la batteria Dd5 attaccando f7 e dominando la partita.",
+                            sequence: "5...dxc3 6.Cxc3",
+                            tag: "DOMINIO PEZZI",
+                            tagType: "rose",
+                            children: []
+                          },
+                          {
+                            id: "w-sc-h6-passive",
+                            situation: "Il Nero non mangia e gioca passivo (es. 5...d6)",
+                            myMove: "6.cxd4! Cf6 7.e5!",
+                            summary: "Riprendi il centro pieno con i due pedoni d4 ed e4, poi cacci il Cavallo con e5.",
+                            sequence: "5...d6 6.cxd4",
+                            tag: "CENTRO GIGANTE",
+                            tagType: "emerald",
+                            children: []
+                          }
+                        ]
                       }
                     ]
                   },
