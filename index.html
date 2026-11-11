@@ -619,11 +619,32 @@
                         id: "w-dev3-cf6",
                         situation: "3...Cf6 (Contrattacco al centro)",
                         myMove: "4.dxe5! Cxe4 5.Dd5!",
-                        summary: "Mangi il pedone: su 4...Cxe4 fai la forchetta 5.Dd5 attaccando il Cavallo e minacciando matto.",
-                        sequence: "3...Cf6",
+                        summary: "Doppia minaccia: attacchi il Cavallo in e4 e prepari l'attacco su f7.",
+                        sequence: "3...Cf6 4.dxe5",
                         tag: "DOPPIA MINACCIA",
                         tagType: "rose",
-                        children: []
+                        children: [
+                          {
+                            id: "w-dev3-cf6-retreat",
+                            situation: "5...Cf6? (Il Cavallo torna indietro attaccando la Donna)",
+                            myMove: "6.exf6! Dxf6 7.Cc3",
+                            summary: "MANGIA IL CAVALLO COL PEDONE! Il pedone in e5 mangia in f6 gratis. Hai un pezzo netto di vantaggio alla mossa 6.",
+                            sequence: "5...Cf6 6.exf6!",
+                            tag: "PEZZO GRATIS",
+                            tagType: "rose",
+                            children: []
+                          },
+                          {
+                            id: "w-dev3-cf6-f5",
+                            situation: "5...f5 (Difende il Cavallo)",
+                            myMove: "6.Ac4! De7 7.O-O",
+                            summary: "Minacci matto in f7 con la batteria Donna-Alfiere. Il Nero resta con il Re inchiodato.",
+                            sequence: "5...f5 6.Ac4",
+                            tag: "MINACCIA MATTO",
+                            tagType: "emerald",
+                            children: []
+                          }
+                        ]
                       },
                       {
                         id: "w-dev3-f6",
@@ -1332,12 +1353,43 @@
                   {
                     id: "b-albin-london",
                     situation: "2.Af4 (London System)",
-                    myMove: "2...c5! 3.e3 cxd4 4.exd4 Db6!",
-                    summary: "Distruggi la piramide del London alla radice: colpisci con 2...c5, scambi in d4 e attacchi il pedone debole b2 con la Regina.",
+                    myMove: "2...c5!",
+                    summary: "Spacchi subito la base del London: colpisci il pedone d4 prima che costruisca la piramide.",
                     sequence: "2.Af4 c5!",
                     tag: "ANTI-LONDON",
                     tagType: "emerald",
-                    children: []
+                    children: [
+                      {
+                        id: "b-london-3nf3",
+                        situation: "3.Cf3 (Sviluppo normale del Bianco)",
+                        myMove: "3...cxd4! 4.Cxd4 e5!",
+                        summary: "Mangi in d4 aprendo il centro. Su 4.Cxd4 spari la forchetta 4...e5! su Alfiere e Cavallo guadagnando un pezzo netto.",
+                        sequence: "3.Cf3 cxd4",
+                        tag: "FORCHETTA CENTRALE",
+                        tagType: "rose",
+                        children: []
+                      },
+                      {
+                        id: "b-london-3e3",
+                        situation: "3.e3 (Costruzione classica)",
+                        myMove: "3...cxd4! 4.exd4 Db6!",
+                        summary: "Scambi in d4 e piazzi la Donna in b6 creando doppio attacco su b2 e d4.",
+                        sequence: "3.e3 cxd4",
+                        tag: "ATTACCO b2",
+                        tagType: "emerald",
+                        children: []
+                      },
+                      {
+                        id: "b-london-3dxc5",
+                        situation: "3.dxc5 (Il Bianco accetta il pedone)",
+                        myMove: "3...e6! 4.e4 Axc5",
+                        summary: "Riprendi il pedone con l'Alfiere attivo e centro aperto senza alcuna debolezza.",
+                        sequence: "3.dxc5 e6",
+                        tag: "RECUPERO FACILE",
+                        tagType: "blue",
+                        children: []
+                      }
+                    ]
                   }
                 ]
               }
