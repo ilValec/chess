@@ -880,12 +880,54 @@
                   {
                     id: "w-scandi-qd8",
                     situation: "3...Dd8 (Ritirata a casa base)",
-                    myMove: "4.d4! Cf6 5.Ac4! e6 6.Cf3",
-                    summary: "Il Nero ha perso 2 tempi netti per nulla. Sviluppo ideale, centro d4/e4 e arrocco.",
+                    myMove: "4.d4!",
+                    summary: "Occupi il centro pieno con i due pedoni d4 ed e4. Il Nero ha perso 2 tempi per nulla. Come sviluppa?",
                     sequence: "3...Dd8 4.d4",
-                    tag: "VANTAGGIO SVILUPPO",
+                    tag: "CENTRO TOTALE",
                     tagType: "emerald",
-                    children: []
+                    children: [
+                      {
+                        id: "w-scandi-qd8-bf5",
+                        situation: "4...Af5 (Alfiere fuori dalla catena)",
+                        myMove: "5.Ac4! e6 6.Db3!",
+                        summary: "DOPPIA MINACCIA LETALE: l'Alfiere ha lasciato indifeso il pedone b7. Con 6.Db3 attacchi contemporaneamente b7 ed f7 mandando il Nero in tilt immediato.",
+                        sequence: "4...Af5 5.Ac4",
+                        tag: "ATTACCO DOPPIO b7/f7",
+                        tagType: "rose",
+                        children: [
+                          {
+                            id: "w-scandi-qd8-bf5-b6",
+                            situation: "Se difende con 6...b6",
+                            myMove: "7.Cf3 Cf6 8.Ce5!",
+                            summary: "La diagonale e la casa c6 sono colabrodo. Piazzi il Cavallo in e5 con pressione devastante.",
+                            sequence: "6...b6 7.Cf3",
+                            tag: "DOMINIO TOTALE",
+                            tagType: "emerald",
+                            children: []
+                          },
+                          {
+                            id: "w-scandi-qd8-bf5-qc8",
+                            situation: "Se difende passivo con 6...Dc8",
+                            myMove: "7.Cf3 Cf6 8.O-O Ae7 9.d5!",
+                            summary: "La Donna nera è ridicola in c8. Arrocchi e spacchi con 9.d5 aprendo le colonne centrali.",
+                            sequence: "6...Dc8 7.Cf3",
+                            tag: "ROTTURA d5",
+                            tagType: "blue",
+                            children: []
+                          }
+                        ]
+                      },
+                      {
+                        id: "w-scandi-qd8-nf6",
+                        situation: "4...Cf6 (Sviluppo classico)",
+                        myMove: "5.Ac4! e6 6.Cf3",
+                        summary: "Sviluppo fluido e arrocco con netto vantaggio di spazio e tempi.",
+                        sequence: "4...Cf6 5.Ac4",
+                        tag: "SVILUPPO FLUIDO",
+                        tagType: "emerald",
+                        children: []
+                      }
+                    ]
                   }
                 ]
               }
