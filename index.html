@@ -1425,6 +1425,59 @@
                 tag: "GAMBETTO FROM",
                 tagType: "rose",
                 children: []
+              },
+              {
+                id: "b-flank-g3",
+                situation: "1.g3 (Fianchetto di Re / Attacco Est-Indiano)",
+                myMove: "1...d5! 2.Ag2 e5!",
+                summary: "Occupi subito tutto il centro con i due pedoni d5 ed e5.",
+                sequence: "1.g3 d5 2.Ag2 e5",
+                tag: "CENTRO PIENO",
+                tagType: "emerald",
+                children: [
+                  {
+                    id: "b-flank-g3-3nf3",
+                    situation: "3.Cf3 (Attacca il pedone e5)",
+                    myMove: "3...Cc6!",
+                    summary: "Sviluppi il pezzo e difendi saldamente il centro.",
+                    sequence: "3.Cf3 Cc6",
+                    tag: "DIFESA e5",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "b-flank-g3-4d4",
+                        situation: "4.d4 (Sfida centrale)",
+                        myMove: "4...e4! (MAI 4...Ag4? che perde il pedone!)",
+                        summary: "REGOLA FONDAMENTALE: spingi 4...e4! Cacci il Cavallo f3 e acciechi l'Alfiere in g2, soffocando la posizione del Bianco.",
+                        sequence: "4.d4 e4!",
+                        tag: "SPINTA e4",
+                        tagType: "rose",
+                        children: [
+                          {
+                            id: "b-flank-g3-5ne5",
+                            situation: "5.Ce5 (Il Cavallo si accentra)",
+                            myMove: "5...Cxe5 6.dxe5 c6!",
+                            summary: "Scambi i Cavalli e puntelli il pedone d5 con c6. Posizione blindata e Alfiere in g2 completamente spento.",
+                            sequence: "5.Ce5 Cxe5",
+                            tag: "BLOCCO TOTALE",
+                            tagType: "blue",
+                            children: []
+                          }
+                        ]
+                      },
+                      {
+                        id: "b-flank-g3-4o-o",
+                        situation: "4.O-O (Arrocco calmo)",
+                        myMove: "4...Ac5! poi Cf6 e O-O",
+                        summary: "Sviluppo rapido dei pezzi leggeri e arrocco con netto vantaggio di spazio centrale.",
+                        sequence: "4.O-O Ac5",
+                        tag: "SVILUPPO FLUIDO",
+                        tagType: "emerald",
+                        children: []
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
