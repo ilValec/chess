@@ -754,13 +754,55 @@
                 children: [
                   {
                     id: "w-panov-cf6-e6",
-                    situation: "Se chiude con 5...e6",
-                    myMove: "6.Cf3 Ae7 7.cxd5 exd5 8.Ad3!",
-                    summary: "Apri la colonna c e piazzi i pezzi sulle case ideali prima dell'arrocco.",
-                    sequence: "5...e6",
-                    tag: "SVILUPPO FLUIDO",
-                    tagType: "blue",
-                    children: []
+                    situation: "5...e6 (Chiusura solida del Nero)",
+                    myMove: "6.Cf3!",
+                    summary: "Sviluppi il Cavallo difendendo il pedone d4 e preparando l'arrocco. Come continua il Nero?",
+                    sequence: "5...e6 6.Cf3",
+                    tag: "SVILUPPO SOLIDO",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "w-panov-6nc6",
+                        situation: "6...Cc6 (Pressione classica su d4)",
+                        myMove: "7.cxd5! exd5 8.Ad3!",
+                        summary: "Isoli il pedone centrale d5 del Nero e piazzi l'Alfiere puntato sull'arrocco avversario.",
+                        sequence: "6...Cc6 7.cxd5",
+                        tag: "PEDONE ISOLATO",
+                        tagType: "blue",
+                        children: [
+                          {
+                            id: "w-panov-8bg4",
+                            situation: "8...Ag4 (Inchioda il Cavallo f3 per mangiare in d4)",
+                            myMove: "9.Ae3! (MAI 9.h3??)",
+                            summary: "REGOLA D'ORO: il pedone d4 non ha pedoni vicini a difenderlo. Con 9.Ae3! lo blindi. Se fai 9.h3?? il Nero cambia in f3 e mangia d4 gratis con ...Cxd4!",
+                            sequence: "8...Ag4 9.Ae3!",
+                            tag: "DIFESA d4 OBBLIGATA",
+                            tagType: "rose",
+                            children: []
+                          },
+                          {
+                            id: "w-panov-8be7",
+                            situation: "8...Ae7 (Sviluppo calmo)",
+                            myMove: "9.O-O! O-O 10.Ag5!",
+                            summary: "Arrocchi e metti subito pressione sul Cavallo f6 e sul pedone isolato d5.",
+                            sequence: "8...Ae7 9.O-O",
+                            tag: "PRESSIONE CENTRALE",
+                            tagType: "emerald",
+                            children: []
+                          }
+                        ]
+                      },
+                      {
+                        id: "w-panov-6be7",
+                        situation: "6...Ae7 (Ritirata difensiva)",
+                        myMove: "7.cxd5! exd5 8.Ad3! O-O 9.O-O",
+                        summary: "Hai isolato il pedone d5 del Nero e ottenuto colonne aperte per le tue Torri.",
+                        sequence: "6...Ae7 7.cxd5",
+                        tag: "SVILUPPO FLUIDO",
+                        tagType: "emerald",
+                        children: []
+                      }
+                    ]
                   },
                   {
                     id: "w-panov-cf6-cc6",
