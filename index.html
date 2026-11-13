@@ -1329,12 +1329,85 @@
                   {
                     id: "b-scandi-2e5",
                     situation: "2.e5 (Chiusura del centro)",
-                    myMove: "2...c5! 3.f4 Cc6 4.Cf3 Ag4!",
-                    summary: "Colpisci subito d4 con c5, inchiodi il Cavallo con Ag4 e fai collassare la catena bianca.",
+                    myMove: "2...c5!",
+                    summary: "Colpisci subito il centro evitando che il Bianco consolidi la catena di pedoni. Come continua?",
                     sequence: "2.e5 c5!",
-                    tag: "SOFFOCAMENTO",
+                    tag: "ATTACCO AL CENTRO",
                     tagType: "emerald",
-                    children: []
+                    children: [
+                      {
+                        id: "b-scandi-2e5-3d4",
+                        situation: "3.d4 (Sostiene e5 — Francese di Spinta migliorata)",
+                        myMove: "3...Cc6!",
+                        summary: "Aumenti subito la pressione sul pedone d4 prima di chiudere con e6.",
+                        sequence: "3.d4 Cc6!",
+                        tag: "PRESSIONE d4",
+                        tagType: "emerald",
+                        children: [
+                          {
+                            id: "b-scandi-2e5-4c3",
+                            situation: "4.c3 (Catena di pedoni completa)",
+                            myMove: "4...Af5!",
+                            summary: "REGOLA D'ORO: tiri fuori l'Alfiere camposcuro PRIMA di giocare e6! Ottieni una Francese di Spinta senza l'Alfiere chiuso.",
+                            sequence: "4.c3 Af5!",
+                            tag: "ALFIERE ATTIVO",
+                            tagType: "rose",
+                            children: [
+                              {
+                                id: "b-scandi-2e5-5bd3",
+                                situation: "5.Ad3 (Propone il cambio degli Alfieri)",
+                                myMove: "5...Axd3 6.Dxd3 e6!",
+                                summary: "Scambi il tuo Alfiere con quello buono del Bianco, blindi la catena con e6 e poi attacchi d4/e5 con Db6 o Dc7.",
+                                sequence: "5.Ad3 Axd3",
+                                tag: "STRUTTURA IDEALE",
+                                tagType: "blue",
+                                children: []
+                              },
+                              {
+                                id: "b-scandi-2e5-5nf3",
+                                situation: "5.Cf3 (Sviluppo normale)",
+                                myMove: "5...e6!",
+                                summary: "Chiudi la catena con l'Alfiere già fuori, poi sviluppi Cge7 -> Cf5 e Db6 demolendo il pedone d4.",
+                                sequence: "5.Cf3 e6!",
+                                tag: "DEMOLIZIONE d4",
+                                tagType: "emerald",
+                                children: []
+                              }
+                            ]
+                          },
+                          {
+                            id: "b-scandi-2e5-4nf3",
+                            situation: "4.Cf3 (Sviluppo senza c3)",
+                            myMove: "4...Ag4!",
+                            summary: "Inchiodi subito il Cavallo difensore di d4 e fai crollare il centro del Bianco.",
+                            sequence: "4.Cf3 Ag4!",
+                            tag: "INCHIODATURA",
+                            tagType: "emerald",
+                            children: []
+                          }
+                        ]
+                      },
+                      {
+                        id: "b-scandi-2e5-3f4",
+                        situation: "3.f4 (Spinta aggressiva all'ala di Re)",
+                        myMove: "3...Cc6! 4.Cf3 Ag4!",
+                        summary: "Sviluppi il Cavallo e inchiodi f3 preparando e6 e Cge7 con pieno controllo del centro.",
+                        sequence: "3.f4 Cc6!",
+                        tag: "CONTROGIOCO",
+                        tagType: "blue",
+                        children: []
+                      },
+                      {
+                        id: "b-scandi-2e5-3nf3",
+                        situation: "3.Cf3 (Sviluppo calmo)",
+                        myMove: "3...Cc6!",
+                        summary: "Controlli e5 e d4, pronto a rispondere a 4.d4 con 4...Ag4! o 4...Af5!.",
+                        sequence: "3.Cf3 Cc6!",
+                        tag: "SVILUPPO RAPIDO",
+                        tagType: "emerald",
+                        children: []
+                      }
+                    ]
                   },
                   {
                     id: "b-scandi-2d3",
