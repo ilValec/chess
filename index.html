@@ -1616,94 +1616,146 @@
                   {
                     id: "b-albin-c4",
                     situation: "2.c4 (Gambetto di Donna)",
-                    myMove: "2...e5! 3.dxe5 d4!",
-                    summary: "Spacchi con 2...e5 e conficchi la spina 3...d4 togliendo la casa naturale c3 al Cavallo bianco.",
+                    myMove: "2...e5!",
+                    summary: "Spacchi subito il centro con il Controgambetto Albin. Come reagisce il Bianco al turno 3?",
                     sequence: "2.c4 e5!",
-                    tag: "SPINA d4",
+                    tag: "CONTROGAMBETTO ALBIN",
                     tagType: "emerald",
                     children: [
                       {
-                        id: "b-albin-4cf3",
-                        situation: "4.Cf3 (Sviluppo normale)",
-                        myMove: "4...Cc6!",
-                        summary: "Sviluppi il Cavallo e difendi la spina d4. Come continua il Bianco?",
-                        sequence: "4.Cf3 Cc6",
-                        tag: "DIFESA d4",
+                        id: "b-albin-3dxe5",
+                        situation: "3.dxe5 (Il Bianco accetta il gambetto)",
+                        myMove: "3...d4!",
+                        summary: "Conficchi la spina centrale in d4 togliendo la casa naturale c3 al Cavallo bianco. Come prosegue?",
+                        sequence: "3.dxe5 d4!",
+                        tag: "SPINA d4",
                         tagType: "emerald",
                         children: [
                           {
-                            id: "b-albin-5g3",
-                            situation: "5.g3 (Fianchetto Alfiere)",
-                            myMove: "5...Ag4!",
-                            summary: "Inchiodi il Cavallo in f3 e prepari la batteria con Dd7 e arrocco lungo.",
-                            sequence: "5.g3 Ag4",
-                            tag: "INCHIODATURA",
+                            id: "b-albin-4cf3",
+                            situation: "4.Cf3 (Sviluppo normale)",
+                            myMove: "4...Cc6!",
+                            summary: "Sviluppi il Cavallo e difendi la spina d4. Come continua il Bianco?",
+                            sequence: "4.Cf3 Cc6",
+                            tag: "DIFESA d4",
                             tagType: "emerald",
                             children: [
                               {
-                                id: "b-albin-6ag2",
-                                situation: "6.Ag2",
-                                myMove: "6...Dd7! poi O-O-O",
-                                summary: "Batteria completata: prepari l'arrocco lungo e il cambio dell'Alfiere con Ah3.",
-                                sequence: "6.Ag2",
-                                tag: "BATTERIA Dd7",
-                                tagType: "blue",
-                                children: []
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-albin-5ag5",
-                            situation: "5.Ag5 (Inchiodatura aggressiva dell'Alfiere)",
-                            myMove: "5...f6!",
-                            summary: "Cacci subito l'Alfiere distruggendo l'inchiodatura.",
-                            sequence: "5.Ag5 f6!",
-                            tag: "CACCIA ALFIERE",
-                            tagType: "rose",
-                            children: [
+                                id: "b-albin-5g3",
+                                situation: "5.g3 (Fianchetto Alfiere)",
+                                myMove: "5...Ag4!",
+                                summary: "Inchiodi il Cavallo in f3 e prepari la batteria con Dd7 e arrocco lungo.",
+                                sequence: "5.g3 Ag4",
+                                tag: "INCHIODATURA",
+                                tagType: "emerald",
+                                children: [
+                                  {
+                                    id: "b-albin-6ag2",
+                                    situation: "6.Ag2",
+                                    myMove: "6...Dd7! poi O-O-O",
+                                    summary: "Batteria completata: prepari l'arrocco lungo e il cambio dell'Alfiere con Ah3.",
+                                    sequence: "6.Ag2",
+                                    tag: "BATTERIA Dd7",
+                                    tagType: "blue",
+                                    children: []
+                                  }
+                                ]
+                              },
                               {
-                                id: "b-albin-6exf6",
-                                situation: "6.exf6 (Scambio)",
-                                myMove: "6...gxf6! 7.Ah4 Ag4!",
-                                summary: "Isoli l'Alfiere bianco a bordo tavola e attacchi il Cavallo f3. ATTENZIONE: se il Bianco cambia in c6, non riprendere mai col pedone b se la Donna bianca su f3 minaccia la forchetta sulla Torre in a8!",
-                                sequence: "6.exf6 gxf6!",
-                                tag: "ATTACCO AL RE",
+                                id: "b-albin-5ag5",
+                                situation: "5.Ag5 (Inchiodatura aggressiva dell'Alfiere)",
+                                myMove: "5...f6!",
+                                summary: "Cacci subito l'Alfiere distruggendo l'inchiodatura.",
+                                sequence: "5.Ag5 f6!",
+                                tag: "CACCIA ALFIERE",
                                 tagType: "rose",
+                                children: [
+                                  {
+                                    id: "b-albin-6exf6",
+                                    situation: "6.exf6 (Scambio)",
+                                    myMove: "6...gxf6! 7.Ah4 Ag4!",
+                                    summary: "Isoli l'Alfiere bianco a bordo tavola e attacchi il Cavallo f3. ATTENZIONE: non riprendere mai col pedone b su c6 se la Donna bianca su f3 minaccia la forchetta sulla Torre in a8!",
+                                    sequence: "6.exf6 gxf6!",
+                                    tag: "ATTACCO AL RE",
+                                    tagType: "rose",
+                                    children: []
+                                  }
+                                ]
+                              },
+                              {
+                                id: "b-albin-5a3",
+                                situation: "5.a3 (Prevenzione lenta)",
+                                myMove: "5...Ag4!",
+                                summary: "Sviluppo rapido con inchiodatura immediata su f3.",
+                                sequence: "5.a3",
+                                tag: "SVILUPPO",
+                                tagType: "emerald",
+                                children: []
+                              },
+                              {
+                                id: "b-albin-5cbd2",
+                                situation: "5.Cbd2 (Pressione su d4)",
+                                myMove: "5...De7!",
+                                summary: "Punti a recuperare il pedone in e5 con gioco attivo.",
+                                sequence: "5.Cbd2",
+                                tag: "RECUPERO e5",
+                                tagType: "emerald",
                                 children: []
                               }
                             ]
                           },
                           {
-                            id: "b-albin-5a3",
-                            situation: "5.a3 (Prevenzione lenta)",
-                            myMove: "5...Ag4!",
-                            summary: "Sviluppo rapido con inchiodatura immediata su f3.",
-                            sequence: "5.a3",
-                            tag: "SVILUPPO",
-                            tagType: "emerald",
-                            children: []
-                          },
-                          {
-                            id: "b-albin-5cbd2",
-                            situation: "5.Cbd2 (Pressione su d4)",
-                            myMove: "5...De7!",
-                            summary: "Punti a recuperare il pedone in e5 con gioco attivo.",
-                            sequence: "5.Cbd2",
-                            tag: "RECUPERO e5",
-                            tagType: "emerald",
+                            id: "b-albin-4e3",
+                            situation: "4.e3? (Attacco prematuro alla spina d4)",
+                            myMove: "4...Ab4+! 5.Ad2 dxe3!",
+                            summary: "TRAPPOLA DI LASKER: se gioca 6.Axb4?? vinci la partita con 6...exf2+! 7.Re2 fxg1=C+! (promozione a Cavallo con scacco!) e poi Ag4+ vince la Regina bianca al turno 8.",
+                            sequence: "4.e3 Ab4+",
+                            tag: "TRAPPOLA DI LASKER",
+                            tagType: "rose",
                             children: []
                           }
                         ]
                       },
                       {
-                        id: "b-albin-4e3",
-                        situation: "4.e3? (Attacco prematuro alla spina d4)",
-                        myMove: "4...Ab4+! 5.Ad2 dxe3!",
-                        summary: "TRAPPOLA DI LASKER: se gioca 6.Axb4?? vinci la partita con 6...exf2+! 7.Re2 fxg1=C+! (promozione a Cavallo con scacco!) e poi Ag4+ vince la Regina bianca al turno 8.",
-                        sequence: "4.e3 Ab4+",
-                        tag: "TRAPPOLA DI LASKER",
-                        tagType: "rose",
-                        children: []
+                        id: "b-albin-3cxd5",
+                        situation: "3.cxd5 (Il Bianco rifiuta e5 e mangia in d5)",
+                        myMove: "3...Dxd5!",
+                        summary: "Riprendi di Donna centralizzando il pezzo e aprendo subito la colonna d. Come sviluppa il Bianco?",
+                        sequence: "3.cxd5 Dxd5!",
+                        tag: "DONNA CENTRALIZZATA",
+                        tagType: "blue",
+                        children: [
+                          {
+                            id: "b-albin-3cxd5-4nc3",
+                            situation: "4.Cc3 (Attacca subito la Donna)",
+                            myMove: "4...Ab4!",
+                            summary: "REGOLA D'ORO: non ritirare subito la Donna! Inchiodi il Cavallo al Re così il Bianco non può spingere d5 con tempo.",
+                            sequence: "4.Cc3 Ab4!",
+                            tag: "INCHIODATURA Ab4",
+                            tagType: "rose",
+                            children: []
+                          },
+                          {
+                            id: "b-albin-3cxd5-4e3",
+                            situation: "4.e3 (Sviluppo calmo)",
+                            myMove: "4...Cc6!",
+                            summary: "Sviluppi il Cavallo aumentando la pressione su d4. Se al turno dopo fa 5.Cc3 giochi 5...Ab4! (MAI 5...Dd6? che subisce 6.d5!).",
+                            sequence: "4.e3 Cc6!",
+                            tag: "SVILUPPO ATTIVO",
+                            tagType: "emerald",
+                            children: []
+                          },
+                          {
+                            id: "b-albin-3cxd5-4nf3",
+                            situation: "4.Cf3 (Attacca il pedone e5)",
+                            myMove: "4...exd4! (oppure 4...Cc6)",
+                            summary: "Scambi i pedoni centrali aprendo completamente la posizione per i tuoi pezzi leggeri e l'arrocco lungo.",
+                            sequence: "4.Cf3 exd4!",
+                            tag: "CENTRO APERTO",
+                            tagType: "emerald",
+                            children: []
+                          }
+                        ]
                       }
                     ]
                   },
