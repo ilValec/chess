@@ -671,13 +671,55 @@
                 children: [
                   {
                     id: "w-dev2-cf6-exd4",
-                    situation: "Se il Nero mangia: 3...exd4",
-                    myMove: "4.e5! Ce4 5.Dxd4!",
-                    summary: "Cacci il Cavallo con 4.e5 e centralizzi la Donna con netto vantaggio di spazio.",
-                    sequence: "3...exd4",
-                    tag: "SPINTA e5",
+                    situation: "3...exd4 (Il Nero mangia di pedone)",
+                    myMove: "4.e5!",
+                    summary: "Cacci subito il Cavallo in f6 conquistando spazio al centro. Dove scappa il Cavallo?",
+                    sequence: "3...exd4 4.e5!",
+                    tag: "ATTACCO STEINITZ",
                     tagType: "emerald",
-                    children: []
+                    children: [
+                      {
+                        id: "w-dev2-cf6-cg8",
+                        situation: "4...Cg8? (Ritirata passiva alla casa di partenza)",
+                        myMove: "5.Dxd4!",
+                        summary: "Il Nero ha perso 2 tempi e disfatto lo sviluppo: riprendi il pedone con la Donna e sviluppi Ac4, O-O, Te1 e Cc3 puntando dritto a c7/f7.",
+                        sequence: "4...Cg8? 5.Dxd4!",
+                        tag: "VANTAGGIO ENORME",
+                        tagType: "rose",
+                        children: []
+                      },
+                      {
+                        id: "w-dev2-cf6-ce4",
+                        situation: "4...Ce4 (Contrattacco centrale)",
+                        myMove: "5.Dxd4!",
+                        summary: "Riprendi il pedone attaccando subito il Cavallo in e4. Su 5...d5 giochi 6.exd6 Cxd6 7.Cc3 con pieno sviluppo.",
+                        sequence: "4...Ce4 5.Dxd4!",
+                        tag: "ATTACCO CAVALLO",
+                        tagType: "emerald",
+                        children: []
+                      }
+                    ]
+                  },
+                  {
+                    id: "w-dev2-cf6-cxe4",
+                    situation: "3...Cxe4 (Il Nero mangia di Cavallo)",
+                    myMove: "4.dxe5!",
+                    summary: "Togli il pedone centrale al Nero e apri le linee. Come continua?",
+                    sequence: "3...Cxe4 4.dxe5!",
+                    tag: "APERTURA LINEE",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "w-dev2-cf6-cxe4-d5",
+                        situation: "4...d5 (Difende il Cavallo al centro)",
+                        myMove: "5.Ad3!",
+                        summary: "Sviluppi l'Alfiere puntando sull'arrocco e preparando O-O e c4 per demolire il centro nero.",
+                        sequence: "4...d5 5.Ad3!",
+                        tag: "SVILUPPO ATTIVO",
+                        tagType: "blue",
+                        children: []
+                      }
+                    ]
                   },
                   {
                     id: "w-dev2-cf6-d5",
@@ -835,6 +877,27 @@
                 tag: "PEDONE VANTAGGIO",
                 tagType: "rose",
                 children: []
+              },
+              {
+                id: "w-panov-e6",
+                situation: "4...e6 (Difesa solida immediata senza Cf6)",
+                myMove: "5.Cc3!",
+                summary: "Aumenti subito la pressione sul punto d5. Come sviluppa il Nero?",
+                sequence: "4...e6 5.Cc3!",
+                tag: "PRESSIONE d5",
+                tagType: "emerald",
+                children: [
+                  {
+                    id: "w-panov-e6-cc6",
+                    situation: "5...Cc6 (Sviluppo Cavallo)",
+                    myMove: "6.Cf3!",
+                    summary: "Completi lo sviluppo dei Cavalli. Se inchioda con 6...Ab4 giochi 7.Ad3! preparando l'arrocco e puntando alla diagonale h7.",
+                    sequence: "5...Cc6 6.Cf3!",
+                    tag: "DIAGONALE h7",
+                    tagType: "blue",
+                    children: []
+                  }
+                ]
               }
             ]
           },
@@ -1141,6 +1204,48 @@
                                     ]
                                   }
                                 ]
+                              }
+                            ]
+                          },
+                          {
+                            id: "b-scandi-4cb5",
+                            situation: "4.Cb5?! (Salto prematuro per minacciare forchetta su c7)",
+                            myMove: "4...c6!",
+                            summary: "REGOLA D'ORO: spingi subito 4...c6! Cacci indietro il Cavallo con guadagno di tempo e blindi per sempre la casa c7.",
+                            sequence: "4.Cb5?! c6!",
+                            tag: "CACCIA CAVALLO",
+                            tagType: "rose",
+                            children: [
+                              {
+                                id: "b-scandi-4cb5-nc3",
+                                situation: "5.Cc3 (Il Cavallo torna indietro)",
+                                myMove: "5...Cf6!",
+                                summary: "Hai guadagnato c6 gratis e il Bianco ha perso 2 tempi: continui con Af5, e6 e sviluppo fluido.",
+                                sequence: "5.Cc3 Cf6!",
+                                tag: "TEMPO GUADAGNATO",
+                                tagType: "emerald",
+                                children: []
+                              }
+                            ]
+                          },
+                          {
+                            id: "b-scandi-4ac4",
+                            situation: "4.Ac4 (Sviluppo immediato dell'Alfiere)",
+                            myMove: "4...Cf6! (MAI 4...e5?!)",
+                            summary: "Sviluppi il Cavallo controllando d5 ed e4. Evita 4...e5?! perché 5.Dh5! crea un doppio attacco pericoloso su f7 ed e5.",
+                            sequence: "4.Ac4 Cf6!",
+                            tag: "SVILUPPO PULITO",
+                            tagType: "emerald",
+                            children: [
+                              {
+                                id: "b-scandi-4ac4-d3",
+                                situation: "5.d3 (o 5.Cf3)",
+                                myMove: "5...c6!",
+                                summary: "Crei la casa di fuga c7 per la Donna e prepari 6...Af5! fuori dalla catena di pedoni.",
+                                sequence: "5.d3 c6!",
+                                tag: "STRUTTURA SOLIDA",
+                                tagType: "blue",
+                                children: []
                               }
                             ]
                           }
