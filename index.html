@@ -1135,12 +1135,75 @@
           {
             id: "w-dev1-c5",
             situation: "Il Nero gioca 1...c5 (Difesa Siciliana)",
-            myMove: "2.Cf3 e su 2...d6/Cc6 spingi 3.d4! cxd4 4.Cxd4",
-            summary: "Stessa filosofia aperta: rompi subito con 3.d4, scambi al centro e apri le colonne per i tuoi pezzi leggeri.",
-            sequence: "1...c5",
+            myMove: "2.Cf3!",
+            summary: "Sviluppi il Cavallo preparando la spinta centrale 3.d4! per aprire subito la posizione. Cosa risponde il Nero al turno 2?",
+            sequence: "1...c5 2.Cf3!",
             tag: "SICILIANA APERTA",
             tagType: "emerald",
-            children: []
+            children: [
+              {
+                id: "w-sic-2e6",
+                situation: "2...e6 (Siciliana Taimanov / Paulsen)",
+                myMove: "3.d4! cxd4 4.Cxd4",
+                summary: "Spacchi subito il centro come nello Scozzese e centralizzi il Cavallo. Come continua il Nero?",
+                sequence: "2...e6 3.d4 cxd4 4.Cxd4",
+                tag: "CENTRO APERTO",
+                tagType: "emerald",
+                children: [
+                  {
+                    id: "w-sic-4nc6",
+                    situation: "4...Cc6 (Variante Taimanov)",
+                    myMove: "5.Cc3! (MAI 5.Cxc6?!)",
+                    summary: "REGOLA D'ORO: sviluppa 5.Cc3! Mai cambiare in c6 perché 5...bxc6 rinforza il centro nero per ...d5 e apre la colonna b. Poi giochi 6.Ae3! o 6.Ae2! e arrocco.",
+                    sequence: "4...Cc6 5.Cc3!",
+                    tag: "MAI 5.Cxc6?!",
+                    tagType: "rose",
+                    children: [
+                      {
+                        id: "w-sic-5qc7",
+                        situation: "5...Dc7 (o 5...a6 — Mossa tipica Taimanov)",
+                        myMove: "6.Ae3! Cf6 7.Ae2! (poi O-O e f4!)",
+                        summary: "Sviluppo armonico: difendi d4, arrocchi corto e lanci l'attacco sull'ala di Re con f4 e Df3.",
+                        sequence: "5...Dc7 6.Ae3!",
+                        tag: "ATTACCO ALA DI RE",
+                        tagType: "blue",
+                        children: []
+                      }
+                    ]
+                  },
+                  {
+                    id: "w-sic-4nf6",
+                    situation: "4...Cf6 (Attacca il pedone e4)",
+                    myMove: "5.Cc3!",
+                    summary: "Difendi e4 sviluppando il secondo Cavallo. Su 5...Cc6 giochi 6.Cdb5! puntando al buco in d6.",
+                    sequence: "4...Cf6 5.Cc3!",
+                    tag: "PUNTO DEBOLE d6",
+                    tagType: "emerald",
+                    children: []
+                  }
+                ]
+              },
+              {
+                id: "w-sic-2nc6",
+                situation: "2...Cc6 (Siciliana Classica)",
+                myMove: "3.d4! cxd4 4.Cxd4 Cf6 5.Cc3!",
+                summary: "Apri il centro e sviluppi entrambi i Cavalli (senza mai cambiare in c6!). Poi piazzi 6.Ag5! o 6.Ac4! con attacco diretto.",
+                sequence: "2...Cc6 3.d4 cxd4 4.Cxd4",
+                tag: "SVILUPPO RAPIDO",
+                tagType: "emerald",
+                children: []
+              },
+              {
+                id: "w-sic-2d6",
+                situation: "2...d6 (Siciliana Najdorf / Dragone)",
+                myMove: "3.d4! cxd4 4.Cxd4 Cf6 5.Cc3!",
+                summary: "Centro spalancato: contro 5...a6 (Najdorf) o 5...g6 (Dragone) piazzi 6.Ae3!, 7.f3, 8.Dd2 e Arrocco Lungo (O-O-O) con attacco a valanga.",
+                sequence: "2...d6 3.d4 cxd4 4.Cxd4",
+                tag: "ATTACCO INGLESE",
+                tagType: "rose",
+                children: []
+              }
+            ]
           }
         ]
       },
