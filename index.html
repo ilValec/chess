@@ -819,31 +819,52 @@
               },
               {
                 id: "w-dev2-d6",
-                situation: "Il Nero gioca 2...d6 (Difesa Philidor)",
+                situation: "2...d6 (Difesa Philidor — Il Nero gioca passivo)",
                 myMove: "3.d4!",
-                summary: "Sfidi il centro all'istante.",
-                sequence: "2...d6",
-                tag: "SPINTA d4",
+                summary: "Spacchi subito il centro con 3.d4! per punire la passività del Nero e aprire tutte le linee. Come risponde il Nero?",
+                sequence: "2...d6 3.d4!",
+                tag: "ATTACCO AL CENTRO",
                 tagType: "emerald",
                 children: [
                   {
-                    id: "w-dev2-d6-ag4",
-                    situation: "3...Ag4? (Errore comune)",
-                    myMove: "4.dxe5! Axf3 5.Dxf3 dxe5 6.Ac4! Cf6 7.Db3!!",
-                    summary: "DOPPIO ATTACCO LETALE su f7 e b7: o gli dai matto in f7 o gli mangi la Torre in a8.",
-                    sequence: "3...Ag4",
-                    tag: "ATTACCO 7.Db3",
+                    id: "w-philidor-3exd4",
+                    situation: "3...exd4 (Cambia al centro)",
+                    myMove: "4.Ac4! (Gambetto Morphy — oppure 4.Cxd4)",
+                    summary: "Punti subito l'Alfiere su f7 con sviluppo fulmineo (evita di regalare un secondo pedone con c3!). Come continua il Nero?",
+                    sequence: "3...exd4 4.Ac4!",
+                    tag: "GAMBETTO MORPHY",
                     tagType: "rose",
-                    children: []
+                    children: [
+                      {
+                        id: "w-philidor-4bg4",
+                        situation: "4...Ag4 (Inchioda il Cavallo f3)",
+                        myMove: "5.h3! Axf3 6.Dxf3 Cf6 7.Db3!",
+                        summary: "DOPPIA MINACCIA LETALE: l'Alfiere nero ha lasciato scoperto b7! Con 7.Db3! attacchi simultaneamente f7 e b7.",
+                        sequence: "4...Ag4 5.h3 Axf3 6.Dxf3 Cf6 7.Db3!",
+                        tag: "ATTACCO DOPPIO b7/f7",
+                        tagType: "rose",
+                        children: []
+                      },
+                      {
+                        id: "w-philidor-4nc6",
+                        situation: "4...Cc6 (Difende e sviluppo)",
+                        myMove: "5.Cxd4! (oppure 5.c3!)",
+                        summary: "Riprendi il pedone centrale con vantaggio di spazio, coppia degli Alfieri attiva e arrocco rapido.",
+                        sequence: "4...Cc6 5.Cxd4!",
+                        tag: "CENTRO DOMINANTE",
+                        tagType: "emerald",
+                        children: []
+                      }
+                    ]
                   },
                   {
-                    id: "w-dev2-d6-exd4",
-                    situation: "3...exd4 (Scambio)",
-                    myMove: "4.Ac4!",
-                    summary: "Rientri nel Gambetto Scozzese con sviluppo rapidissimo su f7.",
-                    sequence: "3...exd4",
-                    tag: "SCOZZESE",
-                    tagType: "emerald",
+                    id: "w-philidor-3nd7",
+                    situation: "3...Cd7 (Difende e5 senza cambiare)",
+                    myMove: "4.Ac4! c6 5.O-O!",
+                    summary: "Sviluppo ultra-rapido: i pezzi neri si intralciano a vicenda mentre tu prepari Cc3, a4 e l'apertura del centro.",
+                    sequence: "3...Cd7 4.Ac4!",
+                    tag: "SVILUPPO RAPIDO",
+                    tagType: "blue",
                     children: []
                   }
                 ]
