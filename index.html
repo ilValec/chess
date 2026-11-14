@@ -608,6 +608,58 @@
                     ]
                   },
                   {
+                    id: "w-sc-3cf6",
+                    situation: "3...Cf6 (Deviazione: attacca e4 invece di mangiare d4)",
+                    myMove: "4.dxe5!",
+                    summary: "Catturi subito il pedone e5 cacciando il Cavallo nero con guadagno di tempo. Dove scappa il Cavallo?",
+                    sequence: "3...Cf6 4.dxe5!",
+                    tag: "ATTACCO FORZANTE",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "w-sc-3cf6-cxe4",
+                        situation: "4...Cxe4 (Riprende il pedone centrale)",
+                        myMove: "5.Dd5!",
+                        summary: "Attacchi subito il Cavallo in e4 e prepari 6.Ac4! con minaccia di matto su f7. Dove ritira il Cavallo?",
+                        sequence: "4...Cxe4 5.Dd5!",
+                        tag: "DOPPIA MINACCIA",
+                        tagType: "rose",
+                        children: [
+                          {
+                            id: "w-sc-5cc5",
+                            situation: "5...Cc5 (Il Cavallo scappa in c5)",
+                            myMove: "6.Ac4!",
+                            summary: "MINACCIA MATTO IN 1 (7.Dxf7#)! Se il Nero difende con 6...De7 giochi 7.O-O! (se poi mangia 7...Cxe5?? vinci tutto con 8.Cxe5! e 9.Dxf7+!).",
+                            sequence: "5...Cc5 6.Ac4!",
+                            tag: "MATTO SU f7",
+                            tagType: "rose",
+                            children: []
+                          },
+                          {
+                            id: "w-sc-5cg5",
+                            situation: "5...Cg5 (Scappa in g5)",
+                            myMove: "6.Axg5! Ae7 7.Axe7 Dxe7",
+                            summary: "Scambi i pezzi mantenendo un netto vantaggio di spazio centrale e sviluppo.",
+                            sequence: "5...Cg5 6.Axg5!",
+                            tag: "VANTAGGIO SPAZIO",
+                            tagType: "emerald",
+                            children: []
+                          }
+                        ]
+                      },
+                      {
+                        id: "w-sc-3cf6-cg4",
+                        situation: "4...Cg4 (Controattacca subito il pedone e5)",
+                        myMove: "5.Af4!",
+                        summary: "Difendi saldamente e5 sviluppando l'Alfiere. Su 5...Ac5 giochi 6.Ag3! blindando il centro e preparando Cc3.",
+                        sequence: "4...Cg4 5.Af4!",
+                        tag: "CENTRO BLINDATO",
+                        tagType: "blue",
+                        children: []
+                      }
+                    ]
+                  },
+                  {
                     id: "w-dev3-root",
                     situation: "Il Nero NON mangia in d4 (Deviazioni Mossa 3)",
                     myMove: "Reagisci in base alla deviazione:",
