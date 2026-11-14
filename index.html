@@ -848,13 +848,65 @@
                   },
                   {
                     id: "w-panov-cf6-cc6",
-                    situation: "Se contrattacca con 5...Cc6",
+                    situation: "5...Cc6 (Sviluppo e pressione centrale)",
                     myMove: "6.cxd5! Cxd5 7.Ac4!",
-                    summary: "Mangi in d5 e attacchi subito il Cavallo con Ac4 guadagnando spazio enorme.",
-                    sequence: "5...Cc6",
+                    summary: "Mangi in d5 e attacchi subito il Cavallo con Ac4. ATTENZIONE: l'Alfiere in c4 ora è scoperto. Come risponde il Nero?",
+                    sequence: "5...Cc6 6.cxd5 Cxd5 7.Ac4",
                     tag: "ATTACCO CAVALLO",
                     tagType: "emerald",
-                    children: []
+                    children: [
+                      {
+                        id: "w-panov-7be6",
+                        situation: "7...Ae6 (Difende d5 e minaccia l'Alfiere in c4)",
+                        myMove: "8.Db3! (MAI 8.Dd3??)",
+                        summary: "REGOLA D'ORO: 8.Db3! difende l'Alfiere in c4 sulla diagonale e attacca sia d5 che b7. Mai giocare 8.Dd3?? perché subisce 8...Cdb4! perdendo un pezzo.",
+                        sequence: "7...Ae6 8.Db3!",
+                        tag: "DIFESA E CONTRATTACCO",
+                        tagType: "rose",
+                        children: [
+                          {
+                            id: "w-panov-8nxc3",
+                            situation: "8...Cxc3 (Scambia i Cavalli)",
+                            myMove: "9.Axe6! fxe6 10.bxc3!",
+                            summary: "Catturi prima l'Alfiere in e6 rovini la struttura pedonale del Nero e poi riprendi il Cavallo con centro intatto.",
+                            sequence: "8...Cxc3 9.Axe6!",
+                            tag: "STRUTTURA ROVINATA",
+                            tagType: "emerald",
+                            children: []
+                          },
+                          {
+                            id: "w-panov-8na5",
+                            situation: "8...Ca5 (Attacca Donna e Alfiere)",
+                            myMove: "9.Ab5+! Ad7 10.Da4!",
+                            summary: "Dai scacco intermedio con l'Alfiere e mantieni una pressione devastante inchiodando i pezzi neri.",
+                            sequence: "8...Ca5 9.Ab5+!",
+                            tag: "SCACCO INTERMEDIO",
+                            tagType: "blue",
+                            children: []
+                          }
+                        ]
+                      },
+                      {
+                        id: "w-panov-7nxc3",
+                        situation: "7...Cxc3 (Cambia subito in c3)",
+                        myMove: "8.bxc3!",
+                        summary: "Riprendi di pedone b rinforzando il centro d4 e aprendo la colonna b per la tua Torre.",
+                        sequence: "7...Cxc3 8.bxc3!",
+                        tag: "CENTRO BLINDATO",
+                        tagType: "emerald",
+                        children: []
+                      },
+                      {
+                        id: "w-panov-7nb6",
+                        situation: "7...Cb6 (Attacca l'Alfiere in c4)",
+                        myMove: "8.Ab3!",
+                        summary: "Ritiri l'Alfiere mantenendo il controllo della diagonale a2-g8 e del punto debole f7.",
+                        sequence: "7...Cb6 8.Ab3!",
+                        tag: "RITIRATA ATTIVA",
+                        tagType: "blue",
+                        children: []
+                      }
+                    ]
                   },
                   {
                     id: "w-panov-cf6-g6",
