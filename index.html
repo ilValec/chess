@@ -511,12 +511,44 @@
                               {
                                 id: "w-sc-cf6-ca5",
                                 situation: "Il Cavallo scappa all'ala: 6...Ca5",
-                                myMove: "7.Ab5+ c6 8.dxc6 bxc6 9.Ae2 h6 10.Cf3 e4 11.Ce5",
-                                summary: "Tieni il pedone di vantaggio e mantieni la posizione solida.",
-                                sequence: "6...Ca5",
+                                myMove: "7.Ab5+! c6 8.dxc6 bxc6 9.Ae2!",
+                                summary: "Sequenza forzata: dai scacco, il Nero interpone c6, mangi e ritiri l'Alfiere in e2 mantenendo il pedone di vantaggio. Come continua il Nero al turno 9?",
+                                sequence: "6...Ca5 7.Ab5+ c6 8.dxc6 bxc6 9.Ae2",
                                 tag: "PEDONE IN PIÙ",
                                 tagType: "blue",
-                                children: []
+                                children: [
+                                  {
+                                    id: "w-sc-9bd6",
+                                    situation: "9...Ad6 (Variante Perreux — Sviluppo diretto)",
+                                    myMove: "10.O-O! (poi 11.Cf3! e 12.Cxd4!)",
+                                    summary: "Arrocchi subito, riporti il Cavallo in f3 e al turno 12 mangi il pedone d4 gratis: resti con un pedone netto in più e i pedoni neri a7/c6 isolati.",
+                                    sequence: "9...Ad6 10.O-O!",
+                                    tag: "RECUPERO d4 PULITO",
+                                    tagType: "emerald",
+                                    children: [
+                                      {
+                                        id: "w-sc-12nxd4",
+                                        situation: "10...h6 11.Cf3 O-O -> 12.Cxd4!",
+                                        myMove: "13.Cc3! (ATTENZIONE a ...Ah2+!)",
+                                        summary: "Hai un pedone pulito di vantaggio. ATTENZIONE TATTICA: finché il Nero ha l'Alfiere in d6, non lasciare mai la tua Donna indifesa su d5 o rischi lo scacco di scoperta ...Ah2+!",
+                                        sequence: "12.Cxd4! 13.Cc3",
+                                        tag: "OCCHIO SCOPERTA Ah2+",
+                                        tagType: "rose",
+                                        children: []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    id: "w-sc-9h6",
+                                    situation: "9...h6 (Linea principale — Caccia il Cavallo)",
+                                    myMove: "10.Cf3! e4 11.Ce5!",
+                                    summary: "Ritiri il Cavallo in f3 e, sulla spinta e4, lo piazzi in e5 dominando il centro con un pedone di vantaggio.",
+                                    sequence: "9...h6 10.Cf3!",
+                                    tag: "CENTRO SOLIDO",
+                                    tagType: "emerald",
+                                    children: []
+                                  }
+                                ]
                               }
                             ]
                           }
