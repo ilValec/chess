@@ -1823,12 +1823,54 @@
                       {
                         id: "b-london-3nf3",
                         situation: "3.Cf3 (Sviluppo normale del Bianco)",
-                        myMove: "3...cxd4! 4.Cxd4 e5!",
-                        summary: "Mangi in d4 aprendo il centro. Su 4.Cxd4 spari la forchetta 4...e5! su Alfiere e Cavallo guadagnando un pezzo netto.",
-                        sequence: "3.Cf3 cxd4",
-                        tag: "FORCHETTA CENTRALE",
-                        tagType: "rose",
-                        children: []
+                        myMove: "3...cxd4!",
+                        summary: "Mangi subito in d4 aprendo il centro. Come riprende il Bianco?",
+                        sequence: "3.Cf3 cxd4!",
+                        tag: "APERTURA CENTRO",
+                        tagType: "emerald",
+                        children: [
+                          {
+                            id: "b-london-4nxd4",
+                            situation: "4.Cxd4 (Riprende di Cavallo)",
+                            myMove: "4...Cd7! (MAI 4...e5 subito che perde il pedone!)",
+                            summary: "REGOLA D'ORO: prima proteggi e5 con 4...Cd7! (il Cavallo non può essere scambiato). Ora minacci davvero la forchetta 5...e5! su Alfiere f4 e Cavallo d4.",
+                            sequence: "4.Cxd4 Cd7!",
+                            tag: "PREPARA FORCHETTA",
+                            tagType: "rose",
+                            children: [
+                              {
+                                id: "b-london-5e3",
+                                situation: "5.e3 o 5.Cc3 (Il Bianco ignora la minaccia)",
+                                myMove: "5...e5!",
+                                summary: "SCATTA LA FORCHETTA REALE: e5 è difeso da Cd7! Se 6.Axe5 Cxe5 vinci l'Alfiere; se 6.Ag3 exd4 vinci il Cavallo.",
+                                sequence: "5.e3 e5!",
+                                tag: "PEZZO VINTO",
+                                tagType: "rose",
+                                children: []
+                              },
+                              {
+                                id: "b-london-5nf3",
+                                situation: "5.Cf3 (Il Bianco ritira il Cavallo per evitare la forchetta)",
+                                myMove: "5...e5! 6.Ag3 Cgf6",
+                                summary: "Conquisti tutto il centro gratis con 5...e5! e sviluppi i pezzi con netto vantaggio di spazio.",
+                                sequence: "5.Cf3 e5!",
+                                tag: "CENTRO DOMINANTE",
+                                tagType: "emerald",
+                                children: []
+                              }
+                            ]
+                          },
+                          {
+                            id: "b-london-4qxd4",
+                            situation: "4.Dxd4 (Riprende di Donna)",
+                            myMove: "4...Cc6!",
+                            summary: "Sviluppi il Cavallo cacciando subito la Donna bianca con guadagno di tempo.",
+                            sequence: "4.Dxd4 Cc6!",
+                            tag: "GUADAGNO TEMPO",
+                            tagType: "emerald",
+                            children: []
+                          }
+                        ]
                       },
                       {
                         id: "b-london-3e3",
