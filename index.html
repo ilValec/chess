@@ -660,6 +660,27 @@
                     ]
                   },
                   {
+                    id: "w-sc-3d6",
+                    situation: "3...d6 (Deviazione passiva — Difende e5)",
+                    myMove: "4.dxe5!",
+                    summary: "Spacchi subito il centro costringendo il Nero a cambiare le Donne e perdere il diritto all'arrocco.",
+                    sequence: "3...d6 4.dxe5!",
+                    tag: "TOGLIE ARROCCO",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "w-sc-3d6-nxe5",
+                        situation: "4...Cxe5 (o 4...dxe5)",
+                        myMove: "5.Cxe5! dxe5 6.Dxd8+ Rxd8 7.Ac4!",
+                        summary: "Cambi le Donne lasciando il Re nero al centro e punti subito l'Alfiere su f7 con sviluppo fulmineo (Cc3, Ag5+, O-O-O).",
+                        sequence: "4...Cxe5 5.Cxe5 dxe5 6.Dxd8+ Rxd8 7.Ac4!",
+                        tag: "ATTACCO SU f7",
+                        tagType: "blue",
+                        children: []
+                      }
+                    ]
+                  },
+                  {
                     id: "w-dev3-root",
                     situation: "Il Nero NON mangia in d4 (Deviazioni Mossa 3)",
                     myMove: "Reagisci in base alla deviazione:",
@@ -1721,6 +1742,27 @@
                     tag: "ARROCCO CON SCACCO",
                     tagType: "rose",
                     children: []
+                  },
+                  {
+                    id: "b-scandi-2nc3",
+                    situation: "2.Cc3 (Scandinava Chiusa — Difende e4)",
+                    myMove: "2...d4!",
+                    summary: "Spinti subito in d4 cacciando il Cavallo bianco con guadagno di tempo e conquistando spazio centrale.",
+                    sequence: "2.Cc3 d4!",
+                    tag: "SPAZIO E TEMPO",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "b-scandi-2nc3-3ce2",
+                        situation: "3.Cce2 (o 3.Cb1 — Il Cavallo scappa)",
+                        myMove: "3...e5!",
+                        summary: "Blindi il centro con 3...e5!, poi sviluppi Cc6, Ae6 e Cf6 con enorme vantaggio di spazio.",
+                        sequence: "3.Cce2 e5!",
+                        tag: "CENTRO BLINDATO",
+                        tagType: "blue",
+                        children: []
+                      }
+                    ]
                   }
                 ]
               },
@@ -2174,6 +2216,27 @@
                             children: []
                           }
                         ]
+                      }
+                    ]
+                  },
+                  {
+                    id: "b-d4-2nf3",
+                    situation: "2.Cf3 (Sviluppo calmo senza c4 né Af4)",
+                    myMove: "2...c5!",
+                    summary: "Colpisci subito il centro d4 esattamente come nell'Albin/Anti-London, impedendo al Bianco di chiudere la posizione.",
+                    sequence: "2.Cf3 c5!",
+                    tag: "ATTACCO AL CENTRO",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "b-d4-2nf3-3e3",
+                        situation: "3.e3 (o 3.c3 — Difende d4 con i pedoni)",
+                        myMove: "3...cxd4! 4.exd4 Cc6!",
+                        summary: "Apri il centro, sviluppi Cc6, poi inchiodi con Ag4, scambi in f3 e rompi con ...e5!.",
+                        sequence: "3.e3 cxd4! 4.exd4 Cc6!",
+                        tag: "ROTTURA e5",
+                        tagType: "blue",
+                        children: []
                       }
                     ]
                   }
