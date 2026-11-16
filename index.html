@@ -1074,6 +1074,27 @@
                     tag: "DIAGONALE h7",
                     tagType: "blue",
                     children: []
+                  },
+                  {
+                    id: "w-panov-e6-bb4",
+                    situation: "5...Ab4 (Inchioda subito il Cavallo c3)",
+                    myMove: "6.Cf3! (MAI 6.Dd3?)",
+                    summary: "REGOLA D'ORO: sviluppa 6.Cf3! Non giocare 6.Dd3? perché espone la Donna e blocca l'Alfiere campochiaro. Se il Nero cambia 6...Axc3+, riprendi 7.bxc3! rinforzando il centro d4.",
+                    sequence: "5...Ab4 6.Cf3!",
+                    tag: "NO 6.Dd3?",
+                    tagType: "rose",
+                    children: [
+                      {
+                        id: "w-panov-6nf6",
+                        situation: "6...Cf6 (Sviluppo normale)",
+                        myMove: "7.cxd5! exd5 8.Ad3!",
+                        summary: "Isoli il pedone d5 del Nero e prepari O-O e Ag5 con pressione diretta.",
+                        sequence: "6...Cf6 7.cxd5!",
+                        tag: "PEDONE ISOLATO",
+                        tagType: "emerald",
+                        children: []
+                      }
+                    ]
                   }
                 ]
               }
@@ -1431,6 +1452,16 @@
                                         children: []
                                       }
                                     ]
+                                  },
+                                  {
+                                    id: "b-scandi-6g3",
+                                    situation: "6.g3 (Fianchetto Alfiere campochiaro)",
+                                    myMove: "6...Ag4!",
+                                    summary: "Inchiodi subito il Cavallo f3 al centro, poi sviluppi Cbd7, e6 e Arrocco Lungo (O-O-O).",
+                                    sequence: "6.g3 Ag4!",
+                                    tag: "INCHIODATURA",
+                                    tagType: "emerald",
+                                    children: []
                                   }
                                 ]
                               }
@@ -1538,6 +1569,27 @@
                                 sequence: "5.d3 c6!",
                                 tag: "STRUTTURA SOLIDA",
                                 tagType: "blue",
+                                children: []
+                              }
+                            ]
+                          },
+                          {
+                            id: "b-scandi-4b4",
+                            situation: "4.b4 (Gambetto Leonhardt — Attacca subito senza a3)",
+                            myMove: "4...Dxb4!",
+                            summary: "PEDONE GRATIS: il pedone b4 non è difeso! Lo catturi subito e alla mossa dopo metti la Donna al sicuro in b6 o c5.",
+                            sequence: "4.b4 Dxb4!",
+                            tag: "PEDONE GRATIS",
+                            tagType: "rose",
+                            children: [
+                              {
+                                id: "b-scandi-4b4-5nb5",
+                                situation: "5.Cb5 (Minaccia forchetta su c7)",
+                                myMove: "5...Da5! (oppure 5...Dc5!)",
+                                summary: "Torni a controllare c7 con la Donna, poi spingi 6...a6! cacciando il Cavallo e restando con un pedone netto in più.",
+                                sequence: "5.Cb5 Da5! -> 6...a6!",
+                                tag: "DIFESA c7 + VANTAGGIO",
+                                tagType: "emerald",
                                 children: []
                               }
                             ]
@@ -2235,6 +2287,27 @@
                         summary: "Apri il centro, sviluppi Cc6, poi inchiodi con Ag4, scambi in f3 e rompi con ...e5!.",
                         sequence: "3.e3 cxd4! 4.exd4 Cc6!",
                         tag: "ROTTURA e5",
+                        tagType: "blue",
+                        children: []
+                      }
+                    ]
+                  },
+                  {
+                    id: "b-d4-2nc3",
+                    situation: "2.Cc3 (Attacco Veresov / Chigorin — Blocca c5?)",
+                    myMove: "2...c5!",
+                    summary: "Spacchi subito il centro d4 ignorando il Cavallo. Se spinge 3.dxc5 giochi 3...e5! e 4...d4! conquistando tutto lo spazio centrale.",
+                    sequence: "2.Cc3 c5!",
+                    tag: "ATTACCO CENTRALE",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "b-d4-2nc3-3dxc5",
+                        situation: "3.dxc5 (o 3.a3 — Il Bianco accetta o gioca lento)",
+                        myMove: "3...Cf6! poi 4...e5! e 5...d4!",
+                        summary: "Recuperi il pedone con Axc5 e sfondi al centro con e5 e d4.",
+                        sequence: "3.dxc5 Cf6! -> e5/d4",
+                        tag: "CENTRO DOMINANTE",
                         tagType: "blue",
                         children: []
                       }
