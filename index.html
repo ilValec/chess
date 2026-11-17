@@ -887,6 +887,16 @@
                     tag: "SVILUPPO RAPIDO",
                     tagType: "blue",
                     children: []
+                  },
+                  {
+                    id: "w-philidor-3nf6",
+                    situation: "3...Cf6 (Variante Nimzowitsch — Attacca e4)",
+                    myMove: "4.dxe5! Cxe4 5.Dd5!",
+                    summary: "TRAPPOLA IMMEDIATA: spingi 4.dxe5! cacciando il Cavallo, e su 4...Cxe4 giochi 5.Dd5! attaccando contemporaneamente il Cavallo in e4 e il matto su f7 (vinci un pezzo pulito!).",
+                    sequence: "3...Cf6 4.dxe5! Cxe4 5.Dd5!",
+                    tag: "PEZZO VINTO",
+                    tagType: "rose",
+                    children: []
                   }
                 ]
               }
@@ -1232,6 +1242,27 @@
                         children: []
                       }
                     ]
+                  },
+                  {
+                    id: "w-scandi-3qe6",
+                    situation: "3...De6+ (Scacco insolito di Donna in apertura)",
+                    myMove: "4.Ae2!",
+                    summary: "Copri lo scacco sviluppando un pezzo! La Donna nera in e6 blocca i suoi stessi Alfieri e pedoni centrali: al turno dopo giochi 5.d4! e 6.Cf3! prendendo tutto il centro.",
+                    sequence: "3...De6+ 4.Ae2!",
+                    tag: "SVILUPPO CON TEMPO",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "w-scandi-3qe6-qg6",
+                        situation: "La Donna nera va in g6 (Punta su g2 e c2)",
+                        myMove: "5.d4! Cf6 6.Cf3! (Appena vedi ...Ca6 -> giochi SUBITO a3!)",
+                        summary: "REGOLA SALVA-PARTITA: se il Nero mette il Cavallo sul bordo in ...Ca6 mentre ha la Donna in g6, gioca SUBITO a3! (o O-O-O!) PRIMA che salti in ...Cb4, altrimenti l'attacco doppio su c2 diventa imparabile!",
+                        sequence: "4.Ae2 Dg6 5.d4! -> a3! contro ...Ca6",
+                        tag: "FERMA ...Ca6 CON a3!",
+                        tagType: "rose",
+                        children: []
+                      }
+                    ]
                   }
                 ]
               },
@@ -1316,6 +1347,16 @@
                 sequence: "2...d6 3.d4 cxd4 4.Cxd4",
                 tag: "ATTACCO INGLESE",
                 tagType: "rose",
+                children: []
+              },
+              {
+                id: "w-sic-2b6",
+                situation: "2...b6 (Fianchetto prematuro sull'ala di Donna)",
+                myMove: "3.d4! cxd4 4.Cxd4 Ab7 5.Cc3!",
+                summary: "Prendi tutto il centro con d4 e sviluppi i Cavalli. Se il Nero lascia la diagonale aperta, punti subito su g7 e sulla Torre in h8!",
+                sequence: "2...b6 3.d4! cxd4 4.Cxd4",
+                tag: "DOMINIO CENTRALE",
+                tagType: "emerald",
                 children: []
               }
             ]
