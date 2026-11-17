@@ -1360,6 +1360,48 @@
                 children: []
               }
             ]
+          },
+          {
+            id: "w-dev1-e6",
+            situation: "Il Nero gioca 1...e6 (Difesa Francese)",
+            myMove: "2.d4! (oppure 2.Cf3 d5 3.exd5 exd5 4.d4)",
+            summary: "Prendi subito tutto il centro con 2.d4! e su 2...d5 cambi immediatamente in d5 (3.exd5!) per evitare partite chiuse. Come riprende il Nero?",
+            sequence: "1...e6 2.d4!",
+            tag: "FRANCESE APERTA",
+            tagType: "emerald",
+            children: [
+              {
+                id: "w-french-2d5",
+                situation: "2...d5 (Spinta centrale standard)",
+                myMove: "3.exd5! exd5 4.c4! (Attacco Monte Carlo)",
+                summary: "Spacchi subito la catena di pedoni francese esattamente come nel Panov! Sviluppi Cc3, Cf3, Ad3 e attacchi a campo aperto.",
+                sequence: "2...d5 3.exd5 exd5 4.c4!",
+                tag: "STILE PANOV",
+                tagType: "rose",
+                children: [
+                  {
+                    id: "w-french-4nf6",
+                    situation: "4...Cf6 (o 4...c6 — Difende d5)",
+                    myMove: "5.Cc3! Ae7 6.Cf3! O-O 7.Ad3!",
+                    summary: "Sviluppo fulmineo: controlla sempre che d5 sia difeso dall'Alfiere e6 o dalla Donna d8 prima di catturare!",
+                    sequence: "4...Cf6 5.Cc3 Ae7 6.Cf3!",
+                    tag: "SVILUPPO ATTIVO",
+                    tagType: "blue",
+                    children: []
+                  },
+                  {
+                    id: "w-french-4dxc4",
+                    situation: "4...dxc4 (Il Nero accetta il pedone)",
+                    myMove: "5.Axc4! Cf6 6.Cf3!",
+                    summary: "Recuperi il pedone sviluppando l'Alfiere sulla diagonale letale a2-g8 puntata dritta su f7.",
+                    sequence: "4...dxc4 5.Axc4!",
+                    tag: "DIAGONALE SU f7",
+                    tagType: "emerald",
+                    children: []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
