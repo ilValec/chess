@@ -912,14 +912,35 @@
             tagType: "emerald",
             children: [
               {
-                id: "w-panov-dxc4",
-                situation: "4...dxc4 (Il Nero accetta il pedone)",
+                id: "w-panov-4dxc4",
+                situation: "4...dxc4 (Il Nero accetta subito il pedone in c4)",
                 myMove: "5.Axc4!",
-                summary: "Sviluppi l'Alfiere mirando a f7 a centro aperto. Poi Cf3, Cc3 e arrocco corto senza pezzi bloccati.",
-                sequence: "4...dxc4",
-                tag: "ALFIERE ATTIVO",
+                summary: "Riprendi immediatamente il pedone sviluppando l'Alfiere sulla diagonale letale puntata su f7. Come risponde il Nero?",
+                sequence: "4...dxc4 5.Axc4!",
+                tag: "DIAGONALE SU f7",
                 tagType: "emerald",
-                children: []
+                children: [
+                  {
+                    id: "w-panov-4dxc4-5bf5",
+                    situation: "5...Af5 (Sviluppa l'Alfiere fuori dalla catena)",
+                    myMove: "6.Cf3! e6 7.d5!",
+                    summary: "Spacchi subito il centro con 7.d5! mentre il Re nero è ancora al centro, preparando Cc3, O-O, Ab5+ e Te1+ con attacco devastante.",
+                    sequence: "5...Af5 6.Cf3 e6 7.d5!",
+                    tag: "ROTTURA CENTRALE d5!",
+                    tagType: "rose",
+                    children: []
+                  },
+                  {
+                    id: "w-panov-4dxc4-5nf6",
+                    situation: "5...Cf6 (Sviluppo normale)",
+                    myMove: "6.Cf3! e6 7.O-O! Cc6 8.Cc3!",
+                    summary: "Sviluppo classico sul pedone isolato d4: tutti i tuoi pezzi puntano sull'arrocco avversario e sul punto e5.",
+                    sequence: "5...Cf6 6.Cf3 e6 7.O-O!",
+                    tag: "ATTACCO CLASSICO",
+                    tagType: "blue",
+                    children: []
+                  }
+                ]
               },
               {
                 id: "w-panov-cf6",
