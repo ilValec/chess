@@ -1416,95 +1416,32 @@
                         children: [
                           {
                             id: "b-scandi-4d4",
-                            situation: "4.d4 (Occupa il centro)",
-                            myMove: "4...Cf6!",
-                            summary: "Sviluppi il Cavallo puntando alle case centrali.",
-                            sequence: "4.d4 Cf6",
-                            tag: "SVILUPPO Cf6",
+                            situation: "4.d4 (Il Bianco prende il centro)",
+                            myMove: "4...c6!",
+                            summary: "REGOLA D'ORO: gioca subito 4...c6! prima di Cf6 per aprire la fuga Dc7 alla Donna ed evitare qualsiasi scoperta di Alfiere o salto di Cavallo. Come continua il Bianco?",
+                            sequence: "4.d4 c6!",
+                            tag: "SCUDO ANTI-SCOPERTE",
                             tagType: "emerald",
                             children: [
                               {
                                 id: "b-scandi-5cf3",
-                                situation: "5.Cf3",
-                                myMove: "5...c6!",
-                                summary: "Puntelli la casa d5 e crei la casella di fuga c7 per la Donna.",
-                                sequence: "5.Cf3 c6",
-                                tag: "STRUTTURA SOLIDA",
+                                situation: "5.Cf3 (Sviluppo naturale)",
+                                myMove: "5...Cf6!",
+                                summary: "Ora sviluppi il Cavallo in sicurezza. Piazzi 6...Ag4! (o 6...Af5!), poi Cbd7, e6 e Arrocco Lungo (O-O-O).",
+                                sequence: "5.Cf3 Cf6!",
+                                tag: "SVILUPPO SICURO",
                                 tagType: "emerald",
-                                children: [
-                                  {
-                                    id: "b-scandi-6ac4",
-                                    situation: "6.Ac4 (Punta su f7)",
-                                    myMove: "6...Af5!",
-                                    summary: "Sviluppi l'Alfiere FUORI dalla catena di pedoni prima di spingere e6.",
-                                    sequence: "6.Ac4 Af5",
-                                    tag: "ALFIERE ATTIVO",
-                                    tagType: "emerald",
-                                    children: [
-                                      {
-                                        id: "b-scandi-7cd5",
-                                        situation: "7.Cd5?! (Incursione prematura di Cavallo)",
-                                        myMove: "7...Dd8!",
-                                        summary: "Nessun panico: ritiri la Donna alla base. Il Cavallo bianco in d5 è isolato e viene cacciato al turno dopo con 8...e6.",
-                                        sequence: "7.Cd5",
-                                        tag: "CAVALLO CACCIATO",
-                                        tagType: "emerald",
-                                        children: []
-                                      },
-                                      {
-                                        id: "b-scandi-7ad2",
-                                        situation: "7.Ad2 (Prepara la scoperta)",
-                                        myMove: "7...Dc7!",
-                                        summary: "Riposizioni la Donna in c7: zero scoperte per il Bianco, controlli il centro e completi e6, Ae7 e arrocco.",
-                                        sequence: "7.Ad2",
-                                        tag: "DONNA AL SICURO",
-                                        tagType: "emerald",
-                                        children: []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    id: "b-scandi-6bd3",
-                                    situation: "6.Ad3 (Alfiere su d3 invece di c4)",
-                                    myMove: "6...Ag4!",
-                                    summary: "Inchiodi subito il Cavallo f3. Qui l'Alfiere su g4 è perfetto perché i tuoi pedoni staranno sulle case chiare (c6, e6).",
-                                    sequence: "6.Ad3 Ag4!",
-                                    tag: "INCHIODATURA",
-                                    tagType: "emerald",
-                                    children: [
-                                      {
-                                        id: "b-scandi-7h3",
-                                        situation: "7.h3 (Interroga l'Alfiere)",
-                                        myMove: "7...Axf3!",
-                                        summary: "SCAMBIA PURE: nella Scandinava dare questo Alfiere per il Cavallo f3 è teoria principale! Porti la Donna bianca su f3, giochi 8...Cbd7 e rompi il centro con 9...e5!.",
-                                        sequence: "7.h3 Axf3!",
-                                        tag: "CAMBIO TEORICO",
-                                        tagType: "blue",
-                                        children: []
-                                      },
-                                      {
-                                        id: "b-scandi-7oo",
-                                        situation: "7.O-O (Arrocco senza h3)",
-                                        myMove: "7...e6! (oppure 7...Cbd7)",
-                                        summary: "Mantieni l'inchiodatura su f3, completi lo sviluppo con Ad6/Ae7 e prepari l'arrocco.",
-                                        sequence: "7.O-O e6!",
-                                        tag: "SVILUPPO FLUIDO",
-                                        tagType: "emerald",
-                                        children: []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    id: "b-scandi-6g3",
-                                    situation: "6.g3 (Fianchetto Alfiere campochiaro)",
-                                    myMove: "6...Ag4!",
-                                    summary: "Inchiodi subito il Cavallo f3 al centro, poi sviluppi Cbd7, e6 e Arrocco Lungo (O-O-O).",
-                                    sequence: "6.g3 Ag4!",
-                                    tag: "INCHIODATURA",
-                                    tagType: "emerald",
-                                    children: []
-                                  }
-                                ]
+                                children: []
+                              },
+                              {
+                                id: "b-scandi-5bd2",
+                                situation: "5.Ad2 (Prepara scoperte con il Cavallo c3)",
+                                myMove: "5...Dc7! (oppure 5...Cf6!)",
+                                summary: "Avendo già giocato 4...c6!, metti la Donna al sicuro in c7 togliendola dalla diagonale dell'Alfiere, poi sviluppi Cf6, Ag4 e e6.",
+                                sequence: "5.Ad2 Dc7!",
+                                tag: "DONNA AL SICURO",
+                                tagType: "blue",
+                                children: []
                               }
                             ]
                           },
@@ -1874,6 +1811,16 @@
                         sequence: "3.Cce2 e5!",
                         tag: "CENTRO BLINDATO",
                         tagType: "blue",
+                        children: []
+                      },
+                      {
+                        id: "b-scandi-2nc3-3cd5",
+                        situation: "3.Cd5 (Il Cavallo salta in avanti invece di ritirarsi)",
+                        myMove: "3...e6! 4.Cf4 e5!",
+                        summary: "Cacci subito il Cavallo guadagnando due tempi consecutivi e conquistando il centro con ...e5! e ...Cf6!.",
+                        sequence: "3.Cd5 e6! 4.Cf4 e5!",
+                        tag: "DOPPIO GUADAGNO TEMPO",
+                        tagType: "rose",
                         children: []
                       }
                     ]
@@ -2467,6 +2414,38 @@
                         sequence: "4.O-O Ac5",
                         tag: "SVILUPPO FLUIDO",
                         tagType: "emerald",
+                        children: []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                id: "b-reti-root",
+                situation: "1.Cf3 (Apertura Réti)",
+                myMove: "1...d5! 2.d4 c5!",
+                summary: "Occupi il centro e colpisci subito d4 con c5.",
+                sequence: "1.Cf3 d5 2.d4 c5!",
+                tag: "ANTI-RETI",
+                tagType: "emerald",
+                children: [
+                  {
+                    id: "b-reti-3c3",
+                    situation: "3.c3 (o 3.e3 — Il Bianco difende d4)",
+                    myMove: "3...cxd4!",
+                    summary: "Spacchi subito il centro in d4. Sia che riprenda 4.cxd4 sia 4.Cxd4, la risposta non cambia!",
+                    sequence: "3.c3 cxd4!",
+                    tag: "CENTRO APERTO",
+                    tagType: "emerald",
+                    children: [
+                      {
+                        id: "b-reti-4nxd4",
+                        situation: "4.Cxd4 (o 4.cxd4 — Riprende il pedone)",
+                        myMove: "4...Cf6! poi 5...Cc6!",
+                        summary: "Sviluppi Cf6 e poi Cc6! minacciando subito 6...e5! che caccia il Cavallo bianco e ti regala il dominio totale del centro.",
+                        sequence: "4.Cxd4 Cf6! -> 5...Cc6!",
+                        tag: "MINACCIA ...e5!",
+                        tagType: "blue",
                         children: []
                       }
                     ]
