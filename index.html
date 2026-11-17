@@ -2238,13 +2238,24 @@
                       },
                       {
                         id: "b-london-3dxc5",
-                        situation: "3.dxc5 (Il Bianco accetta il pedone)",
-                        myMove: "3...e6! 4.e4 Axc5",
-                        summary: "Riprendi il pedone con l'Alfiere attivo e centro aperto senza alcuna debolezza.",
-                        sequence: "3.dxc5 e6",
-                        tag: "RECUPERO FACILE",
-                        tagType: "blue",
-                        children: []
+                        situation: "3.dxc5 (Il Bianco accetta il gambetto in c5)",
+                        myMove: "3...Cc6! (oppure 3...e6!)",
+                        summary: "Attacchi subito l'Alfiere in f4 minacciando 4...e5! e recuperi il pedone c5 con ...e6 e ...Axc5 con pieno dominio centrale.",
+                        sequence: "3.dxc5 Cc6!",
+                        tag: "CONTROATTACCO e5",
+                        tagType: "emerald",
+                        children: [
+                          {
+                            id: "b-london-3dxc5-4nf3",
+                            situation: "4.Cf3 (o 4.e3 — Il Bianco difende il centro)",
+                            myMove: "4...e6! poi 5...Axc5!",
+                            summary: "Recuperi il pedone sviluppando l'Alfiere su una diagonale d'attacco, poi giochi Cf6, O-O e rompi il centro con ...e5!.",
+                            sequence: "4.Cf3 e6! 5...Axc5!",
+                            tag: "CENTRO DOMINANTE",
+                            tagType: "blue",
+                            children: []
+                          }
+                        ]
                       }
                     ]
                   },
