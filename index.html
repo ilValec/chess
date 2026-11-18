@@ -2861,6 +2861,82 @@
                   ]
                 }
               ]
+            },
+            {
+              id: "b-sc-2e5-3cf3",
+              situation: "3.Cf3 (Sviluppo naturale senza d4 immediato)",
+              myMove: "3...Cc6!",
+              summary: "Sviluppi il Cavallo aumentando la pressione sul centro d4 ed e5.",
+              sequence: "2.e5 c5! 3.Cf3 Cc6!",
+              tag: "PRESSIONE CENTRALE",
+              tagType: "emerald",
+              children: [
+                {
+                  id: "b-sc-2e5-4ab5",
+                  situation: "4.Ab5 (Inchioda il Cavallo c6 — La tua partita!)",
+                  myMove: "4...Ag4!",
+                  summary: "MOSSA #1 MOTORE: inchiodi subito il Cavallo f3 prima di chiudere con e6! (Meglio di 4...f6 che indebolisce le case chiare).",
+                  sequence: "3.Cf3 Cc6! 4.Ab5 Ag4!",
+                  tag: "INCHIODATURA f3",
+                  tagType: "rose",
+                  children: [
+                    {
+                      id: "b-sc-2e5-5oo",
+                      situation: "5.O-O (Arrocca)",
+                      myMove: "5...e6!",
+                      summary: "Blindi il centro e liberi l'Alfiere f8.",
+                      sequence: "5.O-O e6!",
+                      tag: "CENTRO SOLIDO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "b-sc-2e5-6h3",
+                          situation: "6.h3 (Interroga l'Alfiere g4)",
+                          myMove: "6...Ah5!",
+                          summary: "Mantieni l'inchiodatura sul Cavallo f3!",
+                          sequence: "6.h3 Ah5!",
+                          tag: "MANTIENE TENSIONE",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "b-sc-2e5-7d3",
+                              situation: "7.d3 (Difende e4 — Come in partita)",
+                              myMove: "7...Cge7!",
+                              summary: "Sviluppi il Cavallo senza bloccare l'Alfiere f8 e prepari ...a6 / ...Cg6 per attaccare e5!",
+                              sequence: "7.d3 Cge7!",
+                              tag: "SVILUPPO ARMONIOSO",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "b-sc-2e5-8cbd2",
+                                  situation: "8.Cbd2 (Sviluppo)",
+                                  myMove: "8...a6!",
+                                  summary: "Interroghi subito l'Alfiere in b5!",
+                                  sequence: "8.Cbd2 a6!",
+                                  tag: "CACCIA ALFIERE",
+                                  tagType: "rose",
+                                  children: [
+                                    {
+                                      id: "b-sc-2e5-9axc6",
+                                      situation: "9.Axc6+ (Cambia in c6)",
+                                      myMove: "9...Cxc6!",
+                                      summary: "Riprendi con il Cavallo mantenendo la struttura intact, la coppia degli Alfieri e pieno controllo di e5!",
+                                      sequence: "9.Axc6+ Cxc6!",
+                                      tag: "VANTAGGIO NERO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -4556,9 +4632,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v14_blackmar_diemer') {
+      if (localStorage.getItem('chess_tree_version') !== 'v15_scandi_2e5_3cf3') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v14_blackmar_diemer');
+        localStorage.setItem('chess_tree_version', 'v15_scandi_2e5_3cf3');
       }
       loadCustomMoves();
       resetToHome();
