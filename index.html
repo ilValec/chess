@@ -358,9 +358,6 @@
        DEFAULT REPERTOIRE DATA TREE
        ======================================================== */
     const DEFAULT_DATA = {
-      // ----------------------------------------------------
-      // WHITE TREE (Scozzese + Panov + Deviate)
-      // ----------------------------------------------------
       white: {
         id: "w-root",
         situation: "Bianco: Inizia la partita con 1.e4",
@@ -370,1066 +367,650 @@
         tag: "APERTURA",
         tagType: "emerald",
         children: [
-          {
-            id: "w-open-e5",
-            situation: "Il Nero risponde classico: 1...e5",
-            myMove: "2.Cf3!",
-            summary: "Sviluppi il Cavallo minacciando subito il pedone e5.",
-            sequence: "1.e4 e5",
-            tag: "SVILUPPO",
-            tagType: "emerald",
-            children: [
-              {
-                id: "w-open-cc6",
-                situation: "Il Nero protegge con 2...Cc6",
-                myMove: "3.d4! (GAMBETTO SCOZZESE)",
-                summary: "Spacchi subito il centro alla mossa 3 prima che il Nero si consolidi.",
-                sequence: "1.e4 e5 2.Cf3 Cc6",
-                tag: "ATTACCO CENTRALE",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "w-sc-accepted",
-                    situation: "Il Nero accetta il cambio: 3...exd4",
-                    myMove: "4.Ac4!",
-                    summary: "Punti dritto al punto debole f7 senza perdere tempi a riprendere subito il pedone.",
-                    sequence: "3...exd4",
-                    tag: "GAMBETTO ATTIVO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-sc-ac5",
-                        situation: "4...Ac5 (Sviluppo classico)",
-                        myMove: "5.c3!",
-                        summary: "Offri il secondo pedone per aprire le linee e preparare l'attacco su f7.",
-                        sequence: "4...Ac5",
-                        tag: "SPINTA c3",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "w-sc-ac5-dxc3",
-                            situation: "Il Nero mangia: 5...dxc3",
-                            myMove: "6.Axf7+! Kxf7 7.Dd5+ Re8 8.Dh5+ g6 9.Dxc5",
-                            summary: "Forchetta letale: sacrifichi l'Alfiere per distruggere l'arrocco e recuperi il pezzo con scacco di Donna.",
-                            sequence: "5...dxc3",
-                            tag: "FORCHETTA RE-ALFIERE",
-                            tagType: "rose",
-                            children: []
-                          },
-                          {
-                            id: "w-sc-ac5-cf6",
-                            situation: "Il Nero sviluppa: 5...Cf6",
-                            myMove: "6.e5! d5 7.Ab5 Ce4 8.cxd4",
-                            summary: "Cacci il Cavallo con e5 e ripristini il pieno dominio dei pedoni centrali.",
-                            sequence: "5...Cf6",
-                            tag: "CENTRO DOMINANTE",
-                            tagType: "blue",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-sc-ab4",
-                        situation: "4...Ab4+ (Scacco d'Alfiere)",
-                        myMove: "5.c3!",
-                        summary: "Interponi il pedone preparando la ricattura con centro intatto.",
-                        sequence: "4...Ab4+",
-                        tag: "BLOCCO c3",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "w-sc-ab4-dxc3",
-                            situation: "Il Nero mangia: 5...dxc3",
-                            myMove: "6.bxc3!",
-                            summary: "Riprendi di pedone b minacciando l'Alfiere avversario. Dove si ritira?",
-                            sequence: "5...dxc3 6.bxc3",
-                            tag: "ATTACCO ALFIERE",
-                            tagType: "emerald",
-                            children: [
-                              {
-                                id: "w-sc-ab4-ae7",
-                                situation: "Ritirata passiva: 6...Ae7",
-                                myMove: "7.Dd5! (SCACCO MATTO IN 1)",
-                                summary: "Minaccia matto inevitabile su f7 (se 7...Ch6 8.Axh6). Partita vinta.",
-                                sequence: "6...Ae7",
-                                tag: "MATTO IN 1",
-                                tagType: "rose",
-                                children: []
-                              },
-                              {
-                                id: "w-sc-ab4-ac5",
-                                situation: "Ritirata attiva: 6...Ac5",
-                                myMove: "7.Axf7+! Kxf7 8.Dd5+ Re8 9.Dh5+ g6 10.Dxc5",
-                                summary: "Solita combinazione di forchetta: recuperi il pezzo e lasci il Re nemico senza arrocco.",
-                                sequence: "6...Ac5",
-                                tag: "RECUPERO PEZZO",
-                                tagType: "rose",
-                                children: []
-                              },
-                              {
-                                id: "w-sc-ab4-aa5",
-                                situation: "Ritirata laterale: 6...Aa5",
-                                myMove: "7.O-O! (poi Db3 ed e5)",
-                                summary: "Metti il Re al sicuro, poi crei la batteria letale Db3 su f7 e b7.",
-                                sequence: "6...Aa5",
-                                tag: "ATTACCO A VALANGA",
-                                tagType: "blue",
-                                children: []
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-sc-cf6",
-                        situation: "4...Cf6 (Contrattacco al pedone e4)",
-                        myMove: "5.Cg5!",
-                        summary: "Attacchi subito la debolezza in f7 creando doppia minaccia con l'Alfiere.",
-                        sequence: "4...Cf6",
-                        tag: "ATTACCO f7",
-                        tagType: "amber",
-                        children: [
-                          {
-                            id: "w-sc-cf6-d5",
-                            situation: "Il Nero chiude con 5...d5",
-                            myMove: "6.exd5!",
-                            summary: "Mangi di pedone aprendo la colonna e. Come risponde il Cavallo nero?",
-                            sequence: "5...d5 6.exd5",
-                            tag: "SPACCATURA",
-                            tagType: "emerald",
-                            children: [
-                              {
-                                id: "w-sc-cf6-cd5",
-                                situation: "Il Nero rimangia: 6...Cxd5?!",
-                                myMove: "7.O-O! (Se 7...Ae6 -> 8.Cxf7! Rxf7 9.Df3+)",
-                                summary: "Arrocchi subito. Su 7...Ae6 scatta il sacrificio in f7 con attacco decisivo.",
-                                sequence: "6...Cxd5",
-                                tag: "SACRIFICIO f7",
-                                tagType: "rose",
-                                children: []
-                              },
-                              {
-                                id: "w-sc-cf6-ca5",
-                                situation: "Il Cavallo scappa all'ala: 6...Ca5",
-                                myMove: "7.Ab5+! c6 8.dxc6 bxc6 9.Ae2!",
-                                summary: "Sequenza forzata: dai scacco, il Nero interpone c6, mangi e ritiri l'Alfiere in e2 mantenendo il pedone di vantaggio. Come continua il Nero al turno 9?",
-                                sequence: "6...Ca5 7.Ab5+ c6 8.dxc6 bxc6 9.Ae2",
-                                tag: "PEDONE IN PIÙ",
-                                tagType: "blue",
-                                children: [
-                                  {
-                                    id: "w-sc-9bd6",
-                                    situation: "9...Ad6 (Variante Perreux — Sviluppo diretto)",
-                                    myMove: "10.O-O! (poi 11.Cf3! e 12.Cxd4!)",
-                                    summary: "Arrocchi subito, riporti il Cavallo in f3 e al turno 12 mangi il pedone d4 gratis: resti con un pedone netto in più e i pedoni neri a7/c6 isolati.",
-                                    sequence: "9...Ad6 10.O-O!",
-                                    tag: "RECUPERO d4 PULITO",
-                                    tagType: "emerald",
-                                    children: [
-                                      {
-                                        id: "w-sc-12nxd4",
-                                        situation: "10...h6 11.Cf3 O-O -> 12.Cxd4!",
-                                        myMove: "13.Cc3! (ATTENZIONE a ...Ah2+!)",
-                                        summary: "Hai un pedone pulito di vantaggio. ATTENZIONE TATTICA: finché il Nero ha l'Alfiere in d6, non lasciare mai la tua Donna indifesa su d5 o rischi lo scacco di scoperta ...Ah2+!",
-                                        sequence: "12.Cxd4! 13.Cc3",
-                                        tag: "OCCHIO SCOPERTA Ah2+",
-                                        tagType: "rose",
-                                        children: []
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    id: "w-sc-9h6",
-                                    situation: "9...h6 (Linea principale — Caccia il Cavallo)",
-                                    myMove: "10.Cf3! e4 11.Ce5!",
-                                    summary: "Ritiri il Cavallo in f3 e, sulla spinta e4, lo piazzi in e5 dominando il centro con un pedone di vantaggio.",
-                                    sequence: "9...h6 10.Cf3!",
-                                    tag: "CENTRO SOLIDO",
-                                    tagType: "emerald",
-                                    children: []
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-sc-d6",
-                        situation: "4...d6 (Mossa passiva)",
-                        myMove: "5.c3! dxc3 6.Db3!",
-                        summary: "Doppia pressione immediata su f7 e b7: il Nero è costretto a difendersi goffamente.",
-                        sequence: "4...d6",
-                        tag: "DOPPIO ATTACCO",
-                        tagType: "emerald",
-                        children: []
-                      },
-                      {
-                        id: "w-sc-ae7",
-                        situation: "4...Ae7 (Errore passivo)",
-                        myMove: "5.c3! (Se 5...dxc3? 6.Dd5! MATTO)",
-                        summary: "Spingi 5.c3. Se mangia in c3 cade nella trappola di matto immediato su f7 con 6.Dd5!",
-                        sequence: "4...Ae7",
-                        tag: "TRAPPOLA LETALE",
-                        tagType: "rose",
-                        children: []
-                      },
-                      {
-                        id: "w-sc-h6",
-                        situation: "4...h6 (Mossa passiva per paura di Cg5)",
-                        myMove: "5.c3!",
-                        summary: "Il Nero spreca un tempo all'ala: offri il pedone per aprire il centro e completare lo sviluppo a tempo di record.",
-                        sequence: "4...h6 5.c3",
-                        tag: "PUNIZIONE SVILUPPO",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "w-sc-h6-dxc3",
-                            situation: "Il Nero accetta il pedone: 5...dxc3",
-                            myMove: "6.Cxc3! d6 7.O-O poi Dd5!",
-                            summary: "Riprendi di Cavallo. Hai 3 pezzi attivi contro zero. Prepari la batteria Dd5 attaccando f7 e dominando la partita.",
-                            sequence: "5...dxc3 6.Cxc3",
-                            tag: "DOMINIO PEZZI",
-                            tagType: "rose",
-                            children: []
-                          },
-                          {
-                            id: "w-sc-h6-passive",
-                            situation: "Il Nero non mangia e gioca passivo (es. 5...d6)",
-                            myMove: "6.cxd4! Cf6 7.e5!",
-                            summary: "Riprendi il centro pieno con i due pedoni d4 ed e4, poi cacci il Cavallo con e5.",
-                            sequence: "5...d6 6.cxd4",
-                            tag: "CENTRO GIGANTE",
-                            tagType: "emerald",
-                            children: []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-sc-3cf6",
-                    situation: "3...Cf6 (Deviazione: attacca e4 invece di mangiare d4)",
-                    myMove: "4.dxe5!",
-                    summary: "Catturi subito il pedone e5 cacciando il Cavallo nero con guadagno di tempo. Dove scappa il Cavallo?",
-                    sequence: "3...Cf6 4.dxe5!",
-                    tag: "ATTACCO FORZANTE",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-sc-3cf6-cxe4",
-                        situation: "4...Cxe4 (Riprende il pedone centrale)",
-                        myMove: "5.Dd5!",
-                        summary: "Attacchi subito il Cavallo in e4 e prepari 6.Ac4! con minaccia di matto su f7. Dove ritira il Cavallo?",
-                        sequence: "4...Cxe4 5.Dd5!",
-                        tag: "DOPPIA MINACCIA",
-                        tagType: "rose",
-                        children: [
-                          {
-                            id: "w-sc-5cc5",
-                            situation: "5...Cc5 (Il Cavallo scappa in c5)",
-                            myMove: "6.Ac4!",
-                            summary: "MINACCIA MATTO IN 1 (7.Dxf7#)! Se il Nero difende con 6...De7 giochi 7.O-O! (se poi mangia 7...Cxe5?? vinci tutto con 8.Cxe5! e 9.Dxf7+!).",
-                            sequence: "5...Cc5 6.Ac4!",
-                            tag: "MATTO SU f7",
-                            tagType: "rose",
-                            children: []
-                          },
-                          {
-                            id: "w-sc-5cg5",
-                            situation: "5...Cg5 (Scappa in g5)",
-                            myMove: "6.Axg5! Ae7 7.Axe7 Dxe7",
-                            summary: "Scambi i pezzi mantenendo un netto vantaggio di spazio centrale e sviluppo.",
-                            sequence: "5...Cg5 6.Axg5!",
-                            tag: "VANTAGGIO SPAZIO",
-                            tagType: "emerald",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-sc-3cf6-cg4",
-                        situation: "4...Cg4 (Controattacca subito il pedone e5)",
-                        myMove: "5.Af4!",
-                        summary: "Difendi saldamente e5 sviluppando l'Alfiere. Su 5...Ac5 giochi 6.Ag3! blindando il centro e preparando Cc3.",
-                        sequence: "4...Cg4 5.Af4!",
-                        tag: "CENTRO BLINDATO",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-sc-3d6",
-                    situation: "3...d6 (Deviazione passiva — Difende e5)",
-                    myMove: "4.dxe5!",
-                    summary: "Spacchi subito il centro costringendo il Nero a cambiare le Donne e perdere il diritto all'arrocco.",
-                    sequence: "3...d6 4.dxe5!",
-                    tag: "TOGLIE ARROCCO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-sc-3d6-nxe5",
-                        situation: "4...Cxe5 (o 4...dxe5)",
-                        myMove: "5.Cxe5! dxe5 6.Dxd8+ Rxd8 7.Ac4!",
-                        summary: "Cambi le Donne lasciando il Re nero al centro e punti subito l'Alfiere su f7 con sviluppo fulmineo (Cc3, Ag5+, O-O-O).",
-                        sequence: "4...Cxe5 5.Cxe5 dxe5 6.Dxd8+ Rxd8 7.Ac4!",
-                        tag: "ATTACCO SU f7",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-dev3-root",
-                    situation: "Il Nero NON mangia in d4 (Deviazioni Mossa 3)",
-                    myMove: "Reagisci in base alla deviazione:",
-                    summary: "L'avversario evita il cambio classico: liquidazione forzata o centro pieno.",
-                    sequence: "Deviazioni 3",
-                    tag: "DEVIATE MOSSA 3",
-                    tagType: "amber",
-                    children: [
-                      {
-                        id: "w-dev3-d6",
-                        situation: "3...d6 (Difesa Philidor ritardata)",
-                        myMove: "4.dxe5!",
-                        summary: "Liquidazione immediata dei pedoni centrali.",
-                        sequence: "3...d6 4.dxe5",
-                        tag: "LIQUIDAZIONE",
-                        tagType: "rose",
-                        children: [
-                          {
-                            id: "w-dev3-d6-dxe5",
-                            situation: "Se rimangia col pedone: 4...dxe5",
-                            myMove: "5.Dxd8+! Rxd8 6.Ac4!",
-                            summary: "Scambio forzato delle Donne: il Re nero perde l'arrocco e Ac4 attacca f7 indifeso.",
-                            sequence: "4...dxe5",
-                            tag: "RE SENZA ARROCCO",
-                            tagType: "rose",
-                            children: []
-                          },
-                          {
-                            id: "w-dev3-d6-cxe5",
-                            situation: "Se rimangia col Cavallo: 4...Cxe5",
-                            myMove: "5.Cxe5! dxe5 6.Dxd8+ Rxd8 7.Ac4!",
-                            summary: "Elimini il Cavallo, scambi le Regine e mantieni il Re avversario bloccato al centro.",
-                            sequence: "4...Cxe5",
-                            tag: "SEMPLIFICAZIONE",
-                            tagType: "rose",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-dev3-cf6",
-                        situation: "3...Cf6 (Contrattacco al centro)",
-                        myMove: "4.dxe5! Cxe4 5.Dd5!",
-                        summary: "Doppia minaccia: attacchi il Cavallo in e4 e prepari l'attacco su f7.",
-                        sequence: "3...Cf6 4.dxe5",
-                        tag: "DOPPIA MINACCIA",
-                        tagType: "rose",
-                        children: [
-                          {
-                            id: "w-dev3-cf6-retreat",
-                            situation: "5...Cf6? (Il Cavallo torna indietro attaccando la Donna)",
-                            myMove: "6.exf6! Dxf6 7.Cc3",
-                            summary: "MANGIA IL CAVALLO COL PEDONE! Il pedone in e5 mangia in f6 gratis. Hai un pezzo netto di vantaggio alla mossa 6.",
-                            sequence: "5...Cf6 6.exf6!",
-                            tag: "PEZZO GRATIS",
-                            tagType: "rose",
-                            children: []
-                          },
-                          {
-                            id: "w-dev3-cf6-f5",
-                            situation: "5...f5 (Difende il Cavallo)",
-                            myMove: "6.Ac4! De7 7.O-O",
-                            summary: "Minacci matto in f7 con la batteria Donna-Alfiere. Il Nero resta con il Re inchiodato.",
-                            sequence: "5...f5 6.Ac4",
-                            tag: "MINACCIA MATTO",
-                            tagType: "emerald",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-dev3-f6",
-                        situation: "3...f6? (Spalanca il Re)",
-                        myMove: "4.dxe5! fxe5 5.Ac4! poi Cg5",
-                        summary: "La diagonale a2-g8 è spalancata: piazzi l'Alfiere in c4 e prepari Cg5 puntando a f7.",
-                        sequence: "3...f6",
-                        tag: "BLUNDER DA PUNIRE",
-                        tagType: "rose",
-                        children: []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                id: "w-dev2-cf6",
-                situation: "Il Nero gioca 2...Cf6 (Difesa Petroff / Russa)",
-                myMove: "3.d4!",
-                summary: "Non difendere passivamente e4: spacca subito il centro con 3.d4!",
-                sequence: "2...Cf6",
-                tag: "ATTACCO CENTRALE",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "w-dev2-cf6-exd4",
-                    situation: "3...exd4 (Il Nero mangia di pedone)",
-                    myMove: "4.e5!",
-                    summary: "Cacci subito il Cavallo in f6 conquistando spazio al centro. Dove scappa il Cavallo?",
-                    sequence: "3...exd4 4.e5!",
-                    tag: "ATTACCO STEINITZ",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-dev2-cf6-cg8",
-                        situation: "4...Cg8? (Ritirata passiva alla casa di partenza)",
-                        myMove: "5.Dxd4!",
-                        summary: "Il Nero ha perso 2 tempi e disfatto lo sviluppo: riprendi il pedone con la Donna e sviluppi Ac4, O-O, Te1 e Cc3 puntando dritto a c7/f7.",
-                        sequence: "4...Cg8? 5.Dxd4!",
-                        tag: "VANTAGGIO ENORME",
-                        tagType: "rose",
-                        children: []
-                      },
-                      {
-                        id: "w-dev2-cf6-ce4",
-                        situation: "4...Ce4 (Contrattacco centrale)",
-                        myMove: "5.Dxd4!",
-                        summary: "Riprendi il pedone attaccando subito il Cavallo in e4. Su 5...d5 giochi 6.exd6 Cxd6 7.Cc3 con pieno sviluppo.",
-                        sequence: "4...Ce4 5.Dxd4!",
-                        tag: "ATTACCO CAVALLO",
-                        tagType: "emerald",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-dev2-cf6-cxe4",
-                    situation: "3...Cxe4 (Il Nero mangia di Cavallo)",
-                    myMove: "4.dxe5!",
-                    summary: "Togli il pedone centrale al Nero e apri le linee. Come continua?",
-                    sequence: "3...Cxe4 4.dxe5!",
-                    tag: "APERTURA LINEE",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-dev2-cf6-cxe4-d5",
-                        situation: "4...d5 (Difende il Cavallo al centro)",
-                        myMove: "5.Ad3!",
-                        summary: "Sviluppi l'Alfiere puntando sull'arrocco e preparando O-O e c4 per demolire il centro nero.",
-                        sequence: "4...d5 5.Ad3!",
-                        tag: "SVILUPPO ATTIVO",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-dev2-cf6-d5",
-                    situation: "Se controspinge: 3...d5 4.dxe5 dxe4",
-                    myMove: "5.Dxd8+! Rxd8 6.exf6",
-                    summary: "Liquidazione totale delle Regine al turno 5. Il Re nero perde l'arrocco e tu resti con un pezzo/pedone in più.",
-                    sequence: "4...dxe4",
-                    tag: "REGINE FORZATE",
-                    tagType: "rose",
-                    children: []
-                  }
-                ]
-              },
-              {
-                id: "w-dev2-d6",
-                situation: "2...d6 (Difesa Philidor — Il Nero gioca passivo)",
-                myMove: "3.d4!",
-                summary: "Spacchi subito il centro con 3.d4! per punire la passività del Nero e aprire tutte le linee. Come risponde il Nero?",
-                sequence: "2...d6 3.d4!",
-                tag: "ATTACCO AL CENTRO",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "w-philidor-3exd4",
-                    situation: "3...exd4 (Cambia al centro)",
-                    myMove: "4.Ac4! (Gambetto Morphy — oppure 4.Cxd4)",
-                    summary: "Punti subito l'Alfiere su f7 con sviluppo fulmineo (evita di regalare un secondo pedone con c3!). Come continua il Nero?",
-                    sequence: "3...exd4 4.Ac4!",
-                    tag: "GAMBETTO MORPHY",
-                    tagType: "rose",
-                    children: [
-                      {
-                        id: "w-philidor-4bg4",
-                        situation: "4...Ag4 (Inchioda il Cavallo f3)",
-                        myMove: "5.h3! Axf3 6.Dxf3 Cf6 7.Db3!",
-                        summary: "DOPPIA MINACCIA LETALE: l'Alfiere nero ha lasciato scoperto b7! Con 7.Db3! attacchi simultaneamente f7 e b7.",
-                        sequence: "4...Ag4 5.h3 Axf3 6.Dxf3 Cf6 7.Db3!",
-                        tag: "ATTACCO DOPPIO b7/f7",
-                        tagType: "rose",
-                        children: []
-                      },
-                      {
-                        id: "w-philidor-4nc6",
-                        situation: "4...Cc6 (Difende e sviluppo)",
-                        myMove: "5.Cxd4! (oppure 5.c3!)",
-                        summary: "Riprendi il pedone centrale con vantaggio di spazio, coppia degli Alfieri attiva e arrocco rapido.",
-                        sequence: "4...Cc6 5.Cxd4!",
-                        tag: "CENTRO DOMINANTE",
-                        tagType: "emerald",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-philidor-3nd7",
-                    situation: "3...Cd7 (Difende e5 senza cambiare)",
-                    myMove: "4.Ac4! c6 5.O-O!",
-                    summary: "Sviluppo ultra-rapido: i pezzi neri si intralciano a vicenda mentre tu prepari Cc3, a4 e l'apertura del centro.",
-                    sequence: "3...Cd7 4.Ac4!",
-                    tag: "SVILUPPO RAPIDO",
-                    tagType: "blue",
-                    children: []
-                  },
-                  {
-                    id: "w-philidor-3nf6",
-                    situation: "3...Cf6 (Variante Nimzowitsch — Attacca e4)",
-                    myMove: "4.dxe5! Cxe4 5.Dd5!",
-                    summary: "TRAPPOLA IMMEDIATA: spingi 4.dxe5! cacciando il Cavallo, e su 4...Cxe4 giochi 5.Dd5! attaccando contemporaneamente il Cavallo in e4 e il matto su f7 (vinci un pezzo pulito!).",
-                    sequence: "3...Cf6 4.dxe5! Cxe4 5.Dd5!",
-                    tag: "PEZZO VINTO",
-                    tagType: "rose",
-                    children: []
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            id: "w-dev1-c6",
-            situation: "Il Nero gioca 1...c6 (Difesa Caro-Kann)",
-            myMove: "2.d4! d5 3.exd5! cxd5 4.c4! (ATTACCO PANOV)",
-            summary: "SCAMBI SUBITO: con 3.exd5 elimini un pedone e con 4.c4 spacchi il centro aprendo la scacchiera per i tuoi pezzi.",
-            sequence: "1...c6",
-            tag: "ATTACCO PANOV",
-            tagType: "emerald",
-            children: [
-              {
-                id: "w-panov-4dxc4",
-                situation: "4...dxc4 (Il Nero accetta subito il pedone in c4)",
-                myMove: "5.Axc4!",
-                summary: "Riprendi immediatamente il pedone sviluppando l'Alfiere sulla diagonale letale puntata su f7. Come risponde il Nero?",
-                sequence: "4...dxc4 5.Axc4!",
-                tag: "DIAGONALE SU f7",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "w-panov-4dxc4-5bf5",
-                    situation: "5...Af5 (Sviluppa l'Alfiere fuori dalla catena)",
-                    myMove: "6.Cf3! e6 7.d5!",
-                    summary: "Spacchi subito il centro con 7.d5! mentre il Re nero è ancora al centro, preparando Cc3, O-O, Ab5+ e Te1+ con attacco devastante.",
-                    sequence: "5...Af5 6.Cf3 e6 7.d5!",
-                    tag: "ROTTURA CENTRALE d5!",
-                    tagType: "rose",
-                    children: []
-                  },
-                  {
-                    id: "w-panov-4dxc4-5nf6",
-                    situation: "5...Cf6 (Sviluppo normale)",
-                    myMove: "6.Cf3! e6 7.O-O! Cc6 8.Cc3!",
-                    summary: "Sviluppo classico sul pedone isolato d4: tutti i tuoi pezzi puntano sull'arrocco avversario e sul punto e5.",
-                    sequence: "5...Cf6 6.Cf3 e6 7.O-O!",
-                    tag: "ATTACCO CLASSICO",
-                    tagType: "blue",
-                    children: []
-                  }
-                ]
-              },
-              {
-                id: "w-panov-cf6",
-                situation: "4...Cf6 (Sviluppo normale)",
-                myMove: "5.Cc3!",
-                summary: "Sviluppi il Cavallo aumentando la pressione su d5. Come continua il Nero?",
-                sequence: "4...Cf6",
-                tag: "PRESSIONE",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "w-panov-cf6-e6",
-                    situation: "5...e6 (Chiusura solida del Nero)",
-                    myMove: "6.Cf3!",
-                    summary: "Sviluppi il Cavallo difendendo il pedone d4 e preparando l'arrocco. Come continua il Nero?",
-                    sequence: "5...e6 6.Cf3",
-                    tag: "SVILUPPO SOLIDO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-panov-6nc6",
-                        situation: "6...Cc6 (Pressione classica su d4)",
-                        myMove: "7.cxd5! exd5 8.Ad3!",
-                        summary: "Isoli il pedone centrale d5 del Nero e piazzi l'Alfiere puntato sull'arrocco avversario.",
-                        sequence: "6...Cc6 7.cxd5",
-                        tag: "PEDONE ISOLATO",
-                        tagType: "blue",
-                        children: [
-                          {
-                            id: "w-panov-8bg4",
-                            situation: "8...Ag4 (Inchioda il Cavallo f3 per mangiare in d4)",
-                            myMove: "9.Ae3! (MAI 9.h3??)",
-                            summary: "REGOLA D'ORO: il pedone d4 non ha pedoni vicini a difenderlo. Con 9.Ae3! lo blindi. Se fai 9.h3?? il Nero cambia in f3 e mangia d4 gratis con ...Cxd4!",
-                            sequence: "8...Ag4 9.Ae3!",
-                            tag: "DIFESA d4 OBBLIGATA",
-                            tagType: "rose",
-                            children: []
-                          },
-                          {
-                            id: "w-panov-8be7",
-                            situation: "8...Ae7 (Sviluppo calmo)",
-                            myMove: "9.O-O! O-O 10.Ag5!",
-                            summary: "Arrocchi e metti subito pressione sul Cavallo f6 e sul pedone isolato d5.",
-                            sequence: "8...Ae7 9.O-O",
-                            tag: "PRESSIONE CENTRALE",
-                            tagType: "emerald",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-panov-6be7",
-                        situation: "6...Ae7 (Ritirata difensiva)",
-                        myMove: "7.cxd5! exd5 8.Ad3! O-O 9.O-O",
-                        summary: "Hai isolato il pedone d5 del Nero e ottenuto colonne aperte per le tue Torri.",
-                        sequence: "6...Ae7 7.cxd5",
-                        tag: "SVILUPPO FLUIDO",
-                        tagType: "emerald",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-panov-cf6-cc6",
-                    situation: "5...Cc6 (Sviluppo e pressione centrale)",
-                    myMove: "6.cxd5! Cxd5 7.Ac4!",
-                    summary: "Mangi in d5 e attacchi subito il Cavallo con Ac4. ATTENZIONE: l'Alfiere in c4 ora è scoperto. Come risponde il Nero?",
-                    sequence: "5...Cc6 6.cxd5 Cxd5 7.Ac4",
-                    tag: "ATTACCO CAVALLO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-panov-7be6",
-                        situation: "7...Ae6 (Difende d5 e minaccia l'Alfiere in c4)",
-                        myMove: "8.Db3! (MAI 8.Dd3??)",
-                        summary: "REGOLA D'ORO: 8.Db3! difende l'Alfiere in c4 sulla diagonale e attacca sia d5 che b7. Mai giocare 8.Dd3?? perché subisce 8...Cdb4! perdendo un pezzo.",
-                        sequence: "7...Ae6 8.Db3!",
-                        tag: "DIFESA E CONTRATTACCO",
-                        tagType: "rose",
-                        children: [
-                          {
-                            id: "w-panov-8nxc3",
-                            situation: "8...Cxc3 (Scambia i Cavalli)",
-                            myMove: "9.Axe6! fxe6 10.bxc3!",
-                            summary: "Catturi prima l'Alfiere in e6 rovini la struttura pedonale del Nero e poi riprendi il Cavallo con centro intatto.",
-                            sequence: "8...Cxc3 9.Axe6!",
-                            tag: "STRUTTURA ROVINATA",
-                            tagType: "emerald",
-                            children: []
-                          },
-                          {
-                            id: "w-panov-8na5",
-                            situation: "8...Ca5 (Attacca Donna e Alfiere)",
-                            myMove: "9.Ab5+! Ad7 10.Da4!",
-                            summary: "Dai scacco intermedio con l'Alfiere e mantieni una pressione devastante inchiodando i pezzi neri.",
-                            sequence: "8...Ca5 9.Ab5+!",
-                            tag: "SCACCO INTERMEDIO",
-                            tagType: "blue",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-panov-7nxc3",
-                        situation: "7...Cxc3 (Cambia subito in c3)",
-                        myMove: "8.bxc3!",
-                        summary: "Riprendi di pedone b rinforzando il centro d4 e aprendo la colonna b per la tua Torre.",
-                        sequence: "7...Cxc3 8.bxc3!",
-                        tag: "CENTRO BLINDATO",
-                        tagType: "emerald",
-                        children: []
-                      },
-                      {
-                        id: "w-panov-7nb6",
-                        situation: "7...Cb6 (Attacca l'Alfiere in c4)",
-                        myMove: "8.Ab3!",
-                        summary: "Ritiri l'Alfiere mantenendo il controllo della diagonale a2-g8 e del punto debole f7.",
-                        sequence: "7...Cb6 8.Ab3!",
-                        tag: "RITIRATA ATTIVA",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-panov-cf6-g6",
-                    situation: "Se prepara il fianchetto con 5...g6",
-                    myMove: "6.cxd5! Cxd5 7.Db3!",
-                    summary: "Doppio attacco su d5 e b7: costringi il Nero a una difesa passiva.",
-                    sequence: "5...g6",
-                    tag: "ATTACCO DOPPIO",
-                    tagType: "rose",
-                    children: []
-                  }
-                ]
-              },
-              {
-                id: "w-panov-c5",
-                situation: "3...c5? (Spinta centrale prematura del Nero)",
-                myMove: "4.dxe5! d4 5.Ce4!",
-                summary: "Guadagni un pedone centrale netto. Il Cavallo salta in e4 controllando il centro e puntando su c5 e d6.",
-                sequence: "3...c5",
-                tag: "PEDONE VANTAGGIO",
-                tagType: "rose",
-                children: []
-              },
-              {
-                id: "w-panov-e6",
-                situation: "4...e6 (Difesa solida immediata senza Cf6)",
-                myMove: "5.Cc3!",
-                summary: "Aumenti subito la pressione sul punto d5. Come sviluppa il Nero?",
-                sequence: "4...e6 5.Cc3!",
-                tag: "PRESSIONE d5",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "w-panov-e6-cc6",
-                    situation: "5...Cc6 (Sviluppo Cavallo)",
-                    myMove: "6.Cf3!",
-                    summary: "Completi lo sviluppo dei Cavalli. Se inchioda con 6...Ab4 giochi 7.Ad3! preparando l'arrocco e puntando alla diagonale h7.",
-                    sequence: "5...Cc6 6.Cf3!",
-                    tag: "DIAGONALE h7",
-                    tagType: "blue",
-                    children: []
-                  },
-                  {
-                    id: "w-panov-e6-bb4",
-                    situation: "5...Ab4 (Inchioda subito il Cavallo c3)",
-                    myMove: "6.Cf3! (MAI 6.Dd3?)",
-                    summary: "REGOLA D'ORO: sviluppa 6.Cf3! Non giocare 6.Dd3? perché espone la Donna e blocca l'Alfiere campochiaro. Se il Nero cambia 6...Axc3+, riprendi 7.bxc3! rinforzando il centro d4.",
-                    sequence: "5...Ab4 6.Cf3!",
-                    tag: "NO 6.Dd3?",
-                    tagType: "rose",
-                    children: [
-                      {
-                        id: "w-panov-6nf6",
-                        situation: "6...Cf6 (Sviluppo normale)",
-                        myMove: "7.cxd5! exd5 8.Ad3!",
-                        summary: "Isoli il pedone d5 del Nero e prepari O-O e Ag5 con pressione diretta.",
-                        sequence: "6...Cf6 7.cxd5!",
-                        tag: "PEDONE ISOLATO",
-                        tagType: "emerald",
-                        children: []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            id: "w-dev1-d5",
-            situation: "Il Nero gioca 1...d5 (Difesa Scandinava)",
-            myMove: "2.exd5!",
-            summary: "Mangi subito il pedone centrale aprendo le linee.",
-            sequence: "1...d5 2.exd5",
-            tag: "SCAMBIO CENTRALE",
-            tagType: "emerald",
-            children: [
-              {
-                id: "w-scandi-2dxd5",
-                situation: "2...Dxd5 (Il Nero riprende di Donna)",
-                myMove: "3.Cc3!",
-                summary: "Sviluppi il Cavallo cacciando la Donna avversaria gratis. Dove la sposta?",
-                sequence: "2...Dxd5 3.Cc3",
-                tag: "GUADAGNO DI TEMPO",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "w-scandi-qe5-check",
-                    situation: "3...De5+? (Scacco molesto di Donna)",
-                    myMove: "4.Ae2!",
-                    summary: "Pari lo scacco sviluppando l'Alfiere e preparando Cf3 e d4 per cacciare ancora la Donna.",
-                    sequence: "3...De5+ 4.Ae2",
-                    tag: "SVILUPPO E DIFESA",
-                    tagType: "rose",
-                    children: [
-                      {
-                        id: "w-scandi-qe5-passive",
-                        situation: "Il Nero fa mosse passive (es. 4...a6 o 4...c6)",
-                        myMove: "5.d4! De6 6.Cf3!",
-                        summary: "Occupi il centro cacciando la Donna e sviluppi Cf3. Hai 3 pezzi fuori e il Nero zero.",
-                        sequence: "4...a6 5.d4",
-                        tag: "CENTRO TOTALE",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "w-scandi-qe5-qd7",
-                            situation: "Il Nero rimette la Donna in d7 (6...Cc6 7.O-O Dd7)",
-                            myMove: "8.d5! (KILLER MOVE - NON CAMBIARE LE DONNE!)",
-                            summary: "SPACCA CON 8.d5! Cacci il Cavallo c6 e apri la scacchiera. Non cambiare mai le Donne quando hai 4 tempi di vantaggio!",
-                            sequence: "7...Dd7 8.d5!",
-                            tag: "ROTTURA KILLER",
-                            tagType: "rose",
-                            children: []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-scandi-qa5-main",
-                    situation: "3...Da5 (Ritirata teorica principale)",
-                    myMove: "4.d4! Cf6 5.Cf3 c6 6.Ac4!",
-                    summary: "Centro pieno e pezzi puntati su f7 prima che il Nero chiuda la catena.",
-                    sequence: "3...Da5 4.d4",
-                    tag: "LINEA CLASSICA",
-                    tagType: "blue",
-                    children: [
-                      {
-                        id: "w-scandi-qa5-af5",
-                        situation: "6...Af5 (Alfiere fuori)",
-                        myMove: "7.Ad2! e6 8.Cd5! Dd8 9.Cxf6+ Dxf6",
-                        summary: "Prepari la scoperta con Ad2 e spari Cd5! forzando la Donna a tornare indietro con attacco schiacciante.",
-                        sequence: "6...Af5 7.Ad2",
-                        tag: "SCOPERTA Cd5",
-                        tagType: "rose",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-scandi-qd6",
-                    situation: "3...Dd6 (Ritirata moderna)",
-                    myMove: "4.d4! Cf6 5.Cf3 a6 6.g3!",
-                    summary: "Prepari 7.Af4! che attacca di nuovo la Donna guadagnando un altro tempo.",
-                    sequence: "3...Dd6 4.d4",
-                    tag: "TEMPO CON Af4",
-                    tagType: "emerald",
-                    children: []
-                  },
-                  {
-                    id: "w-scandi-qd8",
-                    situation: "3...Dd8 (Ritirata a casa base)",
-                    myMove: "4.d4!",
-                    summary: "Occupi il centro pieno con i due pedoni d4 ed e4. Il Nero ha perso 2 tempi per nulla. Come sviluppa?",
-                    sequence: "3...Dd8 4.d4",
-                    tag: "CENTRO TOTALE",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-scandi-qd8-bf5",
-                        situation: "4...Af5 (Alfiere fuori dalla catena)",
-                        myMove: "5.Ac4! e6 6.Db3!",
-                        summary: "DOPPIA MINACCIA LETALE: l'Alfiere ha lasciato indifeso il pedone b7. Con 6.Db3 attacchi contemporaneamente b7 ed f7 mandando il Nero in tilt immediato.",
-                        sequence: "4...Af5 5.Ac4",
-                        tag: "ATTACCO DOPPIO b7/f7",
-                        tagType: "rose",
-                        children: [
-                          {
-                            id: "w-scandi-qd8-bf5-b6",
-                            situation: "Se difende con 6...b6",
-                            myMove: "7.Cf3 Cf6 8.Ce5!",
-                            summary: "La diagonale e la casa c6 sono colabrodo. Piazzi il Cavallo in e5 con pressione devastante.",
-                            sequence: "6...b6 7.Cf3",
-                            tag: "DOMINIO TOTALE",
-                            tagType: "emerald",
-                            children: []
-                          },
-                          {
-                            id: "w-scandi-qd8-bf5-qc8",
-                            situation: "Se difende passivo con 6...Dc8",
-                            myMove: "7.Cf3 Cf6 8.O-O Ae7 9.d5!",
-                            summary: "La Donna nera è ridicola in c8. Arrocchi e spacchi con 9.d5 aprendo le colonne centrali.",
-                            sequence: "6...Dc8 7.Cf3",
-                            tag: "ROTTURA d5",
-                            tagType: "blue",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "w-scandi-qd8-nf6",
-                        situation: "4...Cf6 (Sviluppo classico)",
-                        myMove: "5.Ac4! e6 6.Cf3",
-                        summary: "Sviluppo fluido e arrocco con netto vantaggio di spazio e tempi.",
-                        sequence: "4...Cf6 5.Ac4",
-                        tag: "SVILUPPO FLUIDO",
-                        tagType: "emerald",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-scandi-3qe6",
-                    situation: "3...De6+ (Scacco insolito di Donna in apertura)",
-                    myMove: "4.Ae2!",
-                    summary: "Copri lo scacco sviluppando un pezzo! La Donna nera in e6 blocca i suoi stessi Alfieri e pedoni centrali: al turno dopo giochi 5.d4! e 6.Cf3! prendendo tutto il centro.",
-                    sequence: "3...De6+ 4.Ae2!",
-                    tag: "SVILUPPO CON TEMPO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "w-scandi-3qe6-qg6",
-                        situation: "La Donna nera va in g6 (Punta su g2 e c2)",
-                        myMove: "5.d4! Cf6 6.Cf3! (Appena vedi ...Ca6 -> giochi SUBITO a3!)",
-                        summary: "REGOLA SALVA-PARTITA: se il Nero mette il Cavallo sul bordo in ...Ca6 mentre ha la Donna in g6, gioca SUBITO a3! (o O-O-O!) PRIMA che salti in ...Cb4, altrimenti l'attacco doppio su c2 diventa imparabile!",
-                        sequence: "4.Ae2 Dg6 5.d4! -> a3! contro ...Ca6",
-                        tag: "FERMA ...Ca6 CON a3!",
-                        tagType: "rose",
-                        children: []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                id: "w-scandi-2e5",
-                situation: "2...e5?! (Deviazione: non riprende in d5)",
-                myMove: "3.Cc3!",
-                summary: "Il Nero regala un pedone centrale: sviluppi il Cavallo difendendo d5 e consolidi il vantaggio con d4, Cf3 e arrocco.",
-                sequence: "2...e5?! 3.Cc3!",
-                tag: "PEDONE GRATIS",
-                tagType: "emerald",
-                children: []
-              }
-            ]
-          },
-          {
-            id: "w-dev1-c5",
-            situation: "Il Nero gioca 1...c5 (Difesa Siciliana)",
-            myMove: "2.Cf3!",
-            summary: "Sviluppi il Cavallo preparando la spinta centrale 3.d4! per aprire subito la posizione. Cosa risponde il Nero al turno 2?",
-            sequence: "1...c5 2.Cf3!",
-            tag: "SICILIANA APERTA",
-            tagType: "emerald",
-            children: [
-              {
-                id: "w-sic-2e6",
-                situation: "2...e6 (Siciliana Taimanov / Paulsen)",
-                myMove: "3.d4! cxd4 4.Cxd4",
-                summary: "Spacchi subito il centro come nello Scozzese e centralizzi il Cavallo. Come continua il Nero?",
-                sequence: "2...e6 3.d4 cxd4 4.Cxd4",
-                tag: "CENTRO APERTO",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "w-sic-4nc6",
-                    situation: "4...Cc6 (Variante Taimanov)",
-                    myMove: "5.Cc3! (MAI 5.Cxc6?!)",
-                    summary: "REGOLA D'ORO: sviluppa 5.Cc3! Mai cambiare in c6 perché 5...bxc6 rinforza il centro nero per ...d5 e apre la colonna b. Poi giochi 6.Ae3! o 6.Ae2! e arrocco.",
-                    sequence: "4...Cc6 5.Cc3!",
-                    tag: "MAI 5.Cxc6?!",
-                    tagType: "rose",
-                    children: [
-                      {
-                        id: "w-sic-5qc7",
-                        situation: "5...Dc7 (o 5...a6 — Mossa tipica Taimanov)",
-                        myMove: "6.Ae3! Cf6 7.Ae2! (poi O-O e f4!)",
-                        summary: "Sviluppo armonico: difendi d4, arrocchi corto e lanci l'attacco sull'ala di Re con f4 e Df3.",
-                        sequence: "5...Dc7 6.Ae3!",
-                        tag: "ATTACCO ALA DI RE",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "w-sic-4nf6",
-                    situation: "4...Cf6 (Attacca il pedone e4)",
-                    myMove: "5.Cc3!",
-                    summary: "Difendi e4 sviluppando il secondo Cavallo. Su 5...Cc6 giochi 6.Cdb5! puntando al buco in d6.",
-                    sequence: "4...Cf6 5.Cc3!",
-                    tag: "PUNTO DEBOLE d6",
-                    tagType: "emerald",
-                    children: []
-                  }
-                ]
-              },
-              {
-                id: "w-sic-2nc6",
-                situation: "2...Cc6 (Siciliana Classica)",
-                myMove: "3.d4! cxd4 4.Cxd4 Cf6 5.Cc3!",
-                summary: "Apri il centro e sviluppi entrambi i Cavalli (senza mai cambiare in c6!). Poi piazzi 6.Ag5! o 6.Ac4! con attacco diretto.",
-                sequence: "2...Cc6 3.d4 cxd4 4.Cxd4",
-                tag: "SVILUPPO RAPIDO",
-                tagType: "emerald",
-                children: []
-              },
-              {
-                id: "w-sic-2d6",
-                situation: "2...d6 (Siciliana Najdorf / Dragone)",
-                myMove: "3.d4! cxd4 4.Cxd4 Cf6 5.Cc3!",
-                summary: "Centro spalancato: contro 5...a6 (Najdorf) o 5...g6 (Dragone) piazzi 6.Ae3!, 7.f3, 8.Dd2 e Arrocco Lungo (O-O-O) con attacco a valanga.",
-                sequence: "2...d6 3.d4 cxd4 4.Cxd4",
-                tag: "ATTACCO INGLESE",
-                tagType: "rose",
-                children: []
-              },
-              {
-                id: "w-sic-2b6",
-                situation: "2...b6 (Fianchetto prematuro sull'ala di Donna)",
-                myMove: "3.d4! cxd4 4.Cxd4 Ab7 5.Cc3!",
-                summary: "Prendi tutto il centro con d4 e sviluppi i Cavalli. Se il Nero lascia la diagonale aperta, punti subito su g7 e sulla Torre in h8!",
-                sequence: "2...b6 3.d4! cxd4 4.Cxd4",
-                tag: "DOMINIO CENTRALE",
-                tagType: "emerald",
-                children: []
-              }
-            ]
-          },
-          {
-            id: "w-dev1-e6",
-            situation: "Il Nero gioca 1...e6 (Difesa Francese)",
-            myMove: "2.d4! (oppure 2.Cf3 d5 3.exd5 exd5 4.d4)",
-            summary: "Prendi subito tutto il centro con 2.d4! e su 2...d5 cambi immediatamente in d5 (3.exd5!) per evitare partite chiuse. Come riprende il Nero?",
-            sequence: "1...e6 2.d4!",
-            tag: "FRANCESE APERTA",
-            tagType: "emerald",
-            children: [
-              {
-                id: "w-french-2d5",
-                situation: "2...d5 (Spinta centrale standard)",
-                myMove: "3.exd5! exd5 4.c4! (Attacco Monte Carlo)",
-                summary: "Spacchi subito la catena di pedoni francese esattamente come nel Panov! Sviluppi Cc3, Cf3, Ad3 e attacchi a campo aperto.",
-                sequence: "2...d5 3.exd5 exd5 4.c4!",
-                tag: "STILE PANOV",
-                tagType: "rose",
-                children: [
-                  {
-                    id: "w-french-4nf6",
-                    situation: "4...Cf6 (o 4...c6 — Difende d5)",
-                    myMove: "5.Cc3! Ae7 6.Cf3! O-O 7.Ad3!",
-                    summary: "Sviluppo fulmineo: controlla sempre che d5 sia difeso dall'Alfiere e6 o dalla Donna d8 prima di catturare!",
-                    sequence: "4...Cf6 5.Cc3 Ae7 6.Cf3!",
-                    tag: "SVILUPPO ATTIVO",
-                    tagType: "blue",
-                    children: []
-                  },
-                  {
-                    id: "w-french-4dxc4",
-                    situation: "4...dxc4 (Il Nero accetta il pedone)",
-                    myMove: "5.Axc4! Cf6 6.Cf3!",
-                    summary: "Recuperi il pedone sviluppando l'Alfiere sulla diagonale letale a2-g8 puntata dritta su f7.",
-                    sequence: "4...dxc4 5.Axc4!",
-                    tag: "DIAGONALE SU f7",
-                    tagType: "emerald",
-                    children: []
-                  }
-                ]
-              }
-            ]
-          }
+    {
+      id: "w-scotch-root",
+      situation: "1.e4 e5 2.Cf3 Cc6 3.d4 exd4 4.Ac4! (Gambetto Scozzese)",
+      myMove: "4.Ac4!",
+      summary: "Sacrifichi il pedone d4 per sviluppo fulmineo e pressione diretta sul punto debole f7. Come risponde il Nero?",
+      sequence: "1.e4 e5 2.Cf3 Cc6 3.d4 exd4 4.Ac4!",
+      tag: "GAMBETTO SCOZZESE",
+      tagType: "rose",
+      children: [
+        {
+          id: "w-sc-4bc5",
+          situation: "4...Ac5 (Linea Principale)",
+          myMove: "5.c3!",
+          summary: "Attacchi subito il pedone d4 per ricostruire un centro perfetto e aprire la colonna c.",
+          sequence: "4...Ac5 5.c3!",
+          tag: "ROTTURA CENTRALE",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-sc-5nf6",
+              situation: "5...Cf6 (Mossa migliore del motore)",
+              myMove: "6.cxd4!",
+              summary: "Riprendi il pedone con centro dominante e tempi sull'Alfiere nero.",
+              sequence: "5...Cf6 6.cxd4!",
+              tag: "CENTRO DOMINANTE",
+              tagType: "emerald",
+              children: [
+                {
+                  id: "w-sc-6bb4",
+                  situation: "6...Ab4+ (Scacco e inchiodatura)",
+                  myMove: "7.Ad2!",
+                  summary: "Copri lo scacco neutralizzando subito l'inchiodatura. Cosa fa il Nero?",
+                  sequence: "6...Ab4+ 7.Ad2!",
+                  tag: "ANTI-INCHIODATURA",
+                  tagType: "blue",
+                  children: [
+                    {
+                      id: "w-sc-7bxd2",
+                      situation: "7...Axd2+ (Cambia gli Alfieri — Linea migliore)",
+                      myMove: "8.Cbxd2!",
+                      summary: "Riprendi di Cavallo mantenendo e4 difeso e preparando Db3/O-O.",
+                      sequence: "7...Axd2+ 8.Cbxd2!",
+                      tag: "SVILUPPO PULITO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "w-sc-8d5",
+                          situation: "8...d5 (Il Nero colpisce il centro)",
+                          myMove: "9.exd5! Cxd5 10.Db3!",
+                          summary: "Cambi in d5 e piazzi subito la Donna in b3 attaccando il Cavallo d5 e il punto f7!",
+                          sequence: "8...d5 9.exd5! Cxd5 10.Db3!",
+                          tag: "DOPPIO ATTACCO",
+                          tagType: "rose",
+                          children: []
+                        }
+                      ]
+                    },
+                    {
+                      id: "w-sc-7nxe4",
+                      situation: "7...Cxe4 (Trappola: mangia il pedone e4)",
+                      myMove: "8.Axb4! Cxb4 9.Axf7+! Rxf7 10.Db3+!",
+                      summary: "TRAPPOLA MORTALE: togli l'arrocco con 9.Axf7+! e poi fai forchetta 10.Db3+! recuperando il Cavallo b4 con vantaggio decisivo!",
+                      sequence: "7...Cxe4 8.Axb4 Cxb4 9.Axf7+! Rxf7 10.Db3+!",
+                      tag: "TRAPPOLA VINCENTE",
+                      tagType: "rose",
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: "w-sc-5dxc3",
+              situation: "5...dxc3 (Accetta il secondo pedone)",
+              myMove: "6.Axf7+!",
+              summary: "Sacrificio devastante su f7: il Re nero perde l'arrocco e finisce sotto tiro.",
+              sequence: "5...dxc3 6.Axf7+!",
+              tag: "SACRIFICIO SU f7",
+              tagType: "rose",
+              children: [
+                {
+                  id: "w-sc-6kxf7",
+                  situation: "6...Rxf7 (Forzata)",
+                  myMove: "7.Dd5+!",
+                  summary: "Forchetta reale tra Re in f7 e Alfiere indifeso in c5!",
+                  sequence: "6...Rxf7 7.Dd5+!",
+                  tag: "FORCHETTA DI DONNA",
+                  tagType: "rose",
+                  children: [
+                    {
+                      id: "w-sc-7ke8",
+                      situation: "7...Re8 (o 7...Rf8 — Il Re scappa)",
+                      myMove: "8.Dxc5!",
+                      summary: "Recuperi l'Alfiere lasciando il Re nero bloccato al centro.",
+                      sequence: "7...Re8 8.Dxc5!",
+                      tag: "RECUPERO + ATTACCO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "w-sc-8d6",
+                          situation: "8...d6 (o 8...cxb2)",
+                          myMove: "9.Dxc3! Cf6 10.O-O!",
+                          summary: "Riprendi c3, arrocchi corto e domini tutta la scacchiera mentre il Re nero è al centro.",
+                          sequence: "8...d6 9.Dxc3!",
+                          tag: "VANTAGGIO NETTO",
+                          tagType: "emerald",
+                          children: []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: "w-sc-5d3",
+              situation: "5...d3 (Rifiuta e blocca)",
+              myMove: "6.b4!",
+              summary: "Cacci subito l'Alfiere nero guadagnando spazio sull'ala di Donna.",
+              sequence: "5...d3 6.b4!",
+              tag: "SPAZIO CON TEMPO",
+              tagType: "blue",
+              children: [
+                {
+                  id: "w-sc-6bb6",
+                  situation: "6...Ab6 (Ritira l'Alfiere)",
+                  myMove: "7.a4!",
+                  summary: "Minacci 8.a5 intrappolando l'Alfiere nero!",
+                  sequence: "6...Ab6 7.a4!",
+                  tag: "CACCIA ALFIERE",
+                  tagType: "rose",
+                  children: [
+                    {
+                      id: "w-sc-7a6",
+                      situation: "7...a6 (Crea la fuga)",
+                      myMove: "8.Db3! De7 9.O-O!",
+                      summary: "Punti su f7, mangi poi d3 e hai sviluppo completo.",
+                      sequence: "7...a6 8.Db3! De7 9.O-O!",
+                      tag: "ATTACCO SU f7",
+                      tagType: "emerald",
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: "w-sc-4nf6",
+          situation: "4...Cf6 (Difesa Due Cavalli)",
+          myMove: "5.e5!",
+          summary: "Spinti subito in e5 cacciando il Cavallo nero con guadagno di tempo.",
+          sequence: "4...Cf6 5.e5!",
+          tag: "SPINTA FORZANTE",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-sc-5d5",
+              situation: "5...d5 (Contrattacca l'Alfiere c4)",
+              myMove: "6.Ab5!",
+              summary: "Inchiodi il Cavallo c6 mantenendo la pressione su f6.",
+              sequence: "5...d5 6.Ab5!",
+              tag: "INCHIODATURA",
+              tagType: "blue",
+              children: [
+                {
+                  id: "w-sc-6ne4",
+                  situation: "6...Ce4 (Il Cavallo salta al centro)",
+                  myMove: "7.Cxd4!",
+                  summary: "Recuperi il pedone centrale minacciando 8.Cxc6.",
+                  sequence: "6...Ce4 7.Cxd4!",
+                  tag: "RECUPERO CENTRALE",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "w-sc-7bd7",
+                      situation: "7...Ad7 (Difende c6)",
+                      myMove: "8.Axc6! bxc6 9.O-O!",
+                      summary: "Rovini la struttura pedonale nera sull'ala di Donna e arrocchi in sicurezza.",
+                      sequence: "7...Ad7 8.Axc6! bxc6 9.O-O!",
+                      tag: "STRUTTURA ROVINATA",
+                      tagType: "emerald",
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: "w-sc-5ng4",
+              situation: "5...Cg4 (Attacca e5)",
+              myMove: "6.De2! De7 7.Af4! f6 8.exf6! Dxe2+ 9.Axe2!",
+              summary: "Difendi e5, forzi il cambio delle Donne lasciando i pedoni neri deboli e mantieni vantaggio di sviluppo.",
+              sequence: "5...Cg4 6.De2! De7 7.Af4! f6 8.exf6!",
+              tag: "VANTAGGIO POSIZIONALE",
+              tagType: "blue",
+              children: []
+            }
+          ]
+        },
+        {
+          id: "w-sc-4h6",
+          situation: "4...h6 (Mossa lenta — Inchiodatura ...Ab4 in arrivo)",
+          myMove: "5.c3!",
+          summary: "Offri subito il gambetto c3 mentre il Nero perde tempo con i pedoni laterali.",
+          sequence: "4...h6 5.c3!",
+          tag: "APERTURA LINEE",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-sc-4h6-5dxc3",
+              situation: "5...dxc3 (Accetta)",
+              myMove: "6.Cxc3!",
+              summary: "Sviluppi il Cavallo al centro. Ora quasi tutti inchiodano con 6...Ab4!",
+              sequence: "5...dxc3 6.Cxc3!",
+              tag: "SVILUPPO",
+              tagType: "emerald",
+              children: [
+                {
+                  id: "w-sc-4h6-6bb4",
+                  situation: "6...Ab4 (Inchioda il Cavallo c3!)",
+                  myMove: "7.O-O!",
+                  summary: "ARROCCA SUBITO senza paura dell'inchiodatura!",
+                  sequence: "6...Ab4 7.O-O!",
+                  tag: "IGNORA INCHIODATURA",
+                  tagType: "rose",
+                  children: [
+                    {
+                      id: "w-sc-4h6-7bxc3",
+                      situation: "7...Axc3 (Cambia in c3)",
+                      myMove: "8.bxc3!",
+                      summary: "Rinforzi il centro e apri la diagonale per l'Alfiere camposcuro.",
+                      sequence: "7...Axc3 8.bxc3!",
+                      tag: "CENTRO SOLIDO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "w-sc-4h6-8nge7",
+                          situation: "8...Cge7 (o 8...d6 / 8...Cf6)",
+                          myMove: "9.Db3! (oppure 9.Aa3!)",
+                          summary: "Attacchi subito f7 con Donna e Alfiere, poi porti le Torri in d1 e e1.",
+                          sequence: "8...Cge7 9.Db3!",
+                          tag: "ATTACCO SU f7",
+                          tagType: "rose",
+                          children: []
+                        }
+                      ]
+                    },
+                    {
+                      id: "w-sc-4h6-7d6",
+                      situation: "7...d6 (Non cambia in c3)",
+                      myMove: "8.Cd5! Ac5 9.b4!",
+                      summary: "Rompi l'inchiodatura saltando in d5 e cacci l'Alfiere nero espandendoti sull'ala di Donna.",
+                      sequence: "7...d6 8.Cd5! Ac5 9.b4!",
+                      tag: "ROMPE INCHIODATURA",
+                      tagType: "blue",
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "w-scotch-dev",
+      situation: "1.e4 e5 2.Cf3 Cc6 3.d4 (Deviazioni alla 3a mossa)",
+      myMove: "4.dxe5!",
+      summary: "Se il Nero NON mangia 3...exd4, spacchi subito il centro spingendo in e5!",
+      sequence: "1.e4 e5 2.Cf3 Cc6 3.d4",
+      tag: "DEVIAZIONI 3a MOSSA",
+      tagType: "blue",
+      children: [
+        {
+          id: "w-sc-3cf6",
+          situation: "3...Cf6 (Attacca e4)",
+          myMove: "4.dxe5!",
+          summary: "Cacci subito il Cavallo guadagnando un tempo decisivo.",
+          sequence: "3...Cf6 4.dxe5!",
+          tag: "TEMPO CENTRALE",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-sc-3cf6-cxe4",
+              situation: "4...Cxe4 (Riprende e4)",
+              myMove: "5.Dd5!",
+              summary: "DOPPIO ATTACCO: attacchi il Cavallo e4 e prepari 6.Ac4! con matto su f7.",
+              sequence: "4...Cxe4 5.Dd5!",
+              tag: "DOPPIA MINACCIA",
+              tagType: "rose",
+              children: [
+                {
+                  id: "w-sc-5cc5",
+                  situation: "5...Cc5 (Il Cavallo ritira)",
+                  myMove: "6.Ac4! De7 7.O-O! Ce6 8.Cc3! Cc6 9.Te1!",
+                  summary: "Minacci matto su f7, sviluppi tutti i pezzi e domini la colonna e (se 7...Cxe5?? vinci tutto con 8.Cxe5! e 9.Dxf7+!).",
+                  sequence: "5...Cc5 6.Ac4! De7 7.O-O!",
+                  tag: "ATTACCO LETALE",
+                  tagType: "rose",
+                  children: []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: "w-sc-3d6",
+          situation: "3...d6 (Difende passivamente)",
+          myMove: "4.dxe5! Cxe5 5.Cxe5! dxe5 6.Dxd8+ Rxd8 7.Ac4! f6 8.Ae3! Ad6 9.Cc3!",
+          summary: "Togli l'arrocco al Re nero, punti l'Alfiere su f7 e domini il finale con sviluppo completo.",
+          sequence: "3...d6 4.dxe5! Cxe5 5.Cxe5! dxe5 6.Dxd8+ Rxd8 7.Ac4!",
+          tag: "TOGLIE ARROCCO",
+          tagType: "emerald",
+          children: []
+        }
+      ]
+    },
+    {
+      id: "w-philidor-root",
+      situation: "1.e4 e5 2.Cf3 d6 (Difesa Philidor — Gambetto Morphy)",
+      myMove: "3.d4!",
+      summary: "Spacchi subito il centro contro l'impianto passivo del Nero.",
+      sequence: "1.e4 e5 2.Cf3 d6 3.d4!",
+      tag: "DIFESA PHILIDOR",
+      tagType: "emerald",
+      children: [
+        {
+          id: "w-philidor-3exd4",
+          situation: "3...exd4 (Cambia al centro)",
+          myMove: "4.Ac4!",
+          summary: "Gambetto Morphy: sviluppi l'Alfiere puntando subito su f7.",
+          sequence: "3...exd4 4.Ac4!",
+          tag: "GAMBETTO MORPHY",
+          tagType: "rose",
+          children: [
+            {
+              id: "w-philidor-4bg4",
+              situation: "4...Ag4 (Inchioda f3)",
+              myMove: "5.h3!",
+              summary: "Interroghi subito l'Alfiere costringendolo al cambio.",
+              sequence: "4...Ag4 5.h3!",
+              tag: "CACCIA ALFIERE",
+              tagType: "emerald",
+              children: [
+                {
+                  id: "w-philidor-5bxf3",
+                  situation: "5...Axf3 6.Dxf3 Cf6",
+                  myMove: "7.Db3! De7 8.O-O! Cbd7 9.Dxb7!",
+                  summary: "ATTACCO DOPPIO SU f7 E b7: il pedone b7 è indifeso, lo catturi con vantaggio decisivo!",
+                  sequence: "5...Axf3 6.Dxf3 Cf6 7.Db3! De7 8.O-O! Cbd7 9.Dxb7!",
+                  tag: "PEDONE b7 GRATIS",
+                  tagType: "rose",
+                  children: []
+                }
+              ]
+            },
+            {
+              id: "w-philidor-4nc6",
+              situation: "4...Cc6 (Sviluppo)",
+              myMove: "5.Cxd4! Cf6 6.Cc3! Ae7 7.O-O! O-O 8.h3! Te8 9.Te1!",
+              summary: "Recuperi il pedone con vantaggio di spazio, coppia degli Alfieri attiva e controllo totale del centro.",
+              sequence: "4...Cc6 5.Cxd4! Cf6 6.Cc3! Ae7 7.O-O!",
+              tag: "CENTRO DOMINANTE",
+              tagType: "blue",
+              children: []
+            }
+          ]
+        },
+        {
+          id: "w-philidor-3nf6",
+          situation: "3...Cf6 (Variante Nimzowitsch)",
+          myMove: "4.dxe5! Cxe4 5.Dd5! Cc5 6.Ag5! Ae7 7.exd6! Dxd6 8.Cc3! O-O 9.O-O-O!",
+          summary: "Cacci il Cavallo, attacchi doppiamente e4 e f7 con 5.Dd5! e arrocchi lungo con pressione totale.",
+          sequence: "3...Cf6 4.dxe5! Cxe4 5.Dd5! Cc5 6.Ag5!",
+          tag: "ATTACCO IMMEDIATO",
+          tagType: "rose",
+          children: []
+        }
+      ]
+    },
+    {
+      id: "w-petroff-root",
+      situation: "1.e4 e5 2.Cf3 Cf6 (Difesa Petroff / Russa)",
+      myMove: "3.Cxe5!",
+      summary: "Mangi subito il pedone e5 punendo la simmetria del Nero.",
+      sequence: "1.e4 e5 2.Cf3 Cf6 3.Cxe5!",
+      tag: "DIFESA PETROFF",
+      tagType: "blue",
+      children: [
+        {
+          id: "w-petroff-3d6",
+          situation: "3...d6 4.Cf3 Cxe4 (Linea principale)",
+          myMove: "5.d4! d5 6.Ad3! Ad6 7.O-O! O-O 8.c4! c6 9.Te1!",
+          summary: "Prendi il centro con d4 e c4, sviluppi i pezzi e metti la Torre sulla colonna aperta e.",
+          sequence: "3...d6 4.Cf3 Cxe4 5.d4! d5 6.Ad3! Ad6 7.O-O! O-O 8.c4! c6 9.Te1!",
+          tag: "COLONNA e APERTA",
+          tagType: "emerald",
+          children: []
+        }
+      ]
+    },
+    {
+      id: "w-panov-root",
+      situation: "1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4! (Attacco Panov — Caro-Kann)",
+      myMove: "4.c4!",
+      summary: "Spacchi subito la struttura Caro-Kann creando pressione immediata su d5.",
+      sequence: "1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4!",
+      tag: "ATTACCO PANOV",
+      tagType: "rose",
+      children: [
+        {
+          id: "w-panov-4nf6",
+          situation: "4...Cf6 (Sviluppo principale)",
+          myMove: "5.Cc3!",
+          summary: "Aumenti la pressione sul pedone centrale d5.",
+          sequence: "4...Cf6 5.Cc3!",
+          tag: "PRESSIONE SU d5",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-panov-5nc6",
+              situation: "5...Cc6 (Difende d5)",
+              myMove: "6.Ag5!",
+              summary: "Inchiodi il Cavallo f6 eliminando il difensore di d5!",
+              sequence: "5...Cc6 6.Ag5!",
+              tag: "INCHIODATURA f6",
+              tagType: "rose",
+              children: [
+                {
+                  id: "w-panov-6e6",
+                  situation: "6...e6 (Linea solida)",
+                  myMove: "7.c5! Ae7 8.Ab5! O-O 9.Cf3!",
+                  summary: "Chiudi l'ala di Donna bloccando l'Alfiere c8 nero e inchiodi il Cavallo c6!",
+                  sequence: "6...e6 7.c5! Ae7 8.Ab5! O-O 9.Cf3!",
+                  tag: "BLOCCO ALA DONNA",
+                  tagType: "blue",
+                  children: []
+                },
+                {
+                  id: "w-panov-6dxc4",
+                  situation: "6...dxc4 (Mangia in c4)",
+                  myMove: "7.d5! Ce5 8.Dd4! Cd3+ 9.Axd3!",
+                  summary: "Spinti in d5 con guadagno di tempo e recuperi il pedone con vantaggio di spazio.",
+                  sequence: "6...dxc4 7.d5! Ce5 8.Dd4! Cd3+ 9.Axd3!",
+                  tag: "SPINTA d5!",
+                  tagType: "emerald",
+                  children: []
+                }
+              ]
+            },
+            {
+              id: "w-panov-5e6",
+              situation: "5...e6 (Difende con i pedoni)",
+              myMove: "6.Cf3! Ab4 7.cxd5! exd5 8.Ad3! O-O 9.O-O!",
+              summary: "Isoli il pedone d5 nero e sviluppi tutti i pezzi con attacco sull'ala di Re.",
+              sequence: "5...e6 6.Cf3! Ab4 7.cxd5! exd5 8.Ad3! O-O 9.O-O!",
+              tag: "PEDONE ISOLATO",
+              tagType: "emerald",
+              children: []
+            },
+            {
+              id: "w-panov-5nxd5",
+              situation: "5...Cxd5 (Cambia subito in d5)",
+              myMove: "6.cxd5! Dxd5 7.Cf3! Cc6 8.Ae2! e6 9.O-O!",
+              summary: "Apri la colonna c e sviluppi con tempi sulla Donna nera esposta al centro.",
+              sequence: "5...Cxd5 6.cxd5! Dxd5 7.Cf3! Cc6 8.Ae2! e6 9.O-O!",
+              tag: "TEMPI SULLA DONNA",
+              tagType: "blue",
+              children: []
+            }
+          ]
+        },
+        {
+          id: "w-panov-4e6",
+          situation: "4...e6 (Difende subito d5)",
+          myMove: "5.Cc3!",
+          summary: "Sviluppi il Cavallo.",
+          sequence: "4...e6 5.Cc3!",
+          tag: "SVILUPPO",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-panov-e6-bb4",
+              situation: "5...Ab4 (Inchioda c3 — MAI giocare 6.Dd3?!)",
+              myMove: "6.Cf3! Cf6 7.cxd5! exd5 8.Ad3! O-O 9.O-O!",
+              summary: "REGOLA D'ORO: sviluppa sempre 6.Cf3! senza esporre la Donna, poi isoli il pedone d5 e arrocchi.",
+              sequence: "5...Ab4 6.Cf3! Cf6 7.cxd5! exd5 8.Ad3! O-O 9.O-O!",
+              tag: "NO 6.Dd3?",
+              tagType: "rose",
+              children: []
+            }
+          ]
+        },
+        {
+          id: "w-panov-4dxc4",
+          situation: "4...dxc4 (Accetta subito c4)",
+          myMove: "5.Axc4!",
+          summary: "Recuperi il pedone puntando l'Alfiere dritto su f7.",
+          sequence: "4...dxc4 5.Axc4!",
+          tag: "DIAGONALE f7",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-panov-4dxc4-5bf5",
+              situation: "5...Af5 (Sviluppa l'Alfiere)",
+              myMove: "6.Cf3! e6 7.d5! exd5 8.Axd5! Cc6 9.O-O!",
+              summary: "Spacchi subito il centro con 7.d5! mentre il Re nero è ancora al centro!",
+              sequence: "5...Af5 6.Cf3! e6 7.d5! exd5 8.Axd5! Cc6 9.O-O!",
+              tag: "ROTTURA d5!",
+              tagType: "rose",
+              children: []
+            },
+            {
+              id: "w-panov-4dxc4-5nf6",
+              situation: "5...Cf6 (Sviluppo naturale)",
+              myMove: "6.Cf3! e6 7.O-O! Ae7 8.Cc3! O-O 9.De2!",
+              summary: "Sviluppo classico con pedone isolato: prepari Td1, Ag5 e l'attacco centrale.",
+              sequence: "5...Cf6 6.Cf3! e6 7.O-O! Ae7 8.Cc3! O-O 9.De2!",
+              tag: "ATTACCO CLASSICO",
+              tagType: "blue",
+              children: []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "w-sicilian-root",
+      situation: "1.e4 c5 2.Cf3! (Difesa Siciliana — Siciliana Aperta)",
+      myMove: "2.Cf3!",
+      summary: "Prepari subito la spinta centrale 3.d4! per aprire il gioco.",
+      sequence: "1.e4 c5 2.Cf3!",
+      tag: "SICILIANA APERTA",
+      tagType: "emerald",
+      children: [
+        {
+          id: "w-sic-2d6",
+          situation: "2...d6 (Najdorf / Dragone)",
+          myMove: "3.d4! cxd4 4.Cxd4! Cf6 5.Cc3! a6 6.Ag5! e6 7.f4! Ae7 8.Df3! Dc7 9.O-O-O!",
+          summary: "Attacco Inglese / Rauzer: arrocchi lungo e lanci l'attacco diretto sul Re nero con g4-g5!",
+          sequence: "2...d6 3.d4! cxd4 4.Cxd4! Cf6 5.Cc3! a6 6.Ag5! e6 7.f4! Ae7 8.Df3! Dc7 9.O-O-O!",
+          tag: "ATTACCO O-O-O",
+          tagType: "rose",
+          children: []
+        },
+        {
+          id: "w-sic-2nc6",
+          situation: "2...Cc6 (Siciliana Classica / Sveshnikov)",
+          myMove: "3.d4! cxd4 4.Cxd4! Cf6 5.Cc3! e5 6.Cdb5! d6 7.Ag5! a6 8.Ca3! b5 9.Cd5!",
+          summary: "Piazzi un Cavallo inamovibile nell'avamposto d5 controllando tutta la scacchiera!",
+          sequence: "2...Cc6 3.d4! cxd4 4.Cxd4! Cf6 5.Cc3! e5 6.Cdb5! d6 7.Ag5! a6 8.Ca3! b5 9.Cd5!",
+          tag: "AVAMPOSTO d5",
+          tagType: "blue",
+          children: []
+        },
+        {
+          id: "w-sic-2e6",
+          situation: "2...e6 (Taimanov / Kan)",
+          myMove: "3.d4! cxd4 4.Cxd4! Cc6 5.Cc3! Dc7 6.Ae3! a6 7.Dd2! Cf6 8.O-O-O! Ab4 9.f3!",
+          summary: "Solidifichi e4 con f3 e prepari l'assalto sull'ala di Re dopo O-O-O.",
+          sequence: "2...e6 3.d4! cxd4 4.Cxd4! Cc6 5.Cc3! Dc7 6.Ae3! a6 7.Dd2! Cf6 8.O-O-O! Ab4 9.f3!",
+          tag: "SETUP SOLIDO",
+          tagType: "emerald",
+          children: []
+        },
+        {
+          id: "w-sic-2b6",
+          situation: "2...b6 (Fianchetto prematuro)",
+          myMove: "3.d4! cxd4 4.Cxd4! Ab7 5.Cc3! e6 6.Ad3! Cc6 7.Cxc6! Axc6 8.O-O! Cf6 9.De2!",
+          summary: "Dominio assoluto del centro e sviluppo rapido di tutti i pezzi.",
+          sequence: "2...b6 3.d4! cxd4 4.Cxd4! Ab7 5.Cc3! e6 6.Ad3! Cc6 7.Cxc6! Axc6 8.O-O! Cf6 9.De2!",
+          tag: "CENTRO DOMINANTE",
+          tagType: "emerald",
+          children: []
+        }
+      ]
+    },
+    {
+      id: "w-french-root",
+      situation: "1.e4 e6 2.d4 d5 3.exd5! exd5 4.c4! (Francese — Attacco Monte Carlo)",
+      myMove: "4.c4!",
+      summary: "Spacchi subito la catena francese giocando a campo aperto come nel Panov.",
+      sequence: "1.e4 e6 2.d4 d5 3.exd5! exd5 4.c4!",
+      tag: "ATTACCO MONTE CARLO",
+      tagType: "rose",
+      children: [
+        {
+          id: "w-french-4nf6",
+          situation: "4...Cf6 (Difesa principale)",
+          myMove: "5.Cc3! Ae7 6.Cf3! O-O 7.cxd5! Cxd5 8.Ad3! Cc6 9.O-O!",
+          summary: "Sviluppo ultra-dinamico con colonne aperte e pressione sul Re nero.",
+          sequence: "4...Cf6 5.Cc3! Ae7 6.Cf3! O-O 7.cxd5! Cxd5 8.Ad3! Cc6 9.O-O!",
+          tag: "GIOCO APERTO",
+          tagType: "emerald",
+          children: []
+        },
+        {
+          id: "w-french-4dxc4",
+          situation: "4...dxc4 (Accetta il pedone)",
+          myMove: "5.Axc4! Cf6 6.Cf3! Ae7 7.O-O! O-O 8.Cc3! Cc6 9.h3!",
+          summary: "Recuperi il pedone con l'Alfiere attivo su f7 e controlli g4.",
+          sequence: "4...dxc4 5.Axc4! Cf6 6.Cf3! Ae7 7.O-O! O-O 8.Cc3! Cc6 9.h3!",
+          tag: "DIAGONALE f7",
+          tagType: "blue",
+          children: []
+        }
+      ]
+    },
+    {
+      id: "w-scandi-white-root",
+      situation: "1.e4 d5 2.exd5! Dxd5 3.Cc3! (Scandinava lato Bianco)",
+      myMove: "3.Cc3!",
+      summary: "Guadagni subito un tempo attaccando la Donna centrale nera.",
+      sequence: "1.e4 d5 2.exd5! Dxd5 3.Cc3!",
+      tag: "TEMPO SULLA DONNA",
+      tagType: "emerald",
+      children: [
+        {
+          id: "w-scandi-3qa5",
+          situation: "3...Da5 (Linea principale)",
+          myMove: "4.d4! Cf6 5.Cf3! c6 6.Ac4! Af5 7.Ad2! e6 8.Cd5! Dd8 9.Cxf6+!",
+          summary: "Prendi il centro e salti con 8.Cd5! minacciando attacco di scoperta sulla Donna e rovinando i pedoni neri!",
+          sequence: "3...Da5 4.d4! Cf6 5.Cf3! c6 6.Ac4! Af5 7.Ad2! e6 8.Cd5! Dd8 9.Cxf6+!",
+          tag: "SCOPERTA Cd5!",
+          tagType: "rose",
+          children: []
+        },
+        {
+          id: "w-scandi-3qe6",
+          situation: "3...De6+ (Scacco insolito)",
+          myMove: "4.Ae2! Dg6 5.d4! Cf6 6.Cf3! Cc6 7.O-O! Ag4 8.a3! O-O-O 9.Ae3!",
+          summary: "Copri sviluppando e giochi a3! per impedire qualsiasi salto ...Ca6 -> ...Cb4 contro c2.",
+          sequence: "3...De6+ 4.Ae2! Dg6 5.d4! Cf6 6.Cf3! Cc6 7.O-O! Ag4 8.a3! O-O-O 9.Ae3!",
+          tag: "PROFILASSI a3!",
+          tagType: "blue",
+          children: []
+        }
+      ]
+    }
         ]
       },
-
-      // ----------------------------------------------------
-      // BLACK TREE (Scandinava + Due Cavalli + Albin)
-      // ----------------------------------------------------
       black: {
         id: "b-root",
         situation: "Nero: Cosa gioca il Bianco come prima mossa?",
@@ -1439,1095 +1020,402 @@
         tag: "SELEZIONA MOSSA",
         tagType: "emerald",
         children: [
-          // ==================== CONTRO 1.e4 ====================
-          {
-            id: "b-vs-e4",
-            situation: "Il Bianco apre con 1.e4",
-            myMove: "Scegli il tuo sistema contro 1.e4:",
-            summary: "Scegli tra la Difesa Scandinava (consigliata per scambi forzati e colonna d aperta) o la classica Difesa Due Cavalli:",
-            sequence: "1.e4",
-            tag: "SCELTA APERTURA",
-            tagType: "emerald",
-            children: [
-              // --- DIFESA SCANDINAVA (1...d5!) ---
-              {
-                id: "b-scandi-root",
-                situation: "Consigliata: Difesa Scandinava (1...d5!)",
-                myMove: "1...d5!",
-                summary: "Spacchi subito il centro alla prima mossa: forzi scambi rapidi ed eviti board chiuse.",
-                sequence: "1.e4 d5!",
-                tag: "SCANDINAVA RAPIDA",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "b-scandi-exd5",
-                    situation: "2.exd5 (Il Bianco accetta lo scambio)",
-                    myMove: "2...Dxd5!",
-                    summary: "Rimangi di Donna. Colonna d già aperta. Come reagisce il Bianco?",
-                    sequence: "2.exd5 Dxd5",
-                    tag: "COLONNA APERTA",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-scandi-3cc3",
-                        situation: "3.Cc3 (Attacca la tua Donna)",
-                        myMove: "3...Da5!",
-                        summary: "Ritiri la Donna in a5 dove è al sicuro e inchioda la diagonale. Come sviluppa il Bianco?",
-                        sequence: "3.Cc3 Da5",
-                        tag: "SISTEMA Da5",
-                        tagType: "blue",
-                        children: [
-                          {
-                            id: "b-scandi-4d4",
-                            situation: "4.d4 (Il Bianco prende il centro)",
-                            myMove: "4...c6!",
-                            summary: "REGOLA D'ORO: gioca subito 4...c6! prima di Cf6 per aprire la fuga Dc7 alla Donna ed evitare qualsiasi scoperta di Alfiere o salto di Cavallo. Come continua il Bianco?",
-                            sequence: "4.d4 c6!",
-                            tag: "SCUDO ANTI-SCOPERTE",
-                            tagType: "emerald",
-                            children: [
-                              {
-                                id: "b-scandi-5cf3",
-                                situation: "5.Cf3 (Sviluppo naturale)",
-                                myMove: "5...Cf6!",
-                                summary: "Ora sviluppi il Cavallo in sicurezza. Piazzi 6...Ag4! (o 6...Af5!), poi Cbd7, e6 e Arrocco Lungo (O-O-O).",
-                                sequence: "5.Cf3 Cf6!",
-                                tag: "SVILUPPO SICURO",
-                                tagType: "emerald",
-                                children: []
-                              },
-                              {
-                                id: "b-scandi-5bd2",
-                                situation: "5.Ad2 (Prepara scoperte con il Cavallo c3)",
-                                myMove: "5...Dc7! (oppure 5...Cf6!)",
-                                summary: "Avendo già giocato 4...c6!, metti la Donna al sicuro in c7 togliendola dalla diagonale dell'Alfiere, poi sviluppi Cf6, Ag4 e e6.",
-                                sequence: "5.Ad2 Dc7!",
-                                tag: "DONNA AL SICURO",
-                                tagType: "blue",
-                                children: []
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-scandi-4a3",
-                            situation: "4.a3 (Prepara 5.b4 per cacciare la Donna)",
-                            myMove: "4...Cf6!",
-                            summary: "Sviluppi il Cavallo controllando il centro senza farti intimorire dalla spinta laterale.",
-                            sequence: "4.a3 Cf6",
-                            tag: "SVILUPPO CALMO",
-                            tagType: "emerald",
-                            children: [
-                              {
-                                id: "b-scandi-5b4",
-                                situation: "5.b4 (Attacca la Donna in a5)",
-                                myMove: "5...De5+! (oppure 5...Db6!)",
-                                summary: "Dai scacco per guadagnare un tempo prima di mettere la Donna al sicuro (in alternativa 5...Db6! è subito sicura).",
-                                sequence: "5.b4 De5+",
-                                tag: "SCACCO DI TEMPO",
-                                tagType: "blue",
-                                children: [
-                                  {
-                                    id: "b-scandi-6be2",
-                                    situation: "6.Ae2 (Copre lo scacco)",
-                                    myMove: "6...c6! (MAI 6...Cc6 prima di c6!)",
-                                    summary: "REGOLA D'ORO: spingi subito 6...c6! Crea la casa di fuga c7 per la Donna e blocca per sempre il salto Cb5 del Bianco.",
-                                    sequence: "6.Ae2 c6!",
-                                    tag: "BLOCCO Cb5",
-                                    tagType: "rose",
-                                    children: [
-                                      {
-                                        id: "b-scandi-7nf3",
-                                        situation: "7.Cf3 (Attacca la Donna in e5)",
-                                        myMove: "7...Dc7!",
-                                        summary: "Parcheggi la Donna in c7 al sicuro: zero rischi di forchette su c7 e sviluppo fluido con Af5, e6 e Ad6.",
-                                        sequence: "7.Cf3 Dc7!",
-                                        tag: "DONNA AL SICURO",
-                                        tagType: "emerald",
-                                        children: []
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                id: "b-scandi-5d3",
-                                situation: "5.d3 (Rinuncia a 5.b4 e gioca passivo)",
-                                myMove: "5...c5! (oppure 5...c6!)",
-                                summary: "Il Bianco rinuncia al centro d4 e all'attacco b4: prendi subito spazio con 5...c5! blindando d4, poi sviluppi Af5, Cc6, e5 e Arrocco Lungo (O-O-O).",
-                                sequence: "5.d3 c5!",
-                                tag: "SPAZIO CENTRALE",
-                                tagType: "emerald",
-                                children: [
-                                  {
-                                    id: "b-scandi-5d3-6nf3",
-                                    situation: "6.Cf3 (Sviluppo normale)",
-                                    myMove: "6...Af5! 7.Ae2 Cc6! 8.O-O e5! 9.Ag5 O-O-O!",
-                                    summary: "Piano completo: sviluppi tutti i pezzi leggeri, occupi e5 e arrocchi lungo con dominio totale. ATTENZIONE: se il Bianco inchioda con Ag4, sposta prima il Re in Rb8 prima di spingere ...f5!",
-                                    sequence: "6.Cf3 Af5! -> O-O-O",
-                                    tag: "ATTACCO O-O-O",
-                                    tagType: "blue",
-                                    children: []
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-scandi-4cb5",
-                            situation: "4.Cb5?! (Salto prematuro per minacciare forchetta su c7)",
-                            myMove: "4...c6!",
-                            summary: "REGOLA D'ORO: spingi subito 4...c6! Cacci indietro il Cavallo con guadagno di tempo e blindi per sempre la casa c7.",
-                            sequence: "4.Cb5?! c6!",
-                            tag: "CACCIA CAVALLO",
-                            tagType: "rose",
-                            children: [
-                              {
-                                id: "b-scandi-4cb5-nc3",
-                                situation: "5.Cc3 (Il Cavallo torna indietro)",
-                                myMove: "5...Cf6!",
-                                summary: "Hai guadagnato c6 gratis e il Bianco ha perso 2 tempi: continui con Af5, e6 e sviluppo fluido.",
-                                sequence: "5.Cc3 Cf6!",
-                                tag: "TEMPO GUADAGNATO",
-                                tagType: "emerald",
-                                children: []
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-scandi-4ac4",
-                            situation: "4.Ac4 (Sviluppo immediato dell'Alfiere)",
-                            myMove: "4...Cf6! (MAI 4...e5?!)",
-                            summary: "Sviluppi il Cavallo controllando d5 ed e4. Evita 4...e5?! perché 5.Dh5! crea un doppio attacco pericoloso su f7 ed e5.",
-                            sequence: "4.Ac4 Cf6!",
-                            tag: "SVILUPPO PULITO",
-                            tagType: "emerald",
-                            children: [
-                              {
-                                id: "b-scandi-4ac4-d3",
-                                situation: "5.d3 (o 5.Cf3)",
-                                myMove: "5...c6!",
-                                summary: "Crei la casa di fuga c7 per la Donna e prepari 6...Af5! fuori dalla catena di pedoni.",
-                                sequence: "5.d3 c6!",
-                                tag: "STRUTTURA SOLIDA",
-                                tagType: "blue",
-                                children: []
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-scandi-4b4",
-                            situation: "4.b4 (Gambetto Leonhardt — Attacca subito senza a3)",
-                            myMove: "4...Dxb4!",
-                            summary: "PEDONE GRATIS: il pedone b4 non è difeso! Lo catturi subito e alla mossa dopo metti la Donna al sicuro in b6 o c5.",
-                            sequence: "4.b4 Dxb4!",
-                            tag: "PEDONE GRATIS",
-                            tagType: "rose",
-                            children: [
-                              {
-                                id: "b-scandi-4b4-5nb5",
-                                situation: "5.Cb5 (Minaccia forchetta su c7)",
-                                myMove: "5...Da5! (oppure 5...Dc5!)",
-                                summary: "Torni a controllare c7 con la Donna, poi spingi 6...a6! cacciando il Cavallo e restando con un pedone netto in più.",
-                                sequence: "5.Cb5 Da5! -> 6...a6!",
-                                tag: "DIFESA c7 + VANTAGGIO",
-                                tagType: "emerald",
-                                children: []
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        id: "b-scandi-3d4",
-                        situation: "3.d4?! (Non tocca la Donna)",
-                        myMove: "3...e5! 4.dxe5 Dxd1+ 5.Rxd1 Cc6!",
-                        summary: "LIQUIDAZIONE TOTALE: spacchi con 3...e5, scambi le Donne togliendo l'arrocco al Bianco e recuperi il pedone in e5 con Cc6.",
-                        sequence: "3.d4 e5!",
-                        tag: "REGINE SCAMBIATE",
-                        tagType: "rose",
-                        children: []
-                      },
-                      {
-                        id: "b-scandi-3nf3",
-                        situation: "3.Cf3 (Non attacca la Donna: sviluppo calmo)",
-                        myMove: "3...Ag4! (MAI 3...e5?!)",
-                        summary: "Inchiodi subito il Cavallo f3 al centro. Evita 3...e5?! perché il Bianco può mangiare gratis con 4.Cxe5! (se 4...Dxe5+ 5.De2 cambia le Donne).",
-                        sequence: "3.Cf3 Ag4!",
-                        tag: "INCHIODATURA",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "b-scandi-3nf3-4be2",
-                            situation: "4.Ae2 (Scioglie l'inchiodatura)",
-                            myMove: "4...Cc6!",
-                            summary: "Sviluppi il Cavallo aumentando la pressione centrale su d4 e preparando l'arrocco lungo (O-O-O).",
-                            sequence: "4.Ae2 Cc6!",
-                            tag: "SVILUPPO ATTIVO",
-                            tagType: "emerald",
-                            children: [
-                              {
-                                id: "b-scandi-3nf3-5nc3",
-                                situation: "5.Cc3 (Attacca finalmente la Donna)",
-                                myMove: "5...Da5! (oppure 5...Dh5!)",
-                                summary: "Sposti la Donna mantenendo la pressione sul centro, poi completi con O-O-O e attacco sull'ala di Re.",
-                                sequence: "5.Cc3 Da5!",
-                                tag: "ARROCCO LUNGO",
-                                tagType: "blue",
-                                children: []
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-scandi-3nf3-4nc3",
-                            situation: "4.Cc3 (Attacca subito la Donna)",
-                            myMove: "4...Da5! (oppure 4...Axf3!)",
-                            summary: "Ritiri la Donna in a5 mantenendo inchiodato il Cavallo f3, poi Cc6 e O-O-O con attacco rapido.",
-                            sequence: "4.Cc3 Da5!",
-                            tag: "SISTEMA Da5",
-                            tagType: "emerald",
-                            children: []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    id: "b-scandi-cc3-closed",
-                    situation: "2.Cc3 (Scandinava Chiusa: rifiuta lo scambio)",
-                    myMove: "2...d4! 3.Cce2 e5!",
-                    summary: "Guadagni spazio cacciando il Cavallo. ATTENZIONE: se il Bianco mette l'Alfiere in d3, MAI mangiare pedoni in d4 con la Regina per evitare scacchi di scoperta su h7!",
-                    sequence: "2.Cc3 d4!",
-                    tag: "GUADAGNO SPAZIO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-scandi-cc3-4cf3",
-                        situation: "4.Cf3 (Sviluppo normale)",
-                        myMove: "4...Cc6 5.Cg3 Ac5!",
-                        summary: "Sviluppo solido dei pezzi leggeri e controllo ferreo della casa d4.",
-                        sequence: "4.Cf3",
-                        tag: "SVILUPPO PULITO",
-                        tagType: "emerald",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "b-scandi-2e5",
-                    situation: "2.e5 (Chiusura del centro)",
-                    myMove: "2...c5!",
-                    summary: "Colpisci subito il centro evitando che il Bianco consolidi la catena di pedoni. Come continua?",
-                    sequence: "2.e5 c5!",
-                    tag: "ATTACCO AL CENTRO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-scandi-2e5-3d4",
-                        situation: "3.d4 (Sostiene e5 — Francese di Spinta migliorata)",
-                        myMove: "3...Cc6!",
-                        summary: "Aumenti subito la pressione sul pedone d4 prima di chiudere con e6.",
-                        sequence: "3.d4 Cc6!",
-                        tag: "PRESSIONE d4",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "b-scandi-2e5-4c3",
-                            situation: "4.c3 (Catena di pedoni completa)",
-                            myMove: "4...Af5!",
-                            summary: "REGOLA D'ORO: tiri fuori l'Alfiere camposcuro PRIMA di giocare e6! Ottieni una Francese di Spinta senza l'Alfiere chiuso.",
-                            sequence: "4.c3 Af5!",
-                            tag: "ALFIERE ATTIVO",
-                            tagType: "rose",
-                            children: [
-                              {
-                                id: "b-scandi-2e5-5bd3",
-                                situation: "5.Ad3 (Propone il cambio degli Alfieri)",
-                                myMove: "5...Axd3 6.Dxd3 e6!",
-                                summary: "Scambi il tuo Alfiere con quello buono del Bianco, blindi la catena con e6 e poi attacchi d4/e5 con Db6 o Dc7.",
-                                sequence: "5.Ad3 Axd3",
-                                tag: "STRUTTURA IDEALE",
-                                tagType: "blue",
-                                children: []
-                              },
-                              {
-                                id: "b-scandi-2e5-5nf3",
-                                situation: "5.Cf3 (Sviluppo normale)",
-                                myMove: "5...e6!",
-                                summary: "Chiudi la catena con l'Alfiere già fuori, poi sviluppi Cge7 -> Cf5 e Db6 demolendo il pedone d4.",
-                                sequence: "5.Cf3 e6!",
-                                tag: "DEMOLIZIONE d4",
-                                tagType: "emerald",
-                                children: []
-                              },
-                              {
-                                id: "b-scandi-2e5-5bb5",
-                                situation: "5.Ab5 (Inchioda il Cavallo c6)",
-                                myMove: "5...e6!",
-                                summary: "Non serve spostare il Cavallo: blindi subito d5 con 5...e6! (avendo già tirato fuori l'Alfiere in f5) e prepari 6...a6 per cacciarlo.",
-                                sequence: "5.Ab5 e6!",
-                                tag: "STRUTTURA SOLIDA",
-                                tagType: "emerald",
-                                children: [
-                                  {
-                                    id: "b-scandi-2e5-6nf3",
-                                    situation: "6.Cf3 (o 6.Ce2 — Sviluppo normale)",
-                                    myMove: "6...a6!",
-                                    summary: "Interroghi subito l'Alfiere. Se mangia 7.Axc6+ bxc6 apri la colonna b e rinforzi d5; poi giochi 8...Dc7! per difendere c6.",
-                                    sequence: "6.Cf3 a6!",
-                                    tag: "COPPIA ALFIERI",
-                                    tagType: "blue",
-                                    children: []
-                                  },
-                                  {
-                                    id: "b-scandi-2e5-6dxc5",
-                                    situation: "6.dxc5 (Mangia il pedone in c5)",
-                                    myMove: "6...Axc5!",
-                                    summary: "Sviluppi subito l'Alfiere camposcuro recuperando il pedone con pieno controllo del centro e sviluppo fulmineo.",
-                                    sequence: "6.dxc5 Axc5!",
-                                    tag: "SVILUPPO ATTIVO",
-                                    tagType: "emerald",
-                                    children: []
-                                  }
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-scandi-2e5-4nf3",
-                            situation: "4.Cf3 (Sviluppo senza c3)",
-                            myMove: "4...Ag4!",
-                            summary: "Inchiodi subito il Cavallo difensore di d4 e fai crollare il centro del Bianco.",
-                            sequence: "4.Cf3 Ag4!",
-                            tag: "INCHIODATURA",
-                            tagType: "emerald",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "b-scandi-2e5-3f4",
-                        situation: "3.f4 (Spinta aggressiva all'ala di Re)",
-                        myMove: "3...Cc6! 4.Cf3 Ag4!",
-                        summary: "Sviluppi il Cavallo e inchiodi f3 preparando e6 e Cge7 con pieno controllo del centro.",
-                        sequence: "3.f4 Cc6!",
-                        tag: "CONTROGIOCO",
-                        tagType: "blue",
-                        children: []
-                      },
-                      {
-                        id: "b-scandi-2e5-3nf3",
-                        situation: "3.Cf3 (Sviluppo calmo)",
-                        myMove: "3...Cc6!",
-                        summary: "Controlli e5 e d4, pronto a rispondere a 4.d4 con 4...Ag4! o 4...Af5!.",
-                        sequence: "3.Cf3 Cc6!",
-                        tag: "SVILUPPO RAPIDO",
-                        tagType: "emerald",
-                        children: []
-                      },
-                      {
-                        id: "b-scandi-2e5-3bb5",
-                        situation: "3.Ab5+ (Scacco immediato sull'ala di Donna)",
-                        myMove: "3...Cc6! (MAI 3...Ad7?!)",
-                        summary: "Copri lo scacco sviluppando il Cavallo e attaccando e5! Non giocare 3...Ad7?! perché dopo il cambio ti chiudi l'altro Alfiere e subisci 6.e6!.",
-                        sequence: "3.Ab5+ Cc6!",
-                        tag: "SVILUPPO E PRESSIONE",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "b-scandi-2e5-4nf3",
-                            situation: "4.Cf3 (o 4.d4 — Difende e5)",
-                            myMove: "4...Ag4! (oppure 4...Db6!)",
-                            summary: "Inchiodi il Cavallo f3 oppure attacchi subito l'Alfiere in b5 con 4...Db6! mantenendo il pedone d5 blindato.",
-                            sequence: "4.Cf3 Ag4!",
-                            tag: "INCHIODATURA",
-                            tagType: "blue",
-                            children: []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    id: "b-scandi-2d3",
-                    situation: "2.d3?! (Mossa passiva)",
-                    myMove: "2...dxe4! 3.dxe4 Dxd1+ 4.Rxd1 Cc6 5.c3 O-O-O+!",
-                    summary: "Scambi le Donne, togli l'arrocco al Bianco e fai Arrocco Lungo con SCACCO di Torre lungo la colonna d.",
-                    sequence: "2.d3 dxe4",
-                    tag: "ARROCCO CON SCACCO",
-                    tagType: "rose",
-                    children: []
-                  },
-                  {
-                    id: "b-scandi-2nc3",
-                    situation: "2.Cc3 (Scandinava Chiusa — Difende e4)",
-                    myMove: "2...d4!",
-                    summary: "Spinti subito in d4 cacciando il Cavallo bianco con guadagno di tempo e conquistando spazio centrale.",
-                    sequence: "2.Cc3 d4!",
-                    tag: "SPAZIO E TEMPO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-scandi-2nc3-3ce2",
-                        situation: "3.Cce2 (o 3.Cb1 — Il Cavallo scappa)",
-                        myMove: "3...e5!",
-                        summary: "Blindi il centro con 3...e5!, poi sviluppi Cc6, Ae6 e Cf6 con enorme vantaggio di spazio.",
-                        sequence: "3.Cce2 e5!",
-                        tag: "CENTRO BLINDATO",
-                        tagType: "blue",
-                        children: []
-                      },
-                      {
-                        id: "b-scandi-2nc3-3cd5",
-                        situation: "3.Cd5 (Il Cavallo salta in avanti invece di ritirarsi)",
-                        myMove: "3...e6! 4.Cf4 e5!",
-                        summary: "Cacci subito il Cavallo guadagnando due tempi consecutivi e conquistando il centro con ...e5! e ...Cf6!.",
-                        sequence: "3.Cd5 e6! 4.Cf4 e5!",
-                        tag: "DOPPIO GUADAGNO TEMPO",
-                        tagType: "rose",
-                        children: []
-                      }
-                    ]
-                  }
-                ]
-              },
-
-              // --- DIFESA DUE CAVALLI ---
-              {
-                id: "b-2k-root",
-                situation: "Alternativa: Difesa Due Cavalli (1...e5 2.Cf3 Cc6)",
-                myMove: "1...e5! 2.Cf3 Cc6!",
-                summary: "Impostazione classica per contrattaccare al centro.",
-                sequence: "1...e5 2.Cf3 Cc6",
-                tag: "DUE CAVALLI",
-                tagType: "blue",
-                children: [
-                  {
-                    id: "b-2k-italian",
-                    situation: "3.Ac4 (Partita Italiana)",
-                    myMove: "3...Cf6!",
-                    summary: "Contrattacchi subito sul pedone e4 anziché subire passivamente.",
-                    sequence: "3.Ac4 Cf6",
-                    tag: "CONTRATTACCO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-2k-cg5",
-                        situation: "4.Cg5 (Attacco Fegatello su f7)",
-                        myMove: "4...d5! 5.exd5 Ca5!",
-                        summary: "DISTRUZIONE DEL FEGATELLO: spacchi al centro con 4...d5 e cacci l'Alfiere con 5...Ca5! Come reagisce l'Alfiere?",
-                        sequence: "4.Cg5 d5!",
-                        tag: "ANTI-FEGATELLO",
-                        tagType: "rose",
-                        children: [
-                          {
-                            id: "b-2k-cg5-ab5",
-                            situation: "6.Ab5+ (Scacco d'Alfiere)",
-                            myMove: "6...c6! 7.dxc6 bxc6 8.Ae2 h6! 9.Cf3 e4!",
-                            summary: "Interponi c6, cacci il Cavallo con h6 e spingi e4 guadagnando tempi enormi.",
-                            sequence: "6.Ab5+ c6",
-                            tag: "SPINTA CENTRALE",
-                            tagType: "emerald",
-                            children: [
-                              {
-                                id: "b-2k-cg5-10ce5",
-                                situation: "10.Ce5",
-                                myMove: "10...Dd4!",
-                                summary: "Doppio attacco letale sul Cavallo e su g2 con dominio del centro.",
-                                sequence: "10.Ce5",
-                                tag: "FORCHETTA DONNA",
-                                tagType: "emerald",
-                                children: []
-                              },
-                              {
-                                id: "b-2k-cg5-10cg1",
-                                situation: "10.Cg1 (Ritirata a casa base)",
-                                myMove: "10...Ac5! poi d6 e Arrocco",
-                                summary: "Il Bianco ha perso tutti i tempi: sviluppi Ac5 puntando dritto su f2.",
-                                sequence: "10.Cg1",
-                                tag: "SVILUPPO SCHIACCIANTE",
-                                tagType: "emerald",
-                                children: []
-                              },
-                              {
-                                id: "b-2k-cg5-10de2",
-                                situation: "10.De2 (Inchiodatura)",
-                                myMove: "10...Ae6! poi 11...Dd4!",
-                                summary: "Difendi con l'Alfiere e al turno dopo centri la Donna in d4 a valanga.",
-                                sequence: "10.De2",
-                                tag: "ATTACCO A VALANGA",
-                                tagType: "blue",
-                                children: []
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        id: "b-2k-cc3",
-                        situation: "4.Cc3 (Quattro Cavalli)",
-                        myMove: "4...Cxe4! FORK TRICK (5.Cxe4 d5!)",
-                        summary: "Mangi in e4: su 5.Cxe4 fai la forchetta di pedone 5...d5! recuperando il pezzo con centro netto.",
-                        sequence: "4.Cc3",
-                        tag: "FORK TRICK LETALE",
-                        tagType: "rose",
-                        children: []
-                      },
-                      {
-                        id: "b-2k-d3",
-                        situation: "4.d3 (Giuoco Pianissimo)",
-                        myMove: "4...Ac5 5...d6 e FAI SEMPRE a6! (MAI a5!)",
-                        summary: "REGOLA D'ORO: gioca a6 per creare la casa di fuga a7 per l'Alfiere, poi inchiodi con Ag4.",
-                        sequence: "4.d3",
-                        tag: "REGOLA a6",
-                        tagType: "amber",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "b-2k-ruy",
-                    situation: "3.Ab5 (Partita Spagnola / Ruy Lopez)",
-                    myMove: "3...a6!",
-                    summary: "Interroghi subito l'Alfiere.",
-                    sequence: "3.Ab5 a6",
-                    tag: "SPAGNOLA",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-2k-ruy-axc6",
-                        situation: "4.Axc6 (Variante di Cambio)",
-                        myMove: "4...dxc6! (MANGIA COL PEDONE D! MAI COL B!)",
-                        summary: "Mangi col pedone d per liberare la Donna. Se gioca 5.Cxe5? lo punisci con 5...Dd4! vincendo il pezzo.",
-                        sequence: "4.Axc6",
-                        tag: "FORCHETTA Dd4",
-                        tagType: "rose",
-                        children: []
-                      },
-                      {
-                        id: "b-2k-ruy-aa4",
-                        situation: "4.Aa4 (Ritirata)",
-                        myMove: "4...Cf6 5.O-O Ae7",
-                        summary: "Sviluppo rapido dei pezzi leggeri e preparazione all'arrocco.",
-                        sequence: "4.Aa4",
-                        tag: "SVILUPPO",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  }
-                ]
-              },
-
-              // --- DEVIATE BIANCO ALLA MOSSA 2 ---
-              {
-                id: "b-dev2-dh5",
-                situation: "2.Dh5 (Tentativo di Barbiere)",
-                myMove: "2...Cc6! 3.Ac4 g6! 4.Df3 Cf6!",
-                summary: "Difendi il pedone con 2...Cc6, cacci la Donna con 3...g6 e blocchi la minaccia matto con 4...Cf6. Il Bianco ha mosso la Donna 3 volte a vuoto.",
-                sequence: "2.Dh5",
-                tag: "ANTI-BARBIERE",
-                tagType: "emerald",
-                children: []
-              },
-              {
-                id: "b-dev2-d4",
-                situation: "2.d4 (Partita di Centro)",
-                myMove: "2...exd4!",
-                summary: "Mangi subito il pedone centrale. Come continua il Bianco?",
-                sequence: "2.d4 exd4",
-                tag: "SCAMBIO CENTRALE",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "b-dev2-d4-dxd4",
-                    situation: "3.Dxd4 (Riprende di Donna)",
-                    myMove: "3...Cc6! poi Cf6 e d5",
-                    summary: "Cacci la Donna guadagnando un tempo fondamentale di sviluppo.",
-                    sequence: "3.Dxd4",
-                    tag: "TEMPO DI SVILUPPO",
-                    tagType: "emerald",
-                    children: []
-                  },
-                  {
-                    id: "b-dev2-d4-cf3",
-                    situation: "3.Cf3 (Scozzese a sorpresa)",
-                    myMove: "3...Cc6! (MAI spingere c5!)",
-                    summary: "Sviluppi il pezzo. Se gioca 4.Ac4 rispondi 4...Cf6 tornando nei tuoi Due Cavalli.",
-                    sequence: "3.Cf3",
-                    tag: "MAI c5!",
-                    tagType: "rose",
-                    children: []
-                  }
-                ]
-              }
-            ]
-          },
-
-          // ==================== CONTRO 1.d4 ====================
-          {
-            id: "b-vs-d4",
-            situation: "Il Bianco apre con 1.d4",
-            myMove: "Scegli il tuo piano contro 1.d4:",
-            summary: "Controgambetto Albin (scambi forzati e gioco aperto) o distruzione del London System:",
-            sequence: "1.d4",
-            tag: "CONTRO 1.d4",
-            tagType: "amber",
-            children: [
-              {
-                id: "b-albin-root",
-                situation: "Consigliato: Controgambetto Albin (1...d5 2.c4 e5!)",
-                myMove: "1...d5!",
-                summary: "Prendi posizione al centro. Se gioca 2.c4 spacchi subito con 2...e5!",
-                sequence: "1.d4 d5",
-                tag: "ALBIN SETUP",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "b-albin-c4",
-                    situation: "2.c4 (Gambetto di Donna)",
-                    myMove: "2...e5!",
-                    summary: "Spacchi subito il centro con il Controgambetto Albin. Come reagisce il Bianco al turno 3?",
-                    sequence: "2.c4 e5!",
-                    tag: "CONTROGAMBETTO ALBIN",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-albin-3dxe5",
-                        situation: "3.dxe5 (Il Bianco accetta il gambetto)",
-                        myMove: "3...d4!",
-                        summary: "Conficchi la spina centrale in d4 togliendo la casa naturale c3 al Cavallo bianco. Come prosegue?",
-                        sequence: "3.dxe5 d4!",
-                        tag: "SPINA d4",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "b-albin-4cf3",
-                            situation: "4.Cf3 (Sviluppo normale)",
-                            myMove: "4...Cc6!",
-                            summary: "Sviluppi il Cavallo e difendi la spina d4. Come continua il Bianco?",
-                            sequence: "4.Cf3 Cc6",
-                            tag: "DIFESA d4",
-                            tagType: "emerald",
-                            children: [
-                              {
-                                id: "b-albin-5g3",
-                                situation: "5.g3 (Fianchetto Alfiere)",
-                                myMove: "5...Ag4!",
-                                summary: "Inchiodi il Cavallo in f3 e prepari la batteria con Dd7 e arrocco lungo.",
-                                sequence: "5.g3 Ag4",
-                                tag: "INCHIODATURA",
-                                tagType: "emerald",
-                                children: [
-                                  {
-                                    id: "b-albin-6ag2",
-                                    situation: "6.Ag2",
-                                    myMove: "6...Dd7! poi O-O-O",
-                                    summary: "Batteria completata: prepari l'arrocco lungo e il cambio dell'Alfiere con Ah3.",
-                                    sequence: "6.Ag2",
-                                    tag: "BATTERIA Dd7",
-                                    tagType: "blue",
-                                    children: []
-                                  }
-                                ]
-                              },
-                              {
-                                id: "b-albin-5ag5",
-                                situation: "5.Ag5 (Inchiodatura aggressiva dell'Alfiere)",
-                                myMove: "5...f6!",
-                                summary: "Cacci subito l'Alfiere distruggendo l'inchiodatura.",
-                                sequence: "5.Ag5 f6!",
-                                tag: "CACCIA ALFIERE",
-                                tagType: "rose",
-                                children: [
-                                  {
-                                    id: "b-albin-6exf6",
-                                    situation: "6.exf6 (Scambio)",
-                                    myMove: "6...gxf6! 7.Ah4 Ag4!",
-                                    summary: "Isoli l'Alfiere bianco a bordo tavola e attacchi il Cavallo f3. ATTENZIONE: non riprendere mai col pedone b su c6 se la Donna bianca su f3 minaccia la forchetta sulla Torre in a8!",
-                                    sequence: "6.exf6 gxf6!",
-                                    tag: "ATTACCO AL RE",
-                                    tagType: "rose",
-                                    children: []
-                                  }
-                                ]
-                              },
-                              {
-                                id: "b-albin-5a3",
-                                situation: "5.a3 (Prevenzione lenta)",
-                                myMove: "5...Ag4!",
-                                summary: "Sviluppo rapido con inchiodatura immediata su f3.",
-                                sequence: "5.a3",
-                                tag: "SVILUPPO",
-                                tagType: "emerald",
-                                children: []
-                              },
-                              {
-                                id: "b-albin-5cbd2",
-                                situation: "5.Cbd2 (Pressione su d4)",
-                                myMove: "5...De7!",
-                                summary: "Punti a recuperare il pedone in e5 con gioco attivo.",
-                                sequence: "5.Cbd2",
-                                tag: "RECUPERO e5",
-                                tagType: "emerald",
-                                children: []
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-albin-4e3",
-                            situation: "4.e3? (Attacco prematuro alla spina d4)",
-                            myMove: "4...Ab4+! 5.Ad2 dxe3!",
-                            summary: "TRAPPOLA DI LASKER: se gioca 6.Axb4?? vinci la partita con 6...exf2+! 7.Re2 fxg1=C+! (promozione a Cavallo con scacco!) e poi Ag4+ vince la Regina bianca al turno 8.",
-                            sequence: "4.e3 Ab4+",
-                            tag: "TRAPPOLA DI LASKER",
-                            tagType: "rose",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "b-albin-3cxd5",
-                        situation: "3.cxd5 (Il Bianco rifiuta e5 e mangia in d5)",
-                        myMove: "3...Dxd5!",
-                        summary: "Riprendi di Donna centralizzando il pezzo e aprendo subito la colonna d. Come sviluppa il Bianco?",
-                        sequence: "3.cxd5 Dxd5!",
-                        tag: "DONNA CENTRALIZZATA",
-                        tagType: "blue",
-                        children: [
-                          {
-                            id: "b-albin-3cxd5-4nc3",
-                            situation: "4.Cc3 (Attacca subito la Donna)",
-                            myMove: "4...Ab4!",
-                            summary: "REGOLA D'ORO: non ritirare subito la Donna! Inchiodi il Cavallo al Re così il Bianco non può spingere d5 con tempo.",
-                            sequence: "4.Cc3 Ab4!",
-                            tag: "INCHIODATURA Ab4",
-                            tagType: "rose",
-                            children: []
-                          },
-                          {
-                            id: "b-albin-3cxd5-4e3",
-                            situation: "4.e3 (Sviluppo calmo)",
-                            myMove: "4...Cc6!",
-                            summary: "Sviluppi il Cavallo aumentando la pressione su d4. Se al turno dopo fa 5.Cc3 giochi 5...Ab4! (MAI 5...Dd6? che subisce 6.d5!).",
-                            sequence: "4.e3 Cc6!",
-                            tag: "SVILUPPO ATTIVO",
-                            tagType: "emerald",
-                            children: []
-                          },
-                          {
-                            id: "b-albin-3cxd5-4nf3",
-                            situation: "4.Cf3 (Attacca il pedone e5)",
-                            myMove: "4...exd4! (oppure 4...Cc6)",
-                            summary: "Scambi i pedoni centrali aprendo completamente la posizione per i tuoi pezzi leggeri e l'arrocco lungo.",
-                            sequence: "4.Cf3 exd4!",
-                            tag: "CENTRO APERTO",
-                            tagType: "emerald",
-                            children: []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    id: "b-albin-london",
-                    situation: "2.Af4 (London System)",
-                    myMove: "2...c5!",
-                    summary: "Spacchi subito la base del London: colpisci il pedone d4 prima che costruisca la piramide.",
-                    sequence: "2.Af4 c5!",
-                    tag: "ANTI-LONDON",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-london-3nf3",
-                        situation: "3.Cf3 (Sviluppo normale del Bianco)",
-                        myMove: "3...cxd4!",
-                        summary: "Mangi subito in d4 aprendo il centro. Come riprende il Bianco?",
-                        sequence: "3.Cf3 cxd4!",
-                        tag: "APERTURA CENTRO",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "b-london-4nxd4",
-                            situation: "4.Cxd4 (Riprende di Cavallo)",
-                            myMove: "4...Cd7! (MAI 4...e5 subito che perde il pedone!)",
-                            summary: "REGOLA D'ORO: prima proteggi e5 con 4...Cd7! (il Cavallo non può essere scambiato). Ora minacci davvero la forchetta 5...e5! su Alfiere f4 e Cavallo d4.",
-                            sequence: "4.Cxd4 Cd7!",
-                            tag: "PREPARA FORCHETTA",
-                            tagType: "rose",
-                            children: [
-                              {
-                                id: "b-london-5e3",
-                                situation: "5.e3 o 5.Cc3 (Il Bianco ignora la minaccia)",
-                                myMove: "5...e5!",
-                                summary: "SCATTA LA FORCHETTA REALE: e5 è difeso da Cd7! Se 6.Axe5 Cxe5 vinci l'Alfiere; se 6.Ag3 exd4 vinci il Cavallo.",
-                                sequence: "5.e3 e5!",
-                                tag: "PEZZO VINTO",
-                                tagType: "rose",
-                                children: []
-                              },
-                              {
-                                id: "b-london-5nf3",
-                                situation: "5.Cf3 (Il Bianco ritira il Cavallo per evitare la forchetta)",
-                                myMove: "5...e5! 6.Ag3 Cgf6",
-                                summary: "Conquisti tutto il centro gratis con 5...e5! e sviluppi i pezzi con netto vantaggio di spazio.",
-                                sequence: "5.Cf3 e5!",
-                                tag: "CENTRO DOMINANTE",
-                                tagType: "emerald",
-                                children: []
-                              }
-                            ]
-                          },
-                          {
-                            id: "b-london-4qxd4",
-                            situation: "4.Dxd4 (Riprende di Donna)",
-                            myMove: "4...Cc6!",
-                            summary: "Sviluppi il Cavallo cacciando subito la Donna bianca con guadagno di tempo.",
-                            sequence: "4.Dxd4 Cc6!",
-                            tag: "GUADAGNO TEMPO",
-                            tagType: "emerald",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "b-london-3e3",
-                        situation: "3.e3 (Costruzione classica)",
-                        myMove: "3...cxd4! 4.exd4 Db6!",
-                        summary: "Scambi in d4 e piazzi la Donna in b6 creando doppio attacco su b2 e d4.",
-                        sequence: "3.e3 cxd4",
-                        tag: "ATTACCO b2",
-                        tagType: "emerald",
-                        children: []
-                      },
-                      {
-                        id: "b-london-3dxc5",
-                        situation: "3.dxc5 (Il Bianco accetta il gambetto in c5)",
-                        myMove: "3...Cc6! (oppure 3...e6!)",
-                        summary: "Attacchi subito l'Alfiere in f4 minacciando 4...e5! e recuperi il pedone c5 con ...e6 e ...Axc5 con pieno dominio centrale.",
-                        sequence: "3.dxc5 Cc6!",
-                        tag: "CONTROATTACCO e5",
-                        tagType: "emerald",
-                        children: [
-                          {
-                            id: "b-london-3dxc5-4nf3",
-                            situation: "4.Cf3 (o 4.e3 — Il Bianco difende il centro)",
-                            myMove: "4...e6! poi 5...Axc5!",
-                            summary: "Recuperi il pedone sviluppando l'Alfiere su una diagonale d'attacco, poi giochi Cf6, O-O e rompi il centro con ...e5!.",
-                            sequence: "4.Cf3 e6! 5...Axc5!",
-                            tag: "CENTRO DOMINANTE",
-                            tagType: "blue",
-                            children: []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    id: "b-d4-passive-c3e3",
-                    situation: "2.c3 o 2.e3 (Gioco passivo: Colle / Muro di Pietra)",
-                    myMove: "2...Cc6!",
-                    summary: "Prepari subito la rottura centrale 3...e5! per impedire al Bianco di chiudere la posizione.",
-                    sequence: "2.c3/e3 Cc6!",
-                    tag: "PREPARAZIONE e5",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-d4-passive-3e5",
-                        situation: "3.e3 o 3.Cf3 (Il Bianco continua calmo)",
-                        myMove: "3...e5!",
-                        summary: "Spacchi subito il centro come nell'Albin. Se mangia 4.dxe5 riprendi 4...Cxe5 con gioco completamente aperto.",
-                        sequence: "3.e3 e5!",
-                        tag: "ROTTURA CENTRALE",
-                        tagType: "rose",
-                        children: [
-                          {
-                            id: "b-d4-passive-5f4",
-                            situation: "4.dxe5 Cxe5 5.f4 (Muro di Pietra / Stonewall)",
-                            myMove: "5...Cc6! (poi Cf6, Ac5 e Cg4)",
-                            summary: "Spingendo f4 ed e3 il Bianco lascia enormi buchi su e4 e sulla diagonale a7-g1: punti Ac5 e Cg4 direttamente sul pedone debole e3.",
-                            sequence: "5.f4 Cc6!",
-                            tag: "BERSAGLIO e3",
-                            tagType: "blue",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "b-d4-colle-fianchetto",
-                        situation: "3.Cd2 Cf6 4.Cgf3 Ag4 5.g3 (Colle con fianchetto)",
-                        myMove: "5...e5! 6.dxe5 Cxe5!",
-                        summary: "Spacchi subito il centro con 5...e5! e centralizzi il Cavallo. Dopo ...Cxf3+, c6, Ac5 e O-O hai gioco aperto e attacco diretto su f2.",
-                        sequence: "5.g3 e5! 6.dxe5 Cxe5!",
-                        tag: "ROTTURA CENTRALE",
-                        tagType: "emerald",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "b-d4-2nf3",
-                    situation: "2.Cf3 (Sviluppo calmo senza c4 né Af4)",
-                    myMove: "2...c5!",
-                    summary: "Colpisci subito il centro d4 esattamente come nell'Albin/Anti-London, impedendo al Bianco di chiudere la posizione.",
-                    sequence: "2.Cf3 c5!",
-                    tag: "ATTACCO AL CENTRO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-d4-2nf3-3e3",
-                        situation: "3.e3 (o 3.c3 — Difende d4 con i pedoni)",
-                        myMove: "3...cxd4! 4.exd4 Cc6!",
-                        summary: "Apri il centro, sviluppi Cc6, poi inchiodi con Ag4, scambi in f3 e rompi con ...e5!.",
-                        sequence: "3.e3 cxd4! 4.exd4 Cc6!",
-                        tag: "ROTTURA e5",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  },
-                  {
-                    id: "b-d4-2nc3",
-                    situation: "2.Cc3 (Attacco Veresov / Chigorin — Blocca c5?)",
-                    myMove: "2...c5!",
-                    summary: "Spacchi subito il centro d4 ignorando il Cavallo. Se spinge 3.dxc5 giochi 3...e5! e 4...d4! conquistando tutto lo spazio centrale.",
-                    sequence: "2.Cc3 c5!",
-                    tag: "ATTACCO CENTRALE",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-d4-2nc3-3dxc5",
-                        situation: "3.dxc5 (o 3.a3 — Il Bianco accetta o gioca lento)",
-                        myMove: "3...Cf6! poi 4...e5! e 5...d4!",
-                        summary: "Recuperi il pedone con Axc5 e sfondi al centro con e5 e d4.",
-                        sequence: "3.dxc5 Cf6! -> e5/d4",
-                        tag: "CENTRO DOMINANTE",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-
-          // ==================== CONTRO APERTURE LATERALI (FLANK) ====================
-          {
-            id: "b-vs-flank",
-            situation: "Il Bianco gioca aperture laterali (1.c4, 1.f4, 1.b3, 1.g3)",
-            myMove: "Prendi immediatamente il centro pieno:",
-            summary: "L'avversario vuole una partita lenta: occupa il centro con e5 e d5:",
-            sequence: "Aperture Flanco",
-            tag: "FLANK",
-            tagType: "blue",
-            children: [
-              {
-                id: "b-flank-c4",
-                situation: "1.c4 (Apertura Inglese)",
-                myMove: "1...e5! 2.Cc3 Cf6 3.g3 d5!",
-                summary: "Spacchi subito con 3...d5 eliminando i pedoni centrali con gioco aperto.",
-                sequence: "1.c4 e5",
-                tag: "SPACCA L'INGLESE",
-                tagType: "emerald",
-                children: []
-              },
-              {
-                id: "b-flank-f4",
-                situation: "1.f4 (Apertura Bird)",
-                myMove: "1...e5! 2.fxe5 d6! 3.exd6 Axd6!",
-                summary: "GAMBETTO FROM: sacrifichi un pedone per aprire la diagonale h4-e1 e puntare al matto rapido.",
-                sequence: "1.f4 e5",
-                tag: "GAMBETTO FROM",
-                tagType: "rose",
-                children: []
-              },
-              {
-                id: "b-flank-g3",
-                situation: "1.g3 (Fianchetto di Re / Attacco Est-Indiano)",
-                myMove: "1...d5! 2.Ag2 e5!",
-                summary: "Occupi subito tutto il centro con i due pedoni d5 ed e5.",
-                sequence: "1.g3 d5 2.Ag2 e5",
-                tag: "CENTRO PIENO",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "b-flank-g3-3nf3",
-                    situation: "3.Cf3 (Attacca il pedone e5)",
-                    myMove: "3...Cc6!",
-                    summary: "Sviluppi il pezzo e difendi saldamente il centro.",
-                    sequence: "3.Cf3 Cc6",
-                    tag: "DIFESA e5",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-flank-g3-4d4",
-                        situation: "4.d4 (Sfida centrale)",
-                        myMove: "4...e4! (MAI 4...Ag4? che perde il pedone!)",
-                        summary: "REGOLA FONDAMENTALE: spingi 4...e4! Cacci il Cavallo f3 e acciechi l'Alfiere in g2, soffocando la posizione del Bianco.",
-                        sequence: "4.d4 e4!",
-                        tag: "SPINTA e4",
-                        tagType: "rose",
-                        children: [
-                          {
-                            id: "b-flank-g3-5ne5",
-                            situation: "5.Ce5 (Il Cavallo si accentra)",
-                            myMove: "5...Cxe5 6.dxe5 c6!",
-                            summary: "Scambi i Cavalli e puntelli il pedone d5 con c6. Posizione blindata e Alfiere in g2 completamente spento.",
-                            sequence: "5.Ce5 Cxe5",
-                            tag: "BLOCCO TOTALE",
-                            tagType: "blue",
-                            children: []
-                          }
-                        ]
-                      },
-                      {
-                        id: "b-flank-g3-4o-o",
-                        situation: "4.O-O (Arrocco calmo)",
-                        myMove: "4...Ac5! poi Cf6 e O-O",
-                        summary: "Sviluppo rapido dei pezzi leggeri e arrocco con netto vantaggio di spazio centrale.",
-                        sequence: "4.O-O Ac5",
-                        tag: "SVILUPPO FLUIDO",
-                        tagType: "emerald",
-                        children: []
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                id: "b-reti-root",
-                situation: "1.Cf3 (Apertura Réti)",
-                myMove: "1...d5! 2.d4 c5!",
-                summary: "Occupi il centro e colpisci subito d4 con c5.",
-                sequence: "1.Cf3 d5 2.d4 c5!",
-                tag: "ANTI-RETI",
-                tagType: "emerald",
-                children: [
-                  {
-                    id: "b-reti-3c3",
-                    situation: "3.c3 (o 3.e3 — Il Bianco difende d4)",
-                    myMove: "3...cxd4!",
-                    summary: "Spacchi subito il centro in d4. Sia che riprenda 4.cxd4 sia 4.Cxd4, la risposta non cambia!",
-                    sequence: "3.c3 cxd4!",
-                    tag: "CENTRO APERTO",
-                    tagType: "emerald",
-                    children: [
-                      {
-                        id: "b-reti-4nxd4",
-                        situation: "4.Cxd4 (o 4.cxd4 — Riprende il pedone)",
-                        myMove: "4...Cf6! poi 5...Cc6!",
-                        summary: "Sviluppi Cf6 e poi Cc6! minacciando subito 6...e5! che caccia il Cavallo bianco e ti regala il dominio totale del centro.",
-                        sequence: "4.Cxd4 Cf6! -> 5...Cc6!",
-                        tag: "MINACCIA ...e5!",
-                        tagType: "blue",
-                        children: []
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
+    {
+      id: "b-scandi-root",
+      situation: "1.e4 d5! (Difesa Scandinava)",
+      myMove: "1...d5!",
+      summary: "Colpisci subito il centro al primo turno costringendo il Bianco a reagire.",
+      sequence: "1.e4 d5!",
+      tag: "DIFESA SCANDINAVA",
+      tagType: "emerald",
+      children: [
+        {
+          id: "b-scandi-2exd5",
+          situation: "2.exd5 (Linea principale)",
+          myMove: "2...Dxd5!",
+          summary: "Riprendi subito di Donna centralizzandola.",
+          sequence: "2.exd5 Dxd5!",
+          tag: "RIPRESA IMMEDIATA",
+          tagType: "emerald",
+          children: [
+            {
+              id: "b-scandi-3cc3",
+              situation: "3.Cc3 (Attacca la Donna)",
+              myMove: "3...Da5!",
+              summary: "Sposti la Donna sul lato attivo inchiodando il Cavallo c3 se il Re resta al centro.",
+              sequence: "3.Cc3 Da5!",
+              tag: "DONNA IN a5",
+              tagType: "emerald",
+              children: [
+                {
+                  id: "b-scandi-4d4",
+                  situation: "4.d4 (Prende il centro)",
+                  myMove: "4...c6!",
+                  summary: "REGOLA D'ORO: apri subito la fuga Dc7 alla Donna prima di sviluppare Cf6!",
+                  sequence: "4.d4 c6!",
+                  tag: "SCUDO 4...c6!",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "b-scandi-5cf3",
+                      situation: "5.Cf3 (Sviluppo normale)",
+                      myMove: "5...Cf6!",
+                      summary: "Ora sviluppi il Cavallo in piena sicurezza.",
+                      sequence: "5.Cf3 Cf6!",
+                      tag: "SVILUPPO SICURO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "b-scandi-6bc4",
+                          situation: "6.Ac4 (o 6.Ad3)",
+                          myMove: "6...Af5! 7.Ad2! e6! 8.De2! Ab4! 9.O-O-O! Cbd7!",
+                          summary: "Sviluppi l'Alfiere fuori dalla catena, blindi e6, punti sul Cavallo c3 e arrocchi lungo con posizione solidissima!",
+                          sequence: "6.Ac4 Af5! 7.Ad2! e6! 8.De2! Ab4! 9.O-O-O! Cbd7!",
+                          tag: "SETUP PERFETTO",
+                          tagType: "blue",
+                          children: []
+                        }
+                      ]
+                    },
+                    {
+                      id: "b-scandi-5bd2",
+                      situation: "5.Ad2 (Prepara scoperte con il Cavallo)",
+                      myMove: "5...Dc7! 6.Cf3! Cf6! 7.Ac4! Af5! 8.De2! e6! 9.O-O-O! Cbd7!",
+                      summary: "Togli subito la Donna dalla diagonale dell'Alfiere d2 e completi lo sviluppo con O-O-O.",
+                      sequence: "5.Ad2 Dc7! 6.Cf3! Cf6! 7.Ac4! Af5! 8.De2! e6! 9.O-O-O! Cbd7!",
+                      tag: "DONNA AL SICURO",
+                      tagType: "emerald",
+                      children: []
+                    }
+                  ]
+                },
+                {
+                  id: "b-scandi-4a3",
+                  situation: "4.a3 (Prepara 5.b4 per cacciare la Donna)",
+                  myMove: "4...Cf6!",
+                  summary: "Sviluppi subito preparando una via di fuga attiva per la Donna.",
+                  sequence: "4.a3 Cf6!",
+                  tag: "SVILUPPO ATTIVO",
+                  tagType: "blue",
+                  children: [
+                    {
+                      id: "b-scandi-5b4",
+                      situation: "5.b4 (Attacca la Donna)",
+                      myMove: "5...Db6! 6.Cf3! Ag4! 7.Ae2! e6! 8.O-O! Cbd7! 9.d4! c6!",
+                      summary: "Metti la Donna in b6 puntando su f2 e d4, inchiodi con Ag4 e completi lo sviluppo.",
+                      sequence: "5.b4 Db6! 6.Cf3! Ag4! 7.Ae2! e6! 8.O-O! Cbd7! 9.d4! c6!",
+                      tag: "CONTROGIOCO b6",
+                      tagType: "emerald",
+                      children: []
+                    },
+                    {
+                      id: "b-scandi-5d3",
+                      situation: "5.d3 (Rinuncia a b4 e gioca passivo)",
+                      myMove: "5...c5! 6.Cf3! Af5! 7.Ae2! Cc6! 8.O-O! e5! 9.Ag5! O-O-O!",
+                      summary: "Blocchi d4 con 5...c5!, occupi il centro con e5 e arrocchi lungo con dominio totale (sposta Rb8 prima di ...f5!).",
+                      sequence: "5.d3 c5! 6.Cf3! Af5! 7.Ae2! Cc6! 8.O-O! e5! 9.Ag5! O-O-O!",
+                      tag: "DOMINIO CENTRALE",
+                      tagType: "emerald",
+                      children: []
+                    }
+                  ]
+                },
+                {
+                  id: "b-scandi-4b4",
+                  situation: "4.b4 (Gambetto Leonhardt — Pedone indifeso)",
+                  myMove: "4...Dxb4! 5.Cb5! Da5! 6.Cf3! a6! 7.Cc3! Cf6! 8.Tb1! Cc6! 9.Ae2! e5!",
+                  summary: "Mangi il pedone gratis, difendi c7 tornando in a5, cacci il Cavallo con a6 e resti con un pedone pulito in più!",
+                  sequence: "4.b4 Dxb4! 5.Cb5! Da5! 6.Cf3! a6! 7.Cc3! Cf6! 8.Tb1! Cc6! 9.Ae2! e5!",
+                  tag: "PEDONE GRATIS",
+                  tagType: "rose",
+                  children: []
+                },
+                {
+                  id: "b-scandi-4nb5",
+                  situation: "4.Cb5 (Minaccia forchetta su c7)",
+                  myMove: "4...c6! 5.Cc3! Cf6! 6.d4! Af5! 7.Cf3! e6! 8.Ac4! Ab4! 9.Ad2! Cbd7!",
+                  summary: "Difendi c7 e cacci subito il Cavallo guadagnando un tempo gratis per lo sviluppo!",
+                  sequence: "4.Cb5 c6! 5.Cc3! Cf6! 6.d4! Af5! 7.Cf3! e6! 8.Ac4! Ab4! 9.Ad2! Cbd7!",
+                  tag: "TEMPO GRATIS",
+                  tagType: "emerald",
+                  children: []
+                }
+              ]
+            },
+            {
+              id: "b-scandi-3nf3",
+              situation: "3.Cf3 (Ritarda Cc3)",
+              myMove: "3...Ag4!",
+              summary: "Inchiodi subito il Cavallo f3!",
+              sequence: "3.Cf3 Ag4!",
+              tag: "INCHIODATURA",
+              tagType: "emerald",
+              children: [
+                {
+                  id: "b-scandi-3nf3-5cc3",
+                  situation: "4.Ae2 Cc6 5.Cc3 (Ora attacca la Donna)",
+                  myMove: "5...Dd7! (Mossa #1 Motore — meglio di 5...Da5)",
+                  summary: "In d7 la Donna evita attacchi di scoperta con Ad2 e spinte b4, preparando subito 6...O-O-O!",
+                  sequence: "4.Ae2 Cc6 5.Cc3 Dd7!",
+                  tag: "MOSSA #1 MOTORE",
+                  tagType: "rose",
+                  children: [
+                    {
+                      id: "b-scandi-5qd7-6oo",
+                      situation: "6.O-O",
+                      myMove: "6...O-O-O!",
+                      summary: "Arrocco lungo immediato con Torre sulla colonna aperta d.",
+                      sequence: "6.O-O O-O-O!",
+                      tag: "ARROCCO LUNGO",
+                      tagType: "blue",
+                      children: [
+                        {
+                          id: "b-scandi-6ooo-7d4",
+                          situation: "7.d4 (Mossa migliore Bianco)",
+                          myMove: "7...Cf6! 8.Ae3! e6! 9.Ce5! Cxe5!",
+                          summary: "Sviluppi Cf6 e e6 blindando il centro e cambiando i pezzi per un finale pari e comodissimo.",
+                          sequence: "7.d4 Cf6! 8.Ae3! e6! 9.Ce5! Cxe5!",
+                          tag: "PARITÀ SOLIDA",
+                          tagType: "emerald",
+                          children: []
+                        },
+                        {
+                          id: "b-scandi-6ooo-7h3",
+                          situation: "7.h3 (Interroga l'Alfiere)",
+                          myMove: "7...Ah5! 8.d4! e5! 9.d5! Axf3! 10.Axf3! Cd4!",
+                          summary: "Mantieni l'inchiodatura, spacchi il centro con 8...e5! e piazzi un Cavallo dominante in d4!",
+                          sequence: "7...Ah5! 8.d4! e5! 9.d5! Axf3! 10.Axf3! Cd4!",
+                          tag: "AVAMPOSTO d4",
+                          tagType: "rose",
+                          children: []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: "b-scandi-2e5",
+          situation: "2.e5 (Variante di Spinta)",
+          myMove: "2...c5!",
+          summary: "Attacchi subito il centro come in una Francese con l'Alfiere c8 libero!",
+          sequence: "2.e5 c5!",
+          tag: "SPINTA 2.e5",
+          tagType: "blue",
+          children: [
+            {
+              id: "b-scandi-2e5-3d4",
+              situation: "3.d4 (Difende e5)",
+              myMove: "3...Cc6! 4.Cf3! Ag4! 5.c3! e6! 6.Ae2! Cge7! 7.O-O! Cf5! 8.dxc5! Axc5! 9.Cbd2! O-O!",
+              summary: "Pressione costante su d4 e e5 con tutti i pezzi attivi e arrocco sicuro.",
+              sequence: "3.d4 Cc6! 4.Cf3! Ag4! 5.c3! e6! 6.Ae2! Cge7! 7.O-O! Cf5! 8.dxc5! Axc5! 9.Cbd2! O-O!",
+              tag: "PRESSIONE SU d4",
+              tagType: "emerald",
+              children: []
+            },
+            {
+              id: "b-scandi-2e5-3bb5",
+              situation: "3.Ab5+ (Scacco immediato)",
+              myMove: "3...Cc6! 4.Cf3! Ag4! 5.O-O! e6! 6.h3! Ah5! 7.c3! Cge7! 8.d4! cxd4! 9.cxd4! Cf5!",
+              summary: "Copri sempre con 3...Cc6! (MAI 3...Ad7?!) e colpisci il centro d4 con Cf5 e Db6.",
+              sequence: "3.Ab5+ Cc6! 4.Cf3! Ag4! 5.O-O! e6! 6.h3! Ah5! 7.c3! Cge7! 8.d4! cxd4! 9.cxd4! Cf5!",
+              tag: "COPRI CON Cc6!",
+              tagType: "rose",
+              children: []
+            }
+          ]
+        },
+        {
+          id: "b-scandi-2nc3",
+          situation: "2.Cc3 (Scandinava Chiusa)",
+          myMove: "2...d4!",
+          summary: "Guadagni subito spazio centrale cacciando il Cavallo bianco.",
+          sequence: "2.Cc3 d4!",
+          tag: "SPAZIO CENTRALE",
+          tagType: "emerald",
+          children: [
+            {
+              id: "b-scandi-2nc3-3ce2",
+              situation: "3.Cce2 (o 3.Cb1 — Ritira il Cavallo)",
+              myMove: "3...e5! 4.Cg3! Ae6! 5.Cf3! f6! 6.Ab5+! c6! 7.Aa4! Ca6! 8.Ab3! Cc5! 9.Axe6! Cxe6!",
+              summary: "Blindi il centro con e5 e f6 e manovri il Cavallo in e6 con pieno controllo della scacchiera.",
+              sequence: "3.Cce2 e5! 4.Cg3! Ae6! 5.Cf3! f6! 6.Ab5+! c6! 7.Aa4! Ca6! 8.Ab3! Cc5! 9.Axe6! Cxe6!",
+              tag: "CENTRO BLINDATO",
+              tagType: "emerald",
+              children: []
+            },
+            {
+              id: "b-scandi-2nc3-3cd5",
+              situation: "3.Cd5 (Salta in avanti)",
+              myMove: "3...e6! 4.Cf4! e5! 5.Cd3! Cc6! 6.Cf3! Ad6! 7.Ae2! Cf6! 8.O-O! O-O! 9.Te1! Te8!",
+              summary: "Cacci due volte il Cavallo guadagnando tempi e conquisti tutto il centro.",
+              sequence: "3.Cd5 e6! 4.Cf4! e5! 5.Cd3! Cc6! 6.Cf3! Ad6! 7.Ae2! Cf6! 8.O-O! O-O! 9.Te1! Te8!",
+              tag: "TEMPI SUL CAVALLO",
+              tagType: "rose",
+              children: []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "b-d4-root",
+      situation: "1.d4 d5! (Contro 1.d4 — Albin, Anti-London & Anti-Sistemi)",
+      myMove: "1...d5!",
+      summary: "Blocchi subito il centro e prepari 2...e5! su 2.c4 oppure 2...c5! contro tutto il resto.",
+      sequence: "1.d4 d5!",
+      tag: "CONTRO 1.d4",
+      tagType: "rose",
+      children: [
+        {
+          id: "b-albin-2c4",
+          situation: "2.c4 (Gambetto di Donna)",
+          myMove: "2...e5!",
+          summary: "CONTROGAMBETTO ALBIN: dinamiti il centro alla seconda mossa!",
+          sequence: "2.c4 e5!",
+          tag: "CONTROGAMBETTO ALBIN",
+          tagType: "rose",
+          children: [
+            {
+              id: "b-albin-3dxe5",
+              situation: "3.dxe5 (Accetta il gambetto)",
+              myMove: "3...d4!",
+              summary: "Cuneo centrale in d4 che paralizza lo sviluppo dell'ala di Donna bianca!",
+              sequence: "3.dxe5 d4!",
+              tag: "CUNEO IN d4!",
+              tagType: "rose",
+              children: [
+                {
+                  id: "b-albin-4nf3",
+                  situation: "4.Cf3 (Linea principale)",
+                  myMove: "4...Cc6! 5.g3! Ag4! 6.Ag2! Dd7! 7.O-O! O-O-O! 8.Cbd2! Cge7! 9.Db3! Cg6!",
+                  summary: "Arrocchi lungo, inchiodi con Ag4 e attacchi sul lato di Re mentre il Bianco è soffocato dal pedone d4.",
+                  sequence: "4.Cf3 Cc6! 5.g3! Ag4! 6.Ag2! Dd7! 7.O-O! O-O-O! 8.Cbd2! Cge7! 9.Db3! Cg6!",
+                  tag: "ATTACCO O-O-O",
+                  tagType: "emerald",
+                  children: []
+                },
+                {
+                  id: "b-albin-4e3",
+                  situation: "4.e3 (Trappola Lasker in arrivo!)",
+                  myMove: "4...Ab4+! 5.Ad2! dxe3! 6.fxe3! Dh4+! 7.g3! De4! 8.Cf3! Dxe3+! 9.Ae2! Ah3!",
+                  summary: "TRAPPOLA DI LASKER: se il Bianco gioca 6.Axb4?? subisce 6...exf2+! 7.Re2 fxg1=C+! vincendo la Donna!",
+                  sequence: "4.e3 Ab4+! 5.Ad2! dxe3! 6.fxe3! Dh4+! 7.g3! De4!",
+                  tag: "TRAPPOLA LASKER",
+                  tagType: "rose",
+                  children: []
+                }
+              ]
+            },
+            {
+              id: "b-albin-3cxd5",
+              situation: "3.cxd5 (Mangia d5)",
+              myMove: "3...Dxd5! 4.Cc3! Ab4! 5.Cf3! Cc6! 6.Ad2! Axc3! 7.Axc3! Ag4! 8.e3! O-O-O! 9.Ae2! Cf6!",
+              summary: "Centralizzi la Donna, inchiodi c3, arrocchi lungo e hai pressione totale sulla colonna d.",
+              sequence: "3.cxd5 Dxd5! 4.Cc3! Ab4! 5.Cf3! Cc6! 6.Ad2! Axc3! 7.Axc3! Ag4! 8.e3! O-O-O! 9.Ae2! Cf6!",
+              tag: "DOMINIO COLONNA d",
+              tagType: "blue",
+              children: []
+            }
+          ]
+        },
+        {
+          id: "b-anti-london",
+          situation: "2.Af4 (Sistema London)",
+          myMove: "2...c5!",
+          summary: "Attacchi subito il centro d4 prima che il Bianco costruisca la piramide!",
+          sequence: "2.Af4 c5!",
+          tag: "ANTI-LONDON",
+          tagType: "emerald",
+          children: [
+            {
+              id: "b-london-3e3",
+              situation: "3.e3 (o 3.Cf3 — Piramide classica)",
+              myMove: "3...Cc6! 4.c3! Cf6! 5.Cd2! Db6! 6.Db3! c4! 7.Dc2! Af5! 8.Dc1! e6! 9.Cgf3! Ae7!",
+              summary: "Colpisci b2 con 5...Db6! e piazzi l'Alfiere in f5 guadagnando spazio su tutta l'ala di Donna.",
+              sequence: "3.e3 Cc6! 4.c3! Cf6! 5.Cd2! Db6! 6.Db3! c4! 7.Dc2! Af5!",
+              tag: "PRESSIONE ALA DONNA",
+              tagType: "emerald",
+              children: []
+            },
+            {
+              id: "b-london-3dxc5",
+              situation: "3.dxc5 (Accetta il pedone)",
+              myMove: "3...Cc6! 4.Cf3! e6! 5.e3! Axc5! 6.c4! Cf6! 7.Cc3! O-O! 8.cxd5! exd5! 9.Ae2! Te8!",
+              summary: "Recuperi il pedone con tempo, prepari ...e5! e domini il centro.",
+              sequence: "3.dxc5 Cc6! 4.Cf3! e6! 5.e3! Axc5! 6.c4! Cf6! 7.Cc3! O-O!",
+              tag: "CENTRO APERTO",
+              tagType: "blue",
+              children: []
+            }
+          ]
+        },
+        {
+          id: "b-d4-2nf3",
+          situation: "2.Cf3 (Sviluppo calmo)",
+          myMove: "2...c5! 3.c3! cxd4! 4.cxd4! Cc6! 5.Cc3! Cf6! 6.Af4! Af5! 7.e3! e6! 8.Ab5! Cd7! 9.O-O! Ae7!",
+          summary: "Apri la colonna c, sviluppi tutti i pezzi fuori dalla catena e hai gioco pari e attivo.",
+          sequence: "2.Cf3 c5! 3.c3! cxd4! 4.cxd4! Cc6! 5.Cc3! Cf6! 6.Af4! Af5! 7.e3! e6!",
+          tag: "COLONNA c APERTA",
+          tagType: "emerald",
+          children: []
+        },
+        {
+          id: "b-d4-2nc3",
+          situation: "2.Cc3 (Attacco Veresov / Chigorin)",
+          myMove: "2...c5! 3.dxc5! Cf6! 4.Ag5! e6! 5.e4! Axc5! 6.exd5! Db6! 7.Dd2! Axf2+! 8.Dxf2! Dxb2! 9.Rd2! Dxa1!",
+          summary: "Attacchi f2 con Db6 e Ac5 vincendo la Torre in a1!",
+          sequence: "2.Cc3 c5! 3.dxc5! Cf6! 4.Ag5! e6! 5.e4! Axc5! 6.exd5! Db6!",
+          tag: "ATTACCO SU f2",
+          tagType: "rose",
+          children: []
+        },
+        {
+          id: "b-d4-colle",
+          situation: "2.e3 (o 2.c3 — Sistema Colle / Colle con Fianchetto)",
+          myMove: "2...c5! 3.Cd2! Cf6! 4.Cgf3! Ag4! 5.g3! e5! 6.dxe5! Cxe5! 7.Ag2! Cxf3+! 8.Cxf3! c6! 9.O-O! Ac5!",
+          summary: "Inchiodi con Ag4, spacchi il centro con 5...e5! e centralizzi i pezzi con pieno controllo.",
+          sequence: "2.e3 c5! 3.Cd2! Cf6! 4.Cgf3! Ag4! 5.g3! e5! 6.dxe5! Cxe5!",
+          tag: "ROTTURA 5...e5!",
+          tagType: "emerald",
+          children: []
+        }
+      ]
+    },
+    {
+      id: "b-reti-english-root",
+      situation: "1.Cf3 / 1.c4 (Apertura Reti & Partita Inglese)",
+      myMove: "1...d5! (su 1.Cf3) / 1...e5! (su 1.c4)",
+      summary: "Prendi subito spazio centrale impedendo al Bianco di chiuderti.",
+      sequence: "1.Cf3 d5! / 1.c4 e5!",
+      tag: "ANTI-LATERALI",
+      tagType: "blue",
+      children: [
+        {
+          id: "b-reti-3c3",
+          situation: "1.Cf3 d5 2.d4 c5! 3.c3 cxd4!",
+          myMove: "4.Cxd4! Cf6! 5.Af4! Cc6! 6.e3! Db6! 7.Db3! Cxd4! 8.exd4! Dxb3! 9.axb3! Ad7!",
+          summary: "Sia su 4.Cxd4 sia su 4.cxd4 sviluppi Cf6 e Cc6 minacciando ...e5! e attaccando b2 con Db6.",
+          sequence: "1.Cf3 d5 2.d4 c5! 3.c3 cxd4! 4.Cxd4! Cf6! 5.Af4! Cc6!",
+          tag: "MINACCIA ...e5!",
+          tagType: "emerald",
+          children: []
+        },
+        {
+          id: "b-english-1e5",
+          situation: "1.c4 e5! (Partita Inglese — Siciliana Inversa)",
+          myMove: "2.Cc3! Cf6! 3.Cf3! Cc6! 4.g3! d5! 5.cxd5! Cxd5! 6.Ag2! Cb6! 7.O-O! Ae7! 8.a3! O-O! 9.b4! Ae6!",
+          summary: "Spacchi subito il centro con 4...d5! ottenendo sviluppo libero e controllo centrale.",
+          sequence: "1.c4 e5! 2.Cc3! Cf6! 3.Cf3! Cc6! 4.g3! d5! 5.cxd5! Cxd5!",
+          tag: "ROTTURA 4...d5!",
+          tagType: "emerald",
+          children: []
+        }
+      ]
+    }
         ]
       }
     };
