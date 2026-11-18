@@ -1856,47 +1856,165 @@
               children: [
                 {
                   id: "w-scw-4dg6",
-                  situation: "4...Dg6 (Punta su g2 e c2)",
-                  myMove: "5.d4!",
-                  summary: "Prendi il centro.",
-                  sequence: "4...Dg6 5.d4!",
-                  tag: "CENTRO",
-                  tagType: "emerald",
+                  situation: "4...Dg6 (Attacca g2 — MAI giocare 5.d4? perché perde g2!)",
+                  myMove: "5.Af3!",
+                  summary: "MOSSA SALVA-PARTITA: difendi subito g2 con 5.Af3! e lasci d2 su d2 così la Donna difende c2 impedendo qualsiasi forchetta ...Cc6 -> ...Cb4!",
+                  sequence: "4...Dg6 5.Af3!",
+                  tag: "DIFENDE g2 E c2!",
+                  tagType: "rose",
                   children: [
                     {
-                      id: "w-scw-5cf6",
-                      situation: "5...Cf6 (Sviluppo)",
-                      myMove: "6.Cf3!",
-                      summary: "Difendi g2.",
-                      sequence: "5...Cf6 6.Cf3!",
-                      tag: "DIFESA",
-                      tagType: "blue",
+                      id: "w-scw-5cc6",
+                      situation: "5...Cc6 (Mossa giocata dall'avversario)",
+                      myMove: "6.Cge2!",
+                      summary: "Sviluppi il Cavallo in e2 (evitando inchiodature su f3) e prepari O-O. Anche se il Nero salta ...Cb4, c2 è già difeso dalla Donna!",
+                      sequence: "5...Cc6 6.Cge2!",
+                      tag: "SVILUPPO ANTI-FORCHETTE",
+                      tagType: "emerald",
                       children: [
                         {
-                          id: "w-scw-6ca6",
-                          situation: "6...Ca6 (o 6...Cc6)",
-                          myMove: "7.a3!",
-                          summary: "PROFILASSI OBBLIGATA: impedisci ...Cb4 contro c2!",
-                          sequence: "6...Ca6 7.a3!",
-                          tag: "PROFILASSI a3!",
-                          tagType: "rose",
+                          id: "w-scw-6ag4",
+                          situation: "6...Ag4 (Inchioda / attacca f3 — mossa avversario)",
+                          myMove: "7.Axg4!",
+                          summary: "Elimini subito l'Alfiere fastidioso senza farti inchiodare!",
+                          sequence: "6...Ag4 7.Axg4!",
+                          tag: "ELIMINA ALFIERE",
+                          tagType: "blue",
                           children: [
                             {
-                              id: "w-scw-7ag4",
-                              situation: "7...Ag4 (Inchioda f3)",
+                              id: "w-scw-7dxg4",
+                              situation: "7...Dxg4 (Riprende di Donna)",
                               myMove: "8.O-O!",
-                              summary: "Re al sicuro!",
-                              sequence: "7...Ag4 8.O-O!",
-                              tag: "ARROCCO",
+                              summary: "Metti il Re al sicuro mentre la Donna nera è esposta al centro!",
+                              sequence: "7...Dxg4 8.O-O!",
+                              tag: "ARROCCO SICURO",
                               tagType: "emerald",
                               children: [
                                 {
                                   id: "w-scw-8ooo",
                                   situation: "8...O-O-O (Arrocca lungo)",
-                                  myMove: "9.Ae3!",
-                                  summary: "Sviluppo completo e vantaggio netto.",
-                                  sequence: "8...O-O-O 9.Ae3!",
-                                  tag: "VANTAGGIO",
+                                  myMove: "9.d3!",
+                                  summary: "Apri l'Alfiere c1, blindi il centro e prepari Ae3 + Cg3 con posizione solidissima e zero punti deboli!",
+                                  sequence: "8...O-O-O 9.d3!",
+                                  tag: "VANTAGGIO SOLIDO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: "w-scw-6e5",
+                          situation: "6...e5 (Mossa #1 Motore per il Nero)",
+                          myMove: "7.O-O!",
+                          summary: "Arrocchi corto preparando la spinta centrale 8.d4!.",
+                          sequence: "6...e5 7.O-O!",
+                          tag: "ARROCCO",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "w-scw-7cf6",
+                              situation: "7...Cf6 (Sviluppo)",
+                              myMove: "8.d4!",
+                              summary: "Spacchi subito il centro mentre il Re nero è ancora in e8!",
+                              sequence: "7...Cf6 8.d4!",
+                              tag: "ROTTURA CENTRALE",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-scw-8exd4",
+                                  situation: "8...exd4 (o 8...Ad6 — Cambia)",
+                                  myMove: "9.Cxd4!",
+                                  summary: "Centralizzi il Cavallo minacciando 10.Cxc6 e 10.Te1+ con attacco travolgente!",
+                                  sequence: "8...exd4 9.Cxd4!",
+                                  tag: "DOMINIO CENTRALE",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "w-scw-5e5",
+                      situation: "5...e5 (Mossa #1 Motore al 5° turno — Blocca d4)",
+                      myMove: "6.Cge2!",
+                      summary: "Prepari O-O e la spinta d4 con sviluppo armonioso.",
+                      sequence: "5...e5 6.Cge2!",
+                      tag: "LINEA MOTORE",
+                      tagType: "blue",
+                      children: [
+                        {
+                          id: "w-scw-5e5-6cc6",
+                          situation: "6...Cc6 (Sviluppo)",
+                          myMove: "7.O-O!",
+                          summary: "Re al sicuro.",
+                          sequence: "6...Cc6 7.O-O!",
+                          tag: "ARROCCO",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "w-scw-5e5-7cf6",
+                              situation: "7...Cf6 (Sviluppo)",
+                              myMove: "8.d4!",
+                              summary: "Colpisci subito il centro!",
+                              sequence: "7...Cf6 8.d4!",
+                              tag: "CENTRO",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-scw-5e5-8ad6",
+                                  situation: "8...Ad6 (Difende e5)",
+                                  myMove: "9.Cb5!",
+                                  summary: "Attacchi l'Alfiere d6 e c7 conquistando la coppia degli Alfieri e vantaggio netto!",
+                                  sequence: "8...Ad6 9.Cb5!",
+                                  tag: "VANTAGGIO BIANCO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "w-scw-5cf6",
+                      situation: "5...Cf6 (Sviluppo naturale)",
+                      myMove: "6.Cge2!",
+                      summary: "Sviluppi senza concedere inchiodature.",
+                      sequence: "5...Cf6 6.Cge2!",
+                      tag: "SVILUPPO",
+                      tagType: "blue",
+                      children: [
+                        {
+                          id: "w-scw-5cf6-6cc6",
+                          situation: "6...Cc6 (Sviluppo)",
+                          myMove: "7.O-O!",
+                          summary: "Arrocchi corto.",
+                          sequence: "6...Cc6 7.O-O!",
+                          tag: "ARROCCO",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "w-scw-5cf6-7e5",
+                              situation: "7...e5 (Spinta centrale)",
+                              myMove: "8.d4!",
+                              summary: "Apri il centro.",
+                              sequence: "7...e5 8.d4!",
+                              tag: "ROTTURA",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-scw-5cf6-8ad6",
+                                  situation: "8...Ad6 (Difende)",
+                                  myMove: "9.dxe5!",
+                                  summary: "Apri la colonna d e punti su Cf4 per cacciare la Donna nera con vantaggio netto!",
+                                  sequence: "8...Ad6 9.dxe5!",
+                                  tag: "INIZIATIVA",
                                   tagType: "emerald",
                                   children: []
                                 }
@@ -4297,9 +4415,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v12_alekhine') {
+      if (localStorage.getItem('chess_tree_version') !== 'v13_scandi_3de6_fix') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v12_alekhine');
+        localStorage.setItem('chess_tree_version', 'v13_scandi_3de6_fix');
       }
       loadCustomMoves();
       resetToHome();
