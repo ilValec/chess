@@ -1736,14 +1736,98 @@
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "w-pan-8oo-cxd5",
-                                  situation: "8...O-O (Arrocca)",
-                                  myMove: "9.Ae2! (oppure 9.Ad3!)",
-                                  summary: "Completi lo sviluppo (dopo 9...Cc6 giochi 10.Cxd5! exd5 11.Axb4! Cxb4 12.O-O! dominando la colonna e con Tfe1!).",
-                                  sequence: "8...O-O 9.Ae2!",
-                                  tag: "SVILUPPO COMPLETO",
+                                  id: "w-pan-8ae7",
+                                  situation: "8...Ae7 (Ritira l'Alfiere prima di arroccare — La tua partita)",
+                                  myMove: "9.Cxd5!",
+                                  summary: "Elimini subito il Cavallo centrale fissando il pedone isolato d5!",
+                                  sequence: "8.Ad2! Ae7 9.Cxd5!",
+                                  tag: "PEDONE ISOLATO d5",
+                                  tagType: "emerald",
+                                  children: [
+                                    {
+                                      id: "w-pan-9exd5",
+                                      situation: "9...exd5 (Riprende di pedone — Mossa principale)",
+                                      myMove: "10.Ab5+!",
+                                      summary: "Sviluppi l'Alfiere con scacco guadagnando un tempo decisivo!",
+                                      sequence: "9...exd5 10.Ab5+!",
+                                      tag: "SCACCO DI SVILUPPO",
+                                      tagType: "rose",
+                                      children: [
+                                        {
+                                          id: "w-pan-10cc6",
+                                          situation: "10...Cc6 (Copre di Cavallo — Come in partita)",
+                                          myMove: "11.Ce5!",
+                                          summary: "Attacchi subito il Cavallo inchiodato c6! Su 11...Ad7 giochi 12.Df3! (doppio attacco su f7 e d5) vincendo il pedone d5 dopo 12...Cxe5 13.Axd7+! Cxd7 14.O-O O-O 15.Dxd5!!",
+                                          sequence: "10...Cc6 11.Ce5! Ad7 12.Df3!",
+                                          tag: "VINCE PEDONE d5!",
+                                          tagType: "rose",
+                                          children: []
+                                        },
+                                        {
+                                          id: "w-pan-10ad7",
+                                          situation: "10...Ad7 (Copre di Alfiere)",
+                                          myMove: "11.Axd7+!",
+                                          summary: "Cambi l'Alfiere e al turno 12 giochi 12.Db3! attaccando simultaneamente il pedone isolato d5 e il pedone indifeso b7!",
+                                          sequence: "10...Ad7 11.Axd7+! Cxd7 12.Db3!",
+                                          tag: "DOPPIO ATTACCO d5/b7",
+                                          tagType: "emerald",
+                                          children: []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      id: "w-pan-9dxd5",
+                                      situation: "9...Dxd5 (Riprende di Donna)",
+                                      myMove: "10.Ad3!",
+                                      summary: "Sviluppi l'Alfiere sulla diagonale attiva h7-b1 preparando 11.O-O! e 12.De2! con tempi sulla Donna nera esposta.",
+                                      sequence: "9...Dxd5 10.Ad3!",
+                                      tag: "SVILUPPO RAPIDO",
+                                      tagType: "blue",
+                                      children: []
+                                    }
+                                  ]
+                                },
+                                {
+                                  id: "w-pan-8cc6",
+                                  situation: "8...Cc6 (Sviluppa il Cavallo prima di arroccare)",
+                                  myMove: "9.Ab5!",
+                                  summary: "Inchiodi subito il Cavallo c6 mantenendo la pressione centrale!",
+                                  sequence: "8.Ad2! Cc6 9.Ab5!",
+                                  tag: "INCHIODATURA c6",
                                   tagType: "blue",
-                                  children: []
+                                  children: [
+                                    {
+                                      id: "w-pan-8cc6-9oo",
+                                      situation: "9...O-O (Arrocca)",
+                                      myMove: "10.O-O!",
+                                      summary: "Completi l'arrocco con tutte le colonne centrali aperte per le Torri (Tc1 e Te1).",
+                                      sequence: "9...O-O 10.O-O!",
+                                      tag: "VANTAGGIO BIANCO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                },
+                                {
+                                  id: "w-pan-8oo-cxd5",
+                                  situation: "8...O-O (Arrocca subito)",
+                                  myMove: "9.Ad3!",
+                                  summary: "Sviluppi l'Alfiere sulla diagonale d'attacco preparando 10.O-O! e 11.De2!.",
+                                  sequence: "8...O-O 9.Ad3!",
+                                  tag: "DIAGONALE ATTIVA",
+                                  tagType: "blue",
+                                  children: [
+                                    {
+                                      id: "w-pan-8oo-9cc6",
+                                      situation: "9...Cc6 (Sviluppo)",
+                                      myMove: "10.O-O!",
+                                      summary: "Re al sicuro, poi giochi 11.Cxd5! exd5 12.Ac3! dominando le case scure e il pedone isolato d5.",
+                                      sequence: "9...Cc6 10.O-O!",
+                                      tag: "DOMINIO CASE SCURE",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -6033,9 +6117,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v21_scandi_3d4_be3') {
+      if (localStorage.getItem('chess_tree_version') !== 'v22_panov_7cxd5_m10') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v21_scandi_3d4_be3');
+        localStorage.setItem('chess_tree_version', 'v22_panov_7cxd5_m10');
       }
       loadCustomMoves();
       resetToHome();
