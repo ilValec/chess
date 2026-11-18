@@ -368,509 +368,390 @@
         tagType: "emerald",
         children: [
     {
-      id: "w-scotch-root",
-      situation: "1.e4 e5 2.Cf3 Cc6 3.d4 exd4 4.Ac4! (Gambetto Scozzese)",
-      myMove: "4.Ac4!",
-      summary: "Sacrifichi il pedone d4 per sviluppo fulmineo e pressione diretta su f7. Cosa gioca il Nero?",
-      sequence: "1.e4 e5 2.Cf3 Cc6 3.d4 exd4 4.Ac4!",
-      tag: "GAMBETTO SCOZZESE",
-      tagType: "rose",
+      id: "w-1e5",
+      situation: "1...e5 (Partita Aperta)",
+      myMove: "2.Cf3!",
+      summary: "Attacchi subito il pedone e5 sviluppando il Cavallo verso il centro.",
+      sequence: "1...e5 2.Cf3!",
+      tag: "PARTITA APERTA",
+      tagType: "emerald",
       children: [
         {
-          id: "w-sc-4bc5",
-          situation: "4...Ac5 (Linea Principale)",
-          myMove: "5.c3!",
-          summary: "Attacchi subito il pedone d4 per aprire il centro e la colonna c.",
-          sequence: "4...Ac5 5.c3!",
-          tag: "ROTTURA CENTRALE",
-          tagType: "emerald",
+          id: "w-2cc6",
+          situation: "2...Cc6 (Difende e5)",
+          myMove: "3.d4!",
+          summary: "Spacchi subito il centro preparando il Gambetto Scozzese.",
+          sequence: "2...Cc6 3.d4!",
+          tag: "PARTITA SCOZZESE",
+          tagType: "rose",
           children: [
             {
-              id: "w-sc-5nf6",
-              situation: "5...Cf6 (Mossa #1 Motore)",
-              myMove: "6.cxd4!",
-              summary: "Riprendi il pedone con centro dominante e guadagno di tempo sull'Alfiere nero.",
-              sequence: "5...Cf6 6.cxd4!",
-              tag: "CENTRO DOMINANTE",
-              tagType: "emerald",
+              id: "w-3exd4",
+              situation: "3...exd4 (Mangia al centro)",
+              myMove: "4.Ac4!",
+              summary: "GAMBETTO SCOZZESE: sacrifichi d4 per sviluppo fulmineo e pressione su f7.",
+              sequence: "3...exd4 4.Ac4!",
+              tag: "GAMBETTO SCOZZESE",
+              tagType: "rose",
               children: [
                 {
-                  id: "w-sc-6bb4",
-                  situation: "6...Ab4+ (Scacco e inchiodatura)",
-                  myMove: "7.Ad2!",
-                  summary: "Copri lo scacco neutralizzando subito l'inchiodatura. Cosa fa il Nero?",
-                  sequence: "6...Ab4+ 7.Ad2!",
-                  tag: "ANTI-INCHIODATURA",
-                  tagType: "blue",
+                  id: "w-4ac5",
+                  situation: "4...Ac5 (Linea Principale)",
+                  myMove: "5.c3!",
+                  summary: "Attacchi d4 per aprire il centro e la colonna c.",
+                  sequence: "4...Ac5 5.c3!",
+                  tag: "ROTTURA CENTRALE",
+                  tagType: "emerald",
                   children: [
                     {
-                      id: "w-sc-7bxd2",
-                      situation: "7...Axd2+ (Cambia gli Alfieri — Migliore)",
-                      myMove: "8.Cbxd2!",
-                      summary: "Riprendi di Cavallo mantenendo e4 difeso.",
-                      sequence: "7...Axd2+ 8.Cbxd2!",
-                      tag: "SVILUPPO PULITO",
+                      id: "w-5cf6",
+                      situation: "5...Cf6 (Mossa #1 Motore)",
+                      myMove: "6.cxd4!",
+                      summary: "Riprendi il pedone con centro dominante e tempi sull'Alfiere.",
+                      sequence: "5...Cf6 6.cxd4!",
+                      tag: "CENTRO DOMINANTE",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "w-sc-8d5",
-                          situation: "8...d5 (Colpisce il centro)",
-                          myMove: "9.exd5!",
-                          summary: "Cambi in d5 e dopo 9...Cxd5 giochi 10.Db3! attaccando simultaneamente il Cavallo d5 e f7!",
-                          sequence: "8...d5 9.exd5!",
-                          tag: "DOPPIO ATTACCO",
-                          tagType: "rose",
-                          children: []
+                          id: "w-6ab4",
+                          situation: "6...Ab4+ (Scacco e inchiodatura)",
+                          myMove: "7.Ad2!",
+                          summary: "Copri lo scacco neutralizzando subito l'inchiodatura.",
+                          sequence: "6...Ab4+ 7.Ad2!",
+                          tag: "ANTI-INCHIODATURA",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "w-7axd2",
+                              situation: "7...Axd2+ (Cambia gli Alfieri)",
+                              myMove: "8.Cbxd2!",
+                              summary: "Riprendi di Cavallo mantenendo e4 difeso.",
+                              sequence: "7...Axd2+ 8.Cbxd2!",
+                              tag: "SVILUPPO",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "w-8d5",
+                                  situation: "8...d5 (Colpisce il centro)",
+                                  myMove: "9.exd5!",
+                                  summary: "Cambi in d5 e dopo 9...Cxd5 giochi 10.Db3! attaccando d5 e f7!",
+                                  sequence: "8...d5 9.exd5!",
+                                  tag: "DOPPIO ATTACCO",
+                                  tagType: "rose",
+                                  children: []
+                                }
+                              ]
+                            },
+                            {
+                              id: "w-7cxe4",
+                              situation: "7...Cxe4 (Trappola: mangia e4)",
+                              myMove: "8.Axb4!",
+                              summary: "Elimini il difensore dell'Alfiere!",
+                              sequence: "7...Cxe4 8.Axb4!",
+                              tag: "TRAPPOLA",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-8cxb4",
+                                  situation: "8...Cxb4 (Riprende)",
+                                  myMove: "9.Axf7+!",
+                                  summary: "VINCI TUTTO: dopo 9...Rxf7 fai forchetta 10.Db3+! recuperando il Cavallo!",
+                                  sequence: "8...Cxb4 9.Axf7+!",
+                                  tag: "FORCHETTA 10.Db3+!",
+                                  tagType: "rose",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: "w-6ab6",
+                          situation: "6...Ab6 (Ritira senza scacco)",
+                          myMove: "7.d5!",
+                          summary: "Cacci il Cavallo c6 guadagnando spazio.",
+                          sequence: "6...Ab6 7.d5!",
+                          tag: "SPAZIO",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "w-7ce7",
+                              situation: "7...Ce7 (Ritira il Cavallo)",
+                              myMove: "8.e5!",
+                              summary: "Cacci anche l'altro Cavallo!",
+                              sequence: "7...Ce7 8.e5!",
+                              tag: "ATTACCO",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-8cg4",
+                                  situation: "8...Cg4 (Salta in g4)",
+                                  myMove: "9.O-O!",
+                                  summary: "Re al sicuro e attacco travolgente al centro.",
+                                  sequence: "8...Cg4 9.O-O!",
+                                  tag: "ARROCCO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     },
                     {
-                      id: "w-sc-7nxe4",
-                      situation: "7...Cxe4 (Trappola: mangia e4)",
-                      myMove: "8.Axb4!",
-                      summary: "Elimini il difensore dell'Alfiere!",
-                      sequence: "7...Cxe4 8.Axb4!",
-                      tag: "TRAPPOLA",
+                      id: "w-5dxc3",
+                      situation: "5...dxc3 (Accetta il secondo pedone)",
+                      myMove: "6.Axf7+!",
+                      summary: "Sacrificio su f7 per distruggere l'arrocco!",
+                      sequence: "5...dxc3 6.Axf7+!",
+                      tag: "SACRIFICIO f7",
                       tagType: "rose",
                       children: [
                         {
-                          id: "w-sc-8cxb4",
-                          situation: "8...Cxb4 (Riprende)",
-                          myMove: "9.Axf7+!",
-                          summary: "VINCI TUTTO: dopo 9...Rxf7 fai forchetta 10.Db3+! recuperando il Cavallo b4 e togliendo l'arrocco!",
-                          sequence: "8...Cxb4 9.Axf7+!",
-                          tag: "FORCHETTA 10.Db3+!",
+                          id: "w-6rxf7",
+                          situation: "6...Rxf7 (Forzata)",
+                          myMove: "7.Dd5+!",
+                          summary: "Forchetta reale tra Re e Alfiere c5!",
+                          sequence: "6...Rxf7 7.Dd5+!",
+                          tag: "FORCHETTA",
                           tagType: "rose",
-                          children: []
+                          children: [
+                            {
+                              id: "w-7re8",
+                              situation: "7...Re8 (o 7...Rf8)",
+                              myMove: "8.Dxc5!",
+                              summary: "Recuperi il pezzo lasciando il Re nemico al centro.",
+                              sequence: "7...Re8 8.Dxc5!",
+                              tag: "RECUPERO",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "w-8d6",
+                                  situation: "8...d6 (o 8...cxb2)",
+                                  myMove: "9.Dxc3!",
+                                  summary: "Riprendi c3 con vantaggio decisivo.",
+                                  sequence: "8...d6 9.Dxc3!",
+                                  tag: "VANTAGGIO NETTO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "w-5d3",
+                      situation: "5...d3 (Blocca)",
+                      myMove: "6.b4!",
+                      summary: "Cacci subito l'Alfiere c5.",
+                      sequence: "5...d3 6.b4!",
+                      tag: "TEMPO",
+                      tagType: "blue",
+                      children: [
+                        {
+                          id: "w-6ab6-d3",
+                          situation: "6...Ab6 (Ritira)",
+                          myMove: "7.a4!",
+                          summary: "Minacci 8.a5 intrappolando l'Alfiere!",
+                          sequence: "6...Ab6 7.a4!",
+                          tag: "TRAPPOLA",
+                          tagType: "rose",
+                          children: [
+                            {
+                              id: "w-7a6",
+                              situation: "7...a6 (Crea fuga)",
+                              myMove: "8.Db3!",
+                              summary: "Punti su f7!",
+                              sequence: "7...a6 8.Db3!",
+                              tag: "ATTACCO f7",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "w-8de7",
+                                  situation: "8...De7 (Difende f7)",
+                                  myMove: "9.O-O!",
+                                  summary: "Arrocchi con sviluppo completo.",
+                                  sequence: "8...De7 9.O-O!",
+                                  tag: "SVILUPPO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  id: "w-sc-6bb6",
-                  situation: "6...Ab6 (Ritira l'Alfiere senza scacco)",
-                  myMove: "7.d5!",
-                  summary: "Spinti subito in avanti cacciando il Cavallo c6.",
-                  sequence: "6...Ab6 7.d5!",
-                  tag: "SPAZIO CENTRALE",
+                  id: "w-4cf6",
+                  situation: "4...Cf6 (Difesa Due Cavalli)",
+                  myMove: "5.e5!",
+                  summary: "Cacci subito il Cavallo nero.",
+                  sequence: "4...Cf6 5.e5!",
+                  tag: "SPINTA",
                   tagType: "emerald",
                   children: [
                     {
-                      id: "w-sc-7ce7",
-                      situation: "7...Ce7 (Il Cavallo ritira)",
-                      myMove: "8.e5!",
-                      summary: "Cacci anche l'altro Cavallo con tempi consecutivi!",
-                      sequence: "7...Ce7 8.e5!",
-                      tag: "ATTACCO TRAVOLGENTE",
-                      tagType: "rose",
+                      id: "w-5d5",
+                      situation: "5...d5 (Contrattacca l'Alfiere)",
+                      myMove: "6.Ab5!",
+                      summary: "Inchiodi il Cavallo c6.",
+                      sequence: "5...d5 6.Ab5!",
+                      tag: "INCHIODATURA",
+                      tagType: "blue",
                       children: [
                         {
-                          id: "w-sc-8cg4",
-                          situation: "8...Cg4 (Salta in g4)",
-                          myMove: "9.O-O!",
-                          summary: "Metti il Re al sicuro e prepari d6 / Ag5 con posizione vinta.",
-                          sequence: "8...Cg4 9.O-O!",
-                          tag: "ARROCCO SICURO",
+                          id: "w-6ce4",
+                          situation: "6...Ce4 (Salta al centro)",
+                          myMove: "7.Cxd4!",
+                          summary: "Recuperi il pedone centrale.",
+                          sequence: "6...Ce4 7.Cxd4!",
+                          tag: "RECUPERO",
                           tagType: "emerald",
-                          children: []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              id: "w-sc-5dxc3",
-              situation: "5...dxc3 (Accetta il secondo pedone)",
-              myMove: "6.Axf7+!",
-              summary: "Sacrificio immediato su f7 per distruggere l'arrocco nero!",
-              sequence: "5...dxc3 6.Axf7+!",
-              tag: "SACRIFICIO SU f7",
-              tagType: "rose",
-              children: [
-                {
-                  id: "w-sc-6rxf7",
-                  situation: "6...Rxf7 (Forzata)",
-                  myMove: "7.Dd5+!",
-                  summary: "Forchetta reale tra Re in f7 e Alfiere indifeso in c5!",
-                  sequence: "6...Rxf7 7.Dd5+!",
-                  tag: "FORCHETTA DONNA",
-                  tagType: "rose",
-                  children: [
-                    {
-                      id: "w-sc-7re8",
-                      situation: "7...Re8 (o 7...Rf8)",
-                      myMove: "8.Dxc5!",
-                      summary: "Recuperi il pezzo lasciando il Re nero bloccato al centro.",
-                      sequence: "7...Re8 8.Dxc5!",
-                      tag: "RECUPERO",
-                      tagType: "emerald",
-                      children: [
-                        {
-                          id: "w-sc-8d6",
-                          situation: "8...d6 (o 8...cxb2)",
-                          myMove: "9.Dxc3!",
-                          summary: "Riprendi c3, arrocchi corto e domini tutta la scacchiera.",
-                          sequence: "8...d6 9.Dxc3!",
-                          tag: "VANTAGGIO DECISIVO",
-                          tagType: "emerald",
-                          children: []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              id: "w-sc-5d3",
-              situation: "5...d3 (Rifiuta e blocca)",
-              myMove: "6.b4!",
-              summary: "Attacchi subito l'Alfiere c5 guadagnando spazio sull'ala di Donna.",
-              sequence: "5...d3 6.b4!",
-              tag: "TEMPO SUL PEZZO",
-              tagType: "blue",
-              children: [
-                {
-                  id: "w-sc-6ab6",
-                  situation: "6...Ab6 (Ritira)",
-                  myMove: "7.a4!",
-                  summary: "Minacci 8.a5 intrappolando l'Alfiere!",
-                  sequence: "6...Ab6 7.a4!",
-                  tag: "MINACCIA TRAPPOLA",
-                  tagType: "rose",
-                  children: [
-                    {
-                      id: "w-sc-7a6",
-                      situation: "7...a6 (Crea fuga)",
-                      myMove: "8.Db3!",
-                      summary: "Punti subito su f7 con Donna e Alfiere!",
-                      sequence: "7...a6 8.Db3!",
-                      tag: "ATTACCO SU f7",
-                      tagType: "emerald",
-                      children: [
-                        {
-                          id: "w-sc-8de7",
-                          situation: "8...De7 (Difende f7)",
-                          myMove: "9.O-O!",
-                          summary: "Arrocchi, mangi poi d3 con la Donna e hai sviluppo completo.",
-                          sequence: "8...De7 9.O-O!",
-                          tag: "SVILUPPO TOTALE",
-                          tagType: "emerald",
-                          children: []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          id: "w-sc-4nf6",
-          situation: "4...Cf6 (Difesa Due Cavalli)",
-          myMove: "5.e5!",
-          summary: "Cacci subito il Cavallo nero guadagnando spazio centrale.",
-          sequence: "4...Cf6 5.e5!",
-          tag: "SPINTA FORZANTE",
-          tagType: "emerald",
-          children: [
-            {
-              id: "w-sc-5d5",
-              situation: "5...d5 (Contrattacca l'Alfiere)",
-              myMove: "6.Ab5!",
-              summary: "Inchiodi il Cavallo c6 mantenendo l'attacco su f6.",
-              sequence: "5...d5 6.Ab5!",
-              tag: "INCHIODATURA",
-              tagType: "blue",
-              children: [
-                {
-                  id: "w-sc-6ce4",
-                  situation: "6...Ce4 (Salta al centro)",
-                  myMove: "7.Cxd4!",
-                  summary: "Recuperi il pedone centrale minacciando 8.Cxc6.",
-                  sequence: "6...Ce4 7.Cxd4!",
-                  tag: "RECUPERO CENTRALE",
-                  tagType: "emerald",
-                  children: [
-                    {
-                      id: "w-sc-7ad7",
-                      situation: "7...Ad7 (Difende c6)",
-                      myMove: "8.Axc6!",
-                      summary: "Distruggi la struttura pedonale nera sull'ala di Donna.",
-                      sequence: "7...Ad7 8.Axc6!",
-                      tag: "STRUTTURA ROTTA",
-                      tagType: "emerald",
-                      children: [
-                        {
-                          id: "w-sc-8bxc6",
-                          situation: "8...bxc6 (Riprende)",
-                          myMove: "9.O-O!",
-                          summary: "Arrocchi corto in piena sicurezza contro i pedoni doppiati del Nero.",
-                          sequence: "8...bxc6 9.O-O!",
-                          tag: "VANTAGGIO POSIZIONALE",
-                          tagType: "emerald",
-                          children: []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              id: "w-sc-5cg4",
-              situation: "5...Cg4 (Attacca e5)",
-              myMove: "6.De2!",
-              summary: "Difendi e5 bloccando la colonna e.",
-              sequence: "5...Cg4 6.De2!",
-              tag: "DIFESA ATTIVA",
-              tagType: "blue",
-              children: [
-                {
-                  id: "w-sc-6de7",
-                  situation: "6...De7 (Aumenta pressione)",
-                  myMove: "7.Af4!",
-                  summary: "Sviluppi l'Alfiere rinforzando e5.",
-                  sequence: "6...De7 7.Af4!",
-                  tag: "SVILUPPO",
-                  tagType: "emerald",
-                  children: [
-                    {
-                      id: "w-sc-7f6",
-                      situation: "7...f6 (Tenta di rompere)",
-                      myMove: "8.exf6!",
-                      summary: "Forzi il cambio delle Donne lasciando i pedoni neri debolissimi.",
-                      sequence: "7...f6 8.exf6!",
-                      tag: "CAMBIO FORZATO",
-                      tagType: "emerald",
-                      children: [
-                        {
-                          id: "w-sc-8dxe2",
-                          situation: "8...Dxe2+ (Cambia)",
-                          myMove: "9.Axe2!",
-                          summary: "Riprendi sviluppando l'Alfiere con nettissimo vantaggio di sviluppo.",
-                          sequence: "8...Dxe2+ 9.Axe2!",
-                          tag: "FINALE SUPERIORE",
-                          tagType: "blue",
-                          children: []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          id: "w-sc-4h6",
-          situation: "4...h6 (Mossa lenta — Inchiodatura ...Ab4)",
-          myMove: "5.c3!",
-          summary: "Offri subito il gambetto c3 mentre il Nero perde tempo.",
-          sequence: "4...h6 5.c3!",
-          tag: "APERTURA LINEE",
-          tagType: "emerald",
-          children: [
-            {
-              id: "w-sc-4h6-5dxc3",
-              situation: "5...dxc3 (Accetta)",
-              myMove: "6.Cxc3!",
-              summary: "Sviluppi il Cavallo al centro. Ora arriva quasi sempre 6...Ab4!",
-              sequence: "5...dxc3 6.Cxc3!",
-              tag: "SVILUPPO",
-              tagType: "emerald",
-              children: [
-                {
-                  id: "w-sc-4h6-6bb4",
-                  situation: "6...Ab4 (Inchioda il Cavallo c3!)",
-                  myMove: "7.O-O!",
-                  summary: "ARROCCA SUBITO senza paura dell'inchiodatura!",
-                  sequence: "6...Ab4 7.O-O!",
-                  tag: "IGNORA INCHIODATURA",
-                  tagType: "rose",
-                  children: [
-                    {
-                      id: "w-sc-4h6-7bxc3",
-                      situation: "7...Axc3 (Errore tipico: cambia in c3)",
-                      myMove: "8.bxc3!",
-                      summary: "Rinforzi il centro e apri la diagonale per l'Alfiere camposcuro.",
-                      sequence: "7...Axc3 8.bxc3!",
-                      tag: "CENTRO SOLIDO",
-                      tagType: "emerald",
-                      children: [
-                        {
-                          id: "w-sc-4h6-8nge7",
-                          situation: "8...Cge7 (o 8...d6 / 8...Cf6)",
-                          myMove: "9.Db3!",
-                          summary: "Attacchi subito f7 con Donna e Alfiere, poi porti le Torri in d1 e e1.",
-                          sequence: "8...Cge7 9.Db3!",
-                          tag: "ATTACCO SU f7",
-                          tagType: "rose",
-                          children: []
+                          children: [
+                            {
+                              id: "w-7ad7",
+                              situation: "7...Ad7 (Difende c6)",
+                              myMove: "8.Axc6!",
+                              summary: "Rovini i pedoni neri sull'ala di Donna.",
+                              sequence: "7...Ad7 8.Axc6!",
+                              tag: "STRUTTURA",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "w-8bxc6",
+                                  situation: "8...bxc6 (Riprende)",
+                                  myMove: "9.O-O!",
+                                  summary: "Arrocchi corto con vantaggio posizionale.",
+                                  sequence: "8...bxc6 9.O-O!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     },
                     {
-                      id: "w-sc-4h6-7d6",
-                      situation: "7...d6 (Mossa migliore Motore: non cambia)",
-                      myMove: "8.Cd5!",
-                      summary: "Rompi subito l'inchiodatura saltando in d5 e attaccando l'Alfiere b4!",
-                      sequence: "7...d6 8.Cd5!",
-                      tag: "ROMPE INCHIODATURA",
+                      id: "w-5cg4",
+                      situation: "5...Cg4 (Attacca e5)",
+                      myMove: "6.De2!",
+                      summary: "Difendi e5.",
+                      sequence: "5...Cg4 6.De2!",
+                      tag: "DIFESA",
                       tagType: "blue",
                       children: [
                         {
-                          id: "w-sc-4h6-8ac5",
-                          situation: "8...Ac5 (Ritira l'Alfiere)",
-                          myMove: "9.b4!",
-                          summary: "Guadagni spazio sull'ala di Donna e prepari Ab2 sulla diagonale lunga.",
-                          sequence: "8...Ac5 9.b4!",
-                          tag: "DOMINIO TOTALE",
-                          tagType: "emerald",
-                          children: []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      id: "w-scotch-dev",
-      situation: "1.e4 e5 2.Cf3 Cc6 3.d4 (Deviazioni alla 3a mossa)",
-      myMove: "4.dxe5!",
-      summary: "Se il Nero NON mangia 3...exd4, spacchi subito il centro spingendo in e5!",
-      sequence: "1.e4 e5 2.Cf3 Cc6 3.d4",
-      tag: "DEVIAZIONI 3a MOSSA",
-      tagType: "blue",
-      children: [
-        {
-          id: "w-sc-3cf6",
-          situation: "3...Cf6 (Attacca e4)",
-          myMove: "4.dxe5!",
-          summary: "Cacci subito il Cavallo guadagnando un tempo.",
-          sequence: "3...Cf6 4.dxe5!",
-          tag: "TEMPO CENTRALE",
-          tagType: "emerald",
-          children: [
-            {
-              id: "w-sc-3cf6-cxe4",
-              situation: "4...Cxe4 (Riprende e4)",
-              myMove: "5.Dd5!",
-              summary: "DOPPIO ATTACCO su Cavallo e4 e punto f7!",
-              sequence: "4...Cxe4 5.Dd5!",
-              tag: "DOPPIA MINACCIA",
-              tagType: "rose",
-              children: [
-                {
-                  id: "w-sc-5cc5",
-                  situation: "5...Cc5 (Il Cavallo ritira)",
-                  myMove: "6.Ac4!",
-                  summary: "MINACCIA MATTO IN 1 (7.Dxf7#)!",
-                  sequence: "5...Cc5 6.Ac4!",
-                  tag: "MATTO SU f7",
-                  tagType: "rose",
-                  children: [
-                    {
-                      id: "w-sc-6de7",
-                      situation: "6...De7 (Difende f7)",
-                      myMove: "7.O-O!",
-                      summary: "Arrocchi (se ora mangia 7...Cxe5?? vinci tutto con 8.Cxe5! e 9.Dxf7+!).",
-                      sequence: "6...De7 7.O-O!",
-                      tag: "TRAPPOLA COLONNA e",
-                      tagType: "rose",
-                      children: [
-                        {
-                          id: "w-sc-7ce6",
-                          situation: "7...Ce6 (Blocca)",
-                          myMove: "8.Cc3!",
-                          summary: "Sviluppi il Cavallo verso d5.",
-                          sequence: "7...Ce6 8.Cc3!",
+                          id: "w-6de7",
+                          situation: "6...De7 (Aumenta pressione)",
+                          myMove: "7.Af4!",
+                          summary: "Sviluppi l'Alfiere difendendo e5.",
+                          sequence: "6...De7 7.Af4!",
                           tag: "SVILUPPO",
                           tagType: "emerald",
                           children: [
                             {
-                              id: "w-sc-8cc6",
-                              situation: "8...Cc6 (Sviluppo)",
-                              myMove: "9.Te1!",
-                              summary: "Domini la colonna e con pressione schiacciante.",
-                              sequence: "8...Cc6 9.Te1!",
-                              tag: "DOMINIO TOTALE",
+                              id: "w-7f6",
+                              situation: "7...f6 (Rompe)",
+                              myMove: "8.exf6!",
+                              summary: "Forzi il cambio delle Donne.",
+                              sequence: "7...f6 8.exf6!",
+                              tag: "CAMBIO",
                               tagType: "emerald",
-                              children: []
+                              children: [
+                                {
+                                  id: "w-8dxe2",
+                                  situation: "8...Dxe2+ (Cambia)",
+                                  myMove: "9.Axe2!",
+                                  summary: "Finale con netto vantaggio di sviluppo.",
+                                  sequence: "8...Dxe2+ 9.Axe2!",
+                                  tag: "FINALE SUPERIORE",
+                                  tagType: "blue",
+                                  children: []
+                                }
+                              ]
                             }
                           ]
                         }
                       ]
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          id: "w-sc-3d6",
-          situation: "3...d6 (Difesa passiva)",
-          myMove: "4.dxe5!",
-          summary: "Spacchi subito il centro.",
-          sequence: "3...d6 4.dxe5!",
-          tag: "APERTURA CENTRO",
-          tagType: "emerald",
-          children: [
-            {
-              id: "w-sc-3d6-cxe5",
-              situation: "4...Cxe5 (o 4...dxe5)",
-              myMove: "5.Cxe5!",
-              summary: "Forzi il cambio delle Donne.",
-              sequence: "4...Cxe5 5.Cxe5!",
-              tag: "CAMBIO FORZATO",
-              tagType: "blue",
-              children: [
+                },
                 {
-                  id: "w-sc-5dxe5",
-                  situation: "5...dxe5 (Riprende)",
-                  myMove: "6.Dxd8+!",
-                  summary: "Togli l'arrocco al Re nero!",
-                  sequence: "5...dxe5 6.Dxd8+!",
-                  tag: "TOGLIE ARROCCO",
-                  tagType: "rose",
+                  id: "w-4h6",
+                  situation: "4...h6 (Mossa lenta — Inchiodatura ...Ab4)",
+                  myMove: "5.c3!",
+                  summary: "Offri subito il gambetto c3.",
+                  sequence: "4...h6 5.c3!",
+                  tag: "GAMBETTO",
+                  tagType: "emerald",
                   children: [
                     {
-                      id: "w-sc-6rxd8",
-                      situation: "6...Rxd8 (Forzata)",
-                      myMove: "7.Ac4!",
-                      summary: "Punti subito su f7 con sviluppo rapido.",
-                      sequence: "6...Rxd8 7.Ac4!",
-                      tag: "ATTACCO f7",
+                      id: "w-4h6-5dxc3",
+                      situation: "5...dxc3 (Accetta)",
+                      myMove: "6.Cxc3!",
+                      summary: "Sviluppi il Cavallo.",
+                      sequence: "5...dxc3 6.Cxc3!",
+                      tag: "SVILUPPO",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "w-sc-7f6",
-                          situation: "7...f6 (Difende e5)",
-                          myMove: "8.Ae3!",
-                          summary: "Sviluppi l'Alfiere controllando le case scure.",
-                          sequence: "7...f6 8.Ae3!",
-                          tag: "SVILUPPO",
-                          tagType: "blue",
+                          id: "w-4h6-6ab4",
+                          situation: "6...Ab4 (Inchioda c3!)",
+                          myMove: "7.O-O!",
+                          summary: "ARROCCA SUBITO senza paura dell'inchiodatura!",
+                          sequence: "6...Ab4 7.O-O!",
+                          tag: "IGNORA INCHIODATURA",
+                          tagType: "rose",
                           children: [
                             {
-                              id: "w-sc-8ad6",
-                              situation: "8...Ad6 (Sviluppo)",
-                              myMove: "9.Cc3!",
-                              summary: "Prepari O-O-O con netto vantaggio di sviluppo.",
-                              sequence: "8...Ad6 9.Cc3!",
-                              tag: "FINALE SUPERIORE",
+                              id: "w-4h6-7axc3",
+                              situation: "7...Axc3 (Errore tipico: cambia in c3)",
+                              myMove: "8.bxc3!",
+                              summary: "Rinforzi il centro e apri la diagonale per Aa3!",
+                              sequence: "7...Axc3 8.bxc3!",
+                              tag: "CENTRO SOLIDO",
                               tagType: "emerald",
-                              children: []
+                              children: [
+                                {
+                                  id: "w-4h6-8cge7",
+                                  situation: "8...Cge7 (o 8...d6 / 8...Cf6)",
+                                  myMove: "9.Db3!",
+                                  summary: "Attacchi subito f7 con Donna e Alfiere!",
+                                  sequence: "8...Cge7 9.Db3!",
+                                  tag: "ATTACCO f7",
+                                  tagType: "rose",
+                                  children: []
+                                }
+                              ]
+                            },
+                            {
+                              id: "w-4h6-7d6",
+                              situation: "7...d6 (Mossa migliore Motore)",
+                              myMove: "8.Cd5!",
+                              summary: "Rompi l'inchiodatura saltando al centro!",
+                              sequence: "7...d6 8.Cd5!",
+                              tag: "ROMPE INCHIODATURA",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "w-4h6-8ac5",
+                                  situation: "8...Ac5 (Ritira)",
+                                  myMove: "9.b4!",
+                                  summary: "Cacci l'Alfiere guadagnando spazio sull'ala di Donna.",
+                                  sequence: "8...Ac5 9.b4!",
+                                  tag: "DOMINIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
                             }
                           ]
                         }
@@ -879,74 +760,63 @@
                   ]
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      id: "w-philidor-root",
-      situation: "1.e4 e5 2.Cf3 d6 (Difesa Philidor — Gambetto Morphy)",
-      myMove: "3.d4!",
-      summary: "Spacchi subito il centro contro la Philidor.",
-      sequence: "1.e4 e5 2.Cf3 d6 3.d4!",
-      tag: "DIFESA PHILIDOR",
-      tagType: "emerald",
-      children: [
-        {
-          id: "w-philidor-3exd4",
-          situation: "3...exd4 (Cambia al centro)",
-          myMove: "4.Ac4!",
-          summary: "Gambetto Morphy: punti subito su f7.",
-          sequence: "3...exd4 4.Ac4!",
-          tag: "GAMBETTO MORPHY",
-          tagType: "rose",
-          children: [
+            },
             {
-              id: "w-philidor-4ag4",
-              situation: "4...Ag4 (Inchioda f3)",
-              myMove: "5.h3!",
-              summary: "Interroghi subito l'Alfiere.",
-              sequence: "4...Ag4 5.h3!",
-              tag: "CACCIA ALFIERE",
+              id: "w-3cf6",
+              situation: "3...Cf6 (Attacca e4 invece di mangiare)",
+              myMove: "4.dxe5!",
+              summary: "Cacci subito il Cavallo!",
+              sequence: "3...Cf6 4.dxe5!",
+              tag: "TEMPO",
               tagType: "emerald",
               children: [
                 {
-                  id: "w-philidor-5axf3",
-                  situation: "5...Axf3 (Cambia)",
-                  myMove: "6.Dxf3!",
-                  summary: "Minacci matto in 1 su f7!",
-                  sequence: "5...Axf3 6.Dxf3!",
-                  tag: "MINACCIA MATTO",
+                  id: "w-4cxe4",
+                  situation: "4...Cxe4 (Riprende)",
+                  myMove: "5.Dd5!",
+                  summary: "DOPPIO ATTACCO su Cavallo e4 e f7!",
+                  sequence: "4...Cxe4 5.Dd5!",
+                  tag: "DOPPIA MINACCIA",
                   tagType: "rose",
                   children: [
                     {
-                      id: "w-philidor-6cf6",
-                      situation: "6...Cf6 (Difende f7)",
-                      myMove: "7.Db3!",
-                      summary: "DOPPIO ATTACCO LETALE su f7 e sul pedone indifeso b7!",
-                      sequence: "6...Cf6 7.Db3!",
-                      tag: "DOPPIO ATTACCO b7/f7",
+                      id: "w-5cc5",
+                      situation: "5...Cc5 (Ritira)",
+                      myMove: "6.Ac4!",
+                      summary: "Minaccia matto in 1 su f7!",
+                      sequence: "5...Cc5 6.Ac4!",
+                      tag: "MATTO SU f7",
                       tagType: "rose",
                       children: [
                         {
-                          id: "w-philidor-7de7",
-                          situation: "7...De7 (Difende f7)",
-                          myMove: "8.O-O!",
-                          summary: "Arrocchi mantenendo l'attacco su b7 e sulla colonna e.",
-                          sequence: "7...De7 8.O-O!",
+                          id: "w-6de7",
+                          situation: "6...De7 (Difende f7)",
+                          myMove: "7.O-O!",
+                          summary: "Arrocchi (se 7...Cxe5?? vinci tutto con 8.Cxe5!).",
+                          sequence: "6...De7 7.O-O!",
                           tag: "ARROCCO",
                           tagType: "emerald",
                           children: [
                             {
-                              id: "w-philidor-8cbd7",
-                              situation: "8...Cbd7 (Sviluppo)",
-                              myMove: "9.Dxb7!",
-                              summary: "Catturi il pedone b7 gratis attaccando la Torre a8!",
-                              sequence: "8...Cbd7 9.Dxb7!",
-                              tag: "PEDONE VINTO",
-                              tagType: "rose",
-                              children: []
+                              id: "w-7ce6",
+                              situation: "7...Ce6 (Blocca)",
+                              myMove: "8.Cc3!",
+                              summary: "Sviluppi il Cavallo.",
+                              sequence: "7...Ce6 8.Cc3!",
+                              tag: "SVILUPPO",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "w-8cc6",
+                                  situation: "8...Cc6 (Sviluppo)",
+                                  myMove: "9.Te1!",
+                                  summary: "Domini la colonna e.",
+                                  sequence: "8...Cc6 9.Te1!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
                             }
                           ]
                         }
@@ -957,50 +827,61 @@
               ]
             },
             {
-              id: "w-philidor-4cc6",
-              situation: "4...Cc6 (Sviluppo)",
-              myMove: "5.Cxd4!",
-              summary: "Recuperi il pedone centrale con vantaggio di spazio.",
-              sequence: "4...Cc6 5.Cxd4!",
-              tag: "RECUPERO",
+              id: "w-3d6",
+              situation: "3...d6 (Difesa passiva)",
+              myMove: "4.dxe5!",
+              summary: "Spacchi subito il centro.",
+              sequence: "3...d6 4.dxe5!",
+              tag: "CENTRO",
               tagType: "emerald",
               children: [
                 {
-                  id: "w-philidor-5cf6",
-                  situation: "5...Cf6 (Attacca e4)",
-                  myMove: "6.Cc3!",
-                  summary: "Difendi e4 sviluppando.",
-                  sequence: "5...Cf6 6.Cc3!",
-                  tag: "SVILUPPO",
+                  id: "w-4cxe5",
+                  situation: "4...Cxe5 (o 4...dxe5)",
+                  myMove: "5.Cxe5!",
+                  summary: "Forzi il cambio delle Donne.",
+                  sequence: "4...Cxe5 5.Cxe5!",
+                  tag: "CAMBIO",
                   tagType: "blue",
                   children: [
                     {
-                      id: "w-philidor-6ae7",
-                      situation: "6...Ae7 (Prepara arrocco)",
-                      myMove: "7.O-O!",
-                      summary: "Arrocchi corto.",
-                      sequence: "6...Ae7 7.O-O!",
-                      tag: "ARROCCO",
-                      tagType: "emerald",
+                      id: "w-5dxe5",
+                      situation: "5...dxe5 (Riprende)",
+                      myMove: "6.Dxd8+!",
+                      summary: "Togli l'arrocco al Re nero!",
+                      sequence: "5...dxe5 6.Dxd8+!",
+                      tag: "TOGLIE ARROCCO",
+                      tagType: "rose",
                       children: [
                         {
-                          id: "w-philidor-7oo",
-                          situation: "7...O-O (Arrocca)",
-                          myMove: "8.h3!",
-                          summary: "Impedisci ...Ag4.",
-                          sequence: "7...O-O 8.h3!",
-                          tag: "PROFILASSI",
-                          tagType: "blue",
+                          id: "w-6rxd8",
+                          situation: "6...Rxd8 (Forzata)",
+                          myMove: "7.Ac4!",
+                          summary: "Punti su f7.",
+                          sequence: "6...Rxd8 7.Ac4!",
+                          tag: "ATTACCO f7",
+                          tagType: "emerald",
                           children: [
                             {
-                              id: "w-philidor-8te8",
-                              situation: "8...Te8 (Pressione su e4)",
-                              myMove: "9.Te1!",
-                              summary: "Difendi e4 con pieno controllo del centro.",
-                              sequence: "8...Te8 9.Te1!",
-                              tag: "CENTRO SOLIDO",
-                              tagType: "emerald",
-                              children: []
+                              id: "w-7f6",
+                              situation: "7...f6 (Difende e5)",
+                              myMove: "8.Ae3!",
+                              summary: "Sviluppi l'Alfiere.",
+                              sequence: "7...f6 8.Ae3!",
+                              tag: "SVILUPPO",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "w-8ad6",
+                                  situation: "8...Ad6 (Sviluppo)",
+                                  myMove: "9.Cc3!",
+                                  summary: "Prepari O-O-O con finale superiore.",
+                                  sequence: "8...Ad6 9.Cc3!",
+                                  tag: "FINALE SUPERIORE",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
                             }
                           ]
                         }
@@ -1013,234 +894,126 @@
           ]
         },
         {
-          id: "w-philidor-3cf6",
-          situation: "3...Cf6 (Variante Nimzowitsch)",
-          myMove: "4.dxe5!",
-          summary: "Cacci subito il Cavallo!",
-          sequence: "3...Cf6 4.dxe5!",
-          tag: "TEMPO",
+          id: "w-2d6",
+          situation: "2...d6 (Difesa Philidor)",
+          myMove: "3.d4!",
+          summary: "Spacchi subito il centro contro l'impianto passivo.",
+          sequence: "2...d6 3.d4!",
+          tag: "DIFESA PHILIDOR",
           tagType: "emerald",
           children: [
             {
-              id: "w-philidor-4cxe4",
-              situation: "4...Cxe4 (Riprende)",
-              myMove: "5.Dd5!",
-              summary: "Attacchi doppiamente Cavallo e4 e f7!",
-              sequence: "4...Cxe4 5.Dd5!",
-              tag: "DOPPIA MINACCIA",
+              id: "w-phil-3exd4",
+              situation: "3...exd4 (Cambia)",
+              myMove: "4.Ac4!",
+              summary: "Gambetto Morphy: punti su f7.",
+              sequence: "3...exd4 4.Ac4!",
+              tag: "GAMBETTO MORPHY",
               tagType: "rose",
               children: [
                 {
-                  id: "w-philidor-5cc5",
-                  situation: "5...Cc5 (Ritira)",
-                  myMove: "6.Ag5!",
-                  summary: "Attacchi la Donna nera guadagnando un altro tempo!",
-                  sequence: "5...Cc5 6.Ag5!",
-                  tag: "TEMPO SU DONNA",
-                  tagType: "rose",
+                  id: "w-phil-4ag4",
+                  situation: "4...Ag4 (Inchioda f3)",
+                  myMove: "5.h3!",
+                  summary: "Interroghi l'Alfiere.",
+                  sequence: "4...Ag4 5.h3!",
+                  tag: "TEMPO",
+                  tagType: "emerald",
                   children: [
                     {
-                      id: "w-philidor-6ae7",
-                      situation: "6...Ae7 (Copre)",
-                      myMove: "7.exd6!",
-                      summary: "Apri le linee sul Re nero.",
-                      sequence: "6...Ae7 7.exd6!",
-                      tag: "APERTURA",
-                      tagType: "emerald",
-                      children: [
-                        {
-                          id: "w-philidor-7dxd6",
-                          situation: "7...Dxd6 (Cambia)",
-                          myMove: "8.Cc3!",
-                          summary: "Prepari O-O-O con enorme vantaggio di sviluppo.",
-                          sequence: "7...Dxd6 8.Cc3!",
-                          tag: "SVILUPPO",
-                          tagType: "blue",
-                          children: [
-                            {
-                              id: "w-philidor-8oo",
-                              situation: "8...O-O (Arrocca)",
-                              myMove: "9.O-O-O!",
-                              summary: "Torre sulla colonna aperta d e dominio totale.",
-                              sequence: "8...O-O 9.O-O-O!",
-                              tag: "VANTAGGIO NETTO",
-                              tagType: "emerald",
-                              children: []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      id: "w-petroff-root",
-      situation: "1.e4 e5 2.Cf3 Cf6 (Difesa Petroff)",
-      myMove: "3.Cxe5!",
-      summary: "Mangi subito e5!",
-      sequence: "1.e4 e5 2.Cf3 Cf6 3.Cxe5!",
-      tag: "DIFESA PETROFF",
-      tagType: "blue",
-      children: [
-        {
-          id: "w-petroff-3d6",
-          situation: "3...d6 (Caccia il Cavallo)",
-          myMove: "4.Cf3!",
-          summary: "Ritiri il Cavallo (se 3...Cxe4?? 4.De2! vince un pezzo!).",
-          sequence: "3...d6 4.Cf3!",
-          tag: "RITIRATA",
-          tagType: "emerald",
-          children: [
-            {
-              id: "w-petroff-4cxe4",
-              situation: "4...Cxe4 (Recupera e4)",
-              myMove: "5.d4!",
-              summary: "Prendi il centro.",
-              sequence: "4...Cxe4 5.d4!",
-              tag: "CENTRO",
-              tagType: "emerald",
-              children: [
-                {
-                  id: "w-petroff-5d5",
-                  situation: "5...d5 (Difende il Cavallo)",
-                  myMove: "6.Ad3!",
-                  summary: "Sviluppi l'Alfiere puntando sull'ala di Re.",
-                  sequence: "5...d5 6.Ad3!",
-                  tag: "SVILUPPO",
-                  tagType: "blue",
-                  children: [
-                    {
-                      id: "w-petroff-6ad6",
-                      situation: "6...Ad6 (Sviluppo)",
-                      myMove: "7.O-O!",
-                      summary: "Arrocchi corto.",
-                      sequence: "6...Ad6 7.O-O!",
-                      tag: "ARROCCO",
-                      tagType: "emerald",
-                      children: [
-                        {
-                          id: "w-petroff-7oo",
-                          situation: "7...O-O (Arrocca)",
-                          myMove: "8.c4!",
-                          summary: "Colpisci subito il centro nero!",
-                          sequence: "7...O-O 8.c4!",
-                          tag: "ROTTURA c4",
-                          tagType: "rose",
-                          children: [
-                            {
-                              id: "w-petroff-8c6",
-                              situation: "8...c6 (Difende d5)",
-                              myMove: "9.Te1!",
-                              summary: "Pressione diretta sul Cavallo e4 lungo la colonna aperta.",
-                              sequence: "8...c6 9.Te1!",
-                              tag: "COLONNA e",
-                              tagType: "emerald",
-                              children: []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      id: "w-panov-root",
-      situation: "1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4! (Attacco Panov — Caro-Kann)",
-      myMove: "4.c4!",
-      summary: "Spacchi subito la Caro-Kann mettendo pressione su d5!",
-      sequence: "1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4!",
-      tag: "ATTACCO PANOV",
-      tagType: "rose",
-      children: [
-        {
-          id: "w-panov-4cf6",
-          situation: "4...Cf6 (Linea principale)",
-          myMove: "5.Cc3!",
-          summary: "Aumenti la pressione su d5.",
-          sequence: "4...Cf6 5.Cc3!",
-          tag: "PRESSIONE d5",
-          tagType: "emerald",
-          children: [
-            {
-              id: "w-panov-5cc6",
-              situation: "5...Cc6 (Difende d5)",
-              myMove: "6.Ag5!",
-              summary: "Inchiodi il Cavallo f6 eliminando il difensore di d5!",
-              sequence: "5...Cc6 6.Ag5!",
-              tag: "INCHIODATURA",
-              tagType: "rose",
-              children: [
-                {
-                  id: "w-panov-6e6",
-                  situation: "6...e6 (Difende d5)",
-                  myMove: "7.c5!",
-                  summary: "Chiudi l'ala di Donna bloccando l'Alfiere c8 nero.",
-                  sequence: "6...e6 7.c5!",
-                  tag: "BLOCCO",
-                  tagType: "blue",
-                  children: [
-                    {
-                      id: "w-panov-7ae7",
-                      situation: "7...Ae7 (Sviluppo)",
-                      myMove: "8.Ab5!",
-                      summary: "Inchiodi anche l'altro Cavallo in c6!",
-                      sequence: "7...Ae7 8.Ab5!",
-                      tag: "DOPPIA INCHIODATURA",
+                      id: "w-phil-5axf3",
+                      situation: "5...Axf3 (Cambia)",
+                      myMove: "6.Dxf3!",
+                      summary: "Minacci matto in 1 su f7!",
+                      sequence: "5...Axf3 6.Dxf3!",
+                      tag: "MATTO SU f7",
                       tagType: "rose",
                       children: [
                         {
-                          id: "w-panov-8oo",
-                          situation: "8...O-O (Arrocca)",
-                          myMove: "9.Cf3!",
-                          summary: "Sviluppo perfetto e controllo totale del centro.",
-                          sequence: "8...O-O 9.Cf3!",
-                          tag: "VANTAGGIO BIANCO",
-                          tagType: "emerald",
-                          children: []
+                          id: "w-phil-6cf6",
+                          situation: "6...Cf6 (Difende f7)",
+                          myMove: "7.Db3!",
+                          summary: "ATTACCO DOPPIO su f7 e b7!",
+                          sequence: "6...Cf6 7.Db3!",
+                          tag: "DOPPIO ATTACCO",
+                          tagType: "rose",
+                          children: [
+                            {
+                              id: "w-phil-7de7",
+                              situation: "7...De7 (Difende f7)",
+                              myMove: "8.O-O!",
+                              summary: "Arrocchi.",
+                              sequence: "7...De7 8.O-O!",
+                              tag: "ARROCCO",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "w-phil-8cbd7",
+                                  situation: "8...Cbd7 (Sviluppo)",
+                                  myMove: "9.Dxb7!",
+                                  summary: "Mangi b7 gratis attaccando la Torre a8!",
+                                  sequence: "8...Cbd7 9.Dxb7!",
+                                  tag: "PEDONE VINTO",
+                                  tagType: "rose",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  id: "w-panov-6dxc4",
-                  situation: "6...dxc4 (Mangia in c4)",
-                  myMove: "7.d5!",
-                  summary: "Spinti in d5 con guadagno di tempo sul Cavallo c6!",
-                  sequence: "6...dxc4 7.d5!",
-                  tag: "SPINTA d5!",
-                  tagType: "rose",
+                  id: "w-phil-4cc6",
+                  situation: "4...Cc6 (Sviluppo)",
+                  myMove: "5.Cxd4!",
+                  summary: "Recuperi il pedone.",
+                  sequence: "4...Cc6 5.Cxd4!",
+                  tag: "RECUPERO",
+                  tagType: "emerald",
                   children: [
                     {
-                      id: "w-panov-7ce5",
-                      situation: "7...Ce5 (Salta al centro)",
-                      myMove: "8.Dd4!",
-                      summary: "Attacchi il Cavallo e4 e il pedone c4 contemporaneamente!",
-                      sequence: "7...Ce5 8.Dd4!",
-                      tag: "DOPPIO ATTACCO",
-                      tagType: "rose",
+                      id: "w-phil-5cf6",
+                      situation: "5...Cf6 (Attacca e4)",
+                      myMove: "6.Cc3!",
+                      summary: "Difendi e4.",
+                      sequence: "5...Cf6 6.Cc3!",
+                      tag: "SVILUPPO",
+                      tagType: "blue",
                       children: [
                         {
-                          id: "w-panov-8cd3",
-                          situation: "8...Cd3+ (Scacco)",
-                          myMove: "9.Axd3!",
-                          summary: "Cambi l'Alfiere e recuperi c4 con vantaggio decisivo.",
-                          sequence: "8...Cd3+ 9.Axd3!",
-                          tag: "VANTAGGIO NETTO",
+                          id: "w-phil-6ae7",
+                          situation: "6...Ae7 (Sviluppo)",
+                          myMove: "7.O-O!",
+                          summary: "Arrocchi.",
+                          sequence: "6...Ae7 7.O-O!",
+                          tag: "ARROCCO",
                           tagType: "emerald",
-                          children: []
+                          children: [
+                            {
+                              id: "w-phil-7oo",
+                              situation: "7...O-O (Arrocca)",
+                              myMove: "8.h3!",
+                              summary: "Controlli g4.",
+                              sequence: "7...O-O 8.h3!",
+                              tag: "PROFILASSI",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "w-phil-8te8",
+                                  situation: "8...Te8 (Pressione)",
+                                  myMove: "9.Te1!",
+                                  summary: "Centro dominante.",
+                                  sequence: "8...Te8 9.Te1!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -1249,41 +1022,63 @@
               ]
             },
             {
-              id: "w-panov-5e6",
-              situation: "5...e6 (Difende con i pedoni)",
-              myMove: "6.Cf3!",
-              summary: "Sviluppi il Cavallo.",
-              sequence: "5...e6 6.Cf3!",
-              tag: "SVILUPPO",
+              id: "w-phil-3cf6",
+              situation: "3...Cf6 (Nimzowitsch)",
+              myMove: "4.dxe5!",
+              summary: "Cacci il Cavallo!",
+              sequence: "3...Cf6 4.dxe5!",
+              tag: "TEMPO",
               tagType: "emerald",
               children: [
                 {
-                  id: "w-panov-6ab4",
-                  situation: "6...Ab4 (Inchioda c3)",
-                  myMove: "7.cxd5!",
-                  summary: "Isoli il pedone d5 del Nero!",
-                  sequence: "6...Ab4 7.cxd5!",
-                  tag: "PEDONE ISOLATO",
-                  tagType: "blue",
+                  id: "w-phil-4cxe4",
+                  situation: "4...Cxe4 (Riprende)",
+                  myMove: "5.Dd5!",
+                  summary: "Attacchi Cavallo e4 e f7!",
+                  sequence: "4...Cxe4 5.Dd5!",
+                  tag: "DOPPIA MINACCIA",
+                  tagType: "rose",
                   children: [
                     {
-                      id: "w-panov-7exd5",
-                      situation: "7...exd5 (Riprende)",
-                      myMove: "8.Ad3!",
-                      summary: "Punti l'Alfiere sull'arrocco avversario.",
-                      sequence: "7...exd5 8.Ad3!",
-                      tag: "DIAGONALE ATTIVA",
-                      tagType: "emerald",
+                      id: "w-phil-5cc5",
+                      situation: "5...Cc5 (Ritira)",
+                      myMove: "6.Ag5!",
+                      summary: "Attacchi la Donna!",
+                      sequence: "5...Cc5 6.Ag5!",
+                      tag: "TEMPO",
+                      tagType: "rose",
                       children: [
                         {
-                          id: "w-panov-8oo",
-                          situation: "8...O-O (Arrocca)",
-                          myMove: "9.O-O!",
-                          summary: "Re al sicuro, prepari Ag5 e Te1.",
-                          sequence: "8...O-O 9.O-O!",
-                          tag: "ATTACCO PRONTO",
+                          id: "w-phil-6ae7",
+                          situation: "6...Ae7 (Copre)",
+                          myMove: "7.exd6!",
+                          summary: "Apri il centro.",
+                          sequence: "6...Ae7 7.exd6!",
+                          tag: "APERTURA",
                           tagType: "emerald",
-                          children: []
+                          children: [
+                            {
+                              id: "w-phil-7dxd6",
+                              situation: "7...Dxd6 (Cambia)",
+                              myMove: "8.Cc3!",
+                              summary: "Prepari O-O-O.",
+                              sequence: "7...Dxd6 8.Cc3!",
+                              tag: "SVILUPPO",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "w-phil-8oo",
+                                  situation: "8...O-O (Arrocca)",
+                                  myMove: "9.O-O-O!",
+                                  summary: "Dominio totale della colonna d.",
+                                  sequence: "8...O-O 9.O-O-O!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -1294,104 +1089,72 @@
           ]
         },
         {
-          id: "w-panov-4e6",
-          situation: "4...e6 (Difende subito d5)",
-          myMove: "5.Cc3!",
-          summary: "Sviluppi il Cavallo.",
-          sequence: "4...e6 5.Cc3!",
-          tag: "SVILUPPO",
-          tagType: "emerald",
+          id: "w-2cf6",
+          situation: "2...Cf6 (Difesa Petroff / Russa)",
+          myMove: "3.Cxe5!",
+          summary: "Mangi subito e5!",
+          sequence: "2...Cf6 3.Cxe5!",
+          tag: "DIFESA PETROFF",
+          tagType: "blue",
           children: [
             {
-              id: "w-panov-e6-ab4",
-              situation: "5...Ab4 (Inchioda c3 — MAI 6.Dd3?!)",
-              myMove: "6.Cf3!",
-              summary: "REGOLA D'ORO: sviluppa 6.Cf3! senza esporre la Donna.",
-              sequence: "5...Ab4 6.Cf3!",
-              tag: "NO 6.Dd3?",
-              tagType: "rose",
+              id: "w-pet-3d6",
+              situation: "3...d6 (Caccia il Cavallo)",
+              myMove: "4.Cf3!",
+              summary: "Ritiri il Cavallo.",
+              sequence: "3...d6 4.Cf3!",
+              tag: "RITIRATA",
+              tagType: "emerald",
               children: [
                 {
-                  id: "w-panov-6cf6",
-                  situation: "6...Cf6 (Sviluppo)",
-                  myMove: "7.cxd5!",
-                  summary: "Isoli d5.",
-                  sequence: "6...Cf6 7.cxd5!",
-                  tag: "PEDONE ISOLATO",
+                  id: "w-pet-4cxe4",
+                  situation: "4...Cxe4 (Riprende)",
+                  myMove: "5.d4!",
+                  summary: "Prendi il centro.",
+                  sequence: "4...Cxe4 5.d4!",
+                  tag: "CENTRO",
                   tagType: "emerald",
                   children: [
                     {
-                      id: "w-panov-7exd5-b",
-                      situation: "7...exd5 (Riprende)",
-                      myMove: "8.Ad3!",
-                      summary: "Prepari l'arrocco.",
-                      sequence: "7...exd5 8.Ad3!",
+                      id: "w-pet-5d5",
+                      situation: "5...d5 (Difende)",
+                      myMove: "6.Ad3!",
+                      summary: "Sviluppi l'Alfiere.",
+                      sequence: "5...d5 6.Ad3!",
                       tag: "SVILUPPO",
                       tagType: "blue",
                       children: [
                         {
-                          id: "w-panov-8oo-b",
-                          situation: "8...O-O (Arrocca)",
-                          myMove: "9.O-O!",
-                          summary: "Posizione aperta e superiore per il Bianco.",
-                          sequence: "8...O-O 9.O-O!",
-                          tag: "VANTAGGIO BIANCO",
+                          id: "w-pet-6ad6",
+                          situation: "6...Ad6 (Sviluppo)",
+                          myMove: "7.O-O!",
+                          summary: "Arrocchi.",
+                          sequence: "6...Ad6 7.O-O!",
+                          tag: "ARROCCO",
                           tagType: "emerald",
-                          children: []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          id: "w-panov-4dxc4",
-          situation: "4...dxc4 (Accetta subito c4)",
-          myMove: "5.Axc4!",
-          summary: "Recuperi il pedone puntando su f7.",
-          sequence: "4...dxc4 5.Axc4!",
-          tag: "DIAGONALE f7",
-          tagType: "emerald",
-          children: [
-            {
-              id: "w-panov-4dxc4-5af5",
-              situation: "5...Af5 (Sviluppa fuori catena)",
-              myMove: "6.Cf3!",
-              summary: "Sviluppi il Cavallo.",
-              sequence: "5...Af5 6.Cf3!",
-              tag: "SVILUPPO",
-              tagType: "blue",
-              children: [
-                {
-                  id: "w-panov-6e6-c",
-                  situation: "6...e6 (Chiude)",
-                  myMove: "7.d5!",
-                  summary: "Spacchi subito il centro mentre il Re nero è ancora al centro!",
-                  sequence: "6...e6 7.d5!",
-                  tag: "ROTTURA d5!",
-                  tagType: "rose",
-                  children: [
-                    {
-                      id: "w-panov-7exd5-c",
-                      situation: "7...exd5 (Mangia)",
-                      myMove: "8.Axd5!",
-                      summary: "Minacci 9.Axf7+! e 9.Axb7!",
-                      sequence: "7...exd5 8.Axd5!",
-                      tag: "DOPPIA MINACCIA",
-                      tagType: "rose",
-                      children: [
-                        {
-                          id: "w-panov-8cc6",
-                          situation: "8...Cc6 (Difende b7)",
-                          myMove: "9.O-O!",
-                          summary: "Arrocchi con iniziativa travolgente.",
-                          sequence: "8...Cc6 9.O-O!",
-                          tag: "ATTACCO TOTALE",
-                          tagType: "emerald",
-                          children: []
+                          children: [
+                            {
+                              id: "w-pet-7oo",
+                              situation: "7...O-O (Arrocca)",
+                              myMove: "8.c4!",
+                              summary: "Colpisci il centro!",
+                              sequence: "7...O-O 8.c4!",
+                              tag: "ROTTURA",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-pet-8c6",
+                                  situation: "8...c6 (Difende)",
+                                  myMove: "9.Te1!",
+                                  summary: "Pressione sulla colonna aperta e.",
+                                  sequence: "8...c6 9.Te1!",
+                                  tag: "COLONNA e",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -1404,12 +1167,282 @@
       ]
     },
     {
-      id: "w-sicilian-root",
-      situation: "1.e4 c5 2.Cf3! (Difesa Siciliana — Siciliana Aperta)",
+      id: "w-1c6",
+      situation: "1...c6 (Difesa Caro-Kann)",
+      myMove: "2.d4!",
+      summary: "Prendi il centro preparando l'Attacco Panov.",
+      sequence: "1...c6 2.d4!",
+      tag: "CARO-KANN",
+      tagType: "rose",
+      children: [
+        {
+          id: "w-ck-2d5",
+          situation: "2...d5 (Spinta centrale)",
+          myMove: "3.exd5!",
+          summary: "Cambi per giocare subito 4.c4! (Attacco Panov).",
+          sequence: "2...d5 3.exd5!",
+          tag: "CAMBIO PANOV",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-ck-3cxd5",
+              situation: "3...cxd5 (Riprende)",
+              myMove: "4.c4!",
+              summary: "ATTACCO PANOV: metti subito pressione su d5!",
+              sequence: "3...cxd5 4.c4!",
+              tag: "ATTACCO PANOV",
+              tagType: "rose",
+              children: [
+                {
+                  id: "w-pan-4cf6",
+                  situation: "4...Cf6 (Linea principale)",
+                  myMove: "5.Cc3!",
+                  summary: "Aumenti pressione su d5.",
+                  sequence: "4...Cf6 5.Cc3!",
+                  tag: "SVILUPPO",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "w-pan-5cc6",
+                      situation: "5...Cc6 (Difende d5)",
+                      myMove: "6.Ag5!",
+                      summary: "Inchiodi il Cavallo f6!",
+                      sequence: "5...Cc6 6.Ag5!",
+                      tag: "INCHIODATURA",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "w-pan-6e6",
+                          situation: "6...e6 (Difende)",
+                          myMove: "7.c5!",
+                          summary: "Chiudi l'ala di Donna.",
+                          sequence: "6...e6 7.c5!",
+                          tag: "BLOCCO",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "w-pan-7ae7",
+                              situation: "7...Ae7 (Sviluppo)",
+                              myMove: "8.Ab5!",
+                              summary: "Inchiodi anche c6!",
+                              sequence: "7...Ae7 8.Ab5!",
+                              tag: "INCHIODATURA",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-pan-8oo",
+                                  situation: "8...O-O (Arrocca)",
+                                  myMove: "9.Cf3!",
+                                  summary: "Controllo totale del centro.",
+                                  sequence: "8...O-O 9.Cf3!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: "w-pan-6dxc4",
+                          situation: "6...dxc4 (Mangia)",
+                          myMove: "7.d5!",
+                          summary: "Cacci il Cavallo c6!",
+                          sequence: "6...dxc4 7.d5!",
+                          tag: "SPINTA d5!",
+                          tagType: "rose",
+                          children: [
+                            {
+                              id: "w-pan-7ce5",
+                              situation: "7...Ce5 (Salta al centro)",
+                              myMove: "8.Dd4!",
+                              summary: "Doppio attacco su Cavallo e pedone c4!",
+                              sequence: "7...Ce5 8.Dd4!",
+                              tag: "DOPPIO ATTACCO",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-pan-8cd3",
+                                  situation: "8...Cd3+ (Scacco)",
+                                  myMove: "9.Axd3!",
+                                  summary: "Vantaggio netto per il Bianco.",
+                                  sequence: "8...Cd3+ 9.Axd3!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "w-pan-5e6",
+                      situation: "5...e6 (Difende con pedone)",
+                      myMove: "6.Cf3!",
+                      summary: "Sviluppi il Cavallo.",
+                      sequence: "5...e6 6.Cf3!",
+                      tag: "SVILUPPO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "w-pan-6ab4",
+                          situation: "6...Ab4 (Inchioda)",
+                          myMove: "7.cxd5!",
+                          summary: "Isoli d5.",
+                          sequence: "6...Ab4 7.cxd5!",
+                          tag: "PEDONE ISOLATO",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "w-pan-7exd5",
+                              situation: "7...exd5 (Riprende)",
+                              myMove: "8.Ad3!",
+                              summary: "Punti sull'arrocco.",
+                              sequence: "7...exd5 8.Ad3!",
+                              tag: "DIAGONALE",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "w-pan-8oo-b",
+                                  situation: "8...O-O (Arrocca)",
+                                  myMove: "9.O-O!",
+                                  summary: "Attacco pronto con Ag5 e Te1.",
+                                  sequence: "8...O-O 9.O-O!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  id: "w-pan-4e6",
+                  situation: "4...e6 (Difende subito d5)",
+                  myMove: "5.Cc3!",
+                  summary: "Sviluppi il Cavallo.",
+                  sequence: "4...e6 5.Cc3!",
+                  tag: "SVILUPPO",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "w-pan-e6-ab4",
+                      situation: "5...Ab4 (Inchioda — MAI 6.Dd3?!)",
+                      myMove: "6.Cf3!",
+                      summary: "Sviluppa sempre 6.Cf3! senza esporre la Donna.",
+                      sequence: "5...Ab4 6.Cf3!",
+                      tag: "NO 6.Dd3?",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "w-pan-e6-6cf6",
+                          situation: "6...Cf6 (Sviluppo)",
+                          myMove: "7.cxd5!",
+                          summary: "Isoli d5.",
+                          sequence: "6...Cf6 7.cxd5!",
+                          tag: "PEDONE ISOLATO",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "w-pan-e6-7exd5",
+                              situation: "7...exd5 (Riprende)",
+                              myMove: "8.Ad3!",
+                              summary: "Sviluppi l'Alfiere.",
+                              sequence: "7...exd5 8.Ad3!",
+                              tag: "SVILUPPO",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "w-pan-e6-8oo",
+                                  situation: "8...O-O (Arrocca)",
+                                  myMove: "9.O-O!",
+                                  summary: "Posizione superiore e aperta.",
+                                  sequence: "8...O-O 9.O-O!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  id: "w-pan-4dxc4",
+                  situation: "4...dxc4 (Accetta c4)",
+                  myMove: "5.Axc4!",
+                  summary: "Recuperi il pedone puntando su f7.",
+                  sequence: "4...dxc4 5.Axc4!",
+                  tag: "DIAGONALE f7",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "w-pan-dxc4-5af5",
+                      situation: "5...Af5 (Sviluppa)",
+                      myMove: "6.Cf3!",
+                      summary: "Sviluppi il Cavallo.",
+                      sequence: "5...Af5 6.Cf3!",
+                      tag: "SVILUPPO",
+                      tagType: "blue",
+                      children: [
+                        {
+                          id: "w-pan-dxc4-6e6",
+                          situation: "6...e6 (Chiude)",
+                          myMove: "7.d5!",
+                          summary: "Spacchi il centro mentre il Re nero è ancora al centro!",
+                          sequence: "6...e6 7.d5!",
+                          tag: "ROTTURA d5!",
+                          tagType: "rose",
+                          children: [
+                            {
+                              id: "w-pan-dxc4-7exd5",
+                              situation: "7...exd5 (Mangia)",
+                              myMove: "8.Axd5!",
+                              summary: "Minacci 9.Axf7+! e 9.Axb7!",
+                              sequence: "7...exd5 8.Axd5!",
+                              tag: "MINACCIA",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-pan-dxc4-8cc6",
+                                  situation: "8...Cc6 (Difende b7)",
+                                  myMove: "9.O-O!",
+                                  summary: "Attacco travolgente!",
+                                  sequence: "8...Cc6 9.O-O!",
+                                  tag: "ATTACCO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "w-1c5",
+      situation: "1...c5 (Difesa Siciliana)",
       myMove: "2.Cf3!",
-      summary: "Prepari subito 3.d4! per aprire la scacchiera.",
-      sequence: "1.e4 c5 2.Cf3!",
-      tag: "SICILIANA APERTA",
+      summary: "Prepari 3.d4! per la Siciliana Aperta.",
+      sequence: "1...c5 2.Cf3!",
+      tag: "SICILIANA",
       tagType: "emerald",
       children: [
         {
@@ -1418,7 +1451,7 @@
           myMove: "3.d4!",
           summary: "Apri il centro.",
           sequence: "2...d6 3.d4!",
-          tag: "APERTURA CENTRO",
+          tag: "APERTURA",
           tagType: "emerald",
           children: [
             {
@@ -1443,7 +1476,7 @@
                       id: "w-sic-5a6",
                       situation: "5...a6 (Najdorf)",
                       myMove: "6.Ag5!",
-                      summary: "Attacco diretto sul Cavallo f6!",
+                      summary: "Inchiodi f6!",
                       sequence: "5...a6 6.Ag5!",
                       tag: "INCHIODATURA",
                       tagType: "rose",
@@ -1452,9 +1485,9 @@
                           id: "w-sic-6e6",
                           situation: "6...e6 (Copre)",
                           myMove: "7.f4!",
-                          summary: "Prepari e5 e l'assalto sull'ala di Re!",
+                          summary: "Attacco Inglese!",
                           sequence: "6...e6 7.f4!",
-                          tag: "ATTACCO INGLESE",
+                          tag: "ATTACCO",
                           tagType: "rose",
                           children: [
                             {
@@ -1463,16 +1496,16 @@
                               myMove: "8.Df3!",
                               summary: "Prepari O-O-O.",
                               sequence: "7...Ae7 8.Df3!",
-                              tag: "PREPARAZIONE O-O-O",
+                              tag: "PREPARAZIONE",
                               tagType: "blue",
                               children: [
                                 {
                                   id: "w-sic-8dc7",
                                   situation: "8...Dc7 (Controlla c4)",
                                   myMove: "9.O-O-O!",
-                                  summary: "Arrocco lungo completo e attacco g4-g5 pronto!",
+                                  summary: "Arrocco lungo completo e attacco g4-g5!",
                                   sequence: "8...Dc7 9.O-O-O!",
-                                  tag: "ASSALTO AL RE",
+                                  tag: "ASSALTO",
                                   tagType: "rose",
                                   children: []
                                 }
@@ -1494,14 +1527,14 @@
           myMove: "3.d4!",
           summary: "Apri il centro.",
           sequence: "2...Cc6 3.d4!",
-          tag: "CENTRO APERTO",
+          tag: "APERTURA",
           tagType: "emerald",
           children: [
             {
               id: "w-sic-cc6-3cxd4",
               situation: "3...cxd4 (Mangia)",
               myMove: "4.Cxd4!",
-              summary: "Riprendi al centro.",
+              summary: "Centralizzi il Cavallo.",
               sequence: "3...cxd4 4.Cxd4!",
               tag: "SVILUPPO",
               tagType: "blue",
@@ -1519,34 +1552,34 @@
                       id: "w-sic-cc6-5e5",
                       situation: "5...e5 (Sveshnikov)",
                       myMove: "6.Cdb5!",
-                      summary: "Punti subito alla casa debole d6!",
+                      summary: "Punti a d6!",
                       sequence: "5...e5 6.Cdb5!",
-                      tag: "PRESSIONE d6",
+                      tag: "PRESSIONE",
                       tagType: "rose",
                       children: [
                         {
                           id: "w-sic-cc6-6d6",
-                          situation: "6...d6 (Copre d6)",
+                          situation: "6...d6 (Copre)",
                           myMove: "7.Ag5!",
-                          summary: "Elimini il difensore della casa d5!",
+                          summary: "Elimini il difensore di d5!",
                           sequence: "6...d6 7.Ag5!",
                           tag: "CONQUISTA d5",
                           tagType: "rose",
                           children: [
                             {
                               id: "w-sic-cc6-7a6",
-                              situation: "7...a6 (Caccia il Cavallo)",
+                              situation: "7...a6 (Caccia)",
                               myMove: "8.Ca3!",
-                              summary: "Ritiri il Cavallo per riportarlo in c4/e3.",
+                              summary: "Ritiri il Cavallo.",
                               sequence: "7...a6 8.Ca3!",
                               tag: "MANOVRA",
                               tagType: "blue",
                               children: [
                                 {
                                   id: "w-sic-cc6-8b5",
-                                  situation: "8...b5 (Spinta sull'ala)",
+                                  situation: "8...b5 (Spinta)",
                                   myMove: "9.Cd5!",
-                                  summary: "Piazzi un Cavallo inamovibile nell'avamposto d5!",
+                                  summary: "Avamposto inamovibile in d5!",
                                   sequence: "8...b5 9.Cd5!",
                                   tag: "AVAMPOSTO d5",
                                   tagType: "emerald",
@@ -1570,7 +1603,7 @@
           myMove: "3.d4!",
           summary: "Prendi tutto il centro.",
           sequence: "2...b6 3.d4!",
-          tag: "DOMINIO CENTRALE",
+          tag: "CENTRO",
           tagType: "emerald",
           children: [
             {
@@ -1597,23 +1630,23 @@
                       myMove: "6.Ad3!",
                       summary: "Rinforzi e4.",
                       sequence: "5...e6 6.Ad3!",
-                      tag: "CENTRO BLINDATO",
+                      tag: "CENTRO",
                       tagType: "blue",
                       children: [
                         {
                           id: "w-sic-2b6-6cc6",
                           situation: "6...Cc6 (Attacca d4)",
                           myMove: "7.Cxc6!",
-                          summary: "Cambi mantenendo il vantaggio di spazio.",
+                          summary: "Cambi mantenendo vantaggio.",
                           sequence: "6...Cc6 7.Cxc6!",
-                          tag: "SEMPLIFICAZIONE",
+                          tag: "CAMBIO",
                           tagType: "emerald",
                           children: [
                             {
                               id: "w-sic-2b6-7axc6",
                               situation: "7...Axc6 (Riprende)",
                               myMove: "8.O-O!",
-                              summary: "Arrocchi corto.",
+                              summary: "Arrocchi.",
                               sequence: "7...Axc6 8.O-O!",
                               tag: "ARROCCO",
                               tagType: "emerald",
@@ -1622,9 +1655,9 @@
                                   id: "w-sic-2b6-8cf6",
                                   situation: "8...Cf6 (Sviluppo)",
                                   myMove: "9.De2!",
-                                  summary: "Difendi e4 e prepari e5 / f4.",
+                                  summary: "Vantaggio di spazio centrale.",
                                   sequence: "8...Cf6 9.De2!",
-                                  tag: "VANTAGGIO SPAZIO",
+                                  tag: "VANTAGGIO",
                                   tagType: "emerald",
                                   children: []
                                 }
@@ -1643,59 +1676,81 @@
       ]
     },
     {
-      id: "w-french-root",
-      situation: "1.e4 e6 2.d4 d5 3.exd5! exd5 4.c4! (Francese — Attacco Monte Carlo)",
-      myMove: "4.c4!",
-      summary: "Spacchi subito la catena francese giocando a campo aperto come nel Panov.",
-      sequence: "1.e4 e6 2.d4 d5 3.exd5! exd5 4.c4!",
-      tag: "ATTACCO MONTE CARLO",
+      id: "w-1e6",
+      situation: "1...e6 (Difesa Francese)",
+      myMove: "2.d4!",
+      summary: "Prendi il centro preparando l'Attacco Monte Carlo.",
+      sequence: "1...e6 2.d4!",
+      tag: "FRANCESE",
       tagType: "rose",
       children: [
         {
-          id: "w-french-4cf6",
-          situation: "4...Cf6 (Difesa principale)",
-          myMove: "5.Cc3!",
-          summary: "Sviluppi mettendo pressione su d5.",
-          sequence: "4...Cf6 5.Cc3!",
-          tag: "SVILUPPO",
+          id: "w-fr-2d5",
+          situation: "2...d5 (Spinta centrale)",
+          myMove: "3.exd5!",
+          summary: "Cambi subito per evitare partite chiuse.",
+          sequence: "2...d5 3.exd5!",
+          tag: "CAMBIO",
           tagType: "emerald",
           children: [
             {
-              id: "w-french-5ae7",
-              situation: "5...Ae7 (Prepara arrocco)",
-              myMove: "6.Cf3!",
-              summary: "Sviluppi l'altro Cavallo.",
-              sequence: "5...Ae7 6.Cf3!",
-              tag: "SVILUPPO",
-              tagType: "blue",
+              id: "w-fr-3exd5",
+              situation: "3...exd5 (Riprende)",
+              myMove: "4.c4!",
+              summary: "ATTACCO MONTE CARLO: gioco aperto come nel Panov!",
+              sequence: "3...exd5 4.c4!",
+              tag: "MONTE CARLO",
+              tagType: "rose",
               children: [
                 {
-                  id: "w-french-6oo",
-                  situation: "6...O-O (Arrocca)",
-                  myMove: "7.cxd5!",
-                  summary: "Apri la diagonale per l'Alfiere campochiaro.",
-                  sequence: "6...O-O 7.cxd5!",
-                  tag: "APERTURA LINEE",
+                  id: "w-fr-4cf6",
+                  situation: "4...Cf6 (Difende d5)",
+                  myMove: "5.Cc3!",
+                  summary: "Sviluppi il Cavallo.",
+                  sequence: "4...Cf6 5.Cc3!",
+                  tag: "SVILUPPO",
                   tagType: "emerald",
                   children: [
                     {
-                      id: "w-french-7cxd5",
-                      situation: "7...Cxd5 (Riprende)",
-                      myMove: "8.Ad3!",
-                      summary: "Punti sull'arrocco avversario.",
-                      sequence: "7...Cxd5 8.Ad3!",
-                      tag: "DIAGONALE ATTIVA",
-                      tagType: "rose",
+                      id: "w-fr-5ae7",
+                      situation: "5...Ae7 (Prepara arrocco)",
+                      myMove: "6.Cf3!",
+                      summary: "Sviluppi l'altro Cavallo.",
+                      sequence: "5...Ae7 6.Cf3!",
+                      tag: "SVILUPPO",
+                      tagType: "blue",
                       children: [
                         {
-                          id: "w-french-8cc6",
-                          situation: "8...Cc6 (Sviluppo)",
-                          myMove: "9.O-O!",
-                          summary: "Arrocchi corto con posizione aperta e iniziativa.",
-                          sequence: "8...Cc6 9.O-O!",
-                          tag: "GIOCO APERTO",
+                          id: "w-fr-6oo",
+                          situation: "6...O-O (Arrocca)",
+                          myMove: "7.cxd5!",
+                          summary: "Apri le linee!",
+                          sequence: "6...O-O 7.cxd5!",
+                          tag: "APERTURA",
                           tagType: "emerald",
-                          children: []
+                          children: [
+                            {
+                              id: "w-fr-7cxd5",
+                              situation: "7...Cxd5 (Riprende)",
+                              myMove: "8.Ad3!",
+                              summary: "Punti sull'arrocco!",
+                              sequence: "7...Cxd5 8.Ad3!",
+                              tag: "DIAGONALE",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-fr-8cc6",
+                                  situation: "8...Cc6 (Sviluppo)",
+                                  myMove: "9.O-O!",
+                                  summary: "Iniziativa piena del Bianco.",
+                                  sequence: "8...Cc6 9.O-O!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -1708,68 +1763,79 @@
       ]
     },
     {
-      id: "w-scandi-white-root",
-      situation: "1.e4 d5 2.exd5! Dxd5 3.Cc3! (Scandinava lato Bianco)",
-      myMove: "3.Cc3!",
-      summary: "Attacchi subito la Donna centrale guadagnando un tempo.",
-      sequence: "1.e4 d5 2.exd5! Dxd5 3.Cc3!",
-      tag: "SCANDINAVA BIANCO",
+      id: "w-1d5",
+      situation: "1...d5 (Difesa Scandinava)",
+      myMove: "2.exd5!",
+      summary: "Mangi subito d5!",
+      sequence: "1...d5 2.exd5!",
+      tag: "SCANDINAVA",
       tagType: "emerald",
       children: [
         {
-          id: "w-scandi-3da5",
-          situation: "3...Da5 (Linea principale)",
-          myMove: "4.d4!",
-          summary: "Prendi il centro.",
-          sequence: "3...Da5 4.d4!",
-          tag: "CENTRO",
+          id: "w-scw-2dxd5",
+          situation: "2...Dxd5 (Riprende di Donna)",
+          myMove: "3.Cc3!",
+          summary: "Guadagni subito un tempo sulla Donna!",
+          sequence: "2...Dxd5 3.Cc3!",
+          tag: "TEMPO",
           tagType: "emerald",
           children: [
             {
-              id: "w-scandi-4cf6",
-              situation: "4...Cf6 (Sviluppo)",
-              myMove: "5.Cf3!",
-              summary: "Sviluppi il Cavallo.",
-              sequence: "4...Cf6 5.Cf3!",
-              tag: "SVILUPPO",
-              tagType: "blue",
+              id: "w-scw-3da5",
+              situation: "3...Da5 (Linea principale)",
+              myMove: "4.d4!",
+              summary: "Prendi il centro.",
+              sequence: "3...Da5 4.d4!",
+              tag: "CENTRO",
+              tagType: "emerald",
               children: [
                 {
-                  id: "w-scandi-5c6",
-                  situation: "5...c6 (Crea fuga)",
-                  myMove: "6.Ac4!",
-                  summary: "Punti su f7.",
-                  sequence: "5...c6 6.Ac4!",
-                  tag: "ATTACCO f7",
-                  tagType: "emerald",
+                  id: "w-scw-4cf6",
+                  situation: "4...Cf6 (Sviluppo)",
+                  myMove: "5.Cf3!",
+                  summary: "Sviluppi.",
+                  sequence: "4...Cf6 5.Cf3!",
+                  tag: "SVILUPPO",
+                  tagType: "blue",
                   children: [
                     {
-                      id: "w-scandi-6af5",
-                      situation: "6...Af5 (Sviluppo)",
-                      myMove: "7.Ad2!",
-                      summary: "Prepari la scoperta sulla Donna nera!",
-                      sequence: "6...Af5 7.Ad2!",
-                      tag: "SCOPERTA PRONTA",
-                      tagType: "rose",
+                      id: "w-scw-5c6",
+                      situation: "5...c6 (Crea fuga)",
+                      myMove: "6.Ac4!",
+                      summary: "Punti su f7.",
+                      sequence: "5...c6 6.Ac4!",
+                      tag: "ATTACCO f7",
+                      tagType: "emerald",
                       children: [
                         {
-                          id: "w-scandi-7e6",
-                          situation: "7...e6 (Chiude)",
-                          myMove: "8.Cd5!",
-                          summary: "Attacco doppio alla Donna a5 e al Cavallo f6!",
-                          sequence: "7...e6 8.Cd5!",
-                          tag: "COLPO TATTICO",
+                          id: "w-scw-6af5",
+                          situation: "6...Af5 (Sviluppo)",
+                          myMove: "7.Ad2!",
+                          summary: "Prepari la scoperta sulla Donna!",
+                          sequence: "6...Af5 7.Ad2!",
+                          tag: "SCOPERTA",
                           tagType: "rose",
                           children: [
                             {
-                              id: "w-scandi-8dd8",
-                              situation: "8...Dd8 (Ritira)",
-                              myMove: "9.Cxf6+!",
-                              summary: "Rovini i pedoni dell'arrocco nero e arrocchi con vantaggio netto!",
-                              sequence: "8...Dd8 9.Cxf6+!",
-                              tag: "VANTAGGIO BIANCO",
-                              tagType: "emerald",
-                              children: []
+                              id: "w-scw-7e6",
+                              situation: "7...e6 (Chiude)",
+                              myMove: "8.Cd5!",
+                              summary: "Doppio attacco su Donna e Cavallo f6!",
+                              sequence: "7...e6 8.Cd5!",
+                              tag: "COLPO TATTICO",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "w-scw-8dd8",
+                                  situation: "8...Dd8 (Ritira)",
+                                  myMove: "9.Cxf6+!",
+                                  summary: "Rovini i pedoni dell'arrocco nero!",
+                                  sequence: "8...Dd8 9.Cxf6+!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
                             }
                           ]
                         }
@@ -1778,63 +1844,63 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          id: "w-scandi-3de6",
-          situation: "3...De6+ (Scacco insolito)",
-          myMove: "4.Ae2!",
-          summary: "Copri lo scacco sviluppando un pezzo.",
-          sequence: "3...De6+ 4.Ae2!",
-          tag: "SVILUPPO",
-          tagType: "emerald",
-          children: [
+            },
             {
-              id: "w-scandi-4dg6",
-              situation: "4...Dg6 (Punta su g2 e c2)",
-              myMove: "5.d4!",
-              summary: "Prendi il centro.",
-              sequence: "4...Dg6 5.d4!",
-              tag: "CENTRO",
+              id: "w-scw-3de6",
+              situation: "3...De6+ (Scacco insolito)",
+              myMove: "4.Ae2!",
+              summary: "Copri sviluppando.",
+              sequence: "3...De6+ 4.Ae2!",
+              tag: "SVILUPPO",
               tagType: "emerald",
               children: [
                 {
-                  id: "w-scandi-5cf6",
-                  situation: "5...Cf6 (Sviluppo)",
-                  myMove: "6.Cf3!",
-                  summary: "Difendi g2 sviluppando.",
-                  sequence: "5...Cf6 6.Cf3!",
-                  tag: "DIFESA g2",
-                  tagType: "blue",
+                  id: "w-scw-4dg6",
+                  situation: "4...Dg6 (Punta su g2 e c2)",
+                  myMove: "5.d4!",
+                  summary: "Prendi il centro.",
+                  sequence: "4...Dg6 5.d4!",
+                  tag: "CENTRO",
+                  tagType: "emerald",
                   children: [
                     {
-                      id: "w-scandi-6cc6",
-                      situation: "6...Cc6 (o 6...Ca6)",
-                      myMove: "7.O-O!",
-                      summary: "Metti il Re al sicuro (e ricorda: appena vedi ...Ca6 gioca a3!).",
-                      sequence: "6...Cc6 7.O-O!",
-                      tag: "ARROCCO",
-                      tagType: "emerald",
+                      id: "w-scw-5cf6",
+                      situation: "5...Cf6 (Sviluppo)",
+                      myMove: "6.Cf3!",
+                      summary: "Difendi g2.",
+                      sequence: "5...Cf6 6.Cf3!",
+                      tag: "DIFESA",
+                      tagType: "blue",
                       children: [
                         {
-                          id: "w-scandi-7ag4",
-                          situation: "7...Ag4 (Inchioda f3)",
-                          myMove: "8.a3!",
-                          summary: "Profilassi totale contro ...Cb4!",
-                          sequence: "7...Ag4 8.a3!",
+                          id: "w-scw-6ca6",
+                          situation: "6...Ca6 (o 6...Cc6)",
+                          myMove: "7.a3!",
+                          summary: "PROFILASSI OBBLIGATA: impedisci ...Cb4 contro c2!",
+                          sequence: "6...Ca6 7.a3!",
                           tag: "PROFILASSI a3!",
                           tagType: "rose",
                           children: [
                             {
-                              id: "w-scandi-8ooo",
-                              situation: "8...O-O-O (Arrocca lungo)",
-                              myMove: "9.Ae3!",
-                              summary: "Sviluppo completo e centro intatto.",
-                              sequence: "8...O-O-O 9.Ae3!",
-                              tag: "VANTAGGIO NETTO",
+                              id: "w-scw-7ag4",
+                              situation: "7...Ag4 (Inchioda f3)",
+                              myMove: "8.O-O!",
+                              summary: "Re al sicuro!",
+                              sequence: "7...Ag4 8.O-O!",
+                              tag: "ARROCCO",
                               tagType: "emerald",
-                              children: []
+                              children: [
+                                {
+                                  id: "w-scw-8ooo",
+                                  situation: "8...O-O-O (Arrocca lungo)",
+                                  myMove: "9.Ae3!",
+                                  summary: "Sviluppo completo e vantaggio netto.",
+                                  sequence: "8...O-O-O 9.Ae3!",
+                                  tag: "VANTAGGIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
                             }
                           ]
                         }
@@ -1860,34 +1926,34 @@
         tagType: "emerald",
         children: [
     {
-      id: "b-scandi-root",
-      situation: "1.e4 d5! (Difesa Scandinava)",
+      id: "b-1e4",
+      situation: "1.e4 (Il Bianco apre di pedone di Re)",
       myMove: "1...d5!",
-      summary: "Colpisci subito il centro al primo turno.",
+      summary: "DIFESA SCANDINAVA: colpisci subito il centro al primo turno!",
       sequence: "1.e4 d5!",
       tag: "DIFESA SCANDINAVA",
       tagType: "emerald",
       children: [
         {
-          id: "b-scandi-2exd5",
-          situation: "2.exd5 (Linea principale)",
+          id: "b-sc-2exd5",
+          situation: "2.exd5 (Linea Principale)",
           myMove: "2...Dxd5!",
-          summary: "Riprendi subito di Donna centralizzandola.",
+          summary: "Riprendi subito di Donna.",
           sequence: "2.exd5 Dxd5!",
-          tag: "RIPRESA IMMEDIATA",
+          tag: "RIPRESA",
           tagType: "emerald",
           children: [
             {
-              id: "b-scandi-3cc3",
+              id: "b-sc-3cc3",
               situation: "3.Cc3 (Attacca la Donna)",
               myMove: "3...Da5!",
-              summary: "Sposti la Donna sul lato attivo inchiodando c3.",
+              summary: "Sposti la Donna sul lato attivo.",
               sequence: "3.Cc3 Da5!",
               tag: "DONNA IN a5",
               tagType: "emerald",
               children: [
                 {
-                  id: "b-scandi-4d4",
+                  id: "b-sc-4d4",
                   situation: "4.d4 (Prende il centro)",
                   myMove: "4...c6!",
                   summary: "REGOLA D'ORO: apri subito la fuga Dc7 prima di Cf6!",
@@ -1896,46 +1962,46 @@
                   tagType: "emerald",
                   children: [
                     {
-                      id: "b-scandi-5cf3",
+                      id: "b-sc-5cf3",
                       situation: "5.Cf3 (Sviluppo naturale)",
                       myMove: "5...Cf6!",
-                      summary: "Sviluppi il Cavallo in piena sicurezza.",
+                      summary: "Sviluppi il Cavallo in sicurezza.",
                       sequence: "5.Cf3 Cf6!",
                       tag: "SVILUPPO",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-scandi-6ac4",
+                          id: "b-sc-6ac4",
                           situation: "6.Ac4 (o 6.Ad3)",
                           myMove: "6...Af5!",
-                          summary: "Porti l'Alfiere fuori dalla catena pedonale prima di e6!",
+                          summary: "Porti l'Alfiere fuori dalla catena.",
                           sequence: "6.Ac4 Af5!",
                           tag: "ALFIERE ATTIVO",
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-scandi-7ad2",
+                              id: "b-sc-7ad2",
                               situation: "7.Ad2 (Prepara scoperte)",
                               myMove: "7...e6!",
-                              summary: "Blindi il centro e apri la diagonale all'Alfiere f8.",
+                              summary: "Blindi il centro.",
                               sequence: "7.Ad2 e6!",
-                              tag: "CENTRO SOLIDO",
+                              tag: "CENTRO",
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-scandi-8de2",
+                                  id: "b-sc-8de2",
                                   situation: "8.De2 (Prepara O-O-O)",
                                   myMove: "8...Ab4!",
-                                  summary: "Inchiodi il Cavallo c3!",
+                                  summary: "Inchiodi c3!",
                                   sequence: "8.De2 Ab4!",
                                   tag: "INCHIODATURA",
                                   tagType: "rose",
                                   children: [
                                     {
-                                      id: "b-scandi-9ooo",
+                                      id: "b-sc-9ooo",
                                       situation: "9.O-O-O (Arrocca lungo)",
                                       myMove: "9...Cbd7!",
-                                      summary: "Completi lo sviluppo e arrocchi lungo al turno successivo con posizione solidissima!",
+                                      summary: "Completi lo sviluppo e arrocchi lungo con posizione solidissima!",
                                       sequence: "9.O-O-O Cbd7!",
                                       tag: "SETUP PERFETTO",
                                       tagType: "emerald",
@@ -1950,16 +2016,16 @@
                       ]
                     },
                     {
-                      id: "b-scandi-5ad2",
-                      situation: "5.Ad2 (Prepara scoperte con c3)",
+                      id: "b-sc-5ad2",
+                      situation: "5.Ad2 (Prepara scoperte)",
                       myMove: "5...Dc7!",
-                      summary: "Togli subito la Donna dalla diagonale dell'Alfiere d2!",
+                      summary: "Metti la Donna al sicuro in c7!",
                       sequence: "5.Ad2 Dc7!",
                       tag: "DONNA AL SICURO",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-scandi-5ad2-6cf3",
+                          id: "b-sc-5ad2-6cf3",
                           situation: "6.Cf3 (Sviluppo)",
                           myMove: "6...Cf6!",
                           summary: "Sviluppi il Cavallo.",
@@ -1968,7 +2034,7 @@
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-scandi-5ad2-7ac4",
+                              id: "b-sc-5ad2-7ac4",
                               situation: "7.Ac4 (Sviluppo)",
                               myMove: "7...Af5!",
                               summary: "Alfiere fuori dalla catena.",
@@ -1977,19 +2043,19 @@
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-scandi-5ad2-8de2",
+                                  id: "b-sc-5ad2-8de2",
                                   situation: "8.De2 (Sviluppo)",
                                   myMove: "8...e6!",
                                   summary: "Blindi il centro.",
                                   sequence: "8.De2 e6!",
-                                  tag: "CENTRO SOLIDO",
+                                  tag: "CENTRO",
                                   tagType: "blue",
                                   children: [
                                     {
-                                      id: "b-scandi-5ad2-9ooo",
+                                      id: "b-sc-5ad2-9ooo",
                                       situation: "9.O-O-O (Arrocca lungo)",
                                       myMove: "9...Cbd7!",
-                                      summary: "Prepari 10...O-O-O! con posizione solida e zero punti deboli.",
+                                      summary: "Prepari 10...O-O-O! con posizione solidissima.",
                                       sequence: "9.O-O-O Cbd7!",
                                       tag: "SVILUPPO COMPLETO",
                                       tagType: "emerald",
@@ -2006,43 +2072,43 @@
                   ]
                 },
                 {
-                  id: "b-scandi-4a3",
+                  id: "b-sc-4a3",
                   situation: "4.a3 (Prepara 5.b4)",
                   myMove: "4...Cf6!",
-                  summary: "Sviluppi preparando la ritirata attiva della Donna.",
+                  summary: "Sviluppi preparando la ritirata della Donna.",
                   sequence: "4.a3 Cf6!",
                   tag: "SVILUPPO",
                   tagType: "blue",
                   children: [
                     {
-                      id: "b-scandi-5b4",
+                      id: "b-sc-5b4",
                       situation: "5.b4 (Caccia la Donna)",
                       myMove: "5...Db6!",
-                      summary: "Metti la Donna in b6 puntando su f2 e d4!",
+                      summary: "Donna in b6 puntata su f2!",
                       sequence: "5.b4 Db6!",
                       tag: "DONNA IN b6",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-scandi-5b4-6cf3",
+                          id: "b-sc-5b4-6cf3",
                           situation: "6.Cf3 (Sviluppo)",
                           myMove: "6...Ag4!",
-                          summary: "Inchiodi subito il Cavallo f3!",
+                          summary: "Inchiodi f3!",
                           sequence: "6.Cf3 Ag4!",
                           tag: "INCHIODATURA",
                           tagType: "rose",
                           children: [
                             {
-                              id: "b-scandi-5b4-7ae2",
+                              id: "b-sc-5b4-7ae2",
                               situation: "7.Ae2 (Copre)",
                               myMove: "7...e6!",
-                              summary: "Apri la diagonale all'Alfiere f8.",
+                              summary: "Apri l'Alfiere f8.",
                               sequence: "7.Ae2 e6!",
                               tag: "CENTRO",
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-scandi-5b4-8oo",
+                                  id: "b-sc-5b4-8oo",
                                   situation: "8.O-O (Arrocca)",
                                   myMove: "8...Cbd7!",
                                   summary: "Completi lo sviluppo.",
@@ -2051,10 +2117,10 @@
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-scandi-5b4-9d4",
+                                      id: "b-sc-5b4-9d4",
                                       situation: "9.d4 (Prende il centro)",
                                       myMove: "9...c6!",
-                                      summary: "Struttura solidissima e contropiede su d4.",
+                                      summary: "Posizione solida e contropiede.",
                                       sequence: "9.d4 c6!",
                                       tag: "PARITÀ ATTIVA",
                                       tagType: "emerald",
@@ -2069,16 +2135,16 @@
                       ]
                     },
                     {
-                      id: "b-scandi-5d3",
+                      id: "b-sc-5d3",
                       situation: "5.d3 (Rinuncia a b4 — Gioco passivo)",
                       myMove: "5...c5!",
-                      summary: "Blocchi d4 e guadagni spazio centrale!",
+                      summary: "Blocchi d4!",
                       sequence: "5.d3 c5!",
-                      tag: "BLOCCO d4",
+                      tag: "BLOCCO",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-scandi-5d3-6cf3",
+                          id: "b-sc-5d3-6cf3",
                           situation: "6.Cf3 (Sviluppo)",
                           myMove: "6...Af5!",
                           summary: "Sviluppi l'Alfiere.",
@@ -2087,7 +2153,7 @@
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-scandi-5d3-7ae2",
+                              id: "b-sc-5d3-7ae2",
                               situation: "7.Ae2 (Sviluppo)",
                               myMove: "7...Cc6!",
                               summary: "Controlli d4 ed e5.",
@@ -2096,7 +2162,7 @@
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-scandi-5d3-8oo",
+                                  id: "b-sc-5d3-8oo",
                                   situation: "8.O-O (Arrocca)",
                                   myMove: "8...e5!",
                                   summary: "Conquisti tutto il centro!",
@@ -2105,7 +2171,7 @@
                                   tagType: "rose",
                                   children: [
                                     {
-                                      id: "b-scandi-5d3-9ag5",
+                                      id: "b-sc-5d3-9ag5",
                                       situation: "9.Ag5 (Inchioda)",
                                       myMove: "9...O-O-O!",
                                       summary: "Arrocchi lungo con dominio totale (sposta Rb8 prima di ...f5!).",
@@ -2125,7 +2191,7 @@
                   ]
                 },
                 {
-                  id: "b-scandi-4b4",
+                  id: "b-sc-4b4",
                   situation: "4.b4 (Gambetto Leonhardt — Pedone gratis)",
                   myMove: "4...Dxb4!",
                   summary: "Mangi il pedone indifeso!",
@@ -2134,48 +2200,48 @@
                   tagType: "rose",
                   children: [
                     {
-                      id: "b-scandi-4b4-5cb5",
+                      id: "b-sc-4b4-5cb5",
                       situation: "5.Cb5 (Minaccia c7)",
                       myMove: "5...Da5!",
-                      summary: "Torni a difendere c7 con la Donna!",
+                      summary: "Torni a difendere c7!",
                       sequence: "5.Cb5 Da5!",
                       tag: "DIFESA c7",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-scandi-4b4-6cf3",
+                          id: "b-sc-4b4-6cf3",
                           situation: "6.Cf3 (Sviluppo)",
                           myMove: "6...a6!",
-                          summary: "Cacci il Cavallo bianco con guadagno di tempo!",
+                          summary: "Cacci il Cavallo!",
                           sequence: "6.Cf3 a6!",
-                          tag: "CACCIA CAVALLO",
+                          tag: "TEMPO",
                           tagType: "rose",
                           children: [
                             {
-                              id: "b-scandi-4b4-7cc3",
+                              id: "b-sc-4b4-7cc3",
                               situation: "7.Cc3 (Ritira)",
                               myMove: "7...Cf6!",
-                              summary: "Sviluppi il Cavallo.",
+                              summary: "Sviluppi.",
                               sequence: "7.Cc3 Cf6!",
                               tag: "SVILUPPO",
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-scandi-4b4-8tb1",
+                                  id: "b-sc-4b4-8tb1",
                                   situation: "8.Tb1 (Attacca b7)",
                                   myMove: "8...Cc6!",
-                                  summary: "Sviluppi e prepari ...e5 / ...Ag4.",
+                                  summary: "Sviluppi.",
                                   sequence: "8.Tb1 Cc6!",
                                   tag: "SVILUPPO",
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-scandi-4b4-9ae2",
+                                      id: "b-sc-4b4-9ae2",
                                       situation: "9.Ae2 (Sviluppo)",
                                       myMove: "9...e5!",
-                                      summary: "Prendi il centro con un pedone pulito in più!",
+                                      summary: "Centro dominato con un pedone pulito in più!",
                                       sequence: "9.Ae2 e5!",
-                                      tag: "VANTAGGIO NETTO",
+                                      tag: "VANTAGGIO",
                                       tagType: "emerald",
                                       children: []
                                     }
@@ -2192,7 +2258,7 @@
               ]
             },
             {
-              id: "b-scandi-3nf3",
+              id: "b-sc-3cf3",
               situation: "3.Cf3 (Ritarda Cc3 — La tua partita!)",
               myMove: "3...Ag4!",
               summary: "Inchiodi subito il Cavallo f3!",
@@ -2201,55 +2267,55 @@
               tagType: "emerald",
               children: [
                 {
-                  id: "b-scandi-3nf3-4ae2",
-                  situation: "4.Ae2 (Copre l'inchiodatura)",
+                  id: "b-sc-3cf3-4ae2",
+                  situation: "4.Ae2 (Copre)",
                   myMove: "4...Cc6!",
-                  summary: "Sviluppi il Cavallo e prepari O-O-O!",
+                  summary: "Sviluppi il Cavallo.",
                   sequence: "4.Ae2 Cc6!",
                   tag: "SVILUPPO",
                   tagType: "blue",
                   children: [
                     {
-                      id: "b-scandi-3nf3-5cc3",
-                      situation: "5.Cc3 (Ora attacca la Donna: Dd7 o Da5?)",
+                      id: "b-sc-3cf3-5cc3",
+                      situation: "5.Cc3 (Attacca la Donna: scegli Dd7 o Da5)",
                       myMove: "5...Dd7! (Mossa #1 Motore — oppure 5...Da5)",
-                      summary: "5...Dd7! evita scoperte Ad2 e spinte b4 (5...Da5 è comunque giocabile ma dà +0.86 al Bianco). Scegli quale ramo seguire fino a mossa 9:",
+                      summary: "5...Dd7! evita scoperte Ad2 e spinte b4 (5...Da5 dà +0.86 al Bianco). Entra qui per scegliere il ramo fino a mossa 9:",
                       sequence: "5.Cc3 Dd7!",
                       tag: "MOSSA #1 MOTORE",
                       tagType: "rose",
                       children: [
                         {
-                          id: "b-scandi-5dd7-6oo",
+                          id: "b-sc-5dd7-6oo",
                           situation: "Ramo 5...Dd7! -> 6.O-O (Arrocco Bianco)",
                           myMove: "6...O-O-O!",
-                          summary: "Arrocco lungo immediato con Torre sulla colonna aperta d!",
+                          summary: "Arrocco lungo immediato!",
                           sequence: "5...Dd7! 6.O-O O-O-O!",
                           tag: "ARROCCO LUNGO",
                           tagType: "emerald",
                           children: [
                             {
-                              id: "b-scandi-6ooo-7d4",
+                              id: "b-sc-6ooo-7d4",
                               situation: "7.d4 (Mossa migliore Bianco)",
                               myMove: "7...Cf6!",
-                              summary: "Sviluppi il Cavallo mettendo pressione su d4.",
+                              summary: "Sviluppi il Cavallo.",
                               sequence: "7.d4 Cf6!",
                               tag: "SVILUPPO",
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-scandi-7cf6-8ae3",
+                                  id: "b-sc-7cf6-8ae3",
                                   situation: "8.Ae3 (Difende d4)",
                                   myMove: "8...e6!",
-                                  summary: "Blindi il centro e liberi l'Alfiere f8.",
+                                  summary: "Blindi il centro.",
                                   sequence: "8.Ae3 e6!",
-                                  tag: "CENTRO SOLIDO",
+                                  tag: "CENTRO",
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-scandi-8e6-9ce5",
+                                      id: "b-sc-8e6-9ce5",
                                       situation: "9.Ce5 (Tenta di attaccare)",
                                       myMove: "9...Cxe5!",
-                                      summary: "Cambi tutto entrando in un finale pari e comodissimo (0.00)!",
+                                      summary: "Finale pari e comodissimo (0.00)!",
                                       sequence: "9.Ce5 Cxe5!",
                                       tag: "PARITÀ PIENA",
                                       tagType: "emerald",
@@ -2260,28 +2326,28 @@
                               ]
                             },
                             {
-                              id: "b-scandi-6ooo-7h3",
+                              id: "b-sc-6ooo-7h3",
                               situation: "7.h3 (Interroga l'Alfiere)",
                               myMove: "7...Ah5!",
                               summary: "Mantieni l'inchiodatura!",
                               sequence: "7.h3 Ah5!",
-                              tag: "MANTIENE TENSIONE",
+                              tag: "TENSIONE",
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-scandi-7ah5-8d4",
+                                  id: "b-sc-7ah5-8d4",
                                   situation: "8.d4 (Prende il centro)",
                                   myMove: "8...e5!",
-                                  summary: "Spacchi subito il centro prima che il Bianco si consolidi!",
+                                  summary: "Spacchi subito il centro!",
                                   sequence: "8.d4 e5!",
                                   tag: "ROTTURA e5!",
                                   tagType: "rose",
                                   children: [
                                     {
-                                      id: "b-scandi-8e5-9d5",
+                                      id: "b-sc-8e5-9d5",
                                       situation: "9.d5 (Avanza)",
                                       myMove: "9...Axf3!",
-                                      summary: "Cambi in f3 e poi piazzi 10...Cd4! con un Cavallo mostruoso al centro!",
+                                      summary: "Elimini il difensore e piazzi 10...Cd4! con avamposto dominante!",
                                       sequence: "9.d5 Axf3!",
                                       tag: "AVAMPOSTO d4",
                                       tagType: "rose",
@@ -2294,37 +2360,37 @@
                           ]
                         },
                         {
-                          id: "b-scandi-5da5-6oo",
+                          id: "b-sc-5da5-6oo",
                           situation: "Ramo 5...Da5 -> 6.O-O (La tua partita)",
                           myMove: "6...O-O-O!",
-                          summary: "Arrocco lungo immediato.",
+                          summary: "Arrocco lungo.",
                           sequence: "5...Da5 6.O-O O-O-O!",
                           tag: "ARROCCO LUNGO",
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-scandi-da5-7h3",
-                              situation: "7.h3 (Interroga l'Alfiere)",
+                              id: "b-sc-da5-7h3",
+                              situation: "7.h3 (Interroga)",
                               myMove: "7...Ah5!",
-                              summary: "Mantieni l'inchiodatura.",
+                              summary: "Mantieni inchiodatura.",
                               sequence: "7.h3 Ah5!",
                               tag: "INCHIODATURA",
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-scandi-da5-8d4",
+                                  id: "b-sc-da5-8d4",
                                   situation: "8.d4 (Prende il centro)",
                                   myMove: "8...e5!",
-                                  summary: "Colpisci il centro subito!",
+                                  summary: "Spacchi il centro!",
                                   sequence: "8.d4 e5!",
                                   tag: "ROTTURA e5!",
                                   tagType: "rose",
                                   children: [
                                     {
-                                      id: "b-scandi-da5-9d5",
+                                      id: "b-sc-da5-9d5",
                                       situation: "9.d5 (Avanza)",
                                       myMove: "9...Axf3!",
-                                      summary: "Elimini il difensore di d4 e piazzi 10...Cd4! con pieno controgioco!",
+                                      summary: "Elimini il difensore e piazzi 10...Cd4! con pieno controgioco!",
                                       sequence: "9.d5 Axf3!",
                                       tag: "CAVALLO IN d4",
                                       tagType: "emerald",
@@ -2345,34 +2411,34 @@
           ]
         },
         {
-          id: "b-scandi-2e5",
+          id: "b-sc-2e5",
           situation: "2.e5 (Variante di Spinta)",
           myMove: "2...c5!",
-          summary: "Attacchi subito d4 come in una Francese con l'Alfiere c8 libero!",
+          summary: "Attacchi subito d4 con l'Alfiere c8 libero!",
           sequence: "2.e5 c5!",
           tag: "SPINTA 2.e5",
           tagType: "blue",
           children: [
             {
-              id: "b-scandi-2e5-3d4",
+              id: "b-sc-2e5-3d4",
               situation: "3.d4 (Difende e5)",
               myMove: "3...Cc6!",
-              summary: "Aumenti la pressione su d4.",
+              summary: "Pressione su d4.",
               sequence: "3.d4 Cc6!",
-              tag: "PRESSIONE d4",
+              tag: "PRESSIONE",
               tagType: "emerald",
               children: [
                 {
-                  id: "b-scandi-2e5-4cf3",
+                  id: "b-sc-2e5-4cf3",
                   situation: "4.Cf3 (Difende d4)",
                   myMove: "4...Ag4!",
-                  summary: "Inchiodi il difensore di d4!",
+                  summary: "Inchiodi f3!",
                   sequence: "4.Cf3 Ag4!",
                   tag: "INCHIODATURA",
                   tagType: "rose",
                   children: [
                     {
-                      id: "b-scandi-2e5-5c3",
+                      id: "b-sc-2e5-5c3",
                       situation: "5.c3 (Rinforza)",
                       myMove: "5...e6!",
                       summary: "Apri l'Alfiere f8.",
@@ -2381,39 +2447,39 @@
                       tagType: "blue",
                       children: [
                         {
-                          id: "b-scandi-2e5-6ae2",
+                          id: "b-sc-2e5-6ae2",
                           situation: "6.Ae2 (Copre)",
                           myMove: "6...Cge7!",
-                          summary: "Manovri il Cavallo in f5 per attaccare d4!",
+                          summary: "Prepari ...Cf5!",
                           sequence: "6.Ae2 Cge7!",
-                          tag: "MANOVRA Cf5",
+                          tag: "MANOVRA",
                           tagType: "emerald",
                           children: [
                             {
-                              id: "b-scandi-2e5-7oo",
+                              id: "b-sc-2e5-7oo",
                               situation: "7.O-O (Arrocca)",
                               myMove: "7...Cf5!",
-                              summary: "Triplo attacco sul pedone d4!",
+                              summary: "Triplo attacco su d4!",
                               sequence: "7.O-O Cf5!",
-                              tag: "ATTACCO SU d4",
+                              tag: "ATTACCO d4",
                               tagType: "rose",
                               children: [
                                 {
-                                  id: "b-scandi-2e5-8dxc5",
-                                  situation: "8.dxc5 (Cede il centro)",
+                                  id: "b-sc-2e5-8dxc5",
+                                  situation: "8.dxc5 (Cede)",
                                   myMove: "8...Axc5!",
-                                  summary: "Recuperi il pedone con sviluppo perfetto.",
+                                  summary: "Recuperi il pedone con tempo.",
                                   sequence: "8.dxc5 Axc5!",
                                   tag: "SVILUPPO",
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-scandi-2e5-9cbd2",
+                                      id: "b-sc-2e5-9cbd2",
                                       situation: "9.Cbd2 (Sviluppo)",
                                       myMove: "9...O-O!",
-                                      summary: "Posizione superiore e centro controllato.",
+                                      summary: "Posizione superiore per il Nero.",
                                       sequence: "9.Cbd2 O-O!",
-                                      tag: "VANTAGGIO NERO",
+                                      tag: "VANTAGGIO",
                                       tagType: "emerald",
                                       children: []
                                     }
@@ -2430,7 +2496,7 @@
               ]
             },
             {
-              id: "b-scandi-2e5-3ab5",
+              id: "b-sc-2e5-3ab5",
               situation: "3.Ab5+ (Scacco immediato)",
               myMove: "3...Cc6!",
               summary: "Copri sempre con 3...Cc6! (MAI 3...Ad7?!).",
@@ -2439,7 +2505,7 @@
               tagType: "rose",
               children: [
                 {
-                  id: "b-scandi-2e5-4cf3-b",
+                  id: "b-sc-2e5-4cf3-b",
                   situation: "4.Cf3 (Sviluppo)",
                   myMove: "4...Ag4!",
                   summary: "Inchiodi f3.",
@@ -2448,7 +2514,7 @@
                   tagType: "emerald",
                   children: [
                     {
-                      id: "b-scandi-2e5-5oo",
+                      id: "b-sc-2e5-5oo",
                       situation: "5.O-O (Arrocca)",
                       myMove: "5...e6!",
                       summary: "Blindi il centro.",
@@ -2457,7 +2523,7 @@
                       tagType: "blue",
                       children: [
                         {
-                          id: "b-scandi-2e5-6h3",
+                          id: "b-sc-2e5-6h3",
                           situation: "6.h3 (Interroga)",
                           myMove: "6...Ah5!",
                           summary: "Mantieni inchiodatura.",
@@ -2466,7 +2532,7 @@
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-scandi-2e5-7c3",
+                              id: "b-sc-2e5-7c3",
                               situation: "7.c3 (Prepara d4)",
                               myMove: "7...Cge7!",
                               summary: "Prepari ...Cf5.",
@@ -2475,8 +2541,8 @@
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-scandi-2e5-8d4",
-                                  situation: "8.d4 (Spinta centrale)",
+                                  id: "b-sc-2e5-8d4",
+                                  situation: "8.d4 (Spinta)",
                                   myMove: "8...cxd4!",
                                   summary: "Apri il centro.",
                                   sequence: "8.d4 cxd4!",
@@ -2484,12 +2550,12 @@
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-scandi-2e5-9cxd4",
+                                      id: "b-sc-2e5-9cxd4",
                                       situation: "9.cxd4 (Riprende)",
                                       myMove: "9...Cf5!",
-                                      summary: "Attacchi d4 con gioco aperto e attivo.",
+                                      summary: "Attacchi d4 con gioco aperto!",
                                       sequence: "9.cxd4 Cf5!",
-                                      tag: "PRESSIONE TOTALE",
+                                      tag: "PRESSIONE",
                                       tagType: "emerald",
                                       children: []
                                     }
@@ -2508,16 +2574,16 @@
           ]
         },
         {
-          id: "b-scandi-2cc3",
+          id: "b-sc-2cc3",
           situation: "2.Cc3 (Scandinava Chiusa)",
           myMove: "2...d4!",
-          summary: "Cacci subito il Cavallo conquistando spazio centrale.",
+          summary: "Cacci subito il Cavallo conquistando spazio!",
           sequence: "2.Cc3 d4!",
-          tag: "SPAZIO CENTRALE",
+          tag: "SPAZIO",
           tagType: "emerald",
           children: [
             {
-              id: "b-scandi-2cc3-3cce2",
+              id: "b-sc-2cc3-3cce2",
               situation: "3.Cce2 (o 3.Cb1 — Ritira)",
               myMove: "3...e5!",
               summary: "Blindi il centro!",
@@ -2526,7 +2592,7 @@
               tagType: "emerald",
               children: [
                 {
-                  id: "b-scandi-2cc3-4cg3",
+                  id: "b-sc-2cc3-4cg3",
                   situation: "4.Cg3 (Manovra)",
                   myMove: "4...Ae6!",
                   summary: "Controlli c4 e f7.",
@@ -2535,48 +2601,48 @@
                   tagType: "blue",
                   children: [
                     {
-                      id: "b-scandi-2cc3-5cf3",
+                      id: "b-sc-2cc3-5cf3",
                       situation: "5.Cf3 (Attacca e5)",
                       myMove: "5...f6!",
-                      summary: "Sostieni e5 senza intralciare i pezzi.",
+                      summary: "Sostieni e5.",
                       sequence: "5.Cf3 f6!",
                       tag: "CATENA SOLIDA",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-scandi-2cc3-6ab5",
+                          id: "b-sc-2cc3-6ab5",
                           situation: "6.Ab5+ (Scacco)",
                           myMove: "6...c6!",
-                          summary: "Cacci l'Alfiere con guadagno di tempo!",
+                          summary: "Cacci l'Alfiere!",
                           sequence: "6.Ab5+ c6!",
                           tag: "TEMPO",
                           tagType: "rose",
                           children: [
                             {
-                              id: "b-scandi-2cc3-7aa4",
+                              id: "b-sc-2cc3-7aa4",
                               situation: "7.Aa4 (Ritira)",
                               myMove: "7...Ca6!",
                               summary: "Porti il Cavallo in c5.",
                               sequence: "7.Aa4 Ca6!",
-                              tag: "MANOVRA Cc5",
+                              tag: "MANOVRA",
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-scandi-2cc3-8ab3",
+                                  id: "b-sc-2cc3-8ab3",
                                   situation: "8.Ab3 (Offre cambio)",
                                   myMove: "8...Cc5!",
-                                  summary: "Piazzi il Cavallo nell'avamposto c5.",
+                                  summary: "Avamposto in c5.",
                                   sequence: "8.Ab3 Cc5!",
                                   tag: "AVAMPOSTO",
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-scandi-2cc3-9axe6",
+                                      id: "b-sc-2cc3-9axe6",
                                       situation: "9.Axe6 (Cambia)",
                                       myMove: "9...Cxe6!",
-                                      summary: "Dominio assoluto del centro e delle case chiare.",
+                                      summary: "Dominio totale del centro.",
                                       sequence: "9.Axe6 Cxe6!",
-                                      tag: "VANTAGGIO NERO",
+                                      tag: "VANTAGGIO",
                                       tagType: "emerald",
                                       children: []
                                     }
@@ -2593,7 +2659,7 @@
               ]
             },
             {
-              id: "b-scandi-2cc3-3cd5",
+              id: "b-sc-2cc3-3cd5",
               situation: "3.Cd5 (Salta in avanti)",
               myMove: "3...e6!",
               summary: "Cacci il Cavallo!",
@@ -2602,25 +2668,25 @@
               tagType: "rose",
               children: [
                 {
-                  id: "b-scandi-2cc3-4cf4",
+                  id: "b-sc-2cc3-4cf4",
                   situation: "4.Cf4 (Ritira)",
                   myMove: "4...e5!",
-                  summary: "Guadagni un secondo tempo sul Cavallo!",
+                  summary: "Secondo tempo sul Cavallo!",
                   sequence: "4.Cf4 e5!",
                   tag: "DOPPIO TEMPO",
                   tagType: "rose",
                   children: [
                     {
-                      id: "b-scandi-2cc3-5cd3",
+                      id: "b-sc-2cc3-5cd3",
                       situation: "5.Cd3 (Bloccato)",
                       myMove: "5...Cc6!",
-                      summary: "Sviluppi difendendo e5.",
+                      summary: "Difendi e5.",
                       sequence: "5.Cd3 Cc6!",
                       tag: "SVILUPPO",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-scandi-2cc3-6cf3",
+                          id: "b-sc-2cc3-6cf3",
                           situation: "6.Cf3 (Attacca e5)",
                           myMove: "6...Ad6!",
                           summary: "Difendi e sviluppi.",
@@ -2629,7 +2695,7 @@
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-scandi-2cc3-7ae2",
+                              id: "b-sc-2cc3-7ae2",
                               situation: "7.Ae2 (Prepara arrocco)",
                               myMove: "7...Cf6!",
                               summary: "Attacchi e4.",
@@ -2638,7 +2704,7 @@
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-scandi-2cc3-8oo",
+                                  id: "b-sc-2cc3-8oo",
                                   situation: "8.O-O (Arrocca)",
                                   myMove: "8...O-O!",
                                   summary: "Re al sicuro.",
@@ -2647,12 +2713,12 @@
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-scandi-2cc3-9te1",
+                                      id: "b-sc-2cc3-9te1",
                                       situation: "9.Te1 (Difende e4)",
                                       myMove: "9...Te8!",
-                                      summary: "Vantaggio di spazio schiacciante per il Nero.",
+                                      summary: "Vantaggio di spazio schiacciante.",
                                       sequence: "9.Te1 Te8!",
-                                      tag: "VANTAGGIO NETTO",
+                                      tag: "VANTAGGIO",
                                       tagType: "emerald",
                                       children: []
                                     }
@@ -2673,84 +2739,84 @@
       ]
     },
     {
-      id: "b-d4-root",
-      situation: "1.d4 d5! (Contro 1.d4 — Albin, Anti-London & Anti-Sistemi)",
+      id: "b-1d4",
+      situation: "1.d4 (Il Bianco apre di pedone di Donna)",
       myMove: "1...d5!",
-      summary: "Blocchi subito il centro e prepari 2...e5! su 2.c4 oppure 2...c5! su tutto il resto.",
+      summary: "Blocchi subito il centro!",
       sequence: "1.d4 d5!",
       tag: "CONTRO 1.d4",
       tagType: "rose",
       children: [
         {
-          id: "b-albin-2c4",
+          id: "b-d4-2c4",
           situation: "2.c4 (Gambetto di Donna)",
           myMove: "2...e5!",
-          summary: "CONTROGAMBETTO ALBIN: dinamiti il centro alla seconda mossa!",
+          summary: "CONTROGAMBETTO ALBIN: dinamiti il centro!",
           sequence: "2.c4 e5!",
-          tag: "CONTROGAMBETTO ALBIN",
+          tag: "ALBIN",
           tagType: "rose",
           children: [
             {
-              id: "b-albin-3dxe5",
+              id: "b-alb-3dxe5",
               situation: "3.dxe5 (Accetta)",
               myMove: "3...d4!",
-              summary: "Cuneo centrale in d4 che soffoca il Bianco!",
+              summary: "Cuneo centrale in d4!",
               sequence: "3.dxe5 d4!",
               tag: "CUNEO d4!",
               tagType: "rose",
               children: [
                 {
-                  id: "b-albin-4cf3",
+                  id: "b-alb-4cf3",
                   situation: "4.Cf3 (Linea principale)",
                   myMove: "4...Cc6!",
-                  summary: "Sviluppi preparando Ag4 e O-O-O.",
+                  summary: "Sviluppi.",
                   sequence: "4.Cf3 Cc6!",
                   tag: "SVILUPPO",
                   tagType: "emerald",
                   children: [
                     {
-                      id: "b-albin-5g3",
+                      id: "b-alb-5g3",
                       situation: "5.g3 (Fianchetto)",
                       myMove: "5...Ag4!",
-                      summary: "Inchiodi il Cavallo f3!",
+                      summary: "Inchiodi f3!",
                       sequence: "5.g3 Ag4!",
                       tag: "INCHIODATURA",
                       tagType: "rose",
                       children: [
                         {
-                          id: "b-albin-6ag2",
-                          situation: "6.Ag2 (Completa fianchetto)",
+                          id: "b-alb-6ag2",
+                          situation: "6.Ag2 (Completa)",
                           myMove: "6...Dd7!",
-                          summary: "Prepari O-O-O e ...Ah3!",
+                          summary: "Prepari O-O-O!",
                           sequence: "6.Ag2 Dd7!",
                           tag: "BATTERIA",
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-albin-7oo",
+                              id: "b-alb-7oo",
                               situation: "7.O-O (Arrocca)",
                               myMove: "7...O-O-O!",
-                              summary: "Arrocco lungo e Torre sulla colonna aperta d!",
+                              summary: "Arrocco lungo!",
                               sequence: "7.O-O O-O-O!",
                               tag: "ARROCCO LUNGO",
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-albin-8cbd2",
+                                  id: "b-alb-8cbd2",
                                   situation: "8.Cbd2 (Sviluppo)",
                                   myMove: "8...Cge7!",
-                                  summary: "Manovri il Cavallo in g6 per riprendere e5!",
+                                  summary: "Manovri in g6.",
                                   sequence: "8.Cbd2 Cge7!",
                                   tag: "MANOVRA",
                                   tagType: "blue",
                                   children: [
                                     {
-                                      id: "b-albin-9db3",
+                                      id: "b-alb-9db3",
                                       situation: "9.Db3 (Attacca b7)",
                                       myMove: "9...Cg6!",
-                                      summary: "Recuperi e5 con attacco diretto sul Re bianco!",
+                                      summary: "Recuperi e5 con attacco al Re!",
                                       sequence: "9.Db3 Cg6!",
-                                      tag: "ATTACCO AL RE",
+                                      tag: "ATTACCO",
                                       tagType: "rose",
                                       children: []
                                     }
@@ -2765,57 +2831,57 @@
                   ]
                 },
                 {
-                  id: "b-albin-4e3",
-                  situation: "4.e3 (Trappola Lasker in arrivo!)",
+                  id: "b-alb-4e3",
+                  situation: "4.e3 (Trappola Lasker!)",
                   myMove: "4...Ab4+!",
-                  summary: "Dai scacco sviluppando l'Alfiere!",
+                  summary: "Scacco sviluppando!",
                   sequence: "4.e3 Ab4+!",
                   tag: "SCACCO",
                   tagType: "rose",
                   children: [
                     {
-                      id: "b-albin-5ad2",
+                      id: "b-alb-5ad2",
                       situation: "5.Ad2 (Copre)",
                       myMove: "5...dxe3!",
-                      summary: "TRAPPOLA DI LASKER: se 6.Axb4?? giochi 6...exf2+! 7.Re2 fxg1=C+! vincendo la Donna!",
+                      summary: "TRAPPOLA LASKER: su 6.Axb4?? giochi 6...exf2+! 7.Re2 fxg1=C+! vincendo la Donna!",
                       sequence: "5.Ad2 dxe3!",
                       tag: "TRAPPOLA LASKER",
                       tagType: "rose",
                       children: [
                         {
-                          id: "b-albin-6fxe3",
-                          situation: "6.fxe3 (Evita la trappola)",
+                          id: "b-alb-6fxe3",
+                          situation: "6.fxe3 (Evita trappola)",
                           myMove: "6...Dh4+!",
-                          summary: "Costringi il Bianco a indebolire l'arrocco con g3!",
+                          summary: "Costringi g3!",
                           sequence: "6.fxe3 Dh4+!",
                           tag: "SCACCO",
                           tagType: "rose",
                           children: [
                             {
-                              id: "b-albin-7g3",
+                              id: "b-alb-7g3",
                               situation: "7.g3 (Copre)",
                               myMove: "7...De4!",
-                              summary: "Attacchi la Torre h1 e il pedone e3!",
+                              summary: "Attacchi Torre h1 ed e3!",
                               sequence: "7.g3 De4!",
                               tag: "DOPPIO ATTACCO",
                               tagType: "rose",
                               children: [
                                 {
-                                  id: "b-albin-8cf3",
+                                  id: "b-alb-8cf3",
                                   situation: "8.Cf3 (Difende h1)",
                                   myMove: "8...Dxe3+!",
-                                  summary: "Recuperi il pedone con scacco!",
+                                  summary: "Recuperi con scacco!",
                                   sequence: "8.Cf3 Dxe3+!",
                                   tag: "RECUPERO",
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-albin-9ae2",
+                                      id: "b-alb-9ae2",
                                       situation: "9.Ae2 (Copre)",
                                       myMove: "9...Ah3!",
-                                      summary: "Impedisci al Bianco di arroccare e domini la partita!",
+                                      summary: "Impedisci l'arrocco e domini!",
                                       sequence: "9.Ae2 Ah3!",
-                                      tag: "VANTAGGIO DECISIVO",
+                                      tag: "VANTAGGIO",
                                       tagType: "rose",
                                       children: []
                                     }
@@ -2832,7 +2898,7 @@
               ]
             },
             {
-              id: "b-albin-3cxd5",
+              id: "b-alb-3cxd5",
               situation: "3.cxd5 (Mangia d5)",
               myMove: "3...Dxd5!",
               summary: "Centralizzi la Donna.",
@@ -2841,34 +2907,34 @@
               tagType: "blue",
               children: [
                 {
-                  id: "b-albin-3cxd5-4cc3",
+                  id: "b-alb-3cxd5-4cc3",
                   situation: "4.Cc3 (Attacca Donna)",
                   myMove: "4...Ab4!",
-                  summary: "Inchiodi il Cavallo c3!",
+                  summary: "Inchiodi c3!",
                   sequence: "4.Cc3 Ab4!",
                   tag: "INCHIODATURA",
                   tagType: "rose",
                   children: [
                     {
-                      id: "b-albin-3cxd5-5cf3",
+                      id: "b-alb-3cxd5-5cf3",
                       situation: "5.Cf3 (Sviluppo)",
                       myMove: "5...Cc6!",
-                      summary: "Aumenti pressione su d4.",
+                      summary: "Pressione su d4.",
                       sequence: "5.Cf3 Cc6!",
                       tag: "PRESSIONE",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-albin-3cxd5-6ad2",
+                          id: "b-alb-3cxd5-6ad2",
                           situation: "6.Ad2 (Schioda)",
                           myMove: "6...Axc3!",
-                          summary: "Cambi il Cavallo.",
+                          summary: "Cambi.",
                           sequence: "6.Ad2 Axc3!",
                           tag: "CAMBIO",
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-albin-3cxd5-7axc3",
+                              id: "b-alb-3cxd5-7axc3",
                               situation: "7.Axc3 (Riprende)",
                               myMove: "7...Ag4!",
                               summary: "Inchiodi f3!",
@@ -2877,19 +2943,19 @@
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-albin-3cxd5-8e3",
+                                  id: "b-alb-3cxd5-8e3",
                                   situation: "8.e3 (Difende d4)",
                                   myMove: "8...O-O-O!",
-                                  summary: "Arrocco lungo con Torre sulla colonna d.",
+                                  summary: "Arrocco lungo!",
                                   sequence: "8.e3 O-O-O!",
                                   tag: "ARROCCO LUNGO",
                                   tagType: "emerald",
                                   children: [
                                     {
-                                      id: "b-albin-3cxd5-9ae2",
+                                      id: "b-alb-3cxd5-9ae2",
                                       situation: "9.Ae2 (Sviluppo)",
                                       myMove: "9...Cf6!",
-                                      summary: "Posizione aperta e attiva per il Nero.",
+                                      summary: "Posizione attiva.",
                                       sequence: "9.Ae2 Cf6!",
                                       tag: "GIOCO ATTIVO",
                                       tagType: "emerald",
@@ -2910,66 +2976,66 @@
           ]
         },
         {
-          id: "b-anti-london",
+          id: "b-d4-2af4",
           situation: "2.Af4 (Sistema London)",
           myMove: "2...c5!",
-          summary: "Attacchi subito d4 prima che il Bianco chiuda la piramide!",
+          summary: "ANTI-LONDON: colpisci subito d4!",
           sequence: "2.Af4 c5!",
           tag: "ANTI-LONDON",
           tagType: "emerald",
           children: [
             {
-              id: "b-london-3e3",
+              id: "b-lon-3e3",
               situation: "3.e3 (o 3.Cf3 — Piramide)",
               myMove: "3...Cc6!",
-              summary: "Sviluppi mettendo pressione su d4.",
+              summary: "Pressione su d4.",
               sequence: "3.e3 Cc6!",
-              tag: "PRESSIONE d4",
+              tag: "PRESSIONE",
               tagType: "emerald",
               children: [
                 {
-                  id: "b-london-4c3",
-                  situation: "4.c3 (Completa triangolo)",
+                  id: "b-lon-4c3",
+                  situation: "4.c3 (Triangolo)",
                   myMove: "4...Cf6!",
-                  summary: "Sviluppi il Cavallo.",
+                  summary: "Sviluppi.",
                   sequence: "4.c3 Cf6!",
                   tag: "SVILUPPO",
                   tagType: "blue",
                   children: [
                     {
-                      id: "b-london-5cd2",
+                      id: "b-lon-5cd2",
                       situation: "5.Cd2 (Sviluppo)",
                       myMove: "5...Db6!",
-                      summary: "Attacchi subito il pedone b2 lasciato scoperto dall'Alfiere f4!",
+                      summary: "Attacchi subito b2!",
                       sequence: "5.Cd2 Db6!",
-                      tag: "ATTACCO SU b2",
+                      tag: "ATTACCO b2",
                       tagType: "rose",
                       children: [
                         {
-                          id: "b-london-6db3",
+                          id: "b-lon-6db3",
                           situation: "6.Db3 (Offre cambio)",
                           myMove: "6...c4!",
-                          summary: "Guadagni spazio sull'ala di Donna cacciando la Donna bianca!",
+                          summary: "Spazio sull'ala di Donna!",
                           sequence: "6.Db3 c4!",
-                          tag: "SPAZIO ALA DONNA",
+                          tag: "SPAZIO",
                           tagType: "emerald",
                           children: [
                             {
-                              id: "b-london-7dc2",
+                              id: "b-lon-7dc2",
                               situation: "7.Dc2 (Ritira)",
                               myMove: "7...Af5!",
-                              summary: "Sviluppi l'Alfiere con tempo sulla Donna c2!",
+                              summary: "Sviluppi con tempo sulla Donna!",
                               sequence: "7.Dc2 Af5!",
-                              tag: "TEMPO SU DONNA",
+                              tag: "TEMPO",
                               tagType: "rose",
                               children: [
                                 {
-                                  id: "b-london-8dc1",
+                                  id: "b-lon-8dc1",
                                   situation: "8.Dc1 (Ritira)",
                                   myMove: "8...e6!",
-                                  summary: "Apri l'Alfiere f8 e prepari b5-b4 con vantaggio netto!",
+                                  summary: "Apri f8 con vantaggio netto!",
                                   sequence: "8.Dc1 e6!",
-                                  tag: "VANTAGGIO NERO",
+                                  tag: "VANTAGGIO",
                                   tagType: "emerald",
                                   children: []
                                 }
@@ -2984,57 +3050,57 @@
               ]
             },
             {
-              id: "b-london-3dxc5",
-              situation: "3.dxc5 (Accetta il pedone)",
+              id: "b-lon-3dxc5",
+              situation: "3.dxc5 (Accetta c5)",
               myMove: "3...Cc6!",
-              summary: "Minacci 4...e5! e prepari il recupero con Axc5.",
+              summary: "Minacci 4...e5!",
               sequence: "3.dxc5 Cc6!",
               tag: "CONTROATTACCO",
               tagType: "blue",
               children: [
                 {
-                  id: "b-london-3dxc5-4cf3",
+                  id: "b-lon-3dxc5-4cf3",
                   situation: "4.Cf3 (Controlla e5)",
                   myMove: "4...e6!",
-                  summary: "Apri la diagonale per recuperare c5.",
+                  summary: "Prepari Axc5.",
                   sequence: "4.Cf3 e6!",
                   tag: "RECUPERO",
                   tagType: "emerald",
                   children: [
                     {
-                      id: "b-london-3dxc5-5e3",
+                      id: "b-lon-3dxc5-5e3",
                       situation: "5.e3 (Sviluppo)",
                       myMove: "5...Axc5!",
-                      summary: "Recuperi il pedone sviluppando l'Alfiere.",
+                      summary: "Recuperi il pedone.",
                       sequence: "5.e3 Axc5!",
                       tag: "SVILUPPO",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-london-3dxc5-6c4",
+                          id: "b-lon-3dxc5-6c4",
                           situation: "6.c4 (Colpisce il centro)",
                           myMove: "6...Cf6!",
-                          summary: "Sviluppi il Cavallo.",
+                          summary: "Sviluppi.",
                           sequence: "6.c4 Cf6!",
                           tag: "SVILUPPO",
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-london-3dxc5-7cc3",
+                              id: "b-lon-3dxc5-7cc3",
                               situation: "7.Cc3 (Sviluppo)",
                               myMove: "7...O-O!",
-                              summary: "Arrocchi corto.",
+                              summary: "Arrocchi.",
                               sequence: "7.Cc3 O-O!",
                               tag: "ARROCCO",
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-london-3dxc5-8cxd5",
+                                  id: "b-lon-3dxc5-8cxd5",
                                   situation: "8.cxd5 (Cambia)",
                                   myMove: "8...exd5!",
-                                  summary: "Apri la colonna e per le Torri con gioco attivo.",
+                                  summary: "Colonna e aperta e gioco attivo.",
                                   sequence: "8.cxd5 exd5!",
-                                  tag: "COLONNA e APERTA",
+                                  tag: "COLONNA e",
                                   tagType: "emerald",
                                   children: []
                                 }
@@ -3051,43 +3117,43 @@
           ]
         },
         {
-          id: "b-d4-2nf3",
-          situation: "2.Cf3 (Anti-Zukertort — Sviluppo calmo)",
+          id: "b-d4-2cf3",
+          situation: "2.Cf3 (Anti-Zukertort)",
           myMove: "2...c5!",
-          summary: "Colpisci subito d4!",
+          summary: "Colpisci d4!",
           sequence: "2.Cf3 c5!",
-          tag: "ATTACCO CENTRO",
+          tag: "ANTI-ZUKERTORT",
           tagType: "emerald",
           children: [
             {
-              id: "b-d4-2nf3-3c3",
+              id: "b-zuk-3c3",
               situation: "3.c3 (o 3.e3 — Difende d4)",
               myMove: "3...cxd4!",
               summary: "Apri la colonna c.",
               sequence: "3.c3 cxd4!",
-              tag: "COLONNA c",
+              tag: "APERTURA",
               tagType: "emerald",
               children: [
                 {
-                  id: "b-d4-2nf3-4cxd4",
+                  id: "b-zuk-4cxd4",
                   situation: "4.cxd4 (Riprende)",
                   myMove: "4...Cc6!",
-                  summary: "Sviluppi il Cavallo.",
+                  summary: "Sviluppi.",
                   sequence: "4.cxd4 Cc6!",
                   tag: "SVILUPPO",
                   tagType: "blue",
                   children: [
                     {
-                      id: "b-d4-2nf3-5cc3",
+                      id: "b-zuk-5cc3",
                       situation: "5.Cc3 (Sviluppo)",
                       myMove: "5...Cf6!",
-                      summary: "Sviluppi l'altro Cavallo.",
+                      summary: "Sviluppi.",
                       sequence: "5.Cc3 Cf6!",
                       tag: "SVILUPPO",
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-d4-2nf3-6af4",
+                          id: "b-zuk-6af4",
                           situation: "6.Af4 (Sviluppo)",
                           myMove: "6...Af5!",
                           summary: "Alfiere fuori dalla catena!",
@@ -3096,7 +3162,7 @@
                           tagType: "emerald",
                           children: [
                             {
-                              id: "b-d4-2nf3-7e3",
+                              id: "b-zuk-7e3",
                               situation: "7.e3 (Chiude)",
                               myMove: "7...e6!",
                               summary: "Blindi il centro.",
@@ -3105,12 +3171,12 @@
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-d4-2nf3-8ab5",
+                                  id: "b-zuk-8ab5",
                                   situation: "8.Ab5 (Inchioda)",
                                   myMove: "8...Cd7!",
-                                  summary: "Prepari ...Ae7 e ...O-O con posizione solidissima.",
+                                  summary: "Parità solida e attiva.",
                                   sequence: "8.Ab5 Cd7!",
-                                  tag: "PARITÀ SOLIDA",
+                                  tag: "PARITÀ",
                                   tagType: "emerald",
                                   children: []
                                 }
@@ -3127,64 +3193,64 @@
           ]
         },
         {
-          id: "b-d4-2nc3",
-          situation: "2.Cc3 (Attacco Veresov / Chigorin)",
+          id: "b-d4-2cc3",
+          situation: "2.Cc3 (Attacco Veresov)",
           myMove: "2...c5!",
-          summary: "Spacchi subito d4 ignorando il Cavallo!",
+          summary: "Spacchi d4!",
           sequence: "2.Cc3 c5!",
-          tag: "CONTROATTACCO",
+          tag: "ANTI-VERESOV",
           tagType: "emerald",
           children: [
             {
-              id: "b-d4-2nc3-3dxc5",
+              id: "b-ver-3dxc5",
               situation: "3.dxc5 (Accetta)",
               myMove: "3...Cf6!",
               summary: "Impedisci 4.e4.",
               sequence: "3.dxc5 Cf6!",
-              tag: "CONTROLLO e4",
+              tag: "CONTROLLO",
               tagType: "blue",
               children: [
                 {
-                  id: "b-d4-2nc3-4ag5",
+                  id: "b-ver-4ag5",
                   situation: "4.Ag5 (Inchioda)",
                   myMove: "4...e6!",
-                  summary: "Apri l'Alfiere per mangiare c5.",
+                  summary: "Prepari Axc5.",
                   sequence: "4.Ag5 e6!",
                   tag: "RECUPERO",
                   tagType: "emerald",
                   children: [
                     {
-                      id: "b-d4-2nc3-5e4",
-                      situation: "5.e4 (Spinta centrale)",
+                      id: "b-ver-5e4",
+                      situation: "5.e4 (Spinta)",
                       myMove: "5...Axc5!",
-                      summary: "Recuperi il pedone puntando su f2!",
+                      summary: "Punti su f2!",
                       sequence: "5.e4 Axc5!",
                       tag: "DIAGONALE f2",
                       tagType: "rose",
                       children: [
                         {
-                          id: "b-d4-2nc3-6exd5",
+                          id: "b-ver-6exd5",
                           situation: "6.exd5 (Mangia)",
                           myMove: "6...Db6!",
-                          summary: "ATTACCO DOPPIO su f2 e b2!",
+                          summary: "DOPPIO ATTACCO su f2 e b2!",
                           sequence: "6.exd5 Db6!",
                           tag: "DOPPIO ATTACCO",
                           tagType: "rose",
                           children: [
                             {
-                              id: "b-d4-2nc3-7dd2",
+                              id: "b-ver-7dd2",
                               situation: "7.Dd2 (Difende f2)",
                               myMove: "7...Axf2+!",
-                              summary: "Sacrificio tattico per distruggere l'arrocco!",
+                              summary: "Distruggi l'arrocco!",
                               sequence: "7.Dd2 Axf2+!",
                               tag: "TATTICA",
                               tagType: "rose",
                               children: [
                                 {
-                                  id: "b-d4-2nc3-8dxf2",
+                                  id: "b-ver-8dxf2",
                                   situation: "8.Dxf2 (Riprende)",
                                   myMove: "8...Dxb2!",
-                                  summary: "Attacchi contemporaneamente il Cavallo c3 e la Torre a1!",
+                                  summary: "Vinci la Torre a1!",
                                   sequence: "8.Dxf2 Dxb2!",
                                   tag: "TORRE VINTA",
                                   tagType: "rose",
@@ -3203,34 +3269,34 @@
           ]
         },
         {
-          id: "b-d4-colle",
-          situation: "2.e3 (o 2.c3 — Sistema Colle / Colle con Fianchetto)",
+          id: "b-d4-2e3",
+          situation: "2.e3 (o 2.c3 — Sistema Colle)",
           myMove: "2...c5!",
-          summary: "Colpisci subito d4!",
+          summary: "Colpisci d4!",
           sequence: "2.e3 c5!",
           tag: "ANTI-COLLE",
           tagType: "emerald",
           children: [
             {
-              id: "b-d4-colle-3cd2",
+              id: "b-col-3cd2",
               situation: "3.Cd2 (Sviluppo Colle)",
               myMove: "3...Cf6!",
-              summary: "Sviluppi il Cavallo.",
+              summary: "Sviluppi.",
               sequence: "3.Cd2 Cf6!",
               tag: "SVILUPPO",
               tagType: "blue",
               children: [
                 {
-                  id: "b-d4-colle-4cgf3",
+                  id: "b-col-4cgf3",
                   situation: "4.Cgf3 (Sviluppo)",
                   myMove: "4...Ag4!",
-                  summary: "Inchiodi il Cavallo f3!",
+                  summary: "Inchiodi f3!",
                   sequence: "4.Cgf3 Ag4!",
                   tag: "INCHIODATURA",
                   tagType: "emerald",
                   children: [
                     {
-                      id: "b-d4-colle-5g3",
+                      id: "b-col-5g3",
                       situation: "5.g3 (o 5.c3 — Fianchetto / Piramide)",
                       myMove: "5...e5!",
                       summary: "Spacchi subito il centro con 5...e5!!",
@@ -3239,30 +3305,30 @@
                       tagType: "rose",
                       children: [
                         {
-                          id: "b-d4-colle-6dxe5",
+                          id: "b-col-6dxe5",
                           situation: "6.dxe5 (Mangia)",
                           myMove: "6...Cxe5!",
-                          summary: "Centralizzi il Cavallo sfruttando l'inchiodatura su f3!",
+                          summary: "Centralizzi il Cavallo!",
                           sequence: "6.dxe5 Cxe5!",
                           tag: "CAVALLO CENTRALE",
                           tagType: "emerald",
                           children: [
                             {
-                              id: "b-d4-colle-7ag2",
-                              situation: "7.Ag2 (Completa fianchetto)",
+                              id: "b-col-7ag2",
+                              situation: "7.Ag2 (Completa)",
                               myMove: "7...Cxf3+!",
-                              summary: "Cambi eliminando il difensore.",
+                              summary: "Cambi.",
                               sequence: "7.Ag2 Cxf3+!",
                               tag: "CAMBIO",
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-d4-colle-8cxf3",
+                                  id: "b-col-8cxf3",
                                   situation: "8.Cxf3 (Riprende)",
                                   myMove: "8...c6!",
-                                  summary: "Blindi il pedone d5 e prepari Ac5 e O-O con vantaggio nero!",
+                                  summary: "Centro blindato e vantaggio nero!",
                                   sequence: "8.Cxf3 c6!",
-                                  tag: "CENTRO DOMINANTE",
+                                  tag: "VANTAGGIO",
                                   tagType: "emerald",
                                   children: []
                                 }
@@ -3281,25 +3347,25 @@
       ]
     },
     {
-      id: "b-reti-english-root",
-      situation: "1.Cf3 / 1.c4 (Apertura Reti & Partita Inglese)",
-      myMove: "1...d5! (su 1.Cf3) / 1...e5! (su 1.c4)",
-      summary: "Prendi subito spazio centrale contro le aperture laterali.",
-      sequence: "1.Cf3 d5! / 1.c4 e5!",
-      tag: "ANTI-LATERALI",
+      id: "b-1cf3",
+      situation: "1.Cf3 (Apertura Reti)",
+      myMove: "1...d5!",
+      summary: "Prendi spazio centrale contro Reti.",
+      sequence: "1.Cf3 d5!",
+      tag: "APERTURA RETI",
       tagType: "blue",
       children: [
         {
-          id: "b-reti-2d4",
-          situation: "1.Cf3 d5 2.d4 (Reti trasposta)",
+          id: "b-ret-2d4",
+          situation: "2.d4 (Reti trasposta)",
           myMove: "2...c5!",
           summary: "Colpisci d4.",
-          sequence: "1.Cf3 d5 2.d4 c5!",
-          tag: "ATTACCO CENTRO",
+          sequence: "2.d4 c5!",
+          tag: "ATTACCO",
           tagType: "emerald",
           children: [
             {
-              id: "b-reti-3c3",
+              id: "b-ret-3c3",
               situation: "3.c3 (Difende d4)",
               myMove: "3...cxd4!",
               summary: "Apri il centro.",
@@ -3308,34 +3374,34 @@
               tagType: "emerald",
               children: [
                 {
-                  id: "b-reti-4cxd4",
+                  id: "b-ret-4cxd4",
                   situation: "4.Cxd4 (o 4.cxd4 — Riprende)",
                   myMove: "4...Cf6!",
-                  summary: "Sviluppi il Cavallo.",
+                  summary: "Sviluppi.",
                   sequence: "4.Cxd4 Cf6!",
                   tag: "SVILUPPO",
                   tagType: "blue",
                   children: [
                     {
-                      id: "b-reti-5af4",
+                      id: "b-ret-5af4",
                       situation: "5.Af4 (Sviluppo)",
                       myMove: "5...Cc6!",
-                      summary: "Minacci 6...e5! e punti su d4!",
+                      summary: "Minacci 6...e5!",
                       sequence: "5.Af4 Cc6!",
                       tag: "MINACCIA ...e5!",
                       tagType: "rose",
                       children: [
                         {
-                          id: "b-reti-6e3",
+                          id: "b-ret-6e3",
                           situation: "6.e3 (Difende d4)",
                           myMove: "6...Db6!",
-                          summary: "Attacchi subito il pedone indifeso b2!",
+                          summary: "Attacchi subito b2!",
                           sequence: "6.e3 Db6!",
                           tag: "ATTACCO b2",
                           tagType: "rose",
                           children: [
                             {
-                              id: "b-reti-7db3",
+                              id: "b-ret-7db3",
                               situation: "7.Db3 (Offre cambio)",
                               myMove: "7...Cxd4!",
                               summary: "Cambi al centro.",
@@ -3344,12 +3410,12 @@
                               tagType: "blue",
                               children: [
                                 {
-                                  id: "b-reti-8exd4",
+                                  id: "b-ret-8exd4",
                                   situation: "8.exd4 (Riprende)",
                                   myMove: "8...Dxb3!",
-                                  summary: "Cambi le Donne lasciando al Bianco i pedoni doppiati su b3!",
+                                  summary: "Finale superiore contro pedoni doppiati.",
                                   sequence: "8.exd4 Dxb3!",
-                                  tag: "FINALE SUPERIORE",
+                                  tag: "FINALE",
                                   tagType: "emerald",
                                   children: []
                                 }
@@ -3364,18 +3430,29 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      id: "b-1c4",
+      situation: "1.c4 (Partita Inglese)",
+      myMove: "1...e5!",
+      summary: "Siciliana Inversa: prendi spazio centrale!",
+      sequence: "1.c4 e5!",
+      tag: "PARTITA INGLESE",
+      tagType: "emerald",
+      children: [
         {
-          id: "b-english-1e5",
-          situation: "1.c4 e5! (Partita Inglese — Siciliana Inversa)",
-          myMove: "2...Cf6! (su 2.Cc3)",
-          summary: "Sviluppi il Cavallo controllando d5.",
-          sequence: "1.c4 e5! 2.Cc3 Cf6!",
-          tag: "PARTITA INGLESE",
-          tagType: "emerald",
+          id: "b-ing-2cc3",
+          situation: "2.Cc3 (Sviluppo)",
+          myMove: "2...Cf6!",
+          summary: "Controlli d5.",
+          sequence: "2.Cc3 Cf6!",
+          tag: "SVILUPPO",
+          tagType: "blue",
           children: [
             {
-              id: "b-english-3cf3",
+              id: "b-ing-3cf3",
               situation: "3.Cf3 (Attacca e5)",
               myMove: "3...Cc6!",
               summary: "Difendi e5.",
@@ -3384,16 +3461,16 @@
               tagType: "blue",
               children: [
                 {
-                  id: "b-english-4g3",
+                  id: "b-ing-4g3",
                   situation: "4.g3 (Fianchetto Inglese)",
                   myMove: "4...d5!",
-                  summary: "Spacchi subito il centro prima che l'Alfiere arrivi in g2!",
+                  summary: "Spacchi subito il centro!",
                   sequence: "4.g3 d5!",
-                  tag: "ROTTURA 4...d5!",
+                  tag: "ROTTURA d5!",
                   tagType: "rose",
                   children: [
                     {
-                      id: "b-english-5cxd5",
+                      id: "b-ing-5cxd5",
                       situation: "5.cxd5 (Mangia)",
                       myMove: "5...Cxd5!",
                       summary: "Centralizzi il Cavallo.",
@@ -3402,7 +3479,7 @@
                       tagType: "emerald",
                       children: [
                         {
-                          id: "b-english-6ag2",
+                          id: "b-ing-6ag2",
                           situation: "6.Ag2 (Attacca d5)",
                           myMove: "6...Cb6!",
                           summary: "Metti il Cavallo al sicuro.",
@@ -3411,7 +3488,7 @@
                           tagType: "blue",
                           children: [
                             {
-                              id: "b-english-7oo",
+                              id: "b-ing-7oo",
                               situation: "7.O-O (Arrocca)",
                               myMove: "7...Ae7!",
                               summary: "Prepari l'arrocco.",
@@ -3420,12 +3497,12 @@
                               tagType: "emerald",
                               children: [
                                 {
-                                  id: "b-english-8a3",
+                                  id: "b-ing-8a3",
                                   situation: "8.a3 (Prepara b4)",
                                   myMove: "8...O-O!",
                                   summary: "Re al sicuro con vantaggio di spazio centrale.",
                                   sequence: "8.a3 O-O!",
-                                  tag: "CENTRO CONTROLLATO",
+                                  tag: "VANTAGGIO",
                                   tagType: "emerald",
                                   children: []
                                 }
@@ -3885,9 +3962,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v9_move9') {
+      if (localStorage.getItem('chess_tree_version') !== 'v10_atomico_mossa9') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v9_move9');
+        localStorage.setItem('chess_tree_version', 'v10_atomico_mossa9');
       }
       loadCustomMoves();
       resetToHome();
