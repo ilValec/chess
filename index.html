@@ -3461,6 +3461,103 @@
                       ]
                     }
                   ]
+                },
+                {
+                  id: "b-sc-3d4-4c4-direct",
+                  situation: "4.c4 (Il Bianco spinge subito c4 prima di Cf3)",
+                  myMove: "4...Da5+!",
+                  summary: "Dai scacco intermedio impedendo 5.Cc3 e costringendo il Bianco a coprire con 5.Ad2 o 5.Cc3 (inchiodato).",
+                  sequence: "3.d4 c6! 4.c4 Da5+!",
+                  tag: "SCACCO INTERMEDIO",
+                  tagType: "rose",
+                  children: [
+                    {
+                      id: "b-sc-3d4-5ad2",
+                      situation: "5.Ad2 (Copre lo scacco attaccando la Donna — Come nella tua partita)",
+                      myMove: "5...Dc7!",
+                      summary: "Metti subito la Donna nella casa sicura c7 controllando e5 e evitando qualsiasi scoperta!",
+                      sequence: "5.Ad2 Dc7!",
+                      tag: "DONNA AL SICURO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "b-sc-3d4-4c4-6cc3",
+                          situation: "6.Cc3 (Sviluppo naturale)",
+                          myMove: "6...Cf6!",
+                          summary: "Sviluppi il Cavallo controllando e4 e d5.",
+                          sequence: "6.Cc3 Cf6!",
+                          tag: "SVILUPPO",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "b-sc-3d4-7cf3",
+                              situation: "7.Cf3 (Mossa migliore Bianco)",
+                              myMove: "7...Af5!",
+                              summary: "Porti l'Alfiere fuori dalla catena pedonale prima di giocare e6!",
+                              sequence: "7.Cf3 Af5!",
+                              tag: "ALFIERE ATTIVO",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "b-sc-3d4-4c4-8ae2",
+                                  situation: "8.Ae2 (Prepara arrocco)",
+                                  myMove: "8...e6!",
+                                  summary: "Blindi il centro e liberi l'Alfiere f8.",
+                                  sequence: "8.Ae2 e6!",
+                                  tag: "CENTRO SOLIDO",
+                                  tagType: "blue",
+                                  children: [
+                                    {
+                                      id: "b-sc-3d4-4c4-9oo",
+                                      situation: "9.O-O (Arrocca)",
+                                      myMove: "9...Cbd7!",
+                                      summary: "Prepari 10...O-O-O! o 10...Ad6! con posizione solidissima e zero punti deboli.",
+                                      sequence: "9.O-O Cbd7!",
+                                      tag: "SETUP PERFETTO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              id: "b-sc-3d4-7d5",
+                              situation: "7.d5 (Errore avversario: spinge troppo presto — Come in partita)",
+                              myMove: "7...e5!",
+                              summary: "Prendi subito spazio centrale (oppure 7...cxd5 8.cxd5 e6! aprendo il centro contro il Re bianco).",
+                              sequence: "7.d5 e5!",
+                              tag: "PUNIZIONE CENTRALE",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "b-sc-3d4-8dxc6",
+                                  situation: "8.dxc6 (Cambia in c6)",
+                                  myMove: "8...Cxc6!",
+                                  summary: "Riprendi sviluppando il Cavallo: hai già Donna al sicuro in c7, entrambi i Cavalli sviluppati e la colonna d aperta per ...O-O-O!",
+                                  sequence: "8.dxc6 Cxc6!",
+                                  tag: "VANTAGGIO SVILUPPO",
+                                  tagType: "emerald",
+                                  children: [
+                                    {
+                                      id: "b-sc-3d4-9cf3",
+                                      situation: "9.Cf3 (Sviluppo Bianco)",
+                                      myMove: "9...Af5!",
+                                      summary: "Sviluppi l'Alfiere e al turno 10 giochi 10...O-O-O! con attacco diretto sulla colonna d!",
+                                      sequence: "9.Cf3 Af5!",
+                                      tag: "DOMINIO COLONNA d",
+                                      tagType: "rose",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -5861,9 +5958,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v19_full_history_restored') {
+      if (localStorage.getItem('chess_tree_version') !== 'v20_scandi_3d4_c4') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v19_full_history_restored');
+        localStorage.setItem('chess_tree_version', 'v20_scandi_3d4_c4');
       }
       loadCustomMoves();
       resetToHome();
