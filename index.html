@@ -3558,6 +3558,81 @@
                       ]
                     }
                   ]
+                },
+                {
+                  id: "b-sc-3d4-4ae3",
+                  situation: "4.Ae3 (Sviluppo anticipato dell'Alfiere prima di Cf3 e c4)",
+                  myMove: "4...Cf6!",
+                  summary: "Sviluppi il Cavallo controllando e4 e mantenendo la flessibilità tra ...Da5+ e ...Af5.",
+                  sequence: "3.d4 c6! 4.Ae3 Cf6!",
+                  tag: "SVILUPPO FLESSIBILE",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "b-sc-3d4-4ae3-5c4",
+                      situation: "5.c4 (Guadagna spazio attaccando la Donna)",
+                      myMove: "5...Da5+!",
+                      summary: "Dai scacco immediato costringendo l'Alfiere bianco a muoversi una seconda volta (6.Ad2)!",
+                      sequence: "4.Ae3 Cf6! 5.c4 Da5+!",
+                      tag: "GUADAGNO DI TEMPO",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "b-sc-3d4-4ae3-6ad2",
+                          situation: "6.Ad2 (Copre lo scacco — Come nella tua partita)",
+                          myMove: "6...Dc7!",
+                          summary: "Ritiri la Donna nella casa sicura c7 controllando e5 e evitando qualsiasi scoperta!",
+                          sequence: "6.Ad2 Dc7!",
+                          tag: "DONNA AL SICURO",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "b-sc-3d4-4ae3-7cf3",
+                              situation: "7.Cf3 (Sviluppo naturale)",
+                              myMove: "7...Af5!",
+                              summary: "Piazzi l'Alfiere fuori dalla catena pedonale prima di giocare e6!",
+                              sequence: "7.Cf3 Af5!",
+                              tag: "ALFIERE ATTIVO",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "b-sc-3d4-4ae3-8cc3",
+                                  situation: "8.Cc3 (Sviluppo)",
+                                  myMove: "8...Cbd7!",
+                                  summary: "Prepari l'arrocco lungo O-O-O e la spinta centrale ...e5!",
+                                  sequence: "8.Cc3 Cbd7!",
+                                  tag: "SETUP PERFETTO",
+                                  tagType: "blue",
+                                  children: [
+                                    {
+                                      id: "b-sc-3d4-4ae3-9ch4",
+                                      situation: "9.Ch4 (Attacca l'Alfiere f5 — Come nella tua partita)",
+                                      myMove: "9...Ag6! (#1 Motore — oppure 9...g6)",
+                                      summary: "Con 9...Ag6! mantieni la coppia degli Alfieri (su 10.Cxg6 hxg6 apri la colonna h); con 9...g6 (giocata in partita) dopo 10.Cxf5 gxf5 apri la colonna g e rompi subito al centro con 11...e5! e 12...O-O-O!",
+                                      sequence: "9.Ch4 Ag6!",
+                                      tag: "MOSSA #1 MOTORE",
+                                      tagType: "rose",
+                                      children: []
+                                    },
+                                    {
+                                      id: "b-sc-3d4-4ae3-9ae2",
+                                      situation: "9.Ae2 (Sviluppo calmo)",
+                                      myMove: "9...e6!",
+                                      summary: "Blindi il centro e al turno 10 giochi 10...O-O-O! con posizione solidissima e pieno controgioco.",
+                                      sequence: "9.Ae2 e6!",
+                                      tag: "CENTRO SOLIDO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -5958,9 +6033,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v20_scandi_3d4_c4') {
+      if (localStorage.getItem('chess_tree_version') !== 'v21_scandi_3d4_be3') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v20_scandi_3d4_c4');
+        localStorage.setItem('chess_tree_version', 'v21_scandi_3d4_be3');
       }
       loadCustomMoves();
       resetToHome();
