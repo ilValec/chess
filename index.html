@@ -3570,6 +3570,147 @@
           ]
         },
         {
+          id: "b-d4-2e4",
+          situation: "2.e4 (Gambetto Blackmar-Diemer — Il Bianco offre subito e4)",
+          myMove: "2...dxe4!",
+          summary: "Accetti subito il pedone centrale costringendo il Bianco a spendere tempi per recuperarlo.",
+          sequence: "1.d4 d5! 2.e4 dxe4!",
+          tag: "BLACKMAR-DIEMER",
+          tagType: "rose",
+          children: [
+            {
+              id: "b-bdg-3cc3",
+              situation: "3.Cc3 (Prepara 4.f3 per aprire la colonna f)",
+              myMove: "3...Cf6!",
+              summary: "Sviluppi il Cavallo difendendo il pedone e4.",
+              sequence: "3.Cc3 Cf6!",
+              tag: "DIFESA e4",
+              tagType: "emerald",
+              children: [
+                {
+                  id: "b-bdg-4f3",
+                  situation: "4.f3 (Attacca e4 — Scegli linea solida #1 o Variante Vienna)",
+                  myMove: "4...exf3! (#1 Motore — oppure 4...Af5! Variante Vienna)",
+                  summary: "Con 4...exf3! spegni ogni trappola tattica restando con un pedone pulito in più; con 4...Af5! tieni e4 ma fai attenzione a ritirare l'Alfiere in g6 (MAI in e6!) se il Bianco spinge g4!",
+                  sequence: "4.f3 exf3!",
+                  tag: "SCELTA LINEA",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "b-bdg-4exf3-5cxf3",
+                      situation: "Ramo 4...exf3! (#1 Motore) -> 5.Cxf3 (Riprende di Cavallo)",
+                      myMove: "5...Af5!",
+                      summary: "Sviluppi l'Alfiere fuori dalla catena pedonale prima di giocare e6!",
+                      sequence: "4...exf3! 5.Cxf3 Af5!",
+                      tag: "ALFIERE ATTIVO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "b-bdg-5af5-6ac4",
+                          situation: "6.Ac4 (o 6.Ad3 — Sviluppo Bianco)",
+                          myMove: "6...e6!",
+                          summary: "Blindi il centro e liberi l'Alfiere f8 con un pedone netto di vantaggio.",
+                          sequence: "6.Ac4 e6!",
+                          tag: "CENTRO SOLIDO",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "b-bdg-6e6-7oo",
+                              situation: "7.O-O (Arrocca)",
+                              myMove: "7...Ae7!",
+                              summary: "Prepari l'arrocco corto senza concedere nessun attacco su f7.",
+                              sequence: "7.O-O Ae7!",
+                              tag: "SVILUPPO",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "b-bdg-7ae7-8ce5",
+                                  situation: "8.Ce5 (Tenta di attaccare f7)",
+                                  myMove: "8...O-O!",
+                                  summary: "Metti il Re al sicuro difendendo f7 con la Torre.",
+                                  sequence: "8.Ce5 O-O!",
+                                  tag: "ARROCCO SICURO",
+                                  tagType: "emerald",
+                                  children: [
+                                    {
+                                      id: "b-bdg-8oo-9ae3",
+                                      situation: "9.Ae3 (Completa lo sviluppo)",
+                                      myMove: "9...Cbd7!",
+                                      summary: "Cambi il Cavallo attivo bianco e resti con un pedone netto in più e zero punti deboli!",
+                                      sequence: "9.Ae3 Cbd7!",
+                                      tag: "VANTAGGIO +1",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "b-bdg-4af5",
+                      situation: "Ramo 4...Af5! (Variante Vienna — La tua partita)",
+                      myMove: "5...e6! (su 5.Ae3 — oppure 5...Cxe4! su 5.fxe4)",
+                      summary: "Apri subito l'Alfiere f8 ed eviti qualsiasi forchetta di pedone d5! (Se l'avversario gioca 5.Ae3 Cc6 6.g4, ritira l'Alfiere in 6...Ag6! — MAI 6...Ae6? perché subisce la forchetta 7.d5!).",
+                      sequence: "4...Af5! 5.Ae3 e6!",
+                      tag: "ANTI-FORCHETTA d5!",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "b-bdg-vienna-6g4",
+                          situation: "6.g4 (Il Bianco attacca l'Alfiere f5)",
+                          myMove: "6...Ag6!",
+                          summary: "REGOLA D'ORO: ritira SEMPRE in g6! Mai in e6 perché d5 farebbe forchetta!",
+                          sequence: "6.g4 Ag6!",
+                          tag: "RITIRA IN g6!",
+                          tagType: "rose",
+                          children: [
+                            {
+                              id: "b-bdg-vienna-7g5",
+                              situation: "7.g5 (Attacca f6)",
+                              myMove: "7...Cd5!",
+                              summary: "Piazzi un Cavallo centralizzato in d5 attaccando l'Alfiere e3!",
+                              sequence: "7.g5 Cd5!",
+                              tag: "CAVALLO IN d5",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "b-bdg-vienna-8cxd5",
+                                  situation: "8.Cxd5 (Cambia in d5)",
+                                  myMove: "8...exd5!",
+                                  summary: "Chiudi la diagonale all'Alfiere bianco e blindi il centro!",
+                                  sequence: "8.Cxd5 exd5!",
+                                  tag: "CENTRO BLINDATO",
+                                  tagType: "blue",
+                                  children: [
+                                    {
+                                      id: "b-bdg-vienna-9fxe4",
+                                      situation: "9.fxe4 (Recupera il pedone)",
+                                      myMove: "9...Axe4!",
+                                      summary: "Mangi con l'Alfiere attaccando contemporaneamente la Torre bianca in h1!",
+                                      sequence: "9.fxe4 Axe4!",
+                                      tag: "ATTACCO TORRE h1",
+                                      tagType: "rose",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           id: "b-d4-2cf3",
           situation: "2.Cf3 (Anti-Zukertort)",
           myMove: "2...c5!",
@@ -4415,9 +4556,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v13_scandi_3de6_fix') {
+      if (localStorage.getItem('chess_tree_version') !== 'v14_blackmar_diemer') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v13_scandi_3de6_fix');
+        localStorage.setItem('chess_tree_version', 'v14_blackmar_diemer');
       }
       loadCustomMoves();
       resetToHome();
