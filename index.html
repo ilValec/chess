@@ -2972,6 +2972,168 @@
                   ]
                 }
               ]
+            },
+            {
+              id: "b-alb-3e3",
+              situation: "3.e3 (Albin Rifiutato — Il Bianco blinda d4 e chiude l'Alfiere c1)",
+              myMove: "3...e4! (Spazio & Attacco — oppure 3...exd4! #1 Motore)",
+              summary: "Con 3...e4! fissi spazio sull'ala di Re togliendo f3 al Cavallo bianco e prepari l'assalto ...g5/...h5; con 3...exd4! isoli subito il pedone d4 avversario. Scegli il ramo fino a mossa 9:",
+              sequence: "3.e3 e4!",
+              tag: "ALBIN RIFIUTATO",
+              tagType: "rose",
+              children: [
+                {
+                  id: "b-alb-3e3-4cc3",
+                  situation: "Ramo 3...e4! -> 4.Cc3 (Sviluppo standard)",
+                  myMove: "4...Cf6!",
+                  summary: "Difendi e4 e sviluppi il Cavallo.",
+                  sequence: "3...e4! 4.Cc3 Cf6!",
+                  tag: "DIFESA e4",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "b-alb-3e3-5cxd5",
+                      situation: "5.cxd5 (Apre il centro — OCCHIO a non fare 5...Cxd5??)",
+                      myMove: "5...Ab4!",
+                      summary: "MOSSA CHIAVE: inchiodi prima il Cavallo c3! Se mangiassi subito 5...Cxd5?? perderesti e4 per 6.Cxe4.",
+                      sequence: "5.cxd5 Ab4!",
+                      tag: "INCHIODATURA TATTICA",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "b-alb-3e3-6ad2",
+                          situation: "6.Ad2 (Schioda c3)",
+                          myMove: "6...Axc3!",
+                          summary: "Elimini il difensore di e4 e d5.",
+                          sequence: "6.Ad2 Axc3!",
+                          tag: "CAMBIO",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "b-alb-3e3-7axc3",
+                              situation: "7.Axc3 (Riprende)",
+                              myMove: "7...Cxd5!",
+                              summary: "Recuperi il pedone centralizzando un Cavallo dominante in d5.",
+                              sequence: "7.Axc3 Cxd5!",
+                              tag: "RECUPERO CENTRALE",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "b-alb-3e3-8ae2",
+                                  situation: "8.Ae2 (Imprecisione passiva del Bianco — meglio 8.Ac4)",
+                                  myMove: "8...Cc6!",
+                                  summary: "Sviluppi il Cavallo preparando ...Ae6 e ...O-O-O con pieno controllo centrale.",
+                                  sequence: "8.Ae2 Cc6!",
+                                  tag: "SVILUPPO ATTIVO",
+                                  tagType: "emerald",
+                                  children: [
+                                    {
+                                      id: "b-alb-3e3-9ab5",
+                                      situation: "9.Ab5 (Inchioda c6)",
+                                      myMove: "9...Dd6!",
+                                      summary: "Schiodi c6, prepari 10...Ae6! e 11...O-O-O! e lanci la valanga di pedoni sull'ala di Re (...h6, ...g5, ...h5)!",
+                                      sequence: "9.Ab5 Dd6!",
+                                      tag: "SETUP VINCENTE",
+                                      tagType: "rose",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "b-alb-3e3-4cxd5-early",
+                      situation: "Variante: 4.cxd5 (Cambia subito prima di Cc3)",
+                      myMove: "4...Cf6!",
+                      summary: "Prepari 5...Ab4! e il recupero del pedone con ...Cxd5.",
+                      sequence: "4.cxd5 Cf6!",
+                      tag: "TRASPOSIZIONE",
+                      tagType: "blue",
+                      children: [
+                        {
+                          id: "b-alb-3e3-5cc3-trans",
+                          situation: "5.Cc3 (Difende e4)",
+                          myMove: "5...Ab4! 6.Ad2! Axc3! 7.Axc3! Cxd5! 8.Ac4! Cc6! 9.Ce2! Ae6!",
+                          summary: "Rientra nella stessa struttura con Cavallo dominante in d5 e sviluppo completo.",
+                          sequence: "5.Cc3 Ab4! 6.Ad2 Axc3 7.Axc3 Cxd5!",
+                          tag: "CENTRO DOMINANTE",
+                          tagType: "emerald",
+                          children: []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  id: "b-alb-3e3-exd4",
+                  situation: "Ramo 3...exd4! (#1 Motore) -> 4.exd4 (Isola il pedone d4)",
+                  myMove: "4...Cf6!",
+                  summary: "Sviluppi il Cavallo controllando d5 ed e4 contro il pedone isolato bianco.",
+                  sequence: "3...exd4! 4.exd4 Cf6!",
+                  tag: "MOSSA #1 MOTORE",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "b-alb-3e3-exd4-5cc3",
+                      situation: "5.Cc3 (Sviluppo)",
+                      myMove: "5...Ab4!",
+                      summary: "Inchiodi il Cavallo c3!",
+                      sequence: "5.Cc3 Ab4!",
+                      tag: "INCHIODATURA",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "b-alb-3e3-exd4-6cf3",
+                          situation: "6.Cf3 (Sviluppo)",
+                          myMove: "6...O-O!",
+                          summary: "Arrocchi corto mettendo subito la Torre pronta per la colonna aperta e!",
+                          sequence: "6.Cf3 O-O!",
+                          tag: "ARROCCO",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "b-alb-3e3-exd4-7ae2",
+                              situation: "7.Ae2 (Copre)",
+                              myMove: "7...dxc4!",
+                              summary: "Fissi definitivamente il pedone isolato bianco in d4!",
+                              sequence: "7.Ae2 dxc4!",
+                              tag: "PEDONE ISOLATO d4",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "b-alb-3e3-exd4-8axc4",
+                                  situation: "8.Axc4 (Riprende)",
+                                  myMove: "8...Ag4!",
+                                  summary: "Inchiodi il difensore di d4!",
+                                  sequence: "8.Axc4 Ag4!",
+                                  tag: "PRESSIONE SU d4",
+                                  tagType: "rose",
+                                  children: [
+                                    {
+                                      id: "b-alb-3e3-exd4-9oo",
+                                      situation: "9.O-O (Arrocca)",
+                                      myMove: "9...Cc6!",
+                                      summary: "Triplo attacco sul pedone isolato d4 con parità piena e gioco facilissimo per il Nero!",
+                                      sequence: "9.O-O Cc6!",
+                                      tag: "PARITÀ ATTIVA",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -3962,9 +4124,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v10_atomico_mossa9') {
+      if (localStorage.getItem('chess_tree_version') !== 'v11_albin_3e3') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v10_atomico_mossa9');
+        localStorage.setItem('chess_tree_version', 'v11_albin_3e3');
       }
       loadCustomMoves();
       resetToHome();
