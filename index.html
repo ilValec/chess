@@ -1913,6 +1913,179 @@
           ]
         }
       ]
+    },
+    {
+      id: "w-1cf6",
+      situation: "1...Cf6 (Difesa Alekhine — Provoca la spinta e5)",
+      myMove: "2.e5! (Linea principale — oppure 2.Cc3 se il Nero spinge ...d5)",
+      summary: "Cacci subito il Cavallo guadagnando spazio centrale! Se invece giochi 2.Cc3 e il Nero risponde 2...d5, apri il secondo ramo qui sotto.",
+      sequence: "1...Cf6 2.e5!",
+      tag: "DIFESA ALEKHINE",
+      tagType: "emerald",
+      children: [
+        {
+          id: "w-ale-2cd5",
+          situation: "2...Cd5 (Ritirata principale del Cavallo)",
+          myMove: "3.d4!",
+          summary: "Costruisci un centro perfetto di pedoni.",
+          sequence: "2...Cd5 3.d4!",
+          tag: "CENTRO PERFETTO",
+          tagType: "emerald",
+          children: [
+            {
+              id: "w-ale-3d6",
+              situation: "3...d6 (Attacca il centro)",
+              myMove: "4.Cf3!",
+              summary: "Difendi e5 sviluppando il Cavallo.",
+              sequence: "3...d6 4.Cf3!",
+              tag: "SVILUPPO",
+              tagType: "blue",
+              children: [
+                {
+                  id: "w-ale-4ag4",
+                  situation: "4...Ag4 (Inchioda f3)",
+                  myMove: "5.Ae2!",
+                  summary: "Copri l'inchiodatura preparando l'arrocco.",
+                  sequence: "4...Ag4 5.Ae2!",
+                  tag: "SCHIODATURA",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "w-ale-5e6",
+                      situation: "5...e6 (Apre l'Alfiere f8)",
+                      myMove: "6.O-O!",
+                      summary: "Arrocchi corto in piena sicurezza.",
+                      sequence: "5...e6 6.O-O!",
+                      tag: "ARROCCO",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "w-ale-6ae7",
+                          situation: "6...Ae7 (Prepara arrocco)",
+                          myMove: "7.c4!",
+                          summary: "Cacci il Cavallo centrale d5 guadagnando spazio!",
+                          sequence: "6...Ae7 7.c4!",
+                          tag: "TEMPO SUL CAVALLO",
+                          tagType: "rose",
+                          children: [
+                            {
+                              id: "w-ale-7cb6",
+                              situation: "7...Cb6 (Ritira sul bordo)",
+                              myMove: "8.exd6!",
+                              summary: "Apri il centro mantenendo vantaggio di spazio.",
+                              sequence: "7...Cb6 8.exd6!",
+                              tag: "APERTURA",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "w-ale-8cxd6",
+                                  situation: "8...cxd6 (Riprende)",
+                                  myMove: "9.Cc3!",
+                                  summary: "Sviluppo completo, spazio centrale e pezzi neri schiacciati sull'ala di Donna.",
+                                  sequence: "8...cxd6 9.Cc3!",
+                                  tag: "VANTAGGIO SPAZIO",
+                                  tagType: "emerald",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          id: "w-ale-2cc3-scandi",
+          situation: "Variante 2.Cc3 d5! (Variante Scandinava dell'Alekhine)",
+          myMove: "3.e5!",
+          summary: "Spinti in e5 cacciando il Cavallo f6 con tempo!",
+          sequence: "2.Cc3 d5 3.e5!",
+          tag: "SPINTA FORZANTE",
+          tagType: "blue",
+          children: [
+            {
+              id: "w-ale-3cfd7",
+              situation: "3...Cfd7 (Ritira il Cavallo)",
+              myMove: "4.d4!",
+              summary: "Consolidi il centro.",
+              sequence: "3...Cfd7 4.d4!",
+              tag: "CENTRO SOLIDO",
+              tagType: "emerald",
+              children: [
+                {
+                  id: "w-ale-4g6",
+                  situation: "4...g6 (Fianchetto — La tua partita!)",
+                  myMove: "5.Cf3!",
+                  summary: "Sviluppi il Cavallo difendendo d4.",
+                  sequence: "4...g6 5.Cf3!",
+                  tag: "SVILUPPO",
+                  tagType: "blue",
+                  children: [
+                    {
+                      id: "w-ale-5cc6",
+                      situation: "5...Cc6 (Errore avversario: lascia d5 indifeso!)",
+                      myMove: "6.Cxd5!",
+                      summary: "PEDONE CENTRALE GRATIS: lo catturi subito!",
+                      sequence: "5...Cc6 6.Cxd5!",
+                      tag: "PEDONE GRATIS",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "w-ale-6e6",
+                          situation: "6...e6 (Caccia il Cavallo)",
+                          myMove: "7.Cc3!",
+                          summary: "Ritiri il Cavallo mantenendo il pedone netto di vantaggio.",
+                          sequence: "6...e6 7.Cc3!",
+                          tag: "VANTAGGIO +1",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "w-ale-7ag7",
+                              situation: "7...Ag7 (Completa fianchetto)",
+                              myMove: "8.Ab5!",
+                              summary: "Inchiodi il Cavallo c6!",
+                              sequence: "7...Ag7 8.Ab5!",
+                              tag: "INCHIODATURA",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "w-ale-8oo",
+                                  situation: "8...O-O (Arrocca)",
+                                  myMove: "9.Af4!",
+                                  summary: "Difendi e5 e arrocchi al turno dopo (OCCHIO nel mediogioco: NON spingere b4/c3 lasciando la diagonale a6-f1 aperta a ...Aa6!).",
+                                  sequence: "8...O-O 9.Af4!",
+                                  tag: "ATTENZIONE ...Aa6!",
+                                  tagType: "rose",
+                                  children: []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  id: "w-ale-4c5",
+                  situation: "4...c5! (Mossa #1 Motore per il Nero)",
+                  myMove: "5.Cf3! Cc6 6.dxc5! e6 7.Af4! Axc5 8.Ad3! f6 9.exf6!",
+                  summary: "Sviluppi tutti i pezzi con tempi sull'Alfiere nero e mantieni un gioco aperto e attivo.",
+                  sequence: "4...c5! 5.Cf3 Cc6 6.dxc5!",
+                  tag: "LINEA MOTORE",
+                  tagType: "emerald",
+                  children: []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
         ]
       },
@@ -4124,9 +4297,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v11_albin_3e3') {
+      if (localStorage.getItem('chess_tree_version') !== 'v12_alekhine') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v11_albin_3e3');
+        localStorage.setItem('chess_tree_version', 'v12_alekhine');
       }
       loadCustomMoves();
       resetToHome();
