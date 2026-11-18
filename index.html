@@ -519,22 +519,95 @@
                           children: [
                             {
                               id: "w-7re8",
-                              situation: "7...Re8 (o 7...Rf8)",
-                              myMove: "8.Dxc5!",
-                              summary: "Recuperi il pezzo lasciando il Re nemico al centro.",
-                              sequence: "7...Re8 8.Dxc5!",
-                              tag: "RECUPERO",
-                              tagType: "emerald",
+                              situation: "7...Re8 (Il Re torna al centro — Mossa migliore del Nero)",
+                              myMove: "8.Dh5+!",
+                              summary: "MOSSA #1 MOTORE: dai scacco intermedio in h5 prima di mangiare l'Alfiere! Costringi il Nero a spingere ...g6 aprendo la diagonale lunga a1-h8 contro la Torre h8.",
+                              sequence: "7.Dd5+ Re8 8.Dh5+!",
+                              tag: "MOSSA #1 MOTORE",
+                              tagType: "rose",
                               children: [
                                 {
-                                  id: "w-8d6",
-                                  situation: "8...d6 (o 8...cxb2)",
-                                  myMove: "9.Dxc3!",
-                                  summary: "Riprendi c3 con vantaggio decisivo.",
-                                  sequence: "8...d6 9.Dxc3!",
-                                  tag: "VANTAGGIO NETTO",
+                                  id: "w-8g6",
+                                  situation: "8...g6 (Forzata per coprire lo scacco — 8...Rf8 perde subito con 9.Dxc5+!)",
+                                  myMove: "9.Dxc5!",
+                                  summary: "Ora recuperi l'Alfiere c5 con la diagonale a1-h8 spalancata sulla Torre h8! Come risponde il Nero?",
+                                  sequence: "8.Dh5+! g6 9.Dxc5!",
+                                  tag: "DIAGONALE h8 APERTA",
                                   tagType: "emerald",
-                                  children: []
+                                  children: [
+                                    {
+                                      id: "w-9b6",
+                                      situation: "9...b6 (Attacca la Donna c5 — Come nella tua partita)",
+                                      myMove: "10.Dxc3!",
+                                      summary: "Catturi il pedone passato c3 e attacchi contemporaneamente la Torre indifesa in h8 lungo la diagonale lunga!",
+                                      sequence: "9...b6 10.Dxc3!",
+                                      tag: "ATTACCO SU Th8!",
+                                      tagType: "rose",
+                                      children: [
+                                        {
+                                          id: "w-10df6",
+                                          situation: "10...Df6 (Copre Th8 offrendo il cambio Donne)",
+                                          myMove: "11.Ag5!",
+                                          summary: "Sviluppi l'Alfiere attaccando la Donna e dominando tutte le case scure intorno al Re nero!",
+                                          sequence: "10...Df6 11.Ag5!",
+                                          tag: "DOMINIO CASE SCURE",
+                                          tagType: "emerald",
+                                          children: []
+                                        },
+                                        {
+                                          id: "w-10cf6",
+                                          situation: "10...Cf6 (Blocca la diagonale col Cavallo)",
+                                          myMove: "11.Ag5!",
+                                          summary: "Inchiodi subito il Cavallo f6 alla Donna d8 con pressione insostenibile!",
+                                          sequence: "10...Cf6 11.Ag5!",
+                                          tag: "INCHIODATURA f6",
+                                          tagType: "rose",
+                                          children: []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      id: "w-9cxb2",
+                                      situation: "9...cxb2 (Il Nero mangia in b2)",
+                                      myMove: "10.Axb2!",
+                                      summary: "Sviluppi l'Alfiere attaccando immediatamente la Torre h8 sulla diagonale aperta!",
+                                      sequence: "9...cxb2 10.Axb2!",
+                                      tag: "SVILUPPO + ATTACCO Th8",
+                                      tagType: "rose",
+                                      children: [
+                                        {
+                                          id: "w-10cxb2-cf6",
+                                          situation: "10...Cf6 (Copre la Torre)",
+                                          myMove: "11.O-O!",
+                                          summary: "Metti il Re al sicuro e prepari Cc3 -> Cd5! sul Cavallo inchiodato!",
+                                          sequence: "10...Cf6 11.O-O!",
+                                          tag: "ATTACCO VINCENTE",
+                                          tagType: "emerald",
+                                          children: []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      id: "w-9d6",
+                                      situation: "9...d6 (Attacca la Donna c5)",
+                                      myMove: "10.Dxc3!",
+                                      summary: "Elimini il pedone passato c3 e minacci subito 11.Dxh8!",
+                                      sequence: "9...d6 10.Dxc3!",
+                                      tag: "MINACCIA 11.Dxh8",
+                                      tagType: "emerald",
+                                      children: []
+                                    },
+                                    {
+                                      id: "w-9de7",
+                                      situation: "9...De7 (Mette la Donna davanti al Re)",
+                                      myMove: "10.Dxc3!",
+                                      summary: "Mangi c3 minacciando 11.Dxh8! Se il Nero gioca 10...Dxe4+ giochi 11.Rd1! e al turno dopo 12.Te1! vince la partita!",
+                                      sequence: "9...De7 10.Dxc3!",
+                                      tag: "TRAPPOLA 11.Rd1!",
+                                      tagType: "rose",
+                                      children: []
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -4632,9 +4705,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v15_scandi_2e5_3cf3') {
+      if (localStorage.getItem('chess_tree_version') !== 'v16_scotch_8qh5') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v15_scandi_2e5_3cf3');
+        localStorage.setItem('chess_tree_version', 'v16_scotch_8qh5');
       }
       loadCustomMoves();
       resetToHome();
