@@ -5402,7 +5402,235 @@
               sequence: "3.c3 Cc6! 4.f4! Cf6! 5.Cf3! Af5!",
               tag: "RIFIUTATO #3",
               tagType: "blue",
-              children: []
+              children: [
+                {
+                  id: "b-col-3c3-4ab5",
+                  situation: "4.Ab5 (Inchioda il Cavallo c6 invece di giocare 4.f4 — La tua partita)",
+                  myMove: "4...Cf6! (#1 Motore — oppure 4...cxd4! / 4...Dd6)",
+                  summary: "Con 4...Cf6! controlli subito e5 (impedendo Ce5!) e tieni libero l'Alfiere f8 (meglio di 4...Dd6 che lo blocca). Scegli il ramo fino a mossa 9:",
+                  sequence: "1.d4 d5! 2.e3 c5! 3.c3 Cc6! 4.Ab5 Cf6!",
+                  tag: "ANTI-COLLE 4.Ab5",
+                  tagType: "emerald",
+                  children: [
+                    {
+                      id: "b-col-4ab5-5cf3",
+                      situation: "Ramo 4...Cf6! (#1 Motore) -> 5.Cf3 (Sviluppo naturale)",
+                      myMove: "5...Ag4!",
+                      summary: "Inchiodi subito il Cavallo f3 prima di chiudere la diagonale con e6!",
+                      sequence: "4...Cf6! 5.Cf3 Ag4!",
+                      tag: "INCHIODATURA f3",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "b-col-4ab5-6cbd2",
+                          situation: "6.Cbd2 (o 6.O-O — Sviluppo Bianco)",
+                          myMove: "6...e6!",
+                          summary: "Blindi il centro e liberi l'Alfiere f8.",
+                          sequence: "6.Cbd2 e6!",
+                          tag: "CENTRO SOLIDO",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "b-col-4ab5-7da4",
+                              situation: "7.Da4 (Aumenta pressione su c6 — o 7.O-O Ad6!)",
+                              myMove: "7...Db6!",
+                              summary: "Difendi c6 con la Donna e attacchi contemporaneamente l'Alfiere bianco in b5!",
+                              sequence: "7.Da4 Db6!",
+                              tag: "DIFESA ATTIVA c6",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "b-col-4ab5-8ce5",
+                                  situation: "8.Ce5 (Attacca c6 e g4)",
+                                  myMove: "8...Tc8!",
+                                  summary: "Rinforzi c6 con la Torre senza cedere la coppia degli Alfieri.",
+                                  sequence: "8.Ce5 Tc8!",
+                                  tag: "TORRE SU COLONNA c",
+                                  tagType: "blue",
+                                  children: [
+                                    {
+                                      id: "b-col-4ab5-9oo",
+                                      situation: "9.O-O (Arrocca corto)",
+                                      myMove: "9...Ad6!",
+                                      summary: "Completi lo sviluppo puntando sull'arrocco bianco e prepari 10...O-O! con posizione solidissima.",
+                                      sequence: "9.O-O Ad6!",
+                                      tag: "SETUP PERFETTO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "b-col-4ab5-5dxc5",
+                      situation: "Ramo 4...Cf6! -> 5.dxc5 (Il Bianco mangia c5)",
+                      myMove: "5...e5!",
+                      summary: "Conquisti tutto il centro e prepari il recupero immediato del pedone con ...Axc5.",
+                      sequence: "4...Cf6! 5.dxc5 e5!",
+                      tag: "CENTRO DOMINANTE",
+                      tagType: "rose",
+                      children: [
+                        {
+                          id: "b-col-4ab5-6b4",
+                          situation: "6.b4 (Tenta di difendere c5)",
+                          myMove: "6...a5!",
+                          summary: "Mini subito la catena pedonale sull'ala di Donna!",
+                          sequence: "6.b4 a5!",
+                          tag: "ROTTURA a5!",
+                          tagType: "rose",
+                          children: [
+                            {
+                              id: "b-col-4ab5-7ab2",
+                              situation: "7.Ab2 (Difende b4 e attacca e5)",
+                              myMove: "7...Ad7!",
+                              summary: "Difendi c6 e prepari 8...axb4!",
+                              sequence: "7.Ab2 Ad7!",
+                              tag: "SVILUPPO",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "b-col-4ab5-8a3",
+                                  situation: "8.a3 (Sostiene b4)",
+                                  myMove: "8...axb4!",
+                                  summary: "Apri la colonna a per la Torre!",
+                                  sequence: "8.a3 axb4!",
+                                  tag: "COLONNA a APERTA",
+                                  tagType: "emerald",
+                                  children: [
+                                    {
+                                      id: "b-col-4ab5-9cxb4",
+                                      situation: "9.cxb4 (Riprende)",
+                                      myMove: "9...Cxb4!",
+                                      summary: "Recuperi il pedone con guadagno di tempo sull'Alfiere b5 e centro dominante!",
+                                      sequence: "9.cxb4 Cxb4!",
+                                      tag: "VANTAGGIO NERO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "b-col-4ab5-cxd4",
+                      situation: "Ramo 4...cxd4! (Alternativa #2 — Struttura Carlsbad)",
+                      myMove: "5...Cf6! (dopo 5.exd4)",
+                      summary: "Chiarisci subito il centro entrando nella struttura Carlsbad con l'Alfiere c8 libero.",
+                      sequence: "4...cxd4! 5.exd4 Cf6!",
+                      tag: "CARLSBAD",
+                      tagType: "blue",
+                      children: [
+                        {
+                          id: "b-col-4ab5-cxd4-6cf3",
+                          situation: "6.Cf3 (Sviluppo)",
+                          myMove: "6...Ag4!",
+                          summary: "Inchiodi f3.",
+                          sequence: "6.Cf3 Ag4!",
+                          tag: "INCHIODATURA",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "b-col-4ab5-cxd4-7af4",
+                              situation: "7.Af4 (Sviluppo fuori catena)",
+                              myMove: "7...e6!",
+                              summary: "Blindi il centro.",
+                              sequence: "7.Af4 e6!",
+                              tag: "CENTRO",
+                              tagType: "blue",
+                              children: [
+                                {
+                                  id: "b-col-4ab5-cxd4-8cbd2",
+                                  situation: "8.Cbd2 (Sviluppo)",
+                                  myMove: "8...Ad6!",
+                                  summary: "Contendi subito la diagonale attiva all'Alfiere f4!",
+                                  sequence: "8.Cbd2 Ad6!",
+                                  tag: "CAMBIO ALFIERI",
+                                  tagType: "emerald",
+                                  children: [
+                                    {
+                                      id: "b-col-4ab5-cxd4-9axd6",
+                                      situation: "9.Axd6 (Cambia)",
+                                      myMove: "9...Dxd6!",
+                                      summary: "Al turno 10 arrocchi 10...O-O! e lanci l'attacco di minoranza ...Tab8 e ...b5-b4!",
+                                      sequence: "9.Axd6 Dxd6!",
+                                      tag: "GIOCO COMODO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: "b-col-4ab5-dd6",
+                      situation: "Ramo 4...Dd6 (Giocata in partita) -> 5.Cf3",
+                      myMove: "5...Cf6!",
+                      summary: "Sviluppi il Cavallo.",
+                      sequence: "4...Dd6 5.Cf3 Cf6!",
+                      tag: "LINEA PARTITA",
+                      tagType: "blue",
+                      children: [
+                        {
+                          id: "b-col-4ab5-dd6-6ce5",
+                          situation: "6.Ce5 (Salta al centro)",
+                          myMove: "6...Ad7!",
+                          summary: "Cambi il Cavallo attivo bianco.",
+                          sequence: "6.Ce5 Ad7!",
+                          tag: "CAMBIO",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "b-col-4ab5-dd6-7cxd7",
+                              situation: "7.Cxd7 (Cambia)",
+                              myMove: "7...Dxd7!",
+                              summary: "Riprendi di Donna.",
+                              sequence: "7.Cxd7 Dxd7!",
+                              tag: "RIPRESA",
+                              tagType: "emerald",
+                              children: [
+                                {
+                                  id: "b-col-4ab5-dd6-8dxc5",
+                                  situation: "8.dxc5 (Mangia c5)",
+                                  myMove: "8...e5!",
+                                  summary: "Prendi il centro e apri l'Alfiere f8.",
+                                  sequence: "8.dxc5 e5!",
+                                  tag: "CENTRO",
+                                  tagType: "emerald",
+                                  children: [
+                                    {
+                                      id: "b-col-4ab5-dd6-9oo",
+                                      situation: "9.O-O (Arrocca)",
+                                      myMove: "9...Axc5!",
+                                      summary: "Recuperi il pedone con centro attivo. (OCCHIO nel mediogioco: dopo 13.cxd5 Cxd5 14.Ab2 gioca 14...O-O-O! per difendere d5 — MAI 14...Df6?? che lascia d5 in presa!).",
+                                      sequence: "9.O-O Axc5!",
+                                      tag: "ATTENZIONE 14...O-O-O!",
+                                      tagType: "rose",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -6117,9 +6345,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v22_panov_7cxd5_m10') {
+      if (localStorage.getItem('chess_tree_version') !== 'v23_anti_colle_3c3_4ab5') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v22_panov_7cxd5_m10');
+        localStorage.setItem('chess_tree_version', 'v23_anti_colle_3c3_4ab5');
       }
       loadCustomMoves();
       resetToHome();
