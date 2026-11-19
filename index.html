@@ -4790,6 +4790,146 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      id: "b-london-5cf3",
+                      situation: "5.Cf3 (Sviluppo naturale invece di 5.Cd2 — La tua partita)",
+                      myMove: "5...Ag4! (#1 Motore — oppure 5...Db6! / 5...cxd4)",
+                      summary: "Con 5...Ag4! inchiodi subito f3; con 5...Db6! attacchi subito b2; con 5...cxd4 (giocata in partita) entri nella struttura Carlsbad. Scegli il ramo fino a mossa 9:",
+                      sequence: "1.d4 d5! 2.Af4 c5! 3.e3 Cc6! 4.c3 Cf6! 5.Cf3 Ag4!",
+                      tag: "ANTI-LONDON 5.Cf3",
+                      tagType: "emerald",
+                      children: [
+                        {
+                          id: "b-london-5cf3-ag4",
+                          situation: "Ramo 5...Ag4! (#1 Motore) -> 6.Cbd2 (Sviluppo Bianco)",
+                          myMove: "6...e6!",
+                          summary: "Blindi il centro e liberi l'Alfiere f8 mantenendo l'inchiodatura su f3.",
+                          sequence: "5...Ag4! 6.Cbd2 e6!",
+                          tag: "MOSSA #1 MOTORE",
+                          tagType: "emerald",
+                          children: [
+                            {
+                              id: "b-london-5cf3-ag4-7da4",
+                              situation: "7.Da4 (Aumenta pressione su c6 — o 7.Ae2 Ad6!)",
+                              myMove: "7...Db6!",
+                              summary: "Difendi c6 con la Donna e attacchi contemporaneamente il pedone indifeso b2!",
+                              sequence: "7.Da4 Db6!",
+                              tag: "ATTACCO SU b2",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "b-london-5cf3-ag4-8ab5",
+                                  situation: "8.Ab5 (Inchioda c6)",
+                                  myMove: "8...Tc8!",
+                                  summary: "Rinforzi c6 con la Torre senza cedere la coppia degli Alfieri.",
+                                  sequence: "8.Ab5 Tc8!",
+                                  tag: "DIFESA SOLIDA",
+                                  tagType: "blue",
+                                  children: [
+                                    {
+                                      id: "b-london-5cf3-ag4-9oo",
+                                      situation: "9.O-O (Arrocca)",
+                                      myMove: "9...Ad6!",
+                                      summary: "Contendi la diagonale all'Alfiere f4 e prepari 10...O-O! con posizione pari e attivissima.",
+                                      sequence: "9.O-O Ad6!",
+                                      tag: "SETUP PERFETTO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: "b-london-5cf3-db6",
+                          situation: "Ramo 5...Db6! (Attacco immediato su b2) -> 6.Db3",
+                          myMove: "6...c4!",
+                          summary: "Guadagni spazio sull'ala di Donna cacciando la Donna bianca!",
+                          sequence: "5...Db6! 6.Db3 c4!",
+                          tag: "SPAZIO ALA DONNA",
+                          tagType: "rose",
+                          children: [
+                            {
+                              id: "b-london-5cf3-db6-7dc2",
+                              situation: "7.Dc2 (Ritira la Donna)",
+                              myMove: "7...Af5!",
+                              summary: "Sviluppi l'Alfiere fuori dalla catena con guadagno di tempo sulla Donna c2!",
+                              sequence: "7.Dc2 Af5!",
+                              tag: "TEMPO SU DONNA",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "b-london-5cf3-db6-8dc1",
+                                  situation: "8.Dc1 (Ritira)",
+                                  myMove: "8...e6!",
+                                  summary: "Blindi il centro.",
+                                  sequence: "8.Dc1 e6!",
+                                  tag: "CENTRO SOLIDO",
+                                  tagType: "blue",
+                                  children: [
+                                    {
+                                      id: "b-london-5cf3-db6-9cbd2",
+                                      situation: "9.Cbd2 (Sviluppo)",
+                                      myMove: "9...Ae7!",
+                                      summary: "Al turno 10 arrocchi 10...O-O! e lanci l'attacco sull'ala di Donna (...b5-b4) con vantaggio netto!",
+                                      sequence: "9.Cbd2 Ae7!",
+                                      tag: "VANTAGGIO NERO",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: "b-london-5cf3-cxd4",
+                          situation: "Ramo 5...cxd4 (Giocata in partita) -> 6.exd4",
+                          myMove: "6...Ag4!",
+                          summary: "Inchiodi subito il Cavallo f3 prima di chiudere con e6.",
+                          sequence: "5...cxd4 6.exd4 Ag4!",
+                          tag: "CARLSBAD",
+                          tagType: "blue",
+                          children: [
+                            {
+                              id: "b-london-5cf3-cxd4-7ad3",
+                              situation: "7.Ad3 (Sviluppo — Come in partita)",
+                              myMove: "7...e6!",
+                              summary: "NON cambiare subito 7...Axf3? (attiva Dxf3) e NON spingere 8...e5?? (perde un pezzo perché d4 + Af4 controllano e5 due volte!). Gioca 7...e6! e 8...Ad6!.",
+                              sequence: "7.Ad3 e6!",
+                              tag: "NO 8...e5??",
+                              tagType: "rose",
+                              children: [
+                                {
+                                  id: "b-london-5cf3-cxd4-8cbd2",
+                                  situation: "8.Cbd2 (Sviluppo)",
+                                  myMove: "8...Ad6!",
+                                  summary: "Contendi subito la diagonale attiva all'Alfiere f4!",
+                                  sequence: "8.Cbd2 Ad6!",
+                                  tag: "CAMBIO ALFIERI",
+                                  tagType: "emerald",
+                                  children: [
+                                    {
+                                      id: "b-london-5cf3-cxd4-9axd6",
+                                      situation: "9.Axd6 (Cambia)",
+                                      myMove: "9...Dxd6!",
+                                      summary: "Al turno 10 arrocchi 10...O-O! con posizione solidissima, zero punti deboli e attacco di minoranza ...b5-b4!",
+                                      sequence: "9.Axd6 Dxd6!",
+                                      tag: "PARITÀ ATTIVA",
+                                      tagType: "emerald",
+                                      children: []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -6345,9 +6485,9 @@
 
     // Initialize application on load
     window.onload = function() {
-      if (localStorage.getItem('chess_tree_version') !== 'v23_anti_colle_3c3_4ab5') {
+      if (localStorage.getItem('chess_tree_version') !== 'v24_anti_london_5cf3') {
         localStorage.clear();
-        localStorage.setItem('chess_tree_version', 'v23_anti_colle_3c3_4ab5');
+        localStorage.setItem('chess_tree_version', 'v24_anti_london_5cf3');
       }
       loadCustomMoves();
       resetToHome();
